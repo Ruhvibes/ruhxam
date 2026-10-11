@@ -389,11 +389,13 @@ function confetti(){
 var MK=null;
 function negVal(){var v=RXStore.get('negMark');return v===undefined?1/3:parseFloat(v);}
 function mockPool(examId){
-  var mq=chByPart('maths'),rq=chByPart('reasoning'),sq=chByPart('science');
+  var mq=chByPart('maths'),rq=chByPart('reasoning'),sq=chByPart('science'),
+      gq=chByPart('gk'),cq=chByPart('ca');
   function pool(chs){var p=[];chs.forEach(function(c){(c.quiz||[]).forEach(function(q,i){p.push({ch:c.id,qi:i});});});return shuffle(p);}
-  var e=RT_EXAMS[examId],mp=pool(mq).slice(0,e.maths),rp=pool(rq).slice(0,e.reas),sp=[];
+  var e=RT_EXAMS[examId],mp=pool(mq).slice(0,e.maths),rp=pool(rq).slice(0,e.reas),sp=[],gp=[];
   if(examId==='groupd'&&e.science)sp=pool(sq).slice(0,e.science);
-  return mp.concat(rp,sp);
+  if(e.gk)gp=pool(gq).concat(pool(cq)).slice(0,e.gk);
+  return mp.concat(rp,sp,gp);
 }
 function renderMockSetup(){
   var e=RT_EXAMS[RT.examId];
@@ -404,6 +406,7 @@ function renderMockSetup(){
   h+='<tr><td>'+esc(t('part_maths'))+'</td><td>'+e.maths+'</td></tr>';
   h+='<tr><td>'+esc(t('part_reas'))+'</td><td>'+e.reas+'</td></tr>';
   if(e.science)h+='<tr><td>'+esc(t('part_science'))+'</td><td>'+e.science+'</td></tr>';
+  if(e.gk)h+='<tr><td>'+esc(t('part_gk'))+' + '+esc(t('part_ca'))+'</td><td>'+e.gk+'</td></tr>';
   h+='</table><p class="muted">'+esc(L(e.pattern))+' • '+esc(t('time_limit'))+': '+e.timeMin+' '+esc(t('min'))+' • '+esc(t('neg_mark'))+': -'+negVal()+'</p>';
   h+='<p class="muted">'+esc(t('ga_note'))+'</p></div>';
   h+='<button class="btn primary block" id="mkStart">'+esc(t('start_mock'))+'</button>';
