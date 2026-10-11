@@ -1,0 +1,3787 @@
+{
+ "version": 1,
+ "part": "reasoning",
+ "count": 17,
+ "chapters": [
+  {
+   "id": "r01",
+   "part": "reasoning",
+   "num": 1,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "कोडिंग-डिकोडिंग",
+    "en": "Coding-Decoding"
+   },
+   "concept": {
+    "hi": "अक्षरों को <mark>स्थान-संख्या (A=1…Z=26)</mark> से कोड किया जाता है। EJOTY क्रम याद रखें: E=5, J=10, O=15, T=20, Y=25।",
+    "en": "Letters coded by <mark>position (A=1…Z=26)</mark>. Remember EJOTY: E=5,J=10,O=15,T=20,Y=25."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "विपरीत अक्षर",
+      "en": "Opposite letters"
+     },
+     "b": {
+      "hi": "योग 27 वाले जोड़े: <mark>A-Z, B-Y, C-X, D-W, E-V…</mark> (\"आज रात व्यस्त\" ट्रिक से याद करें: Aत Zरात…)।",
+      "en": "Pairs summing to 27: <mark>A-Z, B-Y, C-X…</mark>"
+     }
+    },
+    {
+     "h": {
+      "hi": "+n/−n शिफ्ट",
+      "en": "+/-n shift"
+     },
+     "b": {
+      "hi": "पहले <mark>अंतर ज्ञात</mark> करें (जैसे CAT→DBU = +1)। फिर वही नियम लागू करें।",
+      "en": "Find the <mark>shift</mark> first, then apply."
+     }
+    },
+    {
+     "h": {
+      "hi": "उल्टा क्रम",
+      "en": "Reverse order"
+     },
+     "b": {
+      "hi": "कभी-कभी शब्द <mark>उल्टा</mark> लिखा जाता है (BAT→TAB)।",
+      "en": "Sometimes the word is <mark>reversed</mark>."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "CAT को DBU लिखा जाता है, तो DOG को क्या लिखेंगे?",
+      "en": "CAT→DBU, code DOG?"
+     },
+     "s": {
+      "hi": "प्रत्येक अक्षर +1: D→E, O→P, G→H → <mark>EPH</mark>।",
+      "en": "Each +1 → <mark>EPH</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "यदि ZEBRA को 26-5-2-18-1 लिखा जाए, तो HORSE = ?",
+      "en": "ZEBRA=26-5-2-18-1, HORSE=?"
+     },
+     "s": {
+      "hi": "H=8, O=15, R=18, S=19, E=5 → <mark>8-15-18-19-5</mark>।",
+      "en": "H=8,O=15,R=18,S=19,E=5."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "A=1, B=2… तो BAD = ?",
+      "en": "A=1, B=2… BAD = ?"
+     },
+     "o": [
+      {
+       "hi": "2-1-4",
+       "en": "2-1-4"
+      },
+      {
+       "hi": "1-2-4",
+       "en": "1-2-4"
+      },
+      {
+       "hi": "4-1-2",
+       "en": "4-1-2"
+      },
+      {
+       "hi": "2-4-1",
+       "en": "2-4-1"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "B=2, A=1, D=4।",
+      "en": "B=2,A=1,D=4."
+     }
+    },
+    {
+     "q": {
+      "hi": "Z का विपरीत अक्षर?",
+      "en": "Opposite of Z?"
+     },
+     "o": [
+      {
+       "hi": "Y",
+       "en": "Y"
+      },
+      {
+       "hi": "A",
+       "en": "A"
+      },
+      {
+       "hi": "M",
+       "en": "M"
+      },
+      {
+       "hi": "N",
+       "en": "N"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "Z+A = 27 → A।",
+      "en": "Z+A=27 → A."
+     }
+    },
+    {
+     "q": {
+      "hi": "BALL को CZMN लिखा गया (प्रत्येक +1)। FAN = ?",
+      "en": "BALL→CZMN (+1 each). FAN?"
+     },
+     "o": [
+      {
+       "hi": "GBO",
+       "en": "GBO"
+      },
+      {
+       "hi": "EBM",
+       "en": "EBM"
+      },
+      {
+       "hi": "HCP",
+       "en": "HCP"
+      },
+      {
+       "hi": "GAP",
+       "en": "GAP"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "F+1=G, A+1=B, N+1=O → GBO।",
+      "en": "F→G, A→B, N→O."
+     }
+    },
+    {
+     "q": {
+      "hi": "M का स्थान (A=1)?",
+      "en": "Position of M (A=1)?"
+     },
+     "o": [
+      {
+       "hi": "12",
+       "en": "12"
+      },
+      {
+       "hi": "13",
+       "en": "13"
+      },
+      {
+       "hi": "14",
+       "en": "14"
+      },
+      {
+       "hi": "11",
+       "en": "11"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "A-Z में M 13वाँ अक्षर।",
+      "en": "M is 13th."
+     }
+    },
+    {
+     "q": {
+      "hi": "TAP को PAT लिखा गया। LOOP = ?",
+      "en": "TAP→PAT (reversed). LOOP?"
+     },
+     "o": [
+      {
+       "hi": "POOL",
+       "en": "POOL"
+      },
+      {
+       "hi": "OPOL",
+       "en": "OPOL"
+      },
+      {
+       "hi": "LOPO",
+       "en": "LOPO"
+      },
+      {
+       "hi": "OPLO",
+       "en": "OPLO"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "अक्षर उल्टे: L-O-O-P → P-O-O-L = POOL।",
+      "en": "Letters reversed: POOL."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r02",
+   "part": "reasoning",
+   "num": 2,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "संख्या श्रेणी",
+    "en": "Number Series"
+   },
+   "concept": {
+    "hi": "श्रेणी का <mark>पैटर्न</mark> खोजें: अंतर, गुणा, वर्ग, घन, या मिश्रित।",
+    "en": "Find the <mark>pattern</mark>: difference, multiply, squares, cubes."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "अंतर विधि",
+      "en": "Difference method"
+     },
+     "b": {
+      "hi": "क्रमागत <mark>अंतर</mark> निकालें; अंतर का अंतर (द्वितीय अंतर) भी देखें।",
+      "en": "Take successive <mark>differences</mark>, then differences of differences."
+     }
+    },
+    {
+     "h": {
+      "hi": "गुणा +/−",
+      "en": "Multiply +/-"
+     },
+     "b": {
+      "hi": "×2+1, ×3−2 जैसे पैटर्न आम हैं।",
+      "en": "Patterns like ×2+1, ×3−2 are common."
+     }
+    },
+    {
+     "h": {
+      "hi": "वर्ग/घन",
+      "en": "Squares/cubes"
+     },
+     "b": {
+      "hi": "n²±k, n³±k पहचानें: 1,4,9,16,25… / 1,8,27,64…",
+      "en": "Spot n²±k, n³±k."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "2, 6, 12, 20, 30, ? — अगला पद?",
+      "en": "2, 6, 12, 20, 30, ? Next?"
+     },
+     "s": {
+      "hi": "अंतर: 4,6,8,10 → अगला अंतर 12 → 30+12 = <mark>42</mark>।",
+      "en": "Differences 4,6,8,10 → next 12 → <mark>42</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "3, 9, 27, 81, ? — अगला?",
+      "en": "3, 9, 27, 81, ? Next?"
+     },
+     "s": {
+      "hi": "×3 पैटर्न → 81×3 = <mark>243</mark>।",
+      "en": "×3 → <mark>243</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "5, 11, 23, 47, ? — अगला?",
+      "en": "5, 11, 23, 47, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "94",
+       "en": "94"
+      },
+      {
+       "hi": "95",
+       "en": "95"
+      },
+      {
+       "hi": "96",
+       "en": "96"
+      },
+      {
+       "hi": "93",
+       "en": "93"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "×2+1: 47×2+1 = 95।",
+      "en": "×2+1 → 95."
+     }
+    },
+    {
+     "q": {
+      "hi": "1, 4, 9, 16, 25, ? — अगला?",
+      "en": "1, 4, 9, 16, 25, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "30",
+       "en": "30"
+      },
+      {
+       "hi": "36",
+       "en": "36"
+      },
+      {
+       "hi": "35",
+       "en": "35"
+      },
+      {
+       "hi": "49",
+       "en": "49"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "वर्ग श्रेणी: 6² = 36।",
+      "en": "Squares: 6²=36."
+     }
+    },
+    {
+     "q": {
+      "hi": "2, 3, 5, 9, 17, ? — अगला?",
+      "en": "2, 3, 5, 9, 17, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "33",
+       "en": "33"
+      },
+      {
+       "hi": "32",
+       "en": "32"
+      },
+      {
+       "hi": "34",
+       "en": "34"
+      },
+      {
+       "hi": "31",
+       "en": "31"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "अंतर दोगुना: 1,2,4,8 → अगला 16 → 17+16=33।",
+      "en": "Differences double → 33."
+     }
+    },
+    {
+     "q": {
+      "hi": "7, 14, 28, 56, ? — अगला?",
+      "en": "7, 14, 28, 56, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "100",
+       "en": "100"
+      },
+      {
+       "hi": "108",
+       "en": "108"
+      },
+      {
+       "hi": "112",
+       "en": "112"
+      },
+      {
+       "hi": "116",
+       "en": "116"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "×2 → 112।",
+      "en": "×2 → 112."
+     }
+    },
+    {
+     "q": {
+      "hi": "1, 8, 27, 64, ? — अगला?",
+      "en": "1, 8, 27, 64, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "100",
+       "en": "100"
+      },
+      {
+       "hi": "121",
+       "en": "121"
+      },
+      {
+       "hi": "125",
+       "en": "125"
+      },
+      {
+       "hi": "144",
+       "en": "144"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "घन श्रेणी: 5³ = 125।",
+      "en": "Cubes: 5³=125."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r03",
+   "part": "reasoning",
+   "num": 3,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "अक्षर श्रेणी",
+    "en": "Alphabet Series"
+   },
+   "concept": {
+    "hi": "अक्षरों के <mark>स्थानों</mark> का पैटर्न खोजें (A=1…Z=26)।",
+    "en": "Find pattern in letter <mark>positions</mark>."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "स्थान लिखें",
+      "en": "Write positions"
+     },
+     "b": {
+      "hi": "पहले हर अक्षर का <mark>नंबर</mark> लिखें, फिर संख्या श्रेणी जैसे हल करें।",
+      "en": "Write <mark>numbers</mark> first, solve like number series."
+     }
+    },
+    {
+     "h": {
+      "hi": "स्किप पैटर्न",
+      "en": "Skip pattern"
+     },
+     "b": {
+      "hi": "+1, +2, +3… या −1, −2… जैसे क्रम आम हैं।",
+      "en": "+1,+2,+3 or −1,−2 patterns common."
+     }
+    },
+    {
+     "h": {
+      "hi": "विपरीत अक्षर जोड़े",
+      "en": "Opposite letter pairs"
+     },
+     "b": {
+      "hi": "जिन दो अक्षरों के स्थानों का योग <mark>27</mark> हो, वे विपरीत जोड़े हैं: A-Z, B-Y, C-X... श्रेणी में ये जोड़े बारी-बारी से भी आ सकते हैं।",
+      "en": "Pairs whose positions sum to <mark>27</mark>: A-Z, B-Y, C-X... They may also alternate in a series."
+     }
+    },
+    {
+     "h": {
+      "hi": "EJOTY स्मरण सूत्र",
+      "en": "EJOTY memory trick"
+     },
+     "b": {
+      "hi": "E=5, J=10, O=15, T=20, Y=25 - <mark>5 के गुणज</mark> याद रखें। श्रेणी में इन स्थानों के अक्षर बार-बार आते हैं।",
+      "en": "E=5, J=10, O=15, T=20, Y=25 - <mark>multiples of 5</mark>."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "A, C, F, J, ? — अगला?",
+      "en": "A, C, F, J, ? Next?"
+     },
+     "s": {
+      "hi": "स्थान: 1,3,6,10 → अंतर 2,3,4 → अगला 5 → 15 = <mark>O</mark>।",
+      "en": "Positions 1,3,6,10, diff 2,3,4 → next 15 = <mark>O</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "Z, X, V, T, ? — अगला?",
+      "en": "Z, X, V, T, ? Next?"
+     },
+     "s": {
+      "hi": "26,24,22,20 → −2 → 18 = <mark>R</mark>।",
+      "en": "−2 → 18 = <mark>R</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "B, E, H, K, ? — अगला?",
+      "en": "B, E, H, K, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "M",
+       "en": "M"
+      },
+      {
+       "hi": "N",
+       "en": "N"
+      },
+      {
+       "hi": "L",
+       "en": "L"
+      },
+      {
+       "hi": "O",
+       "en": "O"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "2,5,8,11 → +3 → 14 = N।",
+      "en": "+3 → 14 = N."
+     }
+    },
+    {
+     "q": {
+      "hi": "A, D, G, J, ? — अगला?",
+      "en": "A, D, G, J, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "K",
+       "en": "K"
+      },
+      {
+       "hi": "L",
+       "en": "L"
+      },
+      {
+       "hi": "M",
+       "en": "M"
+      },
+      {
+       "hi": "N",
+       "en": "N"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "1,4,7,10 → +3 → 13 = M।",
+      "en": "+3 → 13 = M."
+     }
+    },
+    {
+     "q": {
+      "hi": "E, J, O, T, ? — अगला?",
+      "en": "E, J, O, T, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "Y",
+       "en": "Y"
+      },
+      {
+       "hi": "X",
+       "en": "X"
+      },
+      {
+       "hi": "Z",
+       "en": "Z"
+      },
+      {
+       "hi": "W",
+       "en": "W"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "5,10,15,20 → +5 → 25 = Y (EJOTY!)।",
+      "en": "+5 → 25 = Y."
+     }
+    },
+    {
+     "q": {
+      "hi": "D, F, I, M, ? — अगला?",
+      "en": "D, F, I, M, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "R",
+       "en": "R"
+      },
+      {
+       "hi": "Q",
+       "en": "Q"
+      },
+      {
+       "hi": "S",
+       "en": "S"
+      },
+      {
+       "hi": "P",
+       "en": "P"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "4,6,9,13 → अंतर 2,3,4 → अगला 5 → 18 = R।",
+      "en": "Diff 2,3,4 → next 18 = R."
+     }
+    },
+    {
+     "q": {
+      "hi": "W, T, Q, N, ? — अगला?",
+      "en": "W, T, Q, N, ? Next?"
+     },
+     "o": [
+      {
+       "hi": "J",
+       "en": "J"
+      },
+      {
+       "hi": "K",
+       "en": "K"
+      },
+      {
+       "hi": "L",
+       "en": "L"
+      },
+      {
+       "hi": "M",
+       "en": "M"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "23,20,17,14 → −3 → 11 = K।",
+      "en": "−3 → 11 = K."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r04",
+   "part": "reasoning",
+   "num": 4,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "सादृश्य (Analogy)",
+    "en": "Analogy"
+   },
+   "concept": {
+    "hi": "पहले युग्म का <mark>संबंध</mark> पहचानें, वही दूसरे पर लागू करें।",
+    "en": "Identify the <mark>relation</mark> in the first pair, apply to second."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "संबंध के प्रकार",
+      "en": "Relation types"
+     },
+     "b": {
+      "hi": "कारण-परिणाम, उपकरण-कार्य, <mark>n:n², n:n³</mark>, अक्षर-स्थान, विपरीत।",
+      "en": "Cause-effect, tool-work, <mark>n:n², n:n³</mark>, opposites."
+     }
+    },
+    {
+     "h": {
+      "hi": "संख्या सादृश्य",
+      "en": "Number analogy"
+     },
+     "b": {
+      "hi": "वर्ग/घन/±k जाँचें: 4:16 = वर्ग; 3:27 = घन।",
+      "en": "Check squares/cubes/±k."
+     }
+    },
+    {
+     "h": {
+      "hi": "विकल्पों से उल्टी जाँच",
+      "en": "Reverse-check with options"
+     },
+     "b": {
+      "hi": "संबंध स्पष्ट न हो तो प्रत्येक <mark>विकल्प</mark> पर वही संबंध लगाकर देखें - जो विकल्प पूरी तरह बैठे, वही उत्तर है।",
+      "en": "Apply the same relation to each <mark>option</mark> - the one that fits is the answer."
+     }
+    },
+    {
+     "h": {
+      "hi": "शब्द-व्याकरण मिलान",
+      "en": "Match grammar of words"
+     },
+     "b": {
+      "hi": "संज्ञा : संज्ञा, क्रिया : क्रिया - उत्तर विकल्प में <mark>वही शब्द-भेद</mark> होना चाहिए। जैसे डॉक्टर : अस्पताल :: शिक्षक : विद्यालय (न कि \"पढ़ाना\")।",
+      "en": "Noun:noun, verb:verb - the answer must share the <mark>part of speech</mark>."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "डॉक्टर : अस्पताल :: शिक्षक : ?",
+      "en": "Doctor : Hospital :: Teacher : ?"
+     },
+     "s": {
+      "hi": "कार्यस्थल संबंध → <mark>विद्यालय</mark>।",
+      "en": "Workplace → <mark>School</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "5 : 125 :: 4 : ?",
+      "en": "5 : 125 :: 4 : ?"
+     },
+     "s": {
+      "hi": "n:n³ → 4³ = <mark>64</mark>।",
+      "en": "n:n³ → <mark>64</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "कलम : लिखना :: चाकू : ?",
+      "en": "Pen : Write :: Knife : ?"
+     },
+     "o": [
+      {
+       "hi": "काटना",
+       "en": "Cut"
+      },
+      {
+       "hi": "तेज़",
+       "en": "Sharp"
+      },
+      {
+       "hi": "सब्ज़ी",
+       "en": "Vegetable"
+      },
+      {
+       "hi": "रसोई",
+       "en": "Kitchen"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "उपकरण-कार्य संबंध → काटना।",
+      "en": "Tool-work → Cut."
+     }
+    },
+    {
+     "q": {
+      "hi": "6 : 36 :: 9 : ?",
+      "en": "6 : 36 :: 9 : ?"
+     },
+     "o": [
+      {
+       "hi": "72",
+       "en": "72"
+      },
+      {
+       "hi": "81",
+       "en": "81"
+      },
+      {
+       "hi": "90",
+       "en": "90"
+      },
+      {
+       "hi": "18",
+       "en": "18"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "n:n² → 9² = 81।",
+      "en": "9² = 81."
+     }
+    },
+    {
+     "q": {
+      "hi": "दिन : रात :: सफ़ेद : ?",
+      "en": "Day : Night :: White : ?"
+     },
+     "o": [
+      {
+       "hi": "रंग",
+       "en": "Colour"
+      },
+      {
+       "hi": "काला",
+       "en": "Black"
+      },
+      {
+       "hi": "चमक",
+       "en": "Bright"
+      },
+      {
+       "hi": "दूध",
+       "en": "Milk"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "विपरीत संबंध → काला।",
+      "en": "Opposite → Black."
+     }
+    },
+    {
+     "q": {
+      "hi": "3 : 30 :: 5 : ?",
+      "en": "3 : 30 :: 5 : ?"
+     },
+     "o": [
+      {
+       "hi": "50",
+       "en": "50"
+      },
+      {
+       "hi": "130",
+       "en": "130"
+      },
+      {
+       "hi": "55",
+       "en": "55"
+      },
+      {
+       "hi": "150",
+       "en": "150"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "n:n³+n → 27+3=30; 125+5=130।",
+      "en": "n³+n → 130."
+     }
+    },
+    {
+     "q": {
+      "hi": "मछली : जल :: पक्षी : ?",
+      "en": "Fish : Water :: Bird : ?"
+     },
+     "o": [
+      {
+       "hi": "पेड़",
+       "en": "Tree"
+      },
+      {
+       "hi": "आकाश",
+       "en": "Sky"
+      },
+      {
+       "hi": "घोंसला",
+       "en": "Nest"
+      },
+      {
+       "hi": "पंख",
+       "en": "Wing"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "रहने का माध्यम → आकाश।",
+      "en": "Medium of living → Sky."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r05",
+   "part": "reasoning",
+   "num": 5,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "वर्गीकरण (भिन्न छाँटें)",
+    "en": "Classification (Odd One Out)"
+   },
+   "concept": {
+    "hi": "जो <mark>अलग</mark> है उसे चुनें — सम/विषम, अभाज्य, वर्ग, अक्षर-स्वर आदि।",
+    "en": "Pick the <mark>different</mark> one."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "संख्या जाँच",
+      "en": "Number checks"
+     },
+     "b": {
+      "hi": "सम-विषम, अभाज्य-भाज्य, <mark>पूर्ण वर्ग/घन</mark>, विभाज्यता क्रम से जाँचें।",
+      "en": "Check even/odd, prime, <mark>perfect square/cube</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "अक्षर जाँच",
+      "en": "Letter checks"
+     },
+     "b": {
+      "hi": "<mark>स्वर (A,E,I,O,U)</mark> बनाम व्यंजन; स्थान सम/विषम।",
+      "en": "<mark>Vowels</mark> vs consonants; position parity."
+     }
+    },
+    {
+     "h": {
+      "hi": "युग्म बनाकर देखें",
+      "en": "Try pairing"
+     },
+     "b": {
+      "hi": "विकल्पों में से दो-दो के <mark>युग्म</mark> बनाएँ (जैसे 2-4, 6-8 या A-C, B-D) - जो किसी युग्म में न आए, वही भिन्न है।",
+      "en": "Make <mark>pairs</mark> from the options - the one left unpaired is the odd one out."
+     }
+    },
+    {
+     "h": {
+      "hi": "अर्थ-आधारित समूह",
+      "en": "Meaning-based groups"
+     },
+     "b": {
+      "hi": "शब्दों के <mark>अर्थ</mark> से समूह बनाएँ - फल, रंग, पेशा, देश आदि। जो शब्द किसी समूह में न बैठे, वही भिन्न है।",
+      "en": "Group words by <mark>meaning</mark> - fruit, colour, profession etc. The misfit is the answer."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "भिन्न: 2, 4, 6, 9, 10",
+      "en": "Odd one: 2, 4, 6, 9, 10"
+     },
+     "s": {
+      "hi": "सभी सम हैं सिवाय <mark>9</mark> के।",
+      "en": "All even except <mark>9</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "भिन्न: A, E, I, K, O",
+      "en": "Odd one: A, E, I, K, O"
+     },
+     "s": {
+      "hi": "सभी स्वर हैं सिवाय <mark>K</mark> के।",
+      "en": "All vowels except <mark>K</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "भिन्न छाँटें: 16, 25, 36, 42, 49",
+      "en": "Odd one: 16, 25, 36, 42, 49"
+     },
+     "o": [
+      {
+       "hi": "16",
+       "en": "16"
+      },
+      {
+       "hi": "25",
+       "en": "25"
+      },
+      {
+       "hi": "42",
+       "en": "42"
+      },
+      {
+       "hi": "49",
+       "en": "49"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "सभी पूर्ण वर्ग हैं सिवाय 42 के।",
+      "en": "All perfect squares except 42."
+     }
+    },
+    {
+     "q": {
+      "hi": "भिन्न छाँटें: 3, 5, 7, 9, 11",
+      "en": "Odd one: 3, 5, 7, 9, 11"
+     },
+     "o": [
+      {
+       "hi": "3",
+       "en": "3"
+      },
+      {
+       "hi": "9",
+       "en": "9"
+      },
+      {
+       "hi": "7",
+       "en": "7"
+      },
+      {
+       "hi": "11",
+       "en": "11"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "सभी अभाज्य हैं सिवाय 9 के।",
+      "en": "All prime except 9."
+     }
+    },
+    {
+     "q": {
+      "hi": "भिन्न छाँटें: CAT, DOG, BAT, EGG",
+      "en": "Odd one: CAT, DOG, BAT, EGG"
+     },
+     "o": [
+      {
+       "hi": "CAT",
+       "en": "CAT"
+      },
+      {
+       "hi": "DOG",
+       "en": "DOG"
+      },
+      {
+       "hi": "EGG",
+       "en": "EGG"
+      },
+      {
+       "hi": "BAT",
+       "en": "BAT"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "सभी में स्वर एक बार, EGG में दो बार (E…E)।",
+      "en": "EGG has vowel twice."
+     }
+    },
+    {
+     "q": {
+      "hi": "भिन्न छाँटें: 8, 27, 64, 100, 125",
+      "en": "Odd one: 8, 27, 64, 100, 125"
+     },
+     "o": [
+      {
+       "hi": "8",
+       "en": "8"
+      },
+      {
+       "hi": "100",
+       "en": "100"
+      },
+      {
+       "hi": "27",
+       "en": "27"
+      },
+      {
+       "hi": "125",
+       "en": "125"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "सभी पूर्ण घन हैं सिवाय 100 के।",
+      "en": "All perfect cubes except 100."
+     }
+    },
+    {
+     "q": {
+      "hi": "भिन्न छाँटें: जनवरी, मार्च, मई, जून, जुलाई",
+      "en": "Odd one: Jan, Mar, May, Jun, Jul"
+     },
+     "o": [
+      {
+       "hi": "जनवरी",
+       "en": "Jan"
+      },
+      {
+       "hi": "जून",
+       "en": "Jun"
+      },
+      {
+       "hi": "मार्च",
+       "en": "Mar"
+      },
+      {
+       "hi": "जुलाई",
+       "en": "Jul"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "सभी 31 दिन के माह, जून 30 दिन का।",
+      "en": "All 31-day months except June."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r06",
+   "part": "reasoning",
+   "num": 6,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "रक्त संबंध",
+    "en": "Blood Relations"
+   },
+   "concept": {
+    "hi": "परिवार के संबंधों को <mark>चित्र (family tree)</mark> बनाकर हल करें। पीढ़ी का ध्यान रखें।",
+    "en": "Draw a <mark>family tree</mark>. Watch generations."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "चित्र बनाएँ",
+      "en": "Draw the tree"
+     },
+     "b": {
+      "hi": "पुरुष = <mark>□/＋</mark>, महिला = <mark>○/－</mark>; एक पीढ़ी = एक पंक्ति।",
+      "en": "Male = <mark>□</mark>, female = <mark>○</mark>; one generation per row."
+     }
+    },
+    {
+     "h": {
+      "hi": "मुख्य संबंध",
+      "en": "Key relations"
+     },
+     "b": {
+      "hi": "पिता का भाई = चाचा; माँ की बहन = मौसी; <mark>पत्नी की माँ = सास</mark>; भाई की पत्नी = भाभी।",
+      "en": "Father's brother = uncle; <mark>wife's mother = mother-in-law</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "\"इकलौता\" शब्द",
+      "en": "Word \"only\""
+     },
+     "b": {
+      "hi": "\"मेरा इकलौता भाई\" = <mark>स्वयं पुरुष</mark> (वक्ता)।",
+      "en": "\"My only brother\" implies speaker is male."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "राम ने कहा: \"वह मेरे पिता की इकलौती बहन का बेटा है।\" वह राम का कौन?",
+      "en": "Ram: \"He is my father's only sister's son.\" Relation?"
+     },
+     "s": {
+      "hi": "पिता की इकलौती बहन = बुआ; बुआ का बेटा = <mark>फुफेरा भाई</mark>।",
+      "en": "Father's only sister = aunt; her son = <mark>cousin</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "A, B की माँ है; B, C की बहन है; C, D का भाई है। D, A का कौन?",
+      "en": "A is B's mother; B sister of C; C brother of D. D to A?"
+     },
+     "s": {
+      "hi": "B, C, D तीनों A के बच्चे → D = <mark>A का बेटा/बेटी (संतान)</mark>।",
+      "en": "All three are A's children → D is <mark>A's child</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "मोहन की माँ, सोहन की माँ की इकलौती बेटी है। मोहन, सोहन का कौन?",
+      "en": "Mohan's mother is the only daughter of Sohan's mother. Relation?"
+     },
+     "o": [
+      {
+       "hi": "भाई",
+       "en": "Brother"
+      },
+      {
+       "hi": "पिता",
+       "en": "Father"
+      },
+      {
+       "hi": "चाचा",
+       "en": "Uncle"
+      },
+      {
+       "hi": "बेटा",
+       "en": "Son"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "सोहन की माँ की इकलौती बेटी = सोहन की बहन = मोहन की माँ → मोहन, सोहन का भाई।",
+      "en": "Only daughter = Sohan's sister = Mohan's mother → brothers."
+     }
+    },
+    {
+     "q": {
+      "hi": "एक महिला की ओर इशारा: \"वह मेरी पत्नी की माँ है।\" महिला कौन?",
+      "en": "Pointing: \"She is my wife's mother.\" Who?"
+     },
+     "o": [
+      {
+       "hi": "माँ",
+       "en": "Mother"
+      },
+      {
+       "hi": "सास",
+       "en": "Mother-in-law"
+      },
+      {
+       "hi": "दादी",
+       "en": "Grandmother"
+      },
+      {
+       "hi": "चाची",
+       "en": "Aunt"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "पत्नी की माँ = सास।",
+      "en": "Wife's mother = mother-in-law."
+     }
+    },
+    {
+     "q": {
+      "hi": "P, Q का भाई है; R, P की माँ है; S, R का पिता है। S, P का कौन?",
+      "en": "P brother of Q; R mother of P; S father of R. S to P?"
+     },
+     "o": [
+      {
+       "hi": "दादा",
+       "en": "Grandfather"
+      },
+      {
+       "hi": "पिता",
+       "en": "Father"
+      },
+      {
+       "hi": "नाना",
+       "en": "Maternal grandfather"
+      },
+      {
+       "hi": "चाचा",
+       "en": "Uncle"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "S = R का पिता = P की माँ का पिता = नाना।",
+      "en": "S = mother's father = maternal grandfather."
+     }
+    },
+    {
+     "q": {
+      "hi": "X ने Y से कहा: \"तुम मेरे दादा के इकलौते बेटे के बेटे हो।\" Y, X का कौन?",
+      "en": "X to Y: \"You are my grandfather's only son's son.\" Y to X?"
+     },
+     "o": [
+      {
+       "hi": "भाई",
+       "en": "Brother"
+      },
+      {
+       "hi": "पिता",
+       "en": "Father"
+      },
+      {
+       "hi": "चचेरा भाई",
+       "en": "Cousin"
+      },
+      {
+       "hi": "बेटा",
+       "en": "Son"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "दादा का इकलौता बेटा = पिता; पिता का बेटा = भाई।",
+      "en": "Only son = father; his son = brother."
+     }
+    },
+    {
+     "q": {
+      "hi": "A की बहन B है; B का भाई C है; C की माँ D है। D, A की कौन?",
+      "en": "A's sister B; B's brother C; C's mother D. D to A?"
+     },
+     "o": [
+      {
+       "hi": "माँ",
+       "en": "Mother"
+      },
+      {
+       "hi": "चाची",
+       "en": "Aunt"
+      },
+      {
+       "hi": "दादी",
+       "en": "Grandmother"
+      },
+      {
+       "hi": "बहन",
+       "en": "Sister"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "A, B, C भाई-बहन; D उनकी माँ → A की माँ।",
+      "en": "Siblings → D is A's mother."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r07",
+   "part": "reasoning",
+   "num": 7,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "दिशा ज्ञान",
+    "en": "Direction Sense"
+   },
+   "concept": {
+    "hi": "मुख्य दिशाएँ: <mark>उत्तर(N), दक्षिण(S), पूर्व(E), पश्चिम(W)</mark>। सूर्य पूर्व में उगता है।",
+    "en": "<mark>N, S, E, W</mark>. Sun rises in east."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "चित्र बनाएँ",
+      "en": "Draw it"
+     },
+     "b": {
+      "hi": "प्रारंभ बिंदु से <mark>तीर</mark> खींचते चलें; अंत में दिशा/दूरी निकालें।",
+      "en": "Draw <mark>arrows</mark> from start point."
+     }
+    },
+    {
+     "h": {
+      "hi": "पाइथागोरस",
+      "en": "Pythagoras"
+     },
+     "b": {
+      "hi": "लंबवत दूरियों हेतु <mark>√(a²+b²)</mark> (जैसे 3-4-5 → 5)।",
+      "en": "Perpendicular distances: <mark>√(a²+b²)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "परछाई नियम",
+      "en": "Shadow rule"
+     },
+     "b": {
+      "hi": "सुबह परछाई <mark>पश्चिम</mark> में, शाम को <mark>पूर्व</mark> में पड़ती है।",
+      "en": "Morning shadow → <mark>west</mark>; evening → <mark>east</mark>."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "राम पूर्व 4km, फिर उत्तर 3km चला। प्रारंभ से दूरी व दिशा?",
+      "en": "Ram walks 4km E, then 3km N. Distance & direction from start?"
+     },
+     "s": {
+      "hi": "√(16+9) = <mark>5 km, उत्तर-पूर्व</mark>।",
+      "en": "√25 = <mark>5 km, north-east</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "श्याम उत्तर की ओर मुँह करके दाएँ मुड़ा, फिर दाएँ। अब दिशा?",
+      "en": "Facing north, turns right twice. Now facing?"
+     },
+     "s": {
+      "hi": "उत्तर→पूर्व→<mark>दक्षिण</mark>।",
+      "en": "N→E→<mark>S</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "A पूर्व 5km, उत्तर 12km चला। सीधी दूरी?",
+      "en": "5km E, 12km N. Straight distance?"
+     },
+     "o": [
+      {
+       "hi": "13 km",
+       "en": "13 km"
+      },
+      {
+       "hi": "17 km",
+       "en": "17 km"
+      },
+      {
+       "hi": "15 km",
+       "en": "15 km"
+      },
+      {
+       "hi": "10 km",
+       "en": "10 km"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "√(25+144) = 13 km।",
+      "en": "√169 = 13."
+     }
+    },
+    {
+     "q": {
+      "hi": "पश्चिम की ओर मुँह, बाएँ मुड़ें — दिशा?",
+      "en": "Facing west, turn left. Direction?"
+     },
+     "o": [
+      {
+       "hi": "पूर्व",
+       "en": "East"
+      },
+      {
+       "hi": "उत्तर",
+       "en": "North"
+      },
+      {
+       "hi": "दक्षिण",
+       "en": "South"
+      },
+      {
+       "hi": "पश्चिम",
+       "en": "West"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "पश्चिम का बायाँ = दक्षिण।",
+      "en": "Left of west = south."
+     }
+    },
+    {
+     "q": {
+      "hi": "सुबह सूर्य की ओर मुँह — परछाई किस दिशा में?",
+      "en": "Facing sun in morning. Shadow direction?"
+     },
+     "o": [
+      {
+       "hi": "पूर्व",
+       "en": "East"
+      },
+      {
+       "hi": "पश्चिम",
+       "en": "West"
+      },
+      {
+       "hi": "उत्तर",
+       "en": "North"
+      },
+      {
+       "hi": "दक्षिण",
+       "en": "South"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "सुबह परछाई पश्चिम में।",
+      "en": "Morning shadow falls west."
+     }
+    },
+    {
+     "q": {
+      "hi": "उत्तर 6km, पूर्व 8km, दक्षिण 6km — प्रारंभ से?",
+      "en": "N 6km, E 8km, S 6km. From start?"
+     },
+     "o": [
+      {
+       "hi": "8 km पूर्व",
+       "en": "8 km east"
+      },
+      {
+       "hi": "14 km पूर्व",
+       "en": "14 km east"
+      },
+      {
+       "hi": "8 km पश्चिम",
+       "en": "8 km west"
+      },
+      {
+       "hi": "6 km उत्तर",
+       "en": "6 km north"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "उत्तर-दक्षिण कट गए → 8 km पूर्व।",
+      "en": "N−S cancel → 8 km east."
+     }
+    },
+    {
+     "q": {
+      "hi": "दक्षिण की ओर चलकर दाएँ, फिर बाएँ मुड़ा। अब दिशा?",
+      "en": "Walking south, turn right then left. Direction?"
+     },
+     "o": [
+      {
+       "hi": "उत्तर",
+       "en": "North"
+      },
+      {
+       "hi": "दक्षिण",
+       "en": "South"
+      },
+      {
+       "hi": "पूर्व",
+       "en": "East"
+      },
+      {
+       "hi": "पश्चिम",
+       "en": "West"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "दक्षिण→(दायाँ)पश्चिम→(बायाँ)दक्षिण।",
+      "en": "S→(right)W→(left)S."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r08",
+   "part": "reasoning",
+   "num": 8,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "क्रम एवं रैंकिंग",
+    "en": "Ranking & Order"
+   },
+   "concept": {
+    "hi": "कुल = <mark>बाएँ + दाएँ − 1</mark>। एक ओर से स्थान ज्ञात हो तो दूसरी ओर से = कुल − ज्ञात + 1।",
+    "en": "Total = <mark>left + right − 1</mark>."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "मूल सूत्र",
+      "en": "Core formula"
+     },
+     "b": {
+      "hi": "<mark>कुल व्यक्ति = बाईं ओर से स्थान + दाईं ओर से स्थान − 1</mark>",
+      "en": "<mark>Total = left rank + right rank − 1</mark>"
+     }
+    },
+    {
+     "h": {
+      "hi": "स्थान परिवर्तन",
+      "en": "Rank interchange"
+     },
+     "b": {
+      "hi": "स्थान बदलने पर नया कुल = <mark>नया बायाँ + पुराना दायाँ − 1</mark>।",
+      "en": "After swap: total = <mark>new left + old right − 1</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "दो के बीच व्यक्ति",
+      "en": "Persons between two"
+     },
+     "b": {
+      "hi": "बिना ओवरलैप के: <mark>बीच के व्यक्ति = कुल - (पहले का बायाँ क्रम + दूसरे का दायाँ क्रम)</mark>।",
+      "en": "With no overlap: <mark>between = total - (left rank of the first person + right rank of the second person)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "ओवरलैप जाँच",
+      "en": "Overlap check"
+     },
+     "b": {
+      "hi": "यदि <mark>बायाँ क्रम + दायाँ क्रम > कुल</mark> हो, तो दोनों के क्रम आपस में ओवरलैप कर रहे हैं - सूत्र सीधे न लगाएँ, पहले स्थिति समझें।",
+      "en": "If <mark>left rank + right rank > total</mark>, the ranks overlap - do not apply the formula directly."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "राम बाएँ से 7वाँ, दाएँ से 12वाँ। कुल कितने?",
+      "en": "Ram 7th from left, 12th from right. Total?"
+     },
+     "s": {
+      "hi": "7+12−1 = <mark>18</mark>।",
+      "en": "7+12−1 = <mark>18</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "40 छात्रों में राम ऊपर से 15वाँ — नीचे से कौन-सा?",
+      "en": "40 students, Ram 15th from top. From bottom?"
+     },
+     "s": {
+      "hi": "40−15+1 = <mark>26वाँ</mark>।",
+      "en": "40−15+1 = <mark>26th</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "कुल 50 में A बाएँ से 20वाँ — दाएँ से?",
+      "en": "50 total, A 20th from left. From right?"
+     },
+     "o": [
+      {
+       "hi": "30वाँ",
+       "en": "30th"
+      },
+      {
+       "hi": "31वाँ",
+       "en": "31st"
+      },
+      {
+       "hi": "29वाँ",
+       "en": "29th"
+      },
+      {
+       "hi": "32वाँ",
+       "en": "32nd"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "50−20+1 = 31वाँ।",
+      "en": "50−20+1 = 31st."
+     }
+    },
+    {
+     "q": {
+      "hi": "B दोनों ओर से 9वाँ — कुल?",
+      "en": "B 9th from both sides. Total?"
+     },
+     "o": [
+      {
+       "hi": "18",
+       "en": "18"
+      },
+      {
+       "hi": "17",
+       "en": "17"
+      },
+      {
+       "hi": "19",
+       "en": "19"
+      },
+      {
+       "hi": "16",
+       "en": "16"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "9+9−1 = 17।",
+      "en": "9+9−1 = 17."
+     }
+    },
+    {
+     "q": {
+      "hi": "ऊपर से 12वाँ, नीचे से 28वाँ — कुल?",
+      "en": "12th from top, 28th from bottom. Total?"
+     },
+     "o": [
+      {
+       "hi": "40",
+       "en": "40"
+      },
+      {
+       "hi": "39",
+       "en": "39"
+      },
+      {
+       "hi": "41",
+       "en": "41"
+      },
+      {
+       "hi": "38",
+       "en": "38"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "12+28−1 = 39।",
+      "en": "12+28−1 = 39."
+     }
+    },
+    {
+     "q": {
+      "hi": "30 लड़कों में A बाएँ से 12वाँ, B दाएँ से 10वाँ — बीच में कितने?",
+      "en": "30 boys; A 12th from left, B 10th from right. Between?"
+     },
+     "o": [
+      {
+       "hi": "6",
+       "en": "6"
+      },
+      {
+       "hi": "8",
+       "en": "8"
+      },
+      {
+       "hi": "7",
+       "en": "7"
+      },
+      {
+       "hi": "9",
+       "en": "9"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "30 − (12+10) = 8।",
+      "en": "30−22 = 8."
+     }
+    },
+    {
+     "q": {
+      "hi": "स्थान बदलने पर A बाएँ से 15वाँ (पहले दाएँ से 8वाँ था)। कुल?",
+      "en": "After swap A 15th from left (was 8th from right). Total?"
+     },
+     "o": [
+      {
+       "hi": "23",
+       "en": "23"
+      },
+      {
+       "hi": "22",
+       "en": "22"
+      },
+      {
+       "hi": "24",
+       "en": "24"
+      },
+      {
+       "hi": "21",
+       "en": "21"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "15+8−1 = 22।",
+      "en": "15+8−1 = 22."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r09",
+   "part": "reasoning",
+   "num": 9,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "न्याय निगमन (Syllogism)",
+    "en": "Syllogism"
+   },
+   "concept": {
+    "hi": "कथनों से <mark>निश्चित</mark> निष्कर्ष निकालें। वेन चित्र बनाएँ। \"कुछ\" = कम-से-कम एक; \"सभी\" = 100%।",
+    "en": "Draw <mark>Venn diagrams</mark>. \"Some\" = at least one."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "वेन चित्र",
+      "en": "Venn diagram"
+     },
+     "b": {
+      "hi": "<mark>सभी A, B हैं</mark> → A का वृत्त B के अंदर। <mark>कुछ A, B हैं</mark> → वृत्त काटें। <mark>कोई A, B नहीं</mark> → वृत्त अलग।",
+      "en": "<mark>All A are B</mark> → A inside B. <mark>Some</mark> → overlap. <mark>No</mark> → separate."
+     }
+    },
+    {
+     "h": {
+      "hi": "निष्कर्ष नियम",
+      "en": "Conclusion rules"
+     },
+     "b": {
+      "hi": "दो <mark>\"कुछ\"</mark> से कोई निश्चित निष्कर्ष नहीं। <mark>\"सभी\"+\"कुछ\"</mark> → \"कुछ\" निष्कर्ष।",
+      "en": "Two \"some\" → no definite conclusion."
+     }
+    },
+    {
+     "h": {
+      "hi": "\"कुछ + सभी = कुछ\" नियम",
+      "en": "\"Some + All = Some\" rule"
+     },
+     "b": {
+      "hi": "<mark>कुछ A, B हैं + सभी B, C हैं = कुछ A, C हैं</mark> - यह निष्कर्ष सदैव सत्य होता है (मध्य पद \"B\" एक कथन में वितरित है)।",
+      "en": "<mark>Some A are B + All B are C = Some A are C</mark> - always valid."
+     }
+    },
+    {
+     "h": {
+      "hi": "मध्य पद वितरण नियम",
+      "en": "Middle term distribution rule"
+     },
+     "b": {
+      "hi": "निश्चित निष्कर्ष हेतु <mark>मध्य पद कम-से-कम एक कथन में वितरित</mark> होना चाहिए। दो \"कुछ\" वाले कथनों से कभी निश्चित निष्कर्ष नहीं निकलता।",
+      "en": "The middle term must be <mark>distributed at least once</mark>; two \"some\" premises give no definite conclusion."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "कथन: सभी कलम किताबें हैं। निष्कर्ष: कुछ किताबें कलम हैं — सही?",
+      "en": "All pens are books. Conclusion: Some books are pens?"
+     },
+     "s": {
+      "hi": "हाँ — \"सभी\" से <mark>\"कुछ\" निष्कर्ष</mark> सदैव सत्य।",
+      "en": "Yes — \"all\" implies <mark>\"some\"</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: कोई कुत्ता बिल्ली नहीं। निष्कर्ष: कोई बिल्ली कुत्ता नहीं — सही?",
+      "en": "No dog is a cat. Conclusion: No cat is a dog?"
+     },
+     "s": {
+      "hi": "हाँ — <mark>\"कोई\" पलटा</mark> जा सकता है।",
+      "en": "Yes — \"no\" reverses."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "सभी A, B हैं। कुछ B, C हैं। निष्कर्ष: कुछ A, C हैं — ?",
+      "en": "All A are B. Some B are C. Conclusion: Some A are C?"
+     },
+     "o": [
+      {
+       "hi": "सत्य",
+       "en": "True"
+      },
+      {
+       "hi": "असत्य",
+       "en": "False"
+      },
+      {
+       "hi": "कह नहीं सकते",
+       "en": "Cannot say"
+      },
+      {
+       "hi": "कभी सत्य",
+       "en": "Sometimes"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "\"कुछ B, C\" वाला भाग A से जुड़ा नहीं → निश्चित नहीं।",
+      "en": "No definite link → cannot say."
+     }
+    },
+    {
+     "q": {
+      "hi": "कोई पेन पेंसिल नहीं। सभी पेंसिल रबर हैं। निष्कर्ष: कोई पेन रबर नहीं — ?",
+      "en": "No pen is pencil. All pencils are erasers. No pen is eraser?"
+     },
+     "o": [
+      {
+       "hi": "सत्य",
+       "en": "True"
+      },
+      {
+       "hi": "असत्य",
+       "en": "False"
+      },
+      {
+       "hi": "कह नहीं सकते",
+       "en": "Cannot say"
+      },
+      {
+       "hi": "आंशिक सत्य",
+       "en": "Partially true"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "पेन, पेंसिल-वृत्त (जो रबर के अंदर) से पूर्णतः अलग → सत्य।",
+      "en": "Pen circle fully outside → true."
+     }
+    },
+    {
+     "q": {
+      "hi": "कुछ आम मीठे हैं। सभी मीठे फल हैं। निष्कर्ष: कुछ आम फल हैं — ?",
+      "en": "Some mangoes are sweet. All sweet are fruits. Some mangoes are fruits?"
+     },
+     "o": [
+      {
+       "hi": "सत्य",
+       "en": "True"
+      },
+      {
+       "hi": "असत्य",
+       "en": "False"
+      },
+      {
+       "hi": "कह नहीं सकते",
+       "en": "Cannot say"
+      },
+      {
+       "hi": "विरुद्ध",
+       "en": "Contradictory"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "मीठे आम, फल-वृत्त के अंदर → सत्य।",
+      "en": "Sweet mangoes inside fruits → true."
+     }
+    },
+    {
+     "q": {
+      "hi": "सभी छात्र मेहनती हैं। राम छात्र है। निष्कर्ष: राम मेहनती है — ?",
+      "en": "All students are hardworking. Ram is a student. Ram is hardworking?"
+     },
+     "o": [
+      {
+       "hi": "सत्य",
+       "en": "True"
+      },
+      {
+       "hi": "असत्य",
+       "en": "False"
+      },
+      {
+       "hi": "कह नहीं सकते",
+       "en": "Cannot say"
+      },
+      {
+       "hi": "संभवतः",
+       "en": "Probably"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "राम, छात्र-वृत्त के अंदर → सत्य।",
+      "en": "Ram inside students → true."
+     }
+    },
+    {
+     "q": {
+      "hi": "कुछ किताबें लाल हैं। कुछ लाल चीज़ें महँगी हैं। निष्कर्ष: कुछ किताबें महँगी हैं — ?",
+      "en": "Some books are red. Some red things are costly. Some books are costly?"
+     },
+     "o": [
+      {
+       "hi": "सत्य",
+       "en": "True"
+      },
+      {
+       "hi": "कह नहीं सकते",
+       "en": "Cannot say"
+      },
+      {
+       "hi": "असत्य",
+       "en": "False"
+      },
+      {
+       "hi": "निश्चित",
+       "en": "Definite"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "दो \"कुछ\" से कोई निश्चित निष्कर्ष नहीं।",
+      "en": "Two \"some\" → no definite conclusion."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r10",
+   "part": "reasoning",
+   "num": 10,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "कथन एवं निष्कर्ष",
+    "en": "Statement & Conclusion"
+   },
+   "concept": {
+    "hi": "केवल <mark>कथन में दी जानकारी</mark> से निष्कर्ष निकालें — बाहरी ज्ञान न लगाएँ।",
+    "en": "Use <mark>only given info</mark> — no outside knowledge."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "\"सभी/कोई\" शब्द",
+      "en": "Absolute words"
+     },
+     "b": {
+      "hi": "<mark>\"सभी\", \"कोई नहीं\", \"हमेशा\"</mark> वाले निष्कर्ष प्रायः गलत (अति-सामान्यीकरण)।",
+      "en": "Conclusions with <mark>\"all/none/always\"</mark> are usually wrong."
+     }
+    },
+    {
+     "h": {
+      "hi": "सलाह/सुझाव",
+      "en": "Advice"
+     },
+     "b": {
+      "hi": "कथन तथ्य हो और निष्कर्ष <mark>सलाह</mark> हो → प्रायः अनुसरण नहीं करता।",
+      "en": "Fact → advice usually does NOT follow."
+     }
+    },
+    {
+     "h": {
+      "hi": "दोहराव वाला निष्कर्ष",
+      "en": "Repeating conclusion"
+     },
+     "b": {
+      "hi": "यदि निष्कर्ष <mark>कथन का ही दोहराव</mark> हो (वही बात दूसरे शब्दों में), तो वह अनुसरण करता है।",
+      "en": "A conclusion that merely <mark>restates</mark> the statement follows."
+     }
+    },
+    {
+     "h": {
+      "hi": "\"हो सकता है\" वाले निष्कर्ष",
+      "en": "\"May be\" conclusions"
+     },
+     "b": {
+      "hi": "<mark>\"संभवतः\", \"हो सकता है\"</mark> जैसे संभावना-सूचक निष्कर्ष प्रायः अनुसरण करते हैं - ये दावा नहीं, केवल गुंजाइश जताते हैं।",
+      "en": "\"May be\", \"possibly\" conclusions usually follow - they express possibility, not a claim."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "कथन: सभी भारतीय नागरिकों को मतदान का अधिकार है। निष्कर्ष: राम (भारतीय) को मतदान का अधिकार है।",
+      "en": "All Indian citizens can vote. Conclusion: Ram (Indian) can vote."
+     },
+     "s": {
+      "hi": "<mark>अनुसरण करता है</mark> — सीधा तार्किक परिणाम।",
+      "en": "<mark>Follows</mark> — direct logical result."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: प्रदूषण बढ़ रहा है। निष्कर्ष: सभी फैक्ट्रियाँ बंद कर देनी चाहिए।",
+      "en": "Pollution rising. Conclusion: All factories must close."
+     },
+     "s": {
+      "hi": "<mark>अनुसरण नहीं करता</mark> — अति-सामान्यीकृत सलाह।",
+      "en": "<mark>Does not follow</mark> — extreme advice."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "कथन: ईमानदारी सबसे अच्छी नीति है। निष्कर्ष: बेईमान लोग असफल होते हैं।",
+      "en": "Honesty is the best policy. Conclusion: Dishonest people fail."
+     },
+     "o": [
+      {
+       "hi": "अनुसरण करता है",
+       "en": "Follows"
+      },
+      {
+       "hi": "अनुसरण नहीं करता",
+       "en": "Does not follow"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "कथन में असफलता का उल्लेख नहीं → अनुसरण नहीं करता।",
+      "en": "Not stated → does not follow."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: सभी कुत्तों के चार पैर होते हैं। निष्कर्ष: टॉमी (कुत्ता) के चार पैर हैं।",
+      "en": "All dogs have four legs. Conclusion: Tommy (a dog) has four legs."
+     },
+     "o": [
+      {
+       "hi": "अनुसरण करता है",
+       "en": "Follows"
+      },
+      {
+       "hi": "अनुसरण नहीं करता",
+       "en": "Does not follow"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "सीधा निष्कर्ष → अनुसरण करता है।",
+      "en": "Direct → follows."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: धूम्रपान स्वास्थ्य के लिए हानिकारक है। निष्कर्ष: धूम्रपान पर पूर्ण प्रतिबंध लगना चाहिए।",
+      "en": "Smoking is harmful. Conclusion: It should be fully banned."
+     },
+     "o": [
+      {
+       "hi": "अनुसरण करता है",
+       "en": "Follows"
+      },
+      {
+       "hi": "अनुसरण नहीं करता",
+       "en": "Does not follow"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "तथ्य से चरम सलाह → अनुसरण नहीं करता।",
+      "en": "Fact → extreme advice does not follow."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: कोई भी छात्र परीक्षा में नकल नहीं करेगा। निष्कर्ष: सभी छात्र ईमानदार हैं।",
+      "en": "No student will cheat. Conclusion: All students are honest."
+     },
+     "o": [
+      {
+       "hi": "अनुसरण करता है",
+       "en": "Follows"
+      },
+      {
+       "hi": "अनुसरण नहीं करता",
+       "en": "Does not follow"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "\"सभी ईमानदार\" अति-सामान्यीकरण → अनुसरण नहीं करता।",
+      "en": "Overgeneralization → does not follow."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: बारिश हो रही है। निष्कर्ष: सड़कें गीली होंगी।",
+      "en": "It is raining. Conclusion: Roads will be wet."
+     },
+     "o": [
+      {
+       "hi": "अनुसरण करता है",
+       "en": "Follows"
+      },
+      {
+       "hi": "अनुसरण नहीं करता",
+       "en": "Does not follow"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "प्राकृतिक परिणाम → अनुसरण करता है।",
+      "en": "Natural consequence → follows."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r11",
+   "part": "reasoning",
+   "num": 11,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "बैठक व्यवस्था",
+    "en": "Seating Arrangement"
+   },
+   "concept": {
+    "hi": "गोल/पंक्ति में बैठने के प्रश्न — <mark>जानकारी को क्रम से</mark> चित्र में रखें।",
+    "en": "Place clues <mark>in order</mark> on a diagram."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "दिशा नियम",
+      "en": "Direction rule"
+     },
+     "b": {
+      "hi": "केंद्र की ओर मुँह = दायाँ <mark>घड़ी-विपरीत</mark> दिशा में। पंक्ति में (उत्तर की ओर मुँह): दायाँ = आपका दायाँ।",
+      "en": "Facing center: right = <mark>anticlockwise</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "निश्चित जानकारी पहले",
+      "en": "Fixed info first"
+     },
+     "b": {
+      "hi": "जो <mark>पक्का</mark> बैठा है उसे पहले रखें, फिर सापेक्ष जानकारी।",
+      "en": "Place <mark>definite</mark> positions first."
+     }
+    },
+    {
+     "h": {
+      "hi": "गिनती",
+      "en": "Counting"
+     },
+     "b": {
+      "hi": "\"बाएँ दूसरा\" = 2 स्थान बाएँ। विपरीत (गोल, सम संख्या) = <mark>कुल/2 स्थान दूर</mark>।",
+      "en": "\"2nd left\" = 2 places left."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "4 लोग गोल मेज़ पर; B, A के ठीक बाएँ; C, B के ठीक बाएँ। A के सामने कौन?",
+      "en": "4 around table; B left of A, C left of B. Opposite A?"
+     },
+     "s": {
+      "hi": "वामावर्त क्रम: A→B→C→D। A के सामने (2 स्थान) = <mark>C</mark>।",
+      "en": "Anticlockwise: A,B,C,D. Opposite A = <mark>C</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "पंक्ति (उत्तर की ओर मुँह): D, E के ठीक दाएँ; E, F के ठीक बाएँ। क्रम?",
+      "en": "Row facing north: D right of E; E left of F. Order?"
+     },
+     "s": {
+      "hi": "बाएँ से दाएँ: <mark>F, E, D</mark>।",
+      "en": "Left to right: <mark>F, E, D</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "6 लोग गोल मेज़ (केंद्र की ओर मुँह)। A के ठीक दाएँ B है। B के ठीक सामने कौन-सा स्थान है?",
+      "en": "6 around table facing center. B immediate right of A. Position opposite B?"
+     },
+     "o": [
+      {
+       "hi": "A के बाएँ तीसरा",
+       "en": "3rd left of A"
+      },
+      {
+       "hi": "A के दाएँ तीसरा",
+       "en": "3rd right of A"
+      },
+      {
+       "hi": "A स्वयं",
+       "en": "A itself"
+      },
+      {
+       "hi": "B के बाएँ दूसरा",
+       "en": "2nd left of B"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "6 में विपरीत = 3 स्थान दूर। B से 3 स्थान = A के दाएँ तीसरा (A, B के बाएँ तीसरा भी)।",
+      "en": "Opposite = 3 places away."
+     }
+    },
+    {
+     "q": {
+      "hi": "पंक्ति: A मध्य (3rd), B बाएँ छोर (1st) — 5 लोग। दाएँ छोर पर?",
+      "en": "Row of 5: A middle, B left end. Right end?"
+     },
+     "o": [
+      {
+       "hi": "A",
+       "en": "A"
+      },
+      {
+       "hi": "B",
+       "en": "B"
+      },
+      {
+       "hi": "C/D/E में कोई",
+       "en": "Any of C/D/E"
+      },
+      {
+       "hi": "निश्चित नहीं",
+       "en": "Not fixed"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "C, D, E में से कोई एक हो सकता है।",
+      "en": "Any one of C/D/E."
+     }
+    },
+    {
+     "q": {
+      "hi": "12 बजे बैठा X केंद्र की ओर देख रहा है। उसके ठीक दाएँ कौन-सी दिशा?",
+      "en": "X at 12, facing center. Immediate right direction?"
+     },
+     "o": [
+      {
+       "hi": "11 बजे की ओर",
+       "en": "Towards 11"
+      },
+      {
+       "hi": "1 बजे की ओर",
+       "en": "Towards 1"
+      },
+      {
+       "hi": "6 बजे की ओर",
+       "en": "Towards 6"
+      },
+      {
+       "hi": "3 बजे की ओर",
+       "en": "Towards 3"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "केंद्र की ओर मुँह → दायाँ = घड़ी-विपरीत = 11 की दिशा।",
+      "en": "Facing center → right = anticlockwise."
+     }
+    },
+    {
+     "q": {
+      "hi": "पंक्ति (उत्तर की ओर मुँह): A, B के बाएँ दूसरा; B, C के दाएँ चौथा। C, A के सापेक्ष?",
+      "en": "Row facing north: A 2nd left of B; B 4th right of C. C w.r.t. A?"
+     },
+     "o": [
+      {
+       "hi": "बाएँ दूसरा",
+       "en": "2nd left"
+      },
+      {
+       "hi": "दाएँ दूसरा",
+       "en": "2nd right"
+      },
+      {
+       "hi": "बाएँ चौथा",
+       "en": "4th left"
+      },
+      {
+       "hi": "दाएँ चौथा",
+       "en": "4th right"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "B=x, A=x−2, C=x−4 → C, A के बाएँ दूसरा।",
+      "en": "C is 2nd left of A."
+     }
+    },
+    {
+     "q": {
+      "hi": "उत्तर की ओर मुँह: D, E के ठीक दाएँ; E, F के ठीक बाएँ। D के ठीक बाएँ?",
+      "en": "Facing north: D immediate right of E; E immediate left of F. Immediate left of D?"
+     },
+     "o": [
+      {
+       "hi": "E",
+       "en": "E"
+      },
+      {
+       "hi": "F",
+       "en": "F"
+      },
+      {
+       "hi": "कह नहीं सकते",
+       "en": "Cannot say"
+      },
+      {
+       "hi": "D",
+       "en": "D"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "क्रम F, E, D → D के बाएँ E।",
+      "en": "Order F,E,D → left of D is E."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r12",
+   "part": "reasoning",
+   "num": 12,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "अशाब्दिक तर्क (दर्पण/जल/कागज़)",
+    "en": "Non-Verbal (Mirror/Water/Paper)"
+   },
+   "concept": {
+    "hi": "दर्पण प्रतिबिंब = <mark>बायाँ-दायाँ उल्टा</mark>; जल प्रतिबिंब = <mark>ऊपर-नीचे उल्टा</mark>।",
+    "en": "Mirror = <mark>left-right</mark> flip; water = <mark>top-bottom</mark> flip."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "दर्पण प्रतिबिंब",
+      "en": "Mirror image"
+     },
+     "b": {
+      "hi": "<mark>बायाँ ↔ दायाँ</mark> बदलता है; ऊपर-नीचे समान। जैसे → का दर्पण ←।",
+      "en": "<mark>Left ↔ right</mark> swap; top-bottom same."
+     }
+    },
+    {
+     "h": {
+      "hi": "जल प्रतिबिंब",
+      "en": "Water image"
+     },
+     "b": {
+      "hi": "<mark>ऊपर ↔ नीचे</mark> बदलता है; बायाँ-दायाँ समान।",
+      "en": "<mark>Top ↔ bottom</mark> swap."
+     }
+    },
+    {
+     "h": {
+      "hi": "कागज़ मोड़ना/काटना",
+      "en": "Paper folding/cutting"
+     },
+     "b": {
+      "hi": "मोड़ के <mark>अक्ष पर सममित</mark> छेद बनते हैं। खोलने पर प्रतिबिंबित प्रतिरूप।",
+      "en": "Holes mirror across the <mark>fold axis</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "अक्षर/अंक",
+      "en": "Letters/digits"
+     },
+     "b": {
+      "hi": "दर्पण में समान दिखने वाले: <mark>A,H,I,M,O,T,U,V,W,X,Y</mark>; अंक: <mark>0,8</mark>।",
+      "en": "Mirror-symmetric: <mark>A,H,I,M,O,T,U,V,W,X,Y</mark>; digits <mark>0,8</mark>."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "\"M\" का दर्पण प्रतिबिंब?",
+      "en": "Mirror image of \"M\"?"
+     },
+     "s": {
+      "hi": "M सममित है → <mark>M</mark> ही दिखेगा।",
+      "en": "M is symmetric → <mark>M</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "तीर → का जल प्रतिबिंब?",
+      "en": "Water image of arrow →?"
+     },
+     "s": {
+      "hi": "ऊपर-नीचे उल्टा, पर तीर क्षैतिज है → <mark>→</mark> ही रहेगा।",
+      "en": "Horizontal arrow unchanged → <mark>→</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "\"P\" का दर्पण प्रतिबिंब कैसा दिखेगा?",
+      "en": "Mirror image of \"P\"?"
+     },
+     "o": [
+      {
+       "hi": "P (समान)",
+       "en": "P (same)"
+      },
+      {
+       "hi": "q जैसा",
+       "en": "Like q"
+      },
+      {
+       "hi": "उल्टा P (बायाँ-दायाँ)",
+       "en": "Flipped P"
+      },
+      {
+       "hi": "b जैसा",
+       "en": "Like b"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "बायाँ-दायाँ उल्टा → P का दर्पण (गोल भाग बाईं ओर)।",
+      "en": "Left-right flip."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"8\" का जल प्रतिबिंब?",
+      "en": "Water image of \"8\"?"
+     },
+     "o": [
+      {
+       "hi": "8 (समान)",
+       "en": "8 (same)"
+      },
+      {
+       "hi": "0",
+       "en": "0"
+      },
+      {
+       "hi": "∞ जैसा",
+       "en": "Like ∞"
+      },
+      {
+       "hi": "6",
+       "en": "6"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "8 ऊपर-नीचे सममित → समान।",
+      "en": "8 is vertically symmetric."
+     }
+    },
+    {
+     "q": {
+      "hi": "कागज़ को बीच से मोड़कर एक कोने पर छेद किया। खोलने पर कितने छेद?",
+      "en": "Fold once, punch corner. Holes on opening?"
+     },
+     "o": [
+      {
+       "hi": "1",
+       "en": "1"
+      },
+      {
+       "hi": "2",
+       "en": "2"
+      },
+      {
+       "hi": "4",
+       "en": "4"
+      },
+      {
+       "hi": "3",
+       "en": "3"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "एक मोड़ → सममित 2 छेद।",
+      "en": "One fold → 2 symmetric holes."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"W\" का दर्पण प्रतिबिंब?",
+      "en": "Mirror image of \"W\"?"
+     },
+     "o": [
+      {
+       "hi": "M",
+       "en": "M"
+      },
+      {
+       "hi": "W (समान)",
+       "en": "W (same)"
+      },
+      {
+       "hi": "E",
+       "en": "E"
+      },
+      {
+       "hi": "3",
+       "en": "3"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "W दर्पण-सममित → समान।",
+      "en": "W is mirror-symmetric."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"b\" का जल प्रतिबिंब?",
+      "en": "Water image of \"b\"?"
+     },
+     "o": [
+      {
+       "hi": "b (समान)",
+       "en": "b (same)"
+      },
+      {
+       "hi": "d",
+       "en": "d"
+      },
+      {
+       "hi": "p",
+       "en": "p"
+      },
+      {
+       "hi": "q",
+       "en": "q"
+      }
+     ],
+     "a": 3,
+     "e": {
+      "hi": "b ऊपर-नीचे उल्टा → q जैसा आकार।",
+      "en": "b flipped vertically ≈ q."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r13",
+   "part": "reasoning",
+   "num": 13,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "गणितीय संक्रियाएँ",
+    "en": "Mathematical Operations"
+   },
+   "concept": {
+    "hi": "चिह्नों को <mark>आपस में बदलकर</mark> BODMAS से हल करें।",
+    "en": "<mark>Interchange signs</mark>, solve by BODMAS."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "चिह्न बदलें",
+      "en": "Swap signs"
+     },
+     "b": {
+      "hi": "निर्देशानुसार + ↔ −, × ↔ ÷ बदलें, फिर <mark>BODMAS</mark> लागू करें।",
+      "en": "Swap as directed, then <mark>BODMAS</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "कोष्ठक पहले",
+      "en": "Brackets first"
+     },
+     "b": {
+      "hi": "बदलाव के बाद भी <mark>क्रम</mark> न भूलें।",
+      "en": "Keep <mark>order</mark> after swapping."
+     }
+    },
+    {
+     "h": {
+      "hi": "पहले पूरा व्यंजक लिखें",
+      "en": "Write the full expression first"
+     },
+     "b": {
+      "hi": "अक्षर-चिह्न प्रश्नों में <mark>पहले सभी चिह्न बदलकर पूरा व्यंजक दोबारा लिखें</mark>, फिर BODMAS लगाएँ - बीच में बदलने से भूल होती है।",
+      "en": "<mark>Rewrite the whole expression</mark> with swapped signs first, then apply BODMAS."
+     }
+    },
+    {
+     "h": {
+      "hi": "दोहरा बदलाव = मूल चिह्न",
+      "en": "Double swap = original sign"
+     },
+     "b": {
+      "hi": "यदि चिह्नों को <mark>दो बार आपस में बदला</mark> जाए (+ को - फिर - को +), तो चिह्न मूल जैसे ही रहते हैं - सीधे गणना करें।",
+      "en": "Swapping signs <mark>twice</mark> restores the originals - calculate directly."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "यदि + का अर्थ × और × का अर्थ + हो, तो 4 + 5 × 3 = ?",
+      "en": "If + means × and × means +, 4 + 5 × 3 = ?"
+     },
+     "s": {
+      "hi": "4 × 5 + 3 = 20 + 3 = <mark>23</mark>।",
+      "en": "4×5+3 = <mark>23</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "− का अर्थ ÷ हो, तो 20 − 4 + 2 = ? (+ अपरिवर्तित)",
+      "en": "− means ÷. 20 − 4 + 2 = ?"
+     },
+     "s": {
+      "hi": "20 ÷ 4 + 2 = 5 + 2 = <mark>7</mark>।",
+      "en": "20÷4+2 = <mark>7</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "+ → −, − → + हो तो 10 + 5 − 3 = ?",
+      "en": "+ → −, − → +. 10 + 5 − 3 = ?"
+     },
+     "o": [
+      {
+       "hi": "12",
+       "en": "12"
+      },
+      {
+       "hi": "8",
+       "en": "8"
+      },
+      {
+       "hi": "2",
+       "en": "2"
+      },
+      {
+       "hi": "18",
+       "en": "18"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "10 − 5 + 3 = 8।",
+      "en": "10−5+3 = 8."
+     }
+    },
+    {
+     "q": {
+      "hi": "× → ÷ हो तो 36 × 6 + 2 = ? (+ अपरिवर्तित)",
+      "en": "× → ÷. 36 × 6 + 2 = ?"
+     },
+     "o": [
+      {
+       "hi": "12",
+       "en": "12"
+      },
+      {
+       "hi": "8",
+       "en": "8"
+      },
+      {
+       "hi": "14",
+       "en": "14"
+      },
+      {
+       "hi": "6",
+       "en": "6"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "36 ÷ 6 + 2 = 6+2 = 8।",
+      "en": "6+2 = 8."
+     }
+    },
+    {
+     "q": {
+      "hi": "A का अर्थ +, B का अर्थ × हो तो 3 A 4 B 2 = ?",
+      "en": "A=+, B=×. 3 A 4 B 2 = ?"
+     },
+     "o": [
+      {
+       "hi": "14",
+       "en": "14"
+      },
+      {
+       "hi": "11",
+       "en": "11"
+      },
+      {
+       "hi": "24",
+       "en": "24"
+      },
+      {
+       "hi": "9",
+       "en": "9"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "3 + 4 × 2 = 3+8 = 11।",
+      "en": "3+8 = 11."
+     }
+    },
+    {
+     "q": {
+      "hi": "− → ×, × → + हो तो 6 − 3 × 2 = ?",
+      "en": "− → ×, × → +. 6 − 3 × 2 = ?"
+     },
+     "o": [
+      {
+       "hi": "20",
+       "en": "20"
+      },
+      {
+       "hi": "14",
+       "en": "14"
+      },
+      {
+       "hi": "10",
+       "en": "10"
+      },
+      {
+       "hi": "16",
+       "en": "16"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "6 × 3 + 2 = 18+2 = 20।",
+      "en": "18+2 = 20."
+     }
+    },
+    {
+     "q": {
+      "hi": "÷ → − हो तो 20 ÷ 5 + 3 = ? (+ अपरिवर्तित)",
+      "en": "÷ → −. 20 ÷ 5 + 3 = ?"
+     },
+     "o": [
+      {
+       "hi": "18",
+       "en": "18"
+      },
+      {
+       "hi": "7",
+       "en": "7"
+      },
+      {
+       "hi": "1",
+       "en": "1"
+      },
+      {
+       "hi": "23",
+       "en": "23"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "20 − 5 + 3 = 18।",
+      "en": "20−5+3 = 18."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r14",
+   "part": "reasoning",
+   "num": 14,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "शब्द गठन (Jumbling)",
+    "en": "Jumbling / Word Formation"
+   },
+   "concept": {
+    "hi": "अक्षरों से <mark>सार्थक शब्द</mark> बनाएँ या दिए शब्द से बनने/न बनने वाले शब्द पहचानें।",
+    "en": "Form <mark>meaningful words</mark> or check formability."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "अक्षर गिनें",
+      "en": "Count letters"
+     },
+     "b": {
+      "hi": "वांछित शब्द का <mark>प्रत्येक अक्षर</mark> मूल शब्द में उतनी ही बार होना चाहिए।",
+      "en": "Each letter must appear <mark>as many times</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "प्रत्यय देखें",
+      "en": "Look at suffixes"
+     },
+     "b": {
+      "hi": "−ING, −TION, −NESS जैसे <mark>प्रत्यय</mark> शब्द बनाने में मदद करते हैं।",
+      "en": "<mark>Suffixes</mark> like −ING help."
+     }
+    },
+    {
+     "h": {
+      "hi": "स्वर पहले अलग करें",
+      "en": "Separate vowels first"
+     },
+     "b": {
+      "hi": "अक्षरों में से <mark>स्वर (A, E, I, O, U)</mark> पहले छाँट लें - अधिकांश सार्थक शब्द स्वर-व्यंजन के क्रम से जल्दी बनते हैं।",
+      "en": "Pick out the <mark>vowels</mark> first - words form faster around them."
+     }
+    },
+    {
+     "h": {
+      "hi": "सामान्य उपसर्ग देखें",
+      "en": "Look for common prefixes"
+     },
+     "b": {
+      "hi": "<mark>UN-, RE-, PRE-, DIS-</mark> जैसे उपसर्ग पहले जाँचें - इनसे शब्द का आरंभ मिल जाता है और बाकी अक्षर आसानी से बैठते हैं।",
+      "en": "Check <mark>UN-, RE-, PRE-, DIS-</mark> prefixes first to catch the beginning of the word."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "\"CAREFUL\" से कौन-सा शब्द नहीं बन सकता? (A) RACE (B) FULL (C) CARE (D) FUEL",
+      "en": "Which word CANNOT be made from \"CAREFUL\"?"
+     },
+     "s": {
+      "hi": "CAREFUL में L एक बार है → <mark>FULL</mark> (दो L चाहिए) नहीं बन सकता।",
+      "en": "Only one L → <mark>FULL</mark> impossible."
+     }
+    },
+    {
+     "q": {
+      "hi": "अक्षर: A, E, R, T — सार्थक शब्द?",
+      "en": "Letters A,E,R,T — meaningful word?"
+     },
+     "s": {
+      "hi": "<mark>RATE / TEAR</mark>।",
+      "en": "<mark>RATE</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "\"STATION\" से कौन-सा शब्द बन सकता है?",
+      "en": "Which word can be made from \"STATION\"?"
+     },
+     "o": [
+      {
+       "hi": "NATION",
+       "en": "NATION"
+      },
+      {
+       "hi": "TENTS",
+       "en": "TENTS"
+      },
+      {
+       "hi": "STAINS",
+       "en": "STAINS"
+      },
+      {
+       "hi": "TOASTS",
+       "en": "TOASTS"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "NATION के सभी अक्षर STATION में हैं।",
+      "en": "All letters of NATION present."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"EXAMINATION\" से कौन-सा शब्द नहीं बन सकता?",
+      "en": "Which CANNOT be made from \"EXAMINATION\"?"
+     },
+     "o": [
+      {
+       "hi": "MINE",
+       "en": "MINE"
+      },
+      {
+       "hi": "AXIOM",
+       "en": "AXIOM"
+      },
+      {
+       "hi": "NOTE",
+       "en": "NOTE"
+      },
+      {
+       "hi": "MAN",
+       "en": "MAN"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "X एक बार, O नहीं है → AXIOM असंभव।",
+      "en": "No O → AXIOM impossible."
+     }
+    },
+    {
+     "q": {
+      "hi": "अव्यवस्थित: \"PLEAP\" — सार्थक शब्द?",
+      "en": "Jumbled \"PLEAP\" — meaningful?"
+     },
+     "o": [
+      {
+       "hi": "APPLE",
+       "en": "APPLE"
+      },
+      {
+       "hi": "PEPAL",
+       "en": "PEPAL"
+      },
+      {
+       "hi": "LEAPP",
+       "en": "LEAPP"
+      },
+      {
+       "hi": "PALEP",
+       "en": "PALEP"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "PLEAP → APPLE।",
+      "en": "PLEAP → APPLE."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"BENCH\" से कौन-सा शब्द नहीं बन सकता?",
+      "en": "Which CANNOT be made from \"BENCH\"?"
+     },
+     "o": [
+      {
+       "hi": "HEN",
+       "en": "HEN"
+      },
+      {
+       "hi": "BEN",
+       "en": "BEN"
+      },
+      {
+       "hi": "HENCE",
+       "en": "HENCE"
+      },
+      {
+       "hi": "NEB",
+       "en": "NEB"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "HENCE में E दो बार चाहिए, BENCH में एक बार → असंभव।",
+      "en": "HENCE needs two E's; only one → impossible."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"WATER\" से कौन-सा शब्द नहीं बन सकता?",
+      "en": "Which CANNOT be made from \"WATER\"?"
+     },
+     "o": [
+      {
+       "hi": "TEA",
+       "en": "TEA"
+      },
+      {
+       "hi": "RAT",
+       "en": "RAT"
+      },
+      {
+       "hi": "WATERFALL",
+       "en": "WATERFALL"
+      },
+      {
+       "hi": "ART",
+       "en": "ART"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "WATERFALL में अतिरिक्त अक्षर चाहिए → असंभव।",
+      "en": "Needs extra letters → impossible."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r15",
+   "part": "reasoning",
+   "num": 15,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "वेन आरेख",
+    "en": "Venn Diagrams"
+   },
+   "concept": {
+    "hi": "समूहों के <mark>संबंध</mark> को वृत्तों से दर्शाएँ: अलग, काटते हुए, या एक-दूसरे के अंदर।",
+    "en": "Show set <mark>relations</mark> with circles."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "तीन संबंध",
+      "en": "Three relations"
+     },
+     "b": {
+      "hi": "<mark>अलग</mark> (कोई संबंध नहीं), <mark>काटते</mark> (आंशिक), <mark>अंदर</mark> (पूर्ण समावेश)।",
+      "en": "<mark>Separate, overlapping, contained</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पहचान",
+      "en": "Identify"
+     },
+     "b": {
+      "hi": "\"सभी X, Y हैं\" → X, Y के <mark>अंदर</mark>। \"कुछ\" → <mark>काटते</mark>।",
+      "en": "\"All X are Y\" → X <mark>inside</mark> Y."
+     }
+    },
+    {
+     "h": {
+      "hi": "कथन से पहले आरेख बनाएँ",
+      "en": "Draw before reading options"
+     },
+     "b": {
+      "hi": "विकल्प देखने से <mark>पहले स्वयं आरेख</mark> बना लें - विकल्प भ्रमित करने के लिए होते हैं, आपका अपना आरेख नहीं भ्रमित करता।",
+      "en": "Draw your <mark>own diagram first</mark> - options are designed to mislead."
+     }
+    },
+    {
+     "h": {
+      "hi": "\"केवल\" = पृथक वृत्त",
+      "en": "\"Only\" = exclusive circle"
+     },
+     "b": {
+      "hi": "\"<mark>केवल X ही Y हैं</mark>\" का अर्थ है: Y का पूरा वृत्त X के अंदर, और X के बाहर कोई Y नहीं - यानी पृथक (exclusive) समावेश।",
+      "en": "\"<mark>Only X are Y</mark>\" means the whole Y circle lies inside X - an exclusive inclusion."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "कुत्ता, पालतू पशु, बिल्ली का वेन आरेख?",
+      "en": "Venn: Dog, Pet animal, Cat?"
+     },
+     "s": {
+      "hi": "कुत्ता व बिल्ली दोनों पालतू के <mark>अंदर अलग-अलग</mark> वृत्त।",
+      "en": "Dog & cat as separate circles <mark>inside</mark> pets."
+     }
+    },
+    {
+     "q": {
+      "hi": "लेखक, गायक, पुरुष का आरेख?",
+      "en": "Author, Singer, Men?"
+     },
+     "s": {
+      "hi": "तीनों <mark>एक-दूसरे को काटते</mark> वृत्त।",
+      "en": "Three <mark>overlapping</mark> circles."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "\"सभी बसें वाहन हैं\" — आरेख?",
+      "en": "\"All buses are vehicles\" — diagram?"
+     },
+     "o": [
+      {
+       "hi": "अलग वृत्त",
+       "en": "Separate"
+      },
+      {
+       "hi": "काटते वृत्त",
+       "en": "Overlapping"
+      },
+      {
+       "hi": "बस वाहन के अंदर",
+       "en": "Bus inside vehicle"
+      },
+      {
+       "hi": "वाहन बस के अंदर",
+       "en": "Vehicle inside bus"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "बस का वृत्त वाहन के अंदर।",
+      "en": "Bus inside vehicle."
+     }
+    },
+    {
+     "q": {
+      "hi": "महिला, माँ, डॉक्टर — सर्वोत्तम आरेख?",
+      "en": "Women, Mothers, Doctors — best diagram?"
+     },
+     "o": [
+      {
+       "hi": "तीनों अलग",
+       "en": "All separate"
+      },
+      {
+       "hi": "तीनों एक-दूसरे को काटते",
+       "en": "All overlapping"
+      },
+      {
+       "hi": "माँ महिला के अंदर; डॉक्टर काटता",
+       "en": "Mother inside women; doctor overlaps"
+      },
+      {
+       "hi": "सभी एक ही",
+       "en": "All same"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "सभी माँ महिला हैं (अंदर); डॉक्टर दोनों को काट सकता है।",
+      "en": "Mothers inside women; doctors overlap."
+     }
+    },
+    {
+     "q": {
+      "hi": "कुत्ता, बिल्ली, पालतू — आरेख?",
+      "en": "Dog, Cat, Pet — diagram?"
+     },
+     "o": [
+      {
+       "hi": "तीनों अलग",
+       "en": "All separate"
+      },
+      {
+       "hi": "कुत्ता-बिल्ली अलग, दोनों पालतू के अंदर",
+       "en": "Dog/cat separate, both inside pet"
+      },
+      {
+       "hi": "सभी काटते",
+       "en": "All overlap"
+      },
+      {
+       "hi": "पालतू कुत्ते के अंदर",
+       "en": "Pet inside dog"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "दोनों अलग-अलग पालतू के अंदर।",
+      "en": "Separate circles inside pet."
+     }
+    },
+    {
+     "q": {
+      "hi": "भारत, दिल्ली, लाल किला — आरेख?",
+      "en": "India, Delhi, Red Fort?"
+     },
+     "o": [
+      {
+       "hi": "तीनों अलग",
+       "en": "All separate"
+      },
+      {
+       "hi": "एक के अंदर एक (तीन स्तर)",
+       "en": "Nested three levels"
+      },
+      {
+       "hi": "काटते",
+       "en": "Overlapping"
+      },
+      {
+       "hi": "दो अंदर एक बाहर",
+       "en": "Two inside one"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "लाल किला ⊂ दिल्ली ⊂ भारत।",
+      "en": "Nested: Red Fort ⊂ Delhi ⊂ India."
+     }
+    },
+    {
+     "q": {
+      "hi": "फल, सेब, सब्ज़ी — आरेख?",
+      "en": "Fruit, Apple, Vegetable?"
+     },
+     "o": [
+      {
+       "hi": "सेब फल के अंदर; सब्ज़ी अलग",
+       "en": "Apple inside fruit; vegetable separate"
+      },
+      {
+       "hi": "तीनों अलग",
+       "en": "All separate"
+      },
+      {
+       "hi": "सभी एक",
+       "en": "All same"
+      },
+      {
+       "hi": "सब्ज़ी फल के अंदर",
+       "en": "Vegetable inside fruit"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "सेब ⊂ फल; सब्ज़ी अलग वृत्त।",
+      "en": "Apple inside fruit; vegetable separate."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r16",
+   "part": "reasoning",
+   "num": 16,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "आँकड़ा पर्याप्तता",
+    "en": "Data Sufficiency"
+   },
+   "concept": {
+    "hi": "प्रश्न का उत्तर देने हेतु <mark>कौन-सा कथन पर्याप्त</mark> है? (I) अकेला? (II) अकेला? दोनों मिलकर? या अपर्याप्त?",
+    "en": "Which statement(s) <mark>suffice</mark> to answer?"
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "क्रम से जाँचें",
+      "en": "Check in order"
+     },
+     "b": {
+      "hi": "पहले (I) अकेला → फिर (II) अकेला → फिर <mark>दोनों मिलकर</mark>।",
+      "en": "Try (I) alone → (II) alone → <mark>both</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "अनुपात + एक मान",
+      "en": "Ratio + one value"
+     },
+     "b": {
+      "hi": "अनुपात अकेला <mark>अपर्याप्त</mark>; एक निश्चित मान मिले तो पर्याप्त।",
+      "en": "Ratio alone <mark>insufficient</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "अतिरिक्त जानकारी अनदेखा करें",
+      "en": "Ignore extra info"
+     },
+     "b": {
+      "hi": "जो कथन उत्तर हेतु <mark>आवश्यक न हो</mark>, उसे अनदेखा करें - अतिरिक्त आँकड़े प्रायः भ्रमित करने के लिए दिए जाते हैं।",
+      "en": "<mark>Ignore</mark> statements not needed for the answer - extra data is there to confuse."
+     }
+    },
+    {
+     "h": {
+      "hi": "निश्चित \"हाँ/ना\" चाहिए",
+      "en": "Need a definite yes/no"
+     },
+     "b": {
+      "hi": "कथन तभी पर्याप्त जब उससे <mark>एक ही निश्चित उत्तर</mark> निकले - दो संभावित उत्तर या दो मान मिलें तो कथन अपर्याप्त है।",
+      "en": "A statement suffices only if it yields <mark>one definite answer</mark>; two possibilities = insufficient."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "x का मान? (I) x²=25 (II) x>0",
+      "en": "Value of x? (I) x²=25 (II) x>0"
+     },
+     "s": {
+      "hi": "(I) से x=±5; (II) से x=5 → <mark>दोनों मिलकर पर्याप्त</mark>।",
+      "en": "(I) gives ±5; (II) fixes 5 → <mark>both needed</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "राम की आयु? (I) राम श्याम से 5 वर्ष बड़ा (II) श्याम 20 वर्ष का",
+      "en": "Ram's age? (I) Ram 5 yrs older than Shyam (II) Shyam is 20"
+     },
+     "s": {
+      "hi": "दोनों से 25 → <mark>दोनों मिलकर</mark>।",
+      "en": "Both → 25."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "दो संख्याओं का योग? (I) दोनों सम हैं (II) अंतर 4 है",
+      "en": "Sum of two numbers? (I) Both even (II) Difference 4"
+     },
+     "o": [
+      {
+       "hi": "केवल I",
+       "en": "Only I"
+      },
+      {
+       "hi": "केवल II",
+       "en": "Only II"
+      },
+      {
+       "hi": "दोनों मिलकर",
+       "en": "Both"
+      },
+      {
+       "hi": "अपर्याप्त",
+       "en": "Insufficient"
+      }
+     ],
+     "a": 3,
+     "e": {
+      "hi": "मान ज्ञात नहीं → अपर्याप्त।",
+      "en": "Values unknown → insufficient."
+     }
+    },
+    {
+     "q": {
+      "hi": "ट्रेन की चाल? (I) 200m, 10 सेकंड में पार (II) —",
+      "en": "Train speed? (I) Crosses 200m in 10s"
+     },
+     "o": [
+      {
+       "hi": "केवल I पर्याप्त",
+       "en": "Only I"
+      },
+      {
+       "hi": "केवल II",
+       "en": "Only II"
+      },
+      {
+       "hi": "दोनों चाहिए",
+       "en": "Both needed"
+      },
+      {
+       "hi": "अपर्याप्त",
+       "en": "Insufficient"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "चाल = 200/10 = 20 m/s → केवल I पर्याप्त।",
+      "en": "Speed = 20 m/s → I alone."
+     }
+    },
+    {
+     "q": {
+      "hi": "x>y? (I) x=10 (II) y=5",
+      "en": "Is x>y? (I) x=10 (II) y=5"
+     },
+     "o": [
+      {
+       "hi": "केवल I",
+       "en": "Only I"
+      },
+      {
+       "hi": "केवल II",
+       "en": "Only II"
+      },
+      {
+       "hi": "दोनों मिलकर",
+       "en": "Both"
+      },
+      {
+       "hi": "अपर्याप्त",
+       "en": "Insufficient"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "दोनों मान चाहिए → दोनों मिलकर।",
+      "en": "Need both values."
+     }
+    },
+    {
+     "q": {
+      "hi": "आयत का क्षेत्रफल? (I) लंबाई 10 (II) चौड़ाई 5",
+      "en": "Rectangle area? (I) Length 10 (II) Width 5"
+     },
+     "o": [
+      {
+       "hi": "केवल I",
+       "en": "Only I"
+      },
+      {
+       "hi": "केवल II",
+       "en": "Only II"
+      },
+      {
+       "hi": "दोनों मिलकर",
+       "en": "Both"
+      },
+      {
+       "hi": "अपर्याप्त",
+       "en": "Insufficient"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "10×5 = 50 → दोनों चाहिए।",
+      "en": "Need both."
+     }
+    },
+    {
+     "q": {
+      "hi": "क्या n अभाज्य है? (I) n<10 (II) n विषम है",
+      "en": "Is n prime? (I) n<10 (II) n is odd"
+     },
+     "o": [
+      {
+       "hi": "केवल I",
+       "en": "Only I"
+      },
+      {
+       "hi": "केवल II",
+       "en": "Only II"
+      },
+      {
+       "hi": "दोनों मिलकर",
+       "en": "Both"
+      },
+      {
+       "hi": "अपर्याप्त",
+       "en": "Insufficient"
+      }
+     ],
+     "a": 3,
+     "e": {
+      "hi": "n = 1,3,5,7,9 में से — 9 भाज्य → अपर्याप्त।",
+      "en": "Could be 9 → insufficient."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "r17",
+   "part": "reasoning",
+   "num": 17,
+   "kind": "tricks",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "कथन-पूर्वधारणा एवं तर्क",
+    "en": "Statement-Assumption & Arguments"
+   },
+   "concept": {
+    "hi": "<mark>पूर्वधारणा</mark> = कथन में छिपी मान्यता। <mark>मज़बूत तर्क</mark> = तथ्यात्मक, सीधा संबंधित।",
+    "en": "<mark>Assumption</mark> = hidden belief. <mark>Strong argument</mark> = factual, directly related."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "पूर्वधारणा जाँच",
+      "en": "Assumption test"
+     },
+     "b": {
+      "hi": "\"कथन सत्य होने हेतु <mark>क्या मानना ज़रूरी</mark> है?\" — वही पूर्वधारणा।",
+      "en": "What <mark>must be true</mark> for the statement to hold?"
+     }
+    },
+    {
+     "h": {
+      "hi": "मज़बूत बनाम कमज़ोर",
+      "en": "Strong vs weak"
+     },
+     "b": {
+      "hi": "तथ्य+तर्क = मज़बूत; <mark>उदाहरण/तुलना/सरल \"हाँ-ना\"</mark> = कमज़ोर।",
+      "en": "Facts = strong; <mark>examples/comparisons</mark> = weak."
+     }
+    },
+    {
+     "h": {
+      "hi": "नकारात्मक पुनर्कथन नहीं",
+      "en": "No negative restatement"
+     },
+     "b": {
+      "hi": "कथन का सीधा <mark>नकारात्मक पुनर्कथन</mark> (\"ऐसा नहीं है कि...\") पूर्वधारणा नहीं होता - पूर्वधारणा कथन से आगे की छिपी हुई मान्यता है।",
+      "en": "A mere <mark>negative restatement</mark> of the statement is not an assumption."
+     }
+    },
+    {
+     "h": {
+      "hi": "\"केवल/सर्वोत्तम\" वाले शब्द",
+      "en": "Words like \"only/best\""
+     },
+     "b": {
+      "hi": "<mark>\"केवल\", \"सर्वोत्तम\", \"सभी\"</mark> जैसे चरम शब्दों वाली पूर्वधारणाएँ प्रायः अंतर्निहित नहीं होतीं - ऐसे विकल्पों से सावधान रहें।",
+      "en": "Assumptions with extreme words like <mark>\"only\", \"best\", \"all\"</mark> are usually not implicit."
+     }
+    }
+   ],
+   "examples": [
+    {
+     "q": {
+      "hi": "कथन: \"कृपया धूम्रपान न करें\" (सूचना)। पूर्वधारणा: लोग सूचना पढ़ते हैं।",
+      "en": "\"Please don't smoke\" (notice). Assumption: people read notices."
+     },
+     "s": {
+      "hi": "<mark>अंतर्निहित है</mark> — सूचना तभी सार्थक जब पढ़ी जाए।",
+      "en": "<mark>Implicit</mark> — notice assumes readers."
+     }
+    },
+    {
+     "q": {
+      "hi": "क्या परीक्षा में कैलकुलेटर चाहिए? तर्क: \"गणना तेज़ होगी\" — मज़बूत?",
+      "en": "Calculator in exams? \"Faster calculation\" — strong?"
+     },
+     "s": {
+      "hi": "<mark>मज़बूत</mark> — सीधा तथ्यात्मक लाभ।",
+      "en": "<mark>Strong</mark> — direct factual benefit."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "कथन: \"ट्रेन 3 घंटे देरी से चलेगी।\" पूर्वधारणा: यात्री स्टेशन आएँगे।",
+      "en": "\"Train delayed 3 hrs.\" Assumption: passengers will come."
+     },
+     "o": [
+      {
+       "hi": "अंतर्निहित",
+       "en": "Implicit"
+      },
+      {
+       "hi": "अंतर्निहित नहीं",
+       "en": "Not implicit"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "सूचना यात्रियों हेतु → अंतर्निहित।",
+      "en": "Notice is for passengers → implicit."
+     }
+    },
+    {
+     "q": {
+      "hi": "तर्क: \"परीक्षा रद्द होनी चाहिए क्योंकि मेरा दोस्त फेल हुआ\" — ?",
+      "en": "\"Exam should be cancelled because my friend failed\" — ?"
+     },
+     "o": [
+      {
+       "hi": "मज़बूत",
+       "en": "Strong"
+      },
+      {
+       "hi": "कमज़ोर",
+       "en": "Weak"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "व्यक्तिगत उदाहरण → कमज़ोर तर्क।",
+      "en": "Personal example → weak."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: \"पुस्तकालय में शांति बनाए रखें।\" पूर्वधारणा: पाठक शोर करते हैं।",
+      "en": "\"Maintain silence in library.\" Assumption: readers make noise."
+     },
+     "o": [
+      {
+       "hi": "अंतर्निहित",
+       "en": "Implicit"
+      },
+      {
+       "hi": "अंतर्निहित नहीं",
+       "en": "Not implicit"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "चेतावनी तभी जब संभावना हो → अंतर्निहित।",
+      "en": "Warning implies possibility → implicit."
+     }
+    },
+    {
+     "q": {
+      "hi": "तर्क: \"मोबाइल प्रतिबंधित हो क्योंकि विकिरण स्वास्थ्य को हानि पहुँचाता है\" — ?",
+      "en": "\"Ban mobiles: radiation harms health\" — ?"
+     },
+     "o": [
+      {
+       "hi": "मज़बूत",
+       "en": "Strong"
+      },
+      {
+       "hi": "कमज़ोर",
+       "en": "Weak"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "वैज्ञानिक तथ्य → मज़बूत तर्क।",
+      "en": "Scientific fact → strong."
+     }
+    },
+    {
+     "q": {
+      "hi": "कथन: \"बच्चों को रोज़ दूध पिलाएँ।\" पूर्वधारणा: दूध लाभदायक है।",
+      "en": "\"Give children milk daily.\" Assumption: milk is beneficial."
+     },
+     "o": [
+      {
+       "hi": "अंतर्निहित",
+       "en": "Implicit"
+      },
+      {
+       "hi": "अंतर्निहित नहीं",
+       "en": "Not implicit"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "सलाह के पीछे यही मान्यता → अंतर्निहित।",
+      "en": "Advice assumes benefit → implicit."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  }
+ ]
+}

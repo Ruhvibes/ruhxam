@@ -1,0 +1,1060 @@
+{
+ "version": 1,
+ "part": "science",
+ "count": 3,
+ "chapters": [
+  {
+   "id": "s01",
+   "part": "science",
+   "num": 1,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "भौतिकी",
+    "en": "Physics"
+   },
+   "concept": {
+    "hi": "गति, प्रकाश, ध्वनि, विद्युत एवं चुंबकत्व के <mark>प्रमुख सूत्र व तथ्य</mark>। Group D में 25 विज्ञान प्रश्नों में भौतिकी का बड़ा हिस्सा होता है।",
+    "en": "Key <mark>formulas & facts</mark>: motion, light, sound, electricity, magnetism."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "गति के समीकरण",
+      "en": "Equations of motion"
+     },
+     "b": {
+      "hi": "<mark>v = u + at</mark> | <mark>s = ut + ½at²</mark> | <mark>v² = u² + 2as</mark>",
+      "en": "<mark>v=u+at</mark> | <mark>s=ut+½at²</mark> | <mark>v²=u²+2as</mark>"
+     }
+    },
+    {
+     "h": {
+      "hi": "न्यूटन के नियम",
+      "en": "Newton's laws"
+     },
+     "b": {
+      "hi": "1) जड़त्व 2) <mark>F = ma</mark> 3) क्रिया-प्रतिक्रिया। गुरुत्वीय त्वरण <mark>g = 9.8 m/s²</mark>।",
+      "en": "1) Inertia 2) <mark>F=ma</mark> 3) Action-reaction. <mark>g=9.8 m/s²</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "कार्य, ऊर्जा, शक्ति",
+      "en": "Work, energy, power"
+     },
+     "b": {
+      "hi": "<mark>W = F×s</mark>; गतिज ऊर्जा <mark>½mv²</mark>; स्थितिज <mark>mgh</mark>; शक्ति <mark>P = W/t</mark>।",
+      "en": "<mark>W=Fs</mark>; KE <mark>½mv²</mark>; PE <mark>mgh</mark>; <mark>P=W/t</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "प्रकाश",
+      "en": "Light"
+     },
+     "b": {
+      "hi": "प्रकाश की चाल <mark>3×10⁸ m/s</mark>। परावर्तन: आपतन कोण = परावर्तन कोण। अपवर्तनांक = <mark>c/v</mark>।",
+      "en": "Speed <mark>3×10⁸ m/s</mark>. Angle of incidence = angle of reflection."
+     }
+    },
+    {
+     "h": {
+      "hi": "ध्वनि",
+      "en": "Sound"
+     },
+     "b": {
+      "hi": "ध्वनि की चाल (वायु) ≈ <mark>332 m/s</mark>। आवृत्ति का मात्रक <mark>हर्ट्ज़ (Hz)</mark>। पराश्रव्य > 20,000 Hz।",
+      "en": "Speed in air ≈ <mark>332 m/s</mark>. Unit: <mark>hertz</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "विद्युत",
+      "en": "Electricity"
+     },
+     "b": {
+      "hi": "ओम का नियम <mark>V = IR</mark>। शक्ति <mark>P = VI</mark>। घरों में <mark>220V, 50Hz</mark> AC।",
+      "en": "Ohm's law <mark>V=IR</mark>. Power <mark>P=VI</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "चुंबकत्व",
+      "en": "Magnetism"
+     },
+     "b": {
+      "hi": "चुंबक के <mark>दो ध्रुव</mark> (उत्तर-दक्षिण)। समान ध्रुव प्रतिकर्षित, विपरीत आकर्षित।",
+      "en": "Two poles; like repel, unlike attract."
+     }
+    },
+    {
+     "h": {
+      "hi": "दाब एवं उत्प्लावन",
+      "en": "Pressure & buoyancy"
+     },
+     "b": {
+      "hi": "दाब <mark>P = F/A</mark>। आर्किमिडीज़: उत्प्लावन बल = हटाए गए द्रव का भार।",
+      "en": "<mark>P=F/A</mark>. Archimedes' principle."
+     }
+    },
+    {
+     "h": {
+      "hi": "तरंगदैर्घ्य",
+      "en": "Wavelength"
+     },
+     "b": {
+      "hi": "<mark>v = fλ</mark> (चाल = आवृत्ति × तरंगदैर्घ्य)।",
+      "en": "<mark>v = fλ</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "लेंस/दर्पण",
+      "en": "Lens/mirror"
+     },
+     "b": {
+      "hi": "अवतल दर्पण <mark>अभिसारी</mark>; उत्तल दर्पण <mark>अपसारी</mark> (वाहनों में)।",
+      "en": "Concave = <mark>converging</mark>; convex = <mark>diverging</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "ऊष्मा",
+      "en": "Heat"
+     },
+     "b": {
+      "hi": "विशिष्ट ऊष्मा का मात्रक <mark>J/kg·K</mark>। पानी की विशिष्ट ऊष्मा <mark>4200 J/kg·K</mark>।",
+      "en": "Specific heat unit <mark>J/kg·K</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मात्रक",
+      "en": "Units"
+     },
+     "b": {
+      "hi": "बल: <mark>न्यूटन</mark>; ऊर्जा: <mark>जूल</mark>; शक्ति: <mark>वाट</mark>; आवेश: <mark>कूलॉम</mark>।",
+      "en": "Force: <mark>newton</mark>; energy: <mark>joule</mark>; power: <mark>watt</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "गुरुत्वाकर्षण",
+      "en": "Gravitation"
+     },
+     "b": {
+      "hi": "<mark>F = G·m₁m₂/r²</mark>। पृथ्वी पर भार = mg।",
+      "en": "<mark>F=G·m₁m₂/r²</mark>. Weight = mg."
+     }
+    },
+    {
+     "h": {
+      "hi": "सरल लोलक",
+      "en": "Simple pendulum"
+     },
+     "b": {
+      "hi": "आवर्तकाल <mark>T = 2π√(l/g)</mark> — लंबाई पर निर्भर, द्रव्यमान पर नहीं।",
+      "en": "<mark>T=2π√(l/g)</mark> — depends on length."
+     }
+    },
+    {
+     "h": {
+      "hi": "विद्युत धारा प्रभाव",
+      "en": "Heating effect"
+     },
+     "b": {
+      "hi": "जूल का नियम: <mark>H = I²Rt</mark> (हीटर, बल्ब)।",
+      "en": "Joule's law: <mark>H=I²Rt</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "इंद्रधनुष के 7 रंग",
+      "en": "7 colours of the rainbow"
+     },
+     "b": {
+      "hi": "\"<mark>VIBGYOR</mark>\" - बैंगनी, जामुनी, नीला, हरा, पीला, नारंगी, लाल। हिंदी में \"बै-जा-नी-ह-पी-ना-ला\" क्रम से याद करें।",
+      "en": "\"<mark>VIBGYOR</mark>\": Violet, Indigo, Blue, Green, Yellow, Orange, Red."
+     }
+    },
+    {
+     "h": {
+      "hi": "SI मात्रक वाक्य",
+      "en": "SI units sentence"
+     },
+     "b": {
+      "hi": "\"<mark>नया जूल वाट</mark>\" - बल = न्यूटन, कार्य/ऊर्जा = जूल, शक्ति = वाट। साथ में याद रखें: धारा = एम्पियर, आवेश = कूलॉम।",
+      "en": "Force = Newton, work/energy = Joule, power = Watt; current = Ampere, charge = Coulomb."
+     }
+    },
+    {
+     "h": {
+      "hi": "गति के तीन सूत्र",
+      "en": "Three equations of motion"
+     },
+     "b": {
+      "hi": "<mark>v=u+at, s=ut+1/2at2, v2=u2+2as</mark> - \"v वाले सूत्र में 2as, s वाले में 1/2at2\"। v2-u2=2as और s=ut+1/2at2 का जोड़ा बनाएँ।",
+      "en": "<mark>v=u+at, s=ut+1/2at2, v2=u2+2as</mark>."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "प्रकाश की चाल कितनी होती है?",
+      "en": "Speed of light?"
+     },
+     "o": [
+      {
+       "hi": "3×10⁶ m/s",
+       "en": "3×10⁶ m/s"
+      },
+      {
+       "hi": "3×10⁸ m/s",
+       "en": "3×10⁸ m/s"
+      },
+      {
+       "hi": "3×10⁵ m/s",
+       "en": "3×10⁵ m/s"
+      },
+      {
+       "hi": "3×10¹⁰ m/s",
+       "en": "3×10¹⁰ m/s"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "निर्वात में 3×10⁸ m/s।",
+      "en": "3×10⁸ m/s in vacuum."
+     }
+    },
+    {
+     "q": {
+      "hi": "ओम का नियम?",
+      "en": "Ohm's law?"
+     },
+     "o": [
+      {
+       "hi": "V = IR",
+       "en": "V = IR"
+      },
+      {
+       "hi": "P = VI",
+       "en": "P = VI"
+      },
+      {
+       "hi": "F = ma",
+       "en": "F = ma"
+      },
+      {
+       "hi": "W = Fs",
+       "en": "W = Fs"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "V = IR।",
+      "en": "V = IR."
+     }
+    },
+    {
+     "q": {
+      "hi": "ध्वनि की चाल वायु में लगभग?",
+      "en": "Speed of sound in air?"
+     },
+     "o": [
+      {
+       "hi": "332 m/s",
+       "en": "332 m/s"
+      },
+      {
+       "hi": "1500 m/s",
+       "en": "1500 m/s"
+      },
+      {
+       "hi": "3×10⁸ m/s",
+       "en": "3×10⁸ m/s"
+      },
+      {
+       "hi": "500 m/s",
+       "en": "500 m/s"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "लगभग 332 m/s (0°C पर)।",
+      "en": "≈332 m/s."
+     }
+    },
+    {
+     "q": {
+      "hi": "गतिज ऊर्जा का सूत्र?",
+      "en": "Kinetic energy formula?"
+     },
+     "o": [
+      {
+       "hi": "mgh",
+       "en": "mgh"
+      },
+      {
+       "hi": "½mv²",
+       "en": "½mv²"
+      },
+      {
+       "hi": "Fs",
+       "en": "Fs"
+      },
+      {
+       "hi": "ma",
+       "en": "ma"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "KE = ½mv²।",
+      "en": "KE = ½mv²."
+     }
+    },
+    {
+     "q": {
+      "hi": "शक्ति का SI मात्रक?",
+      "en": "SI unit of power?"
+     },
+     "o": [
+      {
+       "hi": "जूल",
+       "en": "Joule"
+      },
+      {
+       "hi": "वाट",
+       "en": "Watt"
+      },
+      {
+       "hi": "न्यूटन",
+       "en": "Newton"
+      },
+      {
+       "hi": "वोल्ट",
+       "en": "Volt"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "वाट (W)।",
+      "en": "Watt."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "s02",
+   "part": "science",
+   "num": 2,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "रसायन विज्ञान",
+    "en": "Chemistry"
+   },
+   "concept": {
+    "hi": "परमाणु संरचना, आवर्त सारणी, अम्ल-क्षार, धातु-अधातु के <mark>प्रमुख तथ्य</mark>।",
+    "en": "Key <mark>facts</mark>: atomic structure, periodic table, acids-bases, metals."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "परमाणु संरचना",
+      "en": "Atomic structure"
+     },
+     "b": {
+      "hi": "प्रोटॉन <mark>(+)</mark>, न्यूट्रॉन (उदासीन) नाभिक में; इलेक्ट्रॉन <mark>(−)</mark> कक्षाओं में। परमाणु संख्या = <mark>प्रोटॉनों की संख्या</mark>।",
+      "en": "Protons <mark>(+)</mark>, neutrons in nucleus; electrons <mark>(−)</mark> in orbits."
+     }
+    },
+    {
+     "h": {
+      "hi": "आवर्त सारणी",
+      "en": "Periodic table"
+     },
+     "b": {
+      "hi": "आधुनिक सारणी <mark>मेंडेलीव</mark> ने नहीं, <mark>मोज़ले</mark> के नियम (परमाणु संख्या) पर आधारित। 7 आवर्त, 18 वर्ग।",
+      "en": "Based on <mark>atomic number</mark> (Moseley). 7 periods, 18 groups."
+     }
+    },
+    {
+     "h": {
+      "hi": "अम्ल-क्षार",
+      "en": "Acids-bases"
+     },
+     "b": {
+      "hi": "pH < 7 अम्ल, pH > 7 क्षार, <mark>pH = 7 उदासीन</mark>। लिटमस: अम्ल → लाल, क्षार → नीला।",
+      "en": "pH<7 acid, pH>7 base, <mark>pH=7 neutral</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "धातु-अधातु",
+      "en": "Metals-nonmetals"
+     },
+     "b": {
+      "hi": "सबसे हल्की धातु <mark>लिथियम</mark>; सर्वाधिक तन्य <mark>सोना</mark>; द्रव धातु <mark>पारा</mark>; द्रव अधातु <mark>ब्रोमीन</mark>।",
+      "en": "Lightest metal <mark>lithium</mark>; liquid metal <mark>mercury</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "गैसें",
+      "en": "Gases"
+     },
+     "b": {
+      "hi": "वायु में नाइट्रोजन <mark>78%</mark>, ऑक्सीजन <mark>21%</mark>। हँसाने वाली गैस <mark>N₂O</mark>।",
+      "en": "Air: N₂ <mark>78%</mark>, O₂ <mark>21%</mark>. Laughing gas <mark>N₂O</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "रासायनिक सूत्र",
+      "en": "Formulas"
+     },
+     "b": {
+      "hi": "जल <mark>H₂O</mark>; नमक <mark>NaCl</mark>; बेकिंग सोडा <mark>NaHCO₃</mark>; चूना <mark>CaO</mark>।",
+      "en": "Water <mark>H₂O</mark>; salt <mark>NaCl</mark>; baking soda <mark>NaHCO₃</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "संक्षारण",
+      "en": "Corrosion"
+     },
+     "b": {
+      "hi": "लोहे पर जंग = <mark>ऑक्सीकरण</mark>। रोकथाम: पेंट, गैल्वेनीकरण (जस्ता)।",
+      "en": "Rusting = <mark>oxidation</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "कार्बन",
+      "en": "Carbon"
+     },
+     "b": {
+      "hi": "कार्बन के अपररूप: <mark>हीरा, ग्रेफाइट</mark>। हीरा सबसे कठोर प्राकृतिक पदार्थ।",
+      "en": "Allotropes: <mark>diamond, graphite</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "pH मान",
+      "en": "pH values"
+     },
+     "b": {
+      "hi": "मानव रक्त <mark>7.4</mark>; नींबू रस ~2; शुद्ध जल 7।",
+      "en": "Blood <mark>7.4</mark>; lemon ~2."
+     }
+    },
+    {
+     "h": {
+      "hi": "धातुओं की अभिक्रियाशीलता",
+      "en": "Reactivity series"
+     },
+     "b": {
+      "hi": "<mark>K > Na > Ca > Mg > Al > Zn > Fe > Pb > Cu > Ag > Au</mark> (अधिक → कम)।",
+      "en": "<mark>K>Na>Ca>Mg>Al>Zn>Fe>Pb>Cu>Ag>Au</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मिश्रधातु",
+      "en": "Alloys"
+     },
+     "b": {
+      "hi": "पीतल = <mark>ताँबा+जस्ता</mark>; काँसा = <mark>ताँबा+टिन</mark>; स्टील = <mark>लोहा+कार्बन</mark>।",
+      "en": "Brass = <mark>Cu+Zn</mark>; bronze = <mark>Cu+Sn</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "रेडियोधर्मिता",
+      "en": "Radioactivity"
+     },
+     "b": {
+      "hi": "खोज: <mark>बेकुरेल</mark>। α, β, γ किरणें (भेदन क्षमता γ सर्वाधिक)।",
+      "en": "Discovered by <mark>Becquerel</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "ईंधन",
+      "en": "Fuels"
+     },
+     "b": {
+      "hi": "LPG = <mark>ब्यूटेन+प्रोपेन</mark>; CNG = <mark>मीथेन</mark>; बायोगैस = <mark>मीथेन</mark>।",
+      "en": "LPG = <mark>butane+propane</mark>; CNG = <mark>methane</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "विलयन",
+      "en": "Solutions"
+     },
+     "b": {
+      "hi": "विलेय + विलायक = विलयन। संतृप्त विलयन में और विलेय <mark>नहीं घुलता</mark>।",
+      "en": "Solute + solvent = solution."
+     }
+    },
+    {
+     "h": {
+      "hi": "ऑक्सीकरण-अपचयन",
+      "en": "Redox"
+     },
+     "b": {
+      "hi": "ऑक्सीकरण = <mark>इलेक्ट्रॉन त्यागना</mark>; अपचयन = ग्रहण करना।",
+      "en": "Oxidation = <mark>loss of electrons</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "पहले 10 तत्व",
+      "en": "First 10 elements"
+     },
+     "b": {
+      "hi": "\"<mark>है-ली-बी-बो-का-ना-ओ-फ्लो-नी</mark>\" - H, He, Li, Be, B, C, N, O, F, Ne (हाइड्रोजन, हीलियम, लिथियम, बेरिलियम, बोरॉन, कार्बन, नाइट्रोजन, ऑक्सीजन, फ्लोरीन, नियॉन)।",
+      "en": "H, He, Li, Be, B, C, N, O, F, Ne."
+     }
+    },
+    {
+     "h": {
+      "hi": "pH स्केल",
+      "en": "pH scale"
+     },
+     "b": {
+      "hi": "\"<mark>अम्ल नीचे, क्षार ऊपर</mark>\" - pH 7 से कम = अम्लीय (नींबू, सिरका), pH 7 = उदासीन (शुद्ध जल), pH 7 से अधिक = क्षारीय (साबुन)।",
+      "en": "Below 7 = acidic, 7 = neutral, above 7 = basic."
+     }
+    },
+    {
+     "h": {
+      "hi": "अभिक्रियाशीलता श्रेणी",
+      "en": "Reactivity series"
+     },
+     "b": {
+      "hi": "\"<mark>के-ना-का-मैग-अल-जिं-लो</mark>\" - K > Na > Ca > Mg > Al > Zn > Fe > Pb > H > Cu > Ag > Au। जितना ऊपर, उतना अधिक क्रियाशील।",
+      "en": "K>Na>Ca>Mg>Al>Zn>Fe... - higher means more reactive."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "जल का रासायनिक सूत्र?",
+      "en": "Chemical formula of water?"
+     },
+     "o": [
+      {
+       "hi": "CO₂",
+       "en": "CO₂"
+      },
+      {
+       "hi": "H₂O",
+       "en": "H₂O"
+      },
+      {
+       "hi": "O₂",
+       "en": "O₂"
+      },
+      {
+       "hi": "H₂O₂",
+       "en": "H₂O₂"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "H₂O।",
+      "en": "H₂O."
+     }
+    },
+    {
+     "q": {
+      "hi": "शुद्ध जल का pH मान?",
+      "en": "pH of pure water?"
+     },
+     "o": [
+      {
+       "hi": "0",
+       "en": "0"
+      },
+      {
+       "hi": "7",
+       "en": "7"
+      },
+      {
+       "hi": "14",
+       "en": "14"
+      },
+      {
+       "hi": "1",
+       "en": "1"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "pH 7 = उदासीन।",
+      "en": "pH 7 = neutral."
+     }
+    },
+    {
+     "q": {
+      "hi": "सबसे हल्की धातु?",
+      "en": "Lightest metal?"
+     },
+     "o": [
+      {
+       "hi": "सोडियम",
+       "en": "Sodium"
+      },
+      {
+       "hi": "लिथियम",
+       "en": "Lithium"
+      },
+      {
+       "hi": "एल्युमिनियम",
+       "en": "Aluminium"
+      },
+      {
+       "hi": "पोटैशियम",
+       "en": "Potassium"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "लिथियम।",
+      "en": "Lithium."
+     }
+    },
+    {
+     "q": {
+      "hi": "बेकिंग सोडा का सूत्र?",
+      "en": "Formula of baking soda?"
+     },
+     "o": [
+      {
+       "hi": "NaCl",
+       "en": "NaCl"
+      },
+      {
+       "hi": "Na₂CO₃",
+       "en": "Na₂CO₃"
+      },
+      {
+       "hi": "NaHCO₃",
+       "en": "NaHCO₃"
+      },
+      {
+       "hi": "CaCO₃",
+       "en": "CaCO₃"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "NaHCO₃।",
+      "en": "NaHCO₃."
+     }
+    },
+    {
+     "q": {
+      "hi": "वायु में नाइट्रोजन का प्रतिशत?",
+      "en": "% of nitrogen in air?"
+     },
+     "o": [
+      {
+       "hi": "21%",
+       "en": "21%"
+      },
+      {
+       "hi": "78%",
+       "en": "78%"
+      },
+      {
+       "hi": "1%",
+       "en": "1%"
+      },
+      {
+       "hi": "50%",
+       "en": "50%"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "लगभग 78%।",
+      "en": "≈78%."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "s03",
+   "part": "science",
+   "num": 3,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "जीव विज्ञान",
+    "en": "Biology"
+   },
+   "concept": {
+    "hi": "मानव शरीर, पादप, रोग एवं पोषण के <mark>प्रमुख तथ्य</mark>।",
+    "en": "Key <mark>facts</mark>: human body, plants, diseases, nutrition."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "कोशिका",
+      "en": "Cell"
+     },
+     "b": {
+      "hi": "जीवन की इकाई <mark>कोशिका</mark>। खोज: <mark>रॉबर्ट हुक</mark>। पावरहाउस: <mark>माइटोकॉन्ड्रिया</mark>।",
+      "en": "Unit of life: <mark>cell</mark>. Powerhouse: <mark>mitochondria</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मानव शरीर",
+      "en": "Human body"
+     },
+     "b": {
+      "hi": "हड्डियाँ <mark>206</mark>; मांसपेशियाँ <mark>600+</mark>; सबसे बड़ी हड्डी <mark>फीमर</mark>; सबसे छोटी <mark>स्टेपीज़</mark> (कान)।",
+      "en": "Bones <mark>206</mark>; largest <mark>femur</mark>; smallest <mark>stapes</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "रक्त",
+      "en": "Blood"
+     },
+     "b": {
+      "hi": "लाल कोशिकाएँ O₂ ले जाती हैं (हीमोग्लोबिन)। सार्वभौम दाता <mark>O−</mark>, ग्राही <mark>AB+</mark>।",
+      "en": "Universal donor <mark>O−</mark>; recipient <mark>AB+</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पाचन",
+      "en": "Digestion"
+     },
+     "b": {
+      "hi": "लार में <mark>एमाइलेज</mark>; आमाशय में <mark>HCl + पेप्सिन</mark>; पित्त <mark>यकृत</mark> से।",
+      "en": "Saliva: <mark>amylase</mark>; stomach: <mark>HCl</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "श्वसन",
+      "en": "Respiration"
+     },
+     "b": {
+      "hi": "गैस विनिमय <mark>फेफड़ों की कूपिकाओं</mark> में। श्वसन दर ~<mark>16-20/मिनट</mark>।",
+      "en": "Exchange in <mark>alveoli</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "तंत्रिका तंत्र",
+      "en": "Nervous system"
+     },
+     "b": {
+      "hi": "इकाई <mark>न्यूरॉन</mark>। मस्तिष्क का सबसे बड़ा भाग <mark>प्रमस्तिष्क</mark>।",
+      "en": "Unit: <mark>neuron</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पादप",
+      "en": "Plants"
+     },
+     "b": {
+      "hi": "प्रकाश संश्लेषण: <mark>CO₂ + जल → ग्लूकोज़ + O₂</mark> (सूर्य प्रकाश, पर्णहरित)।",
+      "en": "Photosynthesis: <mark>CO₂+water → glucose+O₂</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "विटामिन",
+      "en": "Vitamins"
+     },
+     "b": {
+      "hi": "A: <mark>रतौंधी</mark>; C: <mark>स्कर्वी</mark>; D: <mark>रिकेट्स</mark>; K: <mark>रक्त स्कंदन</mark>; B1: बेरी-बेरी।",
+      "en": "A: <mark>night blindness</mark>; C: <mark>scurvy</mark>; D: <mark>rickets</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "रोग",
+      "en": "Diseases"
+     },
+     "b": {
+      "hi": "मलेरिया: <mark>मादा एनाफिलीज़</mark>; टीबी: <mark>जीवाणु</mark>; एड्स: <mark>विषाणु (HIV)</mark>।",
+      "en": "Malaria: <mark>female Anopheles</mark>; TB: <mark>bacteria</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "हृदय",
+      "en": "Heart"
+     },
+     "b": {
+      "hi": "4 कक्ष; धड़कन <mark>72/मिनट</mark>। रक्तचाप सामान्य <mark>120/80</mark>।",
+      "en": "4 chambers; <mark>72/min</mark>; BP <mark>120/80</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "उत्सर्जन",
+      "en": "Excretion"
+     },
+     "b": {
+      "hi": "वृक्क की इकाई <mark>नेफ्रॉन</mark>। मूत्र में <mark>यूरिया</mark>।",
+      "en": "Kidney unit: <mark>nephron</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "प्रजनन",
+      "en": "Reproduction"
+     },
+     "b": {
+      "hi": "निषेचन <mark>डिंबवाहिनी</mark> में; गर्भावधि <mark>280 दिन</mark>।",
+      "en": "Fertilization in <mark>fallopian tube</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "आनुवंशिकी",
+      "en": "Genetics"
+     },
+     "b": {
+      "hi": "जनक: <mark>मेंडल</mark>। DNA की संरचना: <mark>द्विकुंडलिनी</mark> (वाटसन-क्रिक)।",
+      "en": "Father: <mark>Mendel</mark>. DNA: <mark>double helix</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पारिस्थितिकी",
+      "en": "Ecology"
+     },
+     "b": {
+      "hi": "ओज़ोन परत <mark>समतापमंडल</mark> में। अम्लीय वर्षा: <mark>SO₂, NO₂</mark>।",
+      "en": "Ozone in <mark>stratosphere</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पोषण",
+      "en": "Nutrition"
+     },
+     "b": {
+      "hi": "प्रोटीन: <mark>वृद्धि</mark>; कार्बोहाइड्रेट: <mark>ऊर्जा</mark>; वसा: <mark>सर्वाधिक ऊर्जा</mark>।",
+      "en": "Protein: <mark>growth</mark>; carbs: <mark>energy</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "विटामिन-कमी रोग",
+      "en": "Vitamin deficiency diseases"
+     },
+     "b": {
+      "hi": "<mark>A-रतौंधी, B1-बेरीबेरी, C-स्कर्वी, D-रिकेट्स, K-रक्तस्राव</mark> - \"अ-रतौ, बे-री, सी-स्क, डी-रि, के-खून\" क्रम से याद करें।",
+      "en": "<mark>A</mark>=night blindness, <mark>B1</mark>=beriberi, <mark>C</mark>=scurvy, <mark>D</mark>=rickets, <mark>K</mark>=bleeding."
+     }
+    },
+    {
+     "h": {
+      "hi": "रक्त समूह",
+      "en": "Blood groups"
+     },
+     "b": {
+      "hi": "\"<mark>O देता है, AB लेता है</mark>\" - O = सर्वदाता (सभी को दे सकता है), AB = सर्वग्राही (सभी से ले सकता है)।",
+      "en": "\"<mark>O gives, AB takes</mark>\" - O = universal donor, AB = universal receiver."
+     }
+    },
+    {
+     "h": {
+      "hi": "हड्डी-मांसपेशी संख्या",
+      "en": "Bones and muscles count"
+     },
+     "b": {
+      "hi": "<mark>206 हड्डियाँ, 600 से अधिक मांसपेशियाँ</mark> - \"दो-सौ-छह हड्डी, छह-सौ पेशी\"। नवजात में लगभग 300 हड्डियाँ होती हैं जो बड़ी होकर जुड़ जाती हैं।",
+      "en": "<mark>206</mark> bones, <mark>600+</mark> muscles; newborns have about 300."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "मानव शरीर में हड्डियों की संख्या?",
+      "en": "Number of bones in human body?"
+     },
+     "o": [
+      {
+       "hi": "206",
+       "en": "206"
+      },
+      {
+       "hi": "306",
+       "en": "306"
+      },
+      {
+       "hi": "106",
+       "en": "106"
+      },
+      {
+       "hi": "256",
+       "en": "256"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "206 हड्डियाँ।",
+      "en": "206 bones."
+     }
+    },
+    {
+     "q": {
+      "hi": "कोशिका का पावरहाउस?",
+      "en": "Powerhouse of the cell?"
+     },
+     "o": [
+      {
+       "hi": "नाभिक",
+       "en": "Nucleus"
+      },
+      {
+       "hi": "राइबोसोम",
+       "en": "Ribosome"
+      },
+      {
+       "hi": "माइटोकॉन्ड्रिया",
+       "en": "Mitochondria"
+      },
+      {
+       "hi": "गॉल्जी",
+       "en": "Golgi"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "माइटोकॉन्ड्रिया।",
+      "en": "Mitochondria."
+     }
+    },
+    {
+     "q": {
+      "hi": "सार्वभौम रक्तदाता समूह?",
+      "en": "Universal blood donor?"
+     },
+     "o": [
+      {
+       "hi": "AB+",
+       "en": "AB+"
+      },
+      {
+       "hi": "O−",
+       "en": "O−"
+      },
+      {
+       "hi": "A+",
+       "en": "A+"
+      },
+      {
+       "hi": "B+",
+       "en": "B+"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "O− (नकारात्मक)।",
+      "en": "O negative."
+     }
+    },
+    {
+     "q": {
+      "hi": "विटामिन C की कमी से रोग?",
+      "en": "Deficiency of vitamin C?"
+     },
+     "o": [
+      {
+       "hi": "रतौंधी",
+       "en": "Night blindness"
+      },
+      {
+       "hi": "स्कर्वी",
+       "en": "Scurvy"
+      },
+      {
+       "hi": "रिकेट्स",
+       "en": "Rickets"
+      },
+      {
+       "hi": "बेरी-बेरी",
+       "en": "Beriberi"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "स्कर्वी।",
+      "en": "Scurvy."
+     }
+    },
+    {
+     "q": {
+      "hi": "प्रकाश संश्लेषण कहाँ होता है?",
+      "en": "Where does photosynthesis occur?"
+     },
+     "o": [
+      {
+       "hi": "जड़",
+       "en": "Root"
+      },
+      {
+       "hi": "तना",
+       "en": "Stem"
+      },
+      {
+       "hi": "पत्ती",
+       "en": "Leaf"
+      },
+      {
+       "hi": "फूल",
+       "en": "Flower"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "पत्तियों में (पर्णहरित द्वारा)।",
+      "en": "In leaves (chlorophyll)."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  }
+ ]
+}

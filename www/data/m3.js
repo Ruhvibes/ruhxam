@@ -1,0 +1,150 @@
+/* RuhXam — Maths Ch 11-15 */
+window.RT_CH = window.RT_CH || [];
+(function(){
+var P='maths';
+RT_CH.push({id:'m11',part:P,num:11,kind:'tricks',exams:['all'],
+title:{hi:'समय, चाल एवं दूरी',en:'Time, Speed & Distance'},
+concept:{hi:'<mark>दूरी = चाल × समय</mark>। 1 km/h = <mark>5/18 m/s</mark>; 1 m/s = <mark>18/5 km/h</mark>।',en:'<mark>Distance = speed × time</mark>. 1 km/h = <mark>5/18</mark> m/s.'},
+tricks:[
+{h:{hi:'रेलगाड़ी सूत्र',en:'Train formulas'},b:{hi:'<mark>समय = (ट्रेन+प्लेटफॉर्म की लंबाई) ÷ चाल</mark>। विपरीत दिशा: चालों का योग; समान दिशा: चालों का अंतर।',en:'<mark>Time = (train+platform length) ÷ speed</mark>. Opposite: add speeds; same direction: subtract.'}},
+{h:{hi:'नाव एवं धारा',en:'Boat & stream'},b:{hi:'अनुकूल चाल = <mark>u+v</mark>, प्रतिकूल = <mark>u−v</mark> (u=नाव, v=धारा)।',en:'Downstream = <mark>u+v</mark>, upstream = <mark>u−v</mark>.'}},
+{h:{hi:'औसत चाल',en:'Average speed'},b:{hi:'समान दूरी आना-जाना: <mark>2xy/(x+y)</mark>।',en:'Same distance both ways: <mark>2xy/(x+y)</mark>.'}},
+{h:{hi:'सापेक्ष चाल',en:'Relative speed'},b:{hi:'एक-दूसरे की ओर = योग; एक ही दिशा में = अंतर। मिलने का समय = <mark>दूरी ÷ सापेक्ष चाल</mark>।',en:'Towards each other = sum; same direction = difference.'}}],
+examples:[
+{q:{hi:'200m लंबी ट्रेन 72 km/h से 300m प्लेटफॉर्म पार करेगी?',en:'200m train at 72 km/h crosses 300m platform?'},
+s:{hi:'कुल दूरी = 500m। चाल = 72×5/18 = 20 m/s। समय = 500/20 = <mark>25 सेकंड</mark>।',en:'Distance 500m, speed 20 m/s → <mark>25 sec</mark>.'}},
+{q:{hi:'नाव की चाल 8 km/h, धारा 2 km/h। अनुकूल 30 km में समय?',en:'Boat 8 km/h, stream 2 km/h. Time for 30 km downstream?'},
+s:{hi:'चाल = 10 km/h → समय = 30/10 = <mark>3 घंटे</mark>।',en:'Speed 10 km/h → <mark>3 hours</mark>.'}}],
+quiz:[
+{q:{hi:'60 km/h से 180 km कितने समय में?',en:'180 km at 60 km/h takes?'},
+o:[{hi:'2 घंटे',en:'2 hours'},{hi:'3 घंटे',en:'3 hours'},{hi:'4 घंटे',en:'4 hours'},{hi:'2.5 घंटे',en:'2.5 hours'}],a:1,
+e:{hi:'180/60 = 3 घंटे।',en:'180/60 = 3 hours.'}},
+{q:{hi:'100m ट्रेन 25 m/s से 200m सुरंग पार करेगी?',en:'100m train at 25 m/s crosses 200m tunnel?'},
+o:[{hi:'8 से',en:'8 s'},{hi:'12 से',en:'12 s'},{hi:'10 से',en:'10 s'},{hi:'4 से',en:'4 s'}],a:1,
+e:{hi:'(100+200)/25 = 12 सेकंड।',en:'300/25 = 12 s.'}},
+{q:{hi:'A 40 km/h जाए, 60 km/h लौटे। औसत चाल?',en:'Go 40 km/h, return 60 km/h. Avg speed?'},
+o:[{hi:'50 km/h',en:'50 km/h'},{hi:'48 km/h',en:'48 km/h'},{hi:'45 km/h',en:'45 km/h'},{hi:'52 km/h',en:'52 km/h'}],a:1,
+e:{hi:'2×40×60/100 = 48 km/h।',en:'4800/100 = 48 km/h.'}},
+{q:{hi:'दो ट्रेनें 300 km दूर, 60 व 40 km/h से एक-दूसरे की ओर। कितनी देर में मिलेंगी?',en:'Two trains 300 km apart at 60, 40 km/h towards each other. Meet in?'},
+o:[{hi:'2 घंटे',en:'2 hours'},{hi:'3 घंटे',en:'3 hours'},{hi:'2.5 घंटे',en:'2.5 hours'},{hi:'4 घंटे',en:'4 hours'}],a:1,
+e:{hi:'सापेक्ष चाल 100 → 300/100 = 3 घंटे।',en:'300/100 = 3 hours.'}},
+{q:{hi:'नाव धारा के प्रतिकूल 24 km, 6 घंटे में। धारा 2 km/h तो शांत जल में नाव की चाल?',en:'Upstream 24 km in 6h, stream 2 km/h. Boat speed in still water?'},
+o:[{hi:'4 km/h',en:'4 km/h'},{hi:'6 km/h',en:'6 km/h'},{hi:'8 km/h',en:'8 km/h'},{hi:'5 km/h',en:'5 km/h'}],a:1,
+e:{hi:'प्रतिकूल चाल = 4 → u−2=4 → u=6 km/h।',en:'u−2 = 4 → u = 6 km/h.'}}]});
+
+RT_CH.push({id:'m12',part:P,num:12,kind:'tricks',exams:['all'],
+title:{hi:'मिश्रण एवं मिश्रानुपात',en:'Mixture & Alligation'},
+concept:{hi:'दो वस्तुओं को मिलाने पर अनुपात ज्ञात करने हेतु <mark>मिश्रानुपात (Alligation)</mark> नियम।',en:'<mark>Alligation rule</mark> finds mixing ratios.'},
+tricks:[
+{h:{hi:'Alligation सूत्र',en:'Alligation formula'},b:{hi:'सस्ता (c), महँगा (d), मिश्रण (m): अनुपात = <mark>(d−m) : (m−c)</mark>।',en:'Cheap c, dear d, mean m → ratio = <mark>(d−m):(m−c)</mark>.'}},
+{h:{hi:'प्रतिस्थापन नियम',en:'Replacement rule'},b:{hi:'x लीटर में से y निकालकर पानी मिलाएँ (n बार): शेष = <mark>x(1−y/x)ⁿ</mark>।',en:'After n replacements: remaining = <mark>x(1−y/x)ⁿ</mark>.'}},
+{h:{hi:'मिश्रण का मूल्य',en:'Mixture price'},b:{hi:'<mark>औसत मूल्य = (q₁p₁+q₂p₂)/(q₁+q₂)</mark>।',en:'<mark>Mean price = (q₁p₁+q₂p₂)/(q₁+q₂)</mark>.'}}],
+examples:[
+{q:{hi:'₹30/kg और ₹50/kg चावल किस अनुपात में मिलाएँ कि मिश्रण ₹40/kg हो?',en:'Mix ₹30 and ₹50 rice to get ₹40/kg. Ratio?'},
+s:{hi:'(50−40):(40−30) = 10:10 = <mark>1:1</mark>।',en:'(50−40):(40−30) = <mark>1:1</mark>.'}},
+{q:{hi:'40 लीटर दूध से 8 लीटर निकालकर पानी मिलाया (1 बार)। शेष दूध?',en:'40L milk, 8L replaced once. Milk left?'},
+s:{hi:'40(1−8/40) = 40×0.8 = <mark>32 लीटर</mark>।',en:'40×0.8 = <mark>32 L</mark>.'}}],
+quiz:[
+{q:{hi:'₹20 और ₹35 वाली चाय 3:2 में मिलाने पर मिश्रण का मूल्य?',en:'Mix ₹20 and ₹35 tea in 3:2. Mean price?'},
+o:[{hi:'₹26',en:'₹26'},{hi:'₹27',en:'₹27'},{hi:'₹28',en:'₹28'},{hi:'₹25',en:'₹25'}],a:0,
+e:{hi:'(3×20+2×35)/5 = 130/5 = ₹26।',en:'130/5 = ₹26.'}},
+{q:{hi:'₹60/L और ₹90/L दूध मिलाकर ₹75/L बनाना हो। अनुपात?',en:'Mix ₹60 and ₹90 milk for ₹75/L. Ratio?'},
+o:[{hi:'1:2',en:'1:2'},{hi:'1:1',en:'1:1'},{hi:'2:1',en:'2:1'},{hi:'3:2',en:'3:2'}],a:1,
+e:{hi:'(90−75):(75−60) = 15:15 = 1:1।',en:'15:15 = 1:1.'}},
+{q:{hi:'50L मिश्रण में दूध:पानी = 3:2। कितना पानी मिलाएँ कि अनुपात 1:1 हो?',en:'50L mix, milk:water=3:2. Add water to make 1:1?'},
+o:[{hi:'5L',en:'5L'},{hi:'10L',en:'10L'},{hi:'15L',en:'15L'},{hi:'20L',en:'20L'}],a:1,
+e:{hi:'दूध=30L; 1:1 हेतु पानी भी 30L → 10L मिलाएँ।',en:'Milk 30L; need 30L water → add 10L.'}},
+{q:{hi:'शराब:पानी = 4:1 के 20L में कितना पानी मिलाएँ कि अनुपात 3:1 हो?',en:'20L of 4:1 spirit:water. Add water for 3:1?'},
+o:[{hi:'1.33L',en:'1.33L'},{hi:'2L',en:'2L'},{hi:'4L',en:'4L'},{hi:'1L',en:'1L'}],a:0,
+e:{hi:'शराब=16L; 3:1 हेतु पानी=16/3=5.33L; मिलाना=1.33L।',en:'Spirit 16L; water needed 5.33L; add 1.33L.'}},
+{q:{hi:'60L दूध से 12L निकालकर पानी मिलाया, दो बार। शेष दूध?',en:'60L milk, 12L replaced twice. Milk left?'},
+o:[{hi:'38.4L',en:'38.4L'},{hi:'40L',en:'40L'},{hi:'36L',en:'36L'},{hi:'42L',en:'42L'}],a:0,
+e:{hi:'60×(0.8)² = 60×0.64 = 38.4L।',en:'60×0.64 = 38.4L.'}}]});
+
+RT_CH.push({id:'m13',part:P,num:13,kind:'tricks',exams:['all'],
+title:{hi:'साझेदारी',en:'Partnership'},
+concept:{hi:'लाभ का बँटवारा <mark>पूँजी × समय</mark> के अनुपात में होता है।',en:'Profit shared in ratio of <mark>capital × time</mark>.'},
+tricks:[
+{h:{hi:'मूल सूत्र',en:'Basic formula'},b:{hi:'A:B का लाभ अनुपात = <mark>(C₁×T₁) : (C₂×T₂)</mark>।',en:'Profit ratio = <mark>(C₁×T₁):(C₂×T₂)</mark>.'}},
+{h:{hi:'मासिक समतुल्य',en:'Monthly equivalent'},b:{hi:'अलग-अलग समय हेतु पूँजी को <mark>महीनों से गुणा</mark> कर एक समान बनाएँ।',en:'Multiply capital by months for uniformity.'}},
+{h:{hi:'कार्यकारी साझेदार',en:'Working partner'},b:{hi:'पहले कार्यकारी साझेदार का <mark>वेतन/कमीशन घटाएँ</mark>, फिर शेष लाभ बाँटें।',en:'Deduct salary/commission first, then split.'}}],
+examples:[
+{q:{hi:'A ने ₹5000 (12 माह), B ने ₹8000 (9 माह) लगाए। ₹3500 लाभ में A का हिस्सा?',en:'A: ₹5000×12, B: ₹8000×9. A share of ₹3500?'},
+s:{hi:'अनुपात = 60000:72000 = 5:6। A = 3500×5/11 = <mark>₹1590.91 ≈ ₹1591</mark>।',en:'Ratio 5:6. A = 3500×5/11 ≈ <mark>₹1591</mark>.'}},
+{q:{hi:'A, B, C ने 2:3:4 में पूँजी लगाई, समय समान। ₹1800 लाभ में B का हिस्सा?',en:'Capital 2:3:4, same time. B share of ₹1800?'},
+s:{hi:'B = 1800×3/9 = <mark>₹600</mark>।',en:'B = 1800×3/9 = <mark>₹600</mark>.'}}],
+quiz:[
+{q:{hi:'A ₹4000 (6 माह), B ₹6000 (4 माह)। लाभ अनुपात?',en:'A ₹4000×6, B ₹6000×4. Profit ratio?'},
+o:[{hi:'1:1',en:'1:1'},{hi:'2:3',en:'2:3'},{hi:'3:2',en:'3:2'},{hi:'1:2',en:'1:2'}],a:0,
+e:{hi:'24000:24000 = 1:1।',en:'24000:24000 = 1:1.'}},
+{q:{hi:'X ने ₹10000 पूरे वर्ष, Y ने ₹15000 छह माह लगाए। ₹8000 लाभ में Y का हिस्सा?',en:'X ₹10000×12, Y ₹15000×6. Y share of ₹8000?'},
+o:[{hi:'₹3428',en:'₹3428'},{hi:'₹4571',en:'₹4571'},{hi:'₹4000',en:'₹4000'},{hi:'₹3000',en:'₹3000'}],a:0,
+e:{hi:'अनुपात 120000:90000=4:3; Y=8000×3/7≈₹3428।',en:'4:3; Y = 8000×3/7 ≈ ₹3428.'}},
+{q:{hi:'तीनों ने क्रमशः ₹2000, ₹3000, ₹4000 (समान समय) लगाए। ₹900 लाभ में C का हिस्सा?',en:'₹2000,3000,4000 same time. C share of ₹900?'},
+o:[{hi:'₹300',en:'₹300'},{hi:'₹400',en:'₹400'},{hi:'₹200',en:'₹200'},{hi:'₹450',en:'₹450'}],a:1,
+e:{hi:'2:3:4 → C = 900×4/9 = ₹400।',en:'C = 900×4/9 = ₹400.'}},
+{q:{hi:'A 4 माह बाद ₹6000 लगाए, B शुरुआत से ₹4000 (12 माह)। लाभ अनुपात A:B?',en:'A ₹6000×8, B ₹4000×12. Ratio A:B?'},
+o:[{hi:'1:1',en:'1:1'},{hi:'2:3',en:'2:3'},{hi:'3:2',en:'3:2'},{hi:'1:2',en:'1:2'}],a:0,
+e:{hi:'48000:48000 = 1:1।',en:'48000:48000 = 1:1.'}},
+{q:{hi:'कुल लाभ ₹5000; कार्यकारी साझेदार को 10% कमीशन, शेष 2:3 में। B (3 वाला) को कितना?',en:'₹5000 profit; 10% commission, rest 2:3. B (3 parts)?'},
+o:[{hi:'₹2700',en:'₹2700'},{hi:'₹1800',en:'₹1800'},{hi:'₹3000',en:'₹3000'},{hi:'₹2500',en:'₹2500'}],a:0,
+e:{hi:'शेष = 4500; B = 4500×3/5 = ₹2700।',en:'Rest 4500; B = 4500×3/5 = ₹2700.'}}]});
+
+RT_CH.push({id:'m14',part:P,num:14,kind:'tricks',exams:['all'],
+title:{hi:'आयु संबंधी प्रश्न',en:'Age Problems'},
+concept:{hi:'वर्तमान आयु = x मानें; n वर्ष बाद = x+n; n वर्ष पूर्व = x−n। अनुपात वाले प्रश्नों में <mark>अंतर स्थिर</mark> रहता है।',en:'Present age = x; after n years = x+n. <mark>Age difference is constant</mark>.'},
+tricks:[
+{h:{hi:'अनुपात विधि',en:'Ratio method'},b:{hi:'आयु अनुपात a:b, अंतर d → <mark>1 भाग = d/|a−b|</mark>।',en:'Ratio a:b, difference d → <mark>1 part = d/|a−b|</mark>.'}},
+{h:{hi:'"n वर्ष बाद/पूर्व"',en:'After/before n years'},b:{hi:'दोनों की आयु में <mark>समान n जुड़े/घटे</mark> — अंतर नहीं बदलता।',en:'Add/subtract n from both — difference unchanged.'}},
+{h:{hi:'औसत आयु',en:'Average age'},b:{hi:'परिवार के प्रश्नों में <mark>कुल आयु = औसत × सदस्य</mark>।',en:'<mark>Total age = average × members</mark>.'}}],
+examples:[
+{q:{hi:'पिता-पुत्र की आयु का अनुपात 5:2, अंतर 21 वर्ष। पिता की आयु?',en:'Father:son = 5:2, difference 21. Father age?'},
+s:{hi:'1 भाग = 21/3 = 7 → पिता = 5×7 = <mark>35 वर्ष</mark>।',en:'1 part = 7 → father = <mark>35 years</mark>.'}},
+{q:{hi:'5 वर्ष पूर्व A की आयु B की तिगुनी थी। अब A=32 वर्ष है, तो B की वर्तमान आयु?',en:'5 yrs ago A was 3× B. A now 32. B now?'},
+s:{hi:'5 वर्ष पूर्व A=27 → B=27/3=9 → अब B = 9+5 = <mark>14 वर्ष</mark>।',en:'5 yrs ago A=27, B=9 → now <mark>14</mark>.'}}],
+quiz:[
+{q:{hi:'राम और श्याम की आयु का योग 48, अनुपात 5:3। राम की आयु?',en:'Ram+Shyam=48, ratio 5:3. Ram age?'},
+o:[{hi:'28',en:'28'},{hi:'30',en:'30'},{hi:'32',en:'32'},{hi:'26',en:'26'}],a:1,
+e:{hi:'48×5/8 = 30।',en:'48×5/8 = 30.'}},
+{q:{hi:'माँ बेटी से 20 वर्ष बड़ी है। 5 वर्ष बाद उनकी आयु का अनुपात 3:1 होगा। बेटी की वर्तमान आयु?',en:'Mother is 20 yrs older than daughter. In 5 yrs ratio will be 3:1. Daughter now?'},
+o:[{hi:'5 वर्ष',en:'5 yrs'},{hi:'8 वर्ष',en:'8 yrs'},{hi:'10 वर्ष',en:'10 yrs'},{hi:'12 वर्ष',en:'12 yrs'}],a:0,
+e:{hi:'(x+25)/(x+5)=3/1 → x+25=3x+15 → x=5। जाँच: (25+5)/(5+5)=30/10=3:1 ✓।',en:'(x+25)/(x+5)=3 → x=5.'}},
+{q:{hi:'4 वर्ष पूर्व पिता पुत्र से 4 गुना बड़ा था। अब पिता 44, पुत्र?',en:'4 yrs ago father was 4× son. Father now 44. Son now?'},
+o:[{hi:'12',en:'12'},{hi:'14',en:'14'},{hi:'16',en:'16'},{hi:'10',en:'10'}],a:1,
+e:{hi:'तब पिता=40=4x → x=10 → अब पुत्र=14।',en:'40=4x → x=10 → now 14.'}},
+{q:{hi:'तीन भाइयों की औसत आयु 18, सबसे छोटा 12। बाकी दोनों का योग?',en:'Avg of 3 brothers 18, youngest 12. Sum of other two?'},
+o:[{hi:'42',en:'42'},{hi:'40',en:'40'},{hi:'36',en:'36'},{hi:'44',en:'44'}],a:0,
+e:{hi:'कुल=54; 54−12=42।',en:'54−12=42.'}},
+{q:{hi:'A और B की वर्तमान आयु का अनुपात 4:5 है; 10 वर्ष बाद यह 6:7 होगा। A की वर्तमान आयु?',en:'A:B = 4:5 now; 6:7 after 10 yrs. A now?'},
+o:[{hi:'24',en:'24'},{hi:'20',en:'20'},{hi:'28',en:'28'},{hi:'16',en:'16'}],a:1,
+e:{hi:'(4x+10)/(5x+10)=6/7 → 28x+70=30x+60 → x=5 → A=20। जाँच: 30/35=6/7 ✓।',en:'(4x+10)/(5x+10)=6/7 → x=5 → A=20.'}}]});
+
+RT_CH.push({id:'m15',part:P,num:15,kind:'tricks',exams:['all'],
+title:{hi:'बीजगणित',en:'Algebra'},
+concept:{hi:'प्रमुख सर्वसमिकाएँ: <mark>(a+b)²=a²+2ab+b²</mark>, <mark>(a−b)²=a²−2ab+b²</mark>, <mark>a²−b²=(a+b)(a−b)</mark>, <mark>(a+b)³=a³+3ab(a+b)+b³</mark>।',en:'Key identities: <mark>(a+b)²</mark>, <mark>a²−b²=(a+b)(a−b)</mark>.'},
+tricks:[
+{h:{hi:'a²−b² ट्रिक',en:'a²−b² trick'},b:{hi:'जैसे 105²−95² = (105+95)(105−95) = 200×10 = <mark>2000</mark>।',en:'105²−95² = 200×10 = <mark>2000</mark>.'}},
+{h:{hi:'x + 1/x = k',en:'x + 1/x = k'},b:{hi:'तो <mark>x² + 1/x² = k² − 2</mark>।',en:'Then <mark>x²+1/x² = k²−2</mark>.'}},
+{h:{hi:'शून्य नियम',en:'Zero rule'},b:{hi:'ab=0 → <mark>a=0 या b=0</mark>।',en:'ab=0 → <mark>a=0 or b=0</mark>.'}}],
+examples:[
+{q:{hi:'यदि x + 1/x = 4, तो x² + 1/x² = ?',en:'If x+1/x=4, x²+1/x²?'},
+s:{hi:'k²−2 = 16−2 = <mark>14</mark>।',en:'16−2 = <mark>14</mark>.'}},
+{q:{hi:'(998)² का मान?',en:'Value of 998²?'},
+s:{hi:'(1000−2)² = 1000000 − 4000 + 4 = <mark>996004</mark>।',en:'(1000−2)² = <mark>996004</mark>.'}}],
+quiz:[
+{q:{hi:'(a+b)² − (a−b)² = ?',en:'(a+b)² − (a−b)² = ?'},
+o:[{hi:'2ab',en:'2ab'},{hi:'4ab',en:'4ab'},{hi:'a²+b²',en:'a²+b²'},{hi:'0',en:'0'}],a:1,
+e:{hi:'(a²+2ab+b²)−(a²−2ab+b²) = 4ab।',en:'= 4ab.'}},
+{q:{hi:'यदि x − 1/x = 3, तो x² + 1/x² = ?',en:'x−1/x=3, x²+1/x²?'},
+o:[{hi:'7',en:'7'},{hi:'11',en:'11'},{hi:'9',en:'9'},{hi:'5',en:'5'}],a:1,
+e:{hi:'(x−1/x)² = x²+1/x²−2 → 9+2 = 11।',en:'9+2 = 11.'}},
+{q:{hi:'97 × 103 = ?',en:'97 × 103 = ?'},
+o:[{hi:'9991',en:'9991'},{hi:'10009',en:'10009'},{hi:'9999',en:'9999'},{hi:'10001',en:'10001'}],a:0,
+e:{hi:'(100−3)(100+3) = 10000−9 = 9991।',en:'10000−9 = 9991.'}},
+{q:{hi:'यदि a+b=8, ab=15, तो a²+b² = ?',en:'a+b=8, ab=15. a²+b²?'},
+o:[{hi:'64',en:'64'},{hi:'34',en:'34'},{hi:'49',en:'49'},{hi:'30',en:'30'}],a:1,
+e:{hi:'(a+b)²−2ab = 64−30 = 34।',en:'64−30 = 34.'}},
+{q:{hi:'2x + 5 = 15 में x = ?',en:'2x+5=15. x?'},
+o:[{hi:'4',en:'4'},{hi:'5',en:'5'},{hi:'6',en:'6'},{hi:'10',en:'10'}],a:1,
+e:{hi:'2x=10 → x=5।',en:'x=5.'}}]});
+})();

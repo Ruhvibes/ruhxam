@@ -1,0 +1,11 @@
+{
+ "version": 1,
+ "updated": "2026-10-11",
+ "counts": {
+  "maths": 22,
+  "reasoning": 17,
+  "science": 3,
+  "gk": 6,
+  "ca": 3
+ }
+}

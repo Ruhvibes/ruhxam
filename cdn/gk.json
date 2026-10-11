@@ -1,0 +1,1853 @@
+{
+ "version": 1,
+ "part": "gk",
+ "count": 6,
+ "chapters": [
+  {
+   "id": "g01",
+   "part": "gk",
+   "num": 1,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "भारतीय इतिहास",
+    "en": "Indian History"
+   },
+   "concept": {
+    "hi": "प्राचीन, मध्यकालीन एवं आधुनिक भारत के <mark>प्रमुख तथ्य</mark>।",
+    "en": "Key <mark>facts</mark>: ancient, medieval, modern India."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "सिंधु सभ्यता",
+      "en": "Indus Valley"
+     },
+     "b": {
+      "hi": "<mark>हड़प्पा</mark> (1921, दयाराम साहनी), <mark>मोहनजोदड़ो</mark> (1922, राखालदास बनर्जी)। नदी: <mark>रावी/सिंधु</mark>।",
+      "en": "<mark>Harappa</mark> (1921), <mark>Mohenjodaro</mark> (1922)."
+     }
+    },
+    {
+     "h": {
+      "hi": "वैदिक काल",
+      "en": "Vedic period"
+     },
+     "b": {
+      "hi": "ऋग्वेद <mark>सबसे प्राचीन</mark>। गायत्री मंत्र <mark>ऋग्वेद</mark> में।",
+      "en": "Rigveda <mark>oldest</mark>; Gayatri mantra in <mark>Rigveda</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मौर्य साम्राज्य",
+      "en": "Maurya Empire"
+     },
+     "b": {
+      "hi": "संस्थापक <mark>चंद्रगुप्त मौर्य</mark> (321 ई.पू.)। अशोक का <mark>कलिंग युद्ध (261 ई.पू.)</mark>।",
+      "en": "Founder <mark>Chandragupta Maurya</mark>. Ashoka's <mark>Kalinga war (261 BC)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "गुप्त काल",
+      "en": "Gupta period"
+     },
+     "b": {
+      "hi": "<mark>स्वर्ण युग</mark>। समुद्रगुप्त, चंद्रगुप्त II (विक्रमादित्य)। शून्य की खोज <mark>आर्यभट्ट</mark>।",
+      "en": "<mark>Golden age</mark>. Zero: <mark>Aryabhata</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मध्यकाल",
+      "en": "Medieval"
+     },
+     "b": {
+      "hi": "दिल्ली सल्तनत (1206) — <mark>कुतुबुद्दीन ऐबक</mark>। मुगल संस्थापक <mark>बाबर (1526, पानीपत)</mark>। अकबर (1556–1605)।",
+      "en": "Delhi Sultanate <mark>Qutubuddin Aibak</mark>. Mughal founder <mark>Babar (1526)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "1857 की क्रांति",
+      "en": "Revolt of 1857"
+     },
+     "b": {
+      "hi": "प्रारंभ <mark>मेरठ (10 मई)</mark>; नेता: <mark>मंगल पांडे (बैरकपुर)</mark>, रानी लक्ष्मीबाई, तात्या टोपे।",
+      "en": "Started <mark>Meerut</mark>; <mark>Mangal Pandey</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "गांधी युग",
+      "en": "Gandhi era"
+     },
+     "b": {
+      "hi": "चंपारण (1917), <mark>असहयोग (1920)</mark>, <mark>दांडी मार्च (1930)</mark>, <mark>भारत छोड़ो (1942)</mark>।",
+      "en": "<mark>Non-cooperation (1920)</mark>, <mark>Dandi March (1930)</mark>, <mark>Quit India (1942)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "स्वतंत्रता",
+      "en": "Independence"
+     },
+     "b": {
+      "hi": "<mark>15 अगस्त 1947</mark>। प्रथम राष्ट्रपति <mark>राजेंद्र प्रसाद</mark>; प्रथम PM <mark>नेहरू</mark>।",
+      "en": "<mark>15 Aug 1947</mark>. First President <mark>Rajendra Prasad</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "बिहार",
+      "en": "Bihar"
+     },
+     "b": {
+      "hi": "प्राचीन <mark>मगध</mark>; नालंदा विश्वविद्यालय (<mark>कुमारगुप्त</mark>); चंपारण सत्याग्रह।",
+      "en": "Ancient <mark>Magadha</mark>; Nalanda university."
+     }
+    },
+    {
+     "h": {
+      "hi": "महत्वपूर्ण युद्ध",
+      "en": "Key battles"
+     },
+     "b": {
+      "hi": "तराइन (1191/92), <mark>पानीपत 1526/1556/1761</mark>, हल्दीघाटी (1576), प्लासी (1757)।",
+      "en": "<mark>Panipat 1526/1556/1761</mark>, Plassey (1757)."
+     }
+    },
+    {
+     "h": {
+      "hi": "सामाजिक सुधार",
+      "en": "Social reformers"
+     },
+     "b": {
+      "hi": "राजा राममोहन राय (<mark>ब्रह्म समाज</mark>), दयानंद (<mark>आर्य समाज</mark>), विवेकानंद (<mark>रामकृष्ण मिशन</mark>)।",
+      "en": "Raja Ram Mohan Roy, Dayananda, Vivekananda."
+     }
+    },
+    {
+     "h": {
+      "hi": "उपाधियाँ",
+      "en": "Titles"
+     },
+     "b": {
+      "hi": "महात्मा (गांधी), <mark>नेताजी (बोस)</mark>, सरदार (पटेल), <mark>लोकमान्य (तिलक)</mark>।",
+      "en": "Mahatma (Gandhi), <mark>Netaji (Bose)</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "पानीपत की 3 लड़ाइयाँ",
+      "en": "Three Battles of Panipat"
+     },
+     "b": {
+      "hi": "\"<mark>बा-अक-अह</mark>\" - 1526: बाबर (इब्राहिम लोदी को हराया), 1556: अकबर (हेमू को हराया), 1761: अहमदशाह अब्दाली (मराठों को हराया)।",
+      "en": "1526 Babur, 1556 Akbar, 1761 Ahmad Shah Abdali."
+     }
+    },
+    {
+     "h": {
+      "hi": "गांधी आंदोलन क्रम",
+      "en": "Gandhi movements in order"
+     },
+     "b": {
+      "hi": "\"<mark>20-30-42</mark>\" - 1920 असहयोग आंदोलन, 1930 सविनय अवज्ञा (दांडी मार्च), 1942 भारत छोड़ो आंदोलन। \"बीस में रोको, तीस में तोड़ो, बयालीस में छोड़ो\"।",
+      "en": "1920 Non-Cooperation, 1930 Civil Disobedience, 1942 Quit India."
+     }
+    },
+    {
+     "h": {
+      "hi": "मुगल शासक क्रम",
+      "en": "Mughal rulers in order"
+     },
+     "b": {
+      "hi": "\"<mark>ब-ह-अ-ज-श-औ</mark>\" - बाबर, हुमायूँ, अकबर, जहाँगीर, शाहजहाँ, औरंगज़ेब। वंश-क्रम से भी याद रखें: बाबर का हुमायूँ, हुमायूँ का अकबर।",
+      "en": "Babur, Humayun, Akbar, Jahangir, Shahjahan, Aurangzeb."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "1857 की क्रांति कहाँ से प्रारंभ हुई?",
+      "en": "Where did the 1857 revolt start?"
+     },
+     "o": [
+      {
+       "hi": "दिल्ली",
+       "en": "Delhi"
+      },
+      {
+       "hi": "मेरठ",
+       "en": "Meerut"
+      },
+      {
+       "hi": "कानपुर",
+       "en": "Kanpur"
+      },
+      {
+       "hi": "झाँसी",
+       "en": "Jhansi"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "10 मई 1857, मेरठ।",
+      "en": "10 May 1857, Meerut."
+     }
+    },
+    {
+     "q": {
+      "hi": "दांडी मार्च कब हुआ?",
+      "en": "When was the Dandi March?"
+     },
+     "o": [
+      {
+       "hi": "1920",
+       "en": "1920"
+      },
+      {
+       "hi": "1930",
+       "en": "1930"
+      },
+      {
+       "hi": "1942",
+       "en": "1942"
+      },
+      {
+       "hi": "1947",
+       "en": "1947"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "12 मार्च 1930।",
+      "en": "12 March 1930."
+     }
+    },
+    {
+     "q": {
+      "hi": "पानीपत का प्रथम युद्ध (1526) किनके बीच?",
+      "en": "First Battle of Panipat (1526)?"
+     },
+     "o": [
+      {
+       "hi": "अकबर-हेमू",
+       "en": "Akbar-Hemu"
+      },
+      {
+       "hi": "बाबर-इब्राहिम लोदी",
+       "en": "Babar-Ibrahim Lodi"
+      },
+      {
+       "hi": "औरंगज़ेब-दारा",
+       "en": "Aurangzeb-Dara"
+      },
+      {
+       "hi": "अहमद शाह-दुर्रानी",
+       "en": "Ahmad Shah Durrani"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "बाबर बनाम इब्राहिम लोदी।",
+      "en": "Babar vs Ibrahim Lodi."
+     }
+    },
+    {
+     "q": {
+      "hi": "भारत के प्रथम राष्ट्रपति?",
+      "en": "First President of India?"
+     },
+     "o": [
+      {
+       "hi": "नेहरू",
+       "en": "Nehru"
+      },
+      {
+       "hi": "गांधी",
+       "en": "Gandhi"
+      },
+      {
+       "hi": "राजेंद्र प्रसाद",
+       "en": "Rajendra Prasad"
+      },
+      {
+       "hi": "अंबेडकर",
+       "en": "Ambedkar"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "डॉ. राजेंद्र प्रसाद।",
+      "en": "Dr. Rajendra Prasad."
+     }
+    },
+    {
+     "q": {
+      "hi": "नालंदा विश्वविद्यालय की स्थापना?",
+      "en": "Founder of Nalanda University?"
+     },
+     "o": [
+      {
+       "hi": "अशोक",
+       "en": "Ashoka"
+      },
+      {
+       "hi": "कुमारगुप्त",
+       "en": "Kumargupta"
+      },
+      {
+       "hi": "हर्षवर्धन",
+       "en": "Harshavardhana"
+      },
+      {
+       "hi": "कनिष्क",
+       "en": "Kanishka"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "कुमारगुप्त (गुप्त काल)।",
+      "en": "Kumargupta."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "g02",
+   "part": "gk",
+   "num": 2,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "भूगोल",
+    "en": "Geography"
+   },
+   "concept": {
+    "hi": "भारत एवं विश्व भूगोल के <mark>प्रमुख तथ्य</mark>।",
+    "en": "Key <mark>facts</mark>: India & world geography."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "भारत — स्थिति",
+      "en": "India — location"
+     },
+     "b": {
+      "hi": "क्षेत्रफल <mark>32.87 लाख km²</mark> (विश्व में 7वाँ)। कर्क रेखा <mark>8 राज्यों</mark> से गुजरती है।",
+      "en": "Area <mark>3.287M km²</mark> (7th). Tropic of Cancer passes <mark>8 states</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "नदियाँ",
+      "en": "Rivers"
+     },
+     "b": {
+      "hi": "गंगा (2525 km, <mark>गोमुख</mark> से), यमुना, <mark>ब्रह्मपुत्र (तिब्बत: यारलुंग)</mark>, सिंधु, नर्मदा (<mark>पश्चिम</mark> की ओर)।",
+      "en": "Ganga from <mark>Gomukh</mark>; Narmada flows <mark>west</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पर्वत",
+      "en": "Mountains"
+     },
+     "b": {
+      "hi": "एवरेस्ट <mark>8848m</mark> (नेपाल); K2 <mark>8611m</mark>; कंचनजंगा <mark>8598m</mark> (भारत की सबसे ऊँची)।",
+      "en": "Everest <mark>8848m</mark>; Kanchenjunga <mark>8598m</mark> (India's highest)."
+     }
+    },
+    {
+     "h": {
+      "hi": "राज्य",
+      "en": "States"
+     },
+     "b": {
+      "hi": "सबसे बड़ा राज्य <mark>राजस्थान</mark>; सबसे छोटा <mark>गोवा</mark>। केंद्रशासित प्रदेश <mark>8</mark>।",
+      "en": "Largest <mark>Rajasthan</mark>; smallest <mark>Goa</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "जलवायु",
+      "en": "Climate"
+     },
+     "b": {
+      "hi": "मानसून: दक्षिण-पश्चिम (<mark>जून-सितंबर</mark>)। चेरापूँजी/मासिनराम <mark>सर्वाधिक वर्षा</mark>।",
+      "en": "SW monsoon <mark>Jun–Sep</mark>; Mawsynram <mark>max rainfall</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मिट्टी/फसल",
+      "en": "Soil/crops"
+     },
+     "b": {
+      "hi": "काली मिट्टी = <mark>कपास</mark>; जलोढ़ = <mark>गेहूँ-चावल</mark>। रबी: गेहूँ; खरीफ: <mark>चावल</mark>।",
+      "en": "Black soil = <mark>cotton</mark>; Rabi: wheat; Kharif: <mark>rice</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "विश्व",
+      "en": "World"
+     },
+     "b": {
+      "hi": "सबसे बड़ा महाद्वीप <mark>एशिया</mark>; सबसे बड़ा महासागर <mark>प्रशांत</mark>; सबसे लंबी नदी <mark>नील</mark>।",
+      "en": "Largest continent <mark>Asia</mark>; ocean <mark>Pacific</mark>; river <mark>Nile</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मरुस्थल",
+      "en": "Deserts"
+     },
+     "b": {
+      "hi": "सहारा <mark>सबसे बड़ा</mark>; भारत में <mark>थार</mark> (राजस्थान)।",
+      "en": "Sahara <mark>largest</mark>; Thar in <mark>Rajasthan</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "झीलें",
+      "en": "Lakes"
+     },
+     "b": {
+      "hi": "चिल्का (<mark>ओडिशा, खारे पानी</mark>), वुलर (<mark>कश्मीर, मीठे पानी की सबसे बड़ी</mark>), सांभर (<mark>नमक</mark>)।",
+      "en": "Chilka (<mark>Odisha</mark>), Wular (<mark>Kashmir</mark>)."
+     }
+    },
+    {
+     "h": {
+      "hi": "बंदरगाह/हवाई",
+      "en": "Ports"
+     },
+     "b": {
+      "hi": "सबसे बड़ा बंदरगाह <mark>मुंबई (न्हावा शेवा)</mark>; कोलकाता <mark>नदी तटीय</mark> बंदरगाह।",
+      "en": "Largest port <mark>Mumbai</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "रेखाएँ",
+      "en": "Lines"
+     },
+     "b": {
+      "hi": "विषुवत् <mark>0°</mark>; कर्क <mark>23.5°N</mark>; मकर <mark>23.5°S</mark>; अंतर्राष्ट्रीय तिथि रेखा <mark>180°</mark>।",
+      "en": "Equator <mark>0°</mark>; Tropic of Cancer <mark>23.5°N</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "बिहार भूगोल",
+      "en": "Bihar geography"
+     },
+     "b": {
+      "hi": "गंगा <mark>बिहार को दो भागों</mark> में बाँटती है। कोसी = \"<mark>बिहार का शोक</mark>\"।",
+      "en": "Ganga divides Bihar; Kosi = \"<mark>sorrow of Bihar</mark>\"."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "भारत के 7 पड़ोसी देश",
+      "en": "7 neighbours of India"
+     },
+     "b": {
+      "hi": "\"<mark>पा-चि-ने-भू-बां-म्या-अफ</mark>\" - पाकिस्तान, चीन, नेपाल, भूटान, बांग्लादेश, म्यांमार, अफगानिस्तान (स्थल सीमा वाले)। श्रीलंका और मालदीव समुद्री पड़ोसी हैं।",
+      "en": "Pakistan, China, Nepal, Bhutan, Bangladesh, Myanmar, Afghanistan."
+     }
+    },
+    {
+     "h": {
+      "hi": "कर्क रेखा के 8 राज्य",
+      "en": "8 states on the Tropic of Cancer"
+     },
+     "b": {
+      "hi": "\"<mark>गु-रा-म-छ-झ-बं-त्रि-मि</mark>\" - गुजरात, राजस्थान, मध्यप्रदेश, छत्तीसगढ़, झारखंड, पश्चिम बंगाल, त्रिपुरा, मिज़ोरम (पश्चिम से पूर्व की ओर क्रम)।",
+      "en": "Gujarat, Rajasthan, MP, Chhattisgarh, Jharkhand, WB, Tripura, Mizoram."
+     }
+    },
+    {
+     "h": {
+      "hi": "गंगा की सहायक नदियाँ",
+      "en": "Tributaries of the Ganga"
+     },
+     "b": {
+      "hi": "बाएँ से: \"<mark>घा-गं-को</mark>\" - घाघरा, गंडक, कोसी (उत्तर से)। दाएँ से: यमुना, सोन (दक्षिण से)। यमुना गंगा की सबसे बड़ी सहायक नदी है।",
+      "en": "Left: Ghaghara, Gandak, Kosi. Right: Yamuna, Son - the largest tributary."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "भारत का सबसे बड़ा राज्य (क्षेत्रफल)?",
+      "en": "Largest Indian state by area?"
+     },
+     "o": [
+      {
+       "hi": "मध्य प्रदेश",
+       "en": "MP"
+      },
+      {
+       "hi": "राजस्थान",
+       "en": "Rajasthan"
+      },
+      {
+       "hi": "महाराष्ट्र",
+       "en": "Maharashtra"
+      },
+      {
+       "hi": "उत्तर प्रदेश",
+       "en": "UP"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "राजस्थान।",
+      "en": "Rajasthan."
+     }
+    },
+    {
+     "q": {
+      "hi": "गंगा नदी का उद्गम?",
+      "en": "Origin of Ganga?"
+     },
+     "o": [
+      {
+       "hi": "गोमुख",
+       "en": "Gomukh"
+      },
+      {
+       "hi": "मानसरोवर",
+       "en": "Manasarovar"
+      },
+      {
+       "hi": "अमकंटक",
+       "en": "Amarkantak"
+      },
+      {
+       "hi": "नासिक",
+       "en": "Nashik"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "गोमुख (उत्तराखंड)।",
+      "en": "Gomukh."
+     }
+    },
+    {
+     "q": {
+      "hi": "कर्क रेखा कितने भारतीय राज्यों से गुजरती है?",
+      "en": "Tropic of Cancer passes through how many states?"
+     },
+     "o": [
+      {
+       "hi": "6",
+       "en": "6"
+      },
+      {
+       "hi": "7",
+       "en": "7"
+      },
+      {
+       "hi": "8",
+       "en": "8"
+      },
+      {
+       "hi": "9",
+       "en": "9"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "8 राज्य।",
+      "en": "8 states."
+     }
+    },
+    {
+     "q": {
+      "hi": "विश्व की सबसे लंबी नदी?",
+      "en": "Longest river in the world?"
+     },
+     "o": [
+      {
+       "hi": "अमेज़न",
+       "en": "Amazon"
+      },
+      {
+       "hi": "नील",
+       "en": "Nile"
+      },
+      {
+       "hi": "गंगा",
+       "en": "Ganga"
+      },
+      {
+       "hi": "यांग्त्ज़ी",
+       "en": "Yangtze"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "नील नदी।",
+      "en": "Nile."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"बिहार का शोक\" किस नदी को कहते हैं?",
+      "en": "Which river is \"sorrow of Bihar\"?"
+     },
+     "o": [
+      {
+       "hi": "गंगा",
+       "en": "Ganga"
+      },
+      {
+       "hi": "कोसी",
+       "en": "Kosi"
+      },
+      {
+       "hi": "गंडक",
+       "en": "Gandak"
+      },
+      {
+       "hi": "सोन",
+       "en": "Son"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "कोसी नदी।",
+      "en": "Kosi."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "g03",
+   "part": "gk",
+   "num": 3,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "भारतीय राजव्यवस्था",
+    "en": "Indian Polity"
+   },
+   "concept": {
+    "hi": "संविधान के <mark>प्रमुख अनुच्छेद व तथ्य</mark>।",
+    "en": "Key <mark>articles & facts</mark> of the Constitution."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "संविधान",
+      "en": "Constitution"
+     },
+     "b": {
+      "hi": "लागू <mark>26 जनवरी 1950</mark>; निर्माता <mark>डॉ. अंबेडकर</mark> (प्रारूप समिति अध्यक्ष); विश्व का <mark>सबसे लंबा लिखित</mark> संविधान।",
+      "en": "Enforced <mark>26 Jan 1950</mark>; architect <mark>Ambedkar</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "प्रस्तावना",
+      "en": "Preamble"
+     },
+     "b": {
+      "hi": "\"हम भारत के लोग…\"। समाजवादी, धर्मनिरपेक्ष शब्द <mark>42वें संशोधन (1976)</mark> से जुड़े।",
+      "en": "\"We the people…\". Socialist/Secular added by <mark>42nd amendment</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मौलिक अधिकार",
+      "en": "Fundamental rights"
+     },
+     "b": {
+      "hi": "अनुच्छेद <mark>12–35</mark>। समानता (14–18), स्वतंत्रता (19–22), शोषण के विरुद्ध (23–24), धार्मिक (25–28), शिक्षा (21A)।",
+      "en": "Articles <mark>12–35</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "अनुच्छेद",
+      "en": "Articles"
+     },
+     "b": {
+      "hi": "<mark>370</mark> (जम्मू-कश्मीर, निरस्त 2019), <mark>356</mark> (राष्ट्रपति शासन), <mark>352</mark> (आपातकाल), <mark>368</mark> (संशोधन)।",
+      "en": "<mark>370</mark> (J&K), <mark>356</mark> (President's rule), <mark>352</mark> (Emergency)."
+     }
+    },
+    {
+     "h": {
+      "hi": "राष्ट्रपति",
+      "en": "President"
+     },
+     "b": {
+      "hi": "प्रथम <mark>राजेंद्र प्रसाद</mark>; कार्यकाल <mark>5 वर्ष</mark>; निर्वाचन <mark>अप्रत्यक्ष</mark>।",
+      "en": "First <mark>Rajendra Prasad</mark>; term <mark>5 yrs</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "संसद",
+      "en": "Parliament"
+     },
+     "b": {
+      "hi": "लोकसभा (अधिकतम <mark>552</mark>), राज्यसभा (<mark>250</mark>)। धन विधेयक <mark>केवल लोकसभा</mark> में।",
+      "en": "Lok Sabha (max <mark>552</mark>); money bill <mark>only Lok Sabha</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "न्यायपालिका",
+      "en": "Judiciary"
+     },
+     "b": {
+      "hi": "सर्वोच्च न्यायालय (<mark>नई दिल्ली</mark>); प्रथम CJI <mark>हरिलाल कानिया</mark>।",
+      "en": "Supreme Court (<mark>New Delhi</mark>)."
+     }
+    },
+    {
+     "h": {
+      "hi": "राज्यपाल/मुख्यमंत्री",
+      "en": "Governor/CM"
+     },
+     "b": {
+      "hi": "राज्यपाल की नियुक्ति <mark>राष्ट्रपति</mark> करता है। पंचायती राज <mark>73वाँ संशोधन</mark>।",
+      "en": "Governor appointed by <mark>President</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मतदान",
+      "en": "Voting"
+     },
+     "b": {
+      "hi": "मतदान आयु <mark>18 वर्ष</mark> (61वाँ संशोधन)। निर्वाचन आयोग: <mark>सुनील…</mark> (वर्तमान देखें)।",
+      "en": "Voting age <mark>18</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "आपातकाल",
+      "en": "Emergency"
+     },
+     "b": {
+      "hi": "राष्ट्रीय आपातकाल (1975–77) अनुच्छेद <mark>352</mark> के तहत।",
+      "en": "1975–77 under Article <mark>352</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "मौलिक अधिकार अनुच्छेद",
+      "en": "Fundamental Rights articles"
+     },
+     "b": {
+      "hi": "<mark>अनुच्छेद 12-35</mark> - \"बारह से पैंतीस, अधिकारों की बस्ती\"। 6 अधिकार: समानता (14-18), स्वतंत्रता (19-22), शोषण के विरुद्ध (23-24), धर्म (25-28), संस्कृति-शिक्षा (29-30), संवैधानिक उपचार (32)।",
+      "en": "<mark>Articles 12-35</mark>: six fundamental rights."
+     }
+    },
+    {
+     "h": {
+      "hi": "तीन आपातकाल",
+      "en": "Three types of emergency"
+     },
+     "b": {
+      "hi": "\"<mark>352-356-360, बढ़ता क्रम</mark>\" - 352 राष्ट्रीय आपातकाल, 356 राज्य आपातकाल (राष्ट्रपति शासन), 360 वित्तीय आपातकाल।",
+      "en": "352 National, 356 State, 360 Financial - in ascending order."
+     }
+    },
+    {
+     "h": {
+      "hi": "राष्ट्रपति अनुच्छेद",
+      "en": "President-related articles"
+     },
+     "b": {
+      "hi": "<mark>अनुच्छेद 52-62</mark> - 52: राष्ट्रपति का पद, 53: कार्यपालिका शक्ति, 54-55: निर्वाचन, 60: शपथ, 61: महाभियोग। \"बावन से बासठ, राष्ट्रपति का हिसाब\"।",
+      "en": "<mark>Articles 52-62</mark>: office, powers, election, oath, impeachment."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "भारतीय संविधान कब लागू हुआ?",
+      "en": "When was the Constitution enforced?"
+     },
+     "o": [
+      {
+       "hi": "15 अगस्त 1947",
+       "en": "15 Aug 1947"
+      },
+      {
+       "hi": "26 जनवरी 1950",
+       "en": "26 Jan 1950"
+      },
+      {
+       "hi": "26 नवंबर 1949",
+       "en": "26 Nov 1949"
+      },
+      {
+       "hi": "2 अक्टूबर 1950",
+       "en": "2 Oct 1950"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "26 जनवरी 1950।",
+      "en": "26 January 1950."
+     }
+    },
+    {
+     "q": {
+      "hi": "संविधान सभा की प्रारूप समिति के अध्यक्ष?",
+      "en": "Chairman of the Drafting Committee?"
+     },
+     "o": [
+      {
+       "hi": "नेहरू",
+       "en": "Nehru"
+      },
+      {
+       "hi": "पटेल",
+       "en": "Patel"
+      },
+      {
+       "hi": "अंबेडकर",
+       "en": "Ambedkar"
+      },
+      {
+       "hi": "प्रसाद",
+       "en": "Prasad"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "डॉ. बी.आर. अंबेडकर।",
+      "en": "Dr. B.R. Ambedkar."
+     }
+    },
+    {
+     "q": {
+      "hi": "मौलिक अधिकार किस अनुच्छेद में?",
+      "en": "Fundamental Rights in which articles?"
+     },
+     "o": [
+      {
+       "hi": "12–35",
+       "en": "12–35"
+      },
+      {
+       "hi": "36–51",
+       "en": "36–51"
+      },
+      {
+       "hi": "1–11",
+       "en": "1–11"
+      },
+      {
+       "hi": "52–60",
+       "en": "52–60"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "अनुच्छेद 12–35।",
+      "en": "Articles 12–35."
+     }
+    },
+    {
+     "q": {
+      "hi": "राष्ट्रपति का कार्यकाल?",
+      "en": "President's term?"
+     },
+     "o": [
+      {
+       "hi": "4 वर्ष",
+       "en": "4 yrs"
+      },
+      {
+       "hi": "6 वर्ष",
+       "en": "6 yrs"
+      },
+      {
+       "hi": "5 वर्ष",
+       "en": "5 yrs"
+      },
+      {
+       "hi": "7 वर्ष",
+       "en": "7 yrs"
+      }
+     ],
+     "a": 2,
+     "e": {
+      "hi": "5 वर्ष।",
+      "en": "5 years."
+     }
+    },
+    {
+     "q": {
+      "hi": "धन विधेयक सर्वप्रथम कहाँ पेश होता है?",
+      "en": "Money Bill is first introduced in?"
+     },
+     "o": [
+      {
+       "hi": "राज्यसभा",
+       "en": "Rajya Sabha"
+      },
+      {
+       "hi": "लोकसभा",
+       "en": "Lok Sabha"
+      },
+      {
+       "hi": "दोनों में",
+       "en": "Both"
+      },
+      {
+       "hi": "राष्ट्रपति के पास",
+       "en": "President"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "केवल लोकसभा में।",
+      "en": "Only in Lok Sabha."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "g04",
+   "part": "gk",
+   "num": 4,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "भारतीय अर्थव्यवस्था",
+    "en": "Indian Economy"
+   },
+   "concept": {
+    "hi": "बजट, RBI, पंचवर्षीय योजनाएँ एवं <mark>प्रमुख आर्थिक तथ्य</mark>।",
+    "en": "Key <mark>economic facts</mark>: budget, RBI, plans."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "RBI",
+      "en": "RBI"
+     },
+     "b": {
+      "hi": "स्थापना <mark>1935</mark>; राष्ट्रीयकरण <mark>1949</mark>; मुख्यालय <mark>मुंबई</mark>। प्रथम गवर्नर <mark>ओसबोर्न स्मिथ</mark>।",
+      "en": "Established <mark>1935</mark>; HQ <mark>Mumbai</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "बजट",
+      "en": "Budget"
+     },
+     "b": {
+      "hi": "केंद्रीय बजट <mark>1 फरवरी</mark> को पेश। रेल बजट 2017 से <mark>आम बजट में विलय</mark>।",
+      "en": "Union budget on <mark>1 Feb</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पंचवर्षीय योजनाएँ",
+      "en": "Five-year plans"
+     },
+     "b": {
+      "hi": "प्रथम (1951–56) — <mark>हैरॉड-डोमर मॉडल</mark>। 12वीं अंतिम (2012–17); अब <mark>नीति आयोग</mark>।",
+      "en": "First plan (1951–56); now <mark>NITI Aayog</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मुद्रा",
+      "en": "Currency"
+     },
+     "b": {
+      "hi": "₹ चिह्न <mark>उदय कुमार</mark> ने डिज़ाइन किया। 1 रुपया = <mark>100 पैसे</mark>।",
+      "en": "₹ designed by <mark>Uday Kumar</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "कर",
+      "en": "Tax"
+     },
+     "b": {
+      "hi": "GST लागू <mark>1 जुलाई 2017</mark>। प्रत्यक्ष कर: <mark>आयकर</mark>; अप्रत्यक्ष: <mark>GST</mark>।",
+      "en": "GST from <mark>1 July 2017</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "बैंक",
+      "en": "Banks"
+     },
+     "b": {
+      "hi": "SBI (1955, पूर्व <mark>इंपीरियल बैंक</mark>); राष्ट्रीयकरण <mark>1969 (14 बैंक)</mark>।",
+      "en": "SBI (1955); nationalization <mark>1969</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "जनगणना",
+      "en": "Census"
+     },
+     "b": {
+      "hi": "प्रथम (1872), नियमित <mark>1881</mark> से; दशकीय। 2011: <mark>15वीं</mark> जनगणना।",
+      "en": "Regular since <mark>1881</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "कृषि",
+      "en": "Agriculture"
+     },
+     "b": {
+      "hi": "हरित क्रांति: <mark>एम.एस. स्वामीनाथन</mark>; श्वेत क्रांति (दूध): <mark>वर्गीज़ कुरियन</mark>।",
+      "en": "Green revolution: <mark>M.S. Swaminathan</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "उद्योग",
+      "en": "Industry"
+     },
+     "b": {
+      "hi": "प्रथम लौह-इस्पात: <mark>जमशेदपुर (1907, टाटा)</mark>।",
+      "en": "First steel plant: <mark>Jamshedpur (1907)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "GDP",
+      "en": "GDP"
+     },
+     "b": {
+      "hi": "आधार वर्ष <mark>2011–12</mark>। CSO गणना करता है।",
+      "en": "Base year <mark>2011–12</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "GST तिथि",
+      "en": "GST launch date"
+     },
+     "b": {
+      "hi": "<mark>1 जुलाई 2017</mark> - \"पहली जुलाई, एक कर व्यवस्था\"। 101वें संविधान संशोधन से लागू; अनुच्छेद 246A और 269A से जुड़ा है।",
+      "en": "<mark>1 July 2017</mark> - via the 101st Amendment."
+     }
+    },
+    {
+     "h": {
+      "hi": "RBI स्थापना",
+      "en": "RBI establishment"
+     },
+     "b": {
+      "hi": "<mark>1 अप्रैल 1935</mark> - RBI अधिनियम 1934 के तहत स्थापित; 1949 में राष्ट्रीयकरण हुआ। मुख्यालय: मुंबई। \"पैंतीस में बैंक, उनचास में सरकारी\"।",
+      "en": "Established <mark>1 April 1935</mark>; nationalised in 1949; HQ Mumbai."
+     }
+    },
+    {
+     "h": {
+      "hi": "क्रांति-व्यक्ति जोड़ी",
+      "en": "Revolution-person pairs"
+     },
+     "b": {
+      "hi": "\"<mark>हरी स्वामी, सफ़ेद कुरियन</mark>\" - हरित क्रांति = एम. एस. स्वामीनाथन, श्वेत क्रांति (दुग्ध) = वर्गीज़ कुरियन।",
+      "en": "Green = M.S. Swaminathan, White (milk) = Verghese Kurien."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "RBI की स्थापना कब हुई?",
+      "en": "When was RBI established?"
+     },
+     "o": [
+      {
+       "hi": "1947",
+       "en": "1947"
+      },
+      {
+       "hi": "1935",
+       "en": "1935"
+      },
+      {
+       "hi": "1949",
+       "en": "1949"
+      },
+      {
+       "hi": "1951",
+       "en": "1951"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "1 अप्रैल 1935।",
+      "en": "1 April 1935."
+     }
+    },
+    {
+     "q": {
+      "hi": "GST भारत में कब लागू हुआ?",
+      "en": "When was GST implemented?"
+     },
+     "o": [
+      {
+       "hi": "1 जुलाई 2017",
+       "en": "1 July 2017"
+      },
+      {
+       "hi": "1 अप्रैल 2016",
+       "en": "1 April 2016"
+      },
+      {
+       "hi": "15 अगस्त 2017",
+       "en": "15 Aug 2017"
+      },
+      {
+       "hi": "1 जनवरी 2018",
+       "en": "1 Jan 2018"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "1 जुलाई 2017।",
+      "en": "1 July 2017."
+     }
+    },
+    {
+     "q": {
+      "hi": "हरित क्रांति के जनक?",
+      "en": "Father of Green Revolution (India)?"
+     },
+     "o": [
+      {
+       "hi": "वर्गीज़ कुरियन",
+       "en": "Verghese Kurien"
+      },
+      {
+       "hi": "एम.एस. स्वामीनाथन",
+       "en": "M.S. Swaminathan"
+      },
+      {
+       "hi": "नॉर्मन बोरलॉग",
+       "en": "Norman Borlaug"
+      },
+      {
+       "hi": "पी.सी. महालनोबिस",
+       "en": "P.C. Mahalanobis"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "एम.एस. स्वामीनाथन।",
+      "en": "M.S. Swaminathan."
+     }
+    },
+    {
+     "q": {
+      "hi": "बैंकों का राष्ट्रीयकरण (प्रथम चरण)?",
+      "en": "First bank nationalization?"
+     },
+     "o": [
+      {
+       "hi": "1969",
+       "en": "1969"
+      },
+      {
+       "hi": "1980",
+       "en": "1980"
+      },
+      {
+       "hi": "1971",
+       "en": "1971"
+      },
+      {
+       "hi": "1991",
+       "en": "1991"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "1969 में 14 बैंक।",
+      "en": "14 banks in 1969."
+     }
+    },
+    {
+     "q": {
+      "hi": "नीति आयोग की स्थापना?",
+      "en": "NITI Aayog established?"
+     },
+     "o": [
+      {
+       "hi": "2014",
+       "en": "2014"
+      },
+      {
+       "hi": "2015",
+       "en": "2015"
+      },
+      {
+       "hi": "2016",
+       "en": "2016"
+      },
+      {
+       "hi": "2013",
+       "en": "2013"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "1 जनवरी 2015।",
+      "en": "1 January 2015."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "g05",
+   "part": "gk",
+   "num": 5,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "खेल",
+    "en": "Sports"
+   },
+   "concept": {
+    "hi": "प्रमुख खेल, ट्रॉफी एवं <mark>खिलाड़ी तथ्य</mark>।",
+    "en": "Key <mark>sports facts</mark>."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "राष्ट्रीय खेल",
+      "en": "National sport"
+     },
+     "b": {
+      "hi": "भारत का <mark>कोई आधिकारिक राष्ट्रीय खेल नहीं</mark> (हॉकी अनौपचारिक)।",
+      "en": "India has <mark>no official</mark> national sport."
+     }
+    },
+    {
+     "h": {
+      "hi": "ओलंपिक",
+      "en": "Olympics"
+     },
+     "b": {
+      "hi": "प्राचीन: <mark>यूनान (776 ई.पू.)</mark>; आधुनिक: <mark>1896 एथेंस</mark>। भारत का प्रथम व्यक्तिगत स्वर्ण: <mark>अभिनव बिंद्रा (2008)</mark>।",
+      "en": "Modern: <mark>1896 Athens</mark>. India's first individual gold: <mark>Abhinav Bindra (2008)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "क्रिकेट",
+      "en": "Cricket"
+     },
+     "b": {
+      "hi": "विश्व कप: भारत <mark>1983, 2011</mark>। प्रथम विश्व कप <mark>1975 (वेस्टइंडीज़)</mark>।",
+      "en": "India won <mark>1983, 2011</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "हॉकी",
+      "en": "Hockey"
+     },
+     "b": {
+      "hi": "भारत ने <mark>8 स्वर्ण</mark> (1928–1980)। ध्यानचंद = \"<mark>हॉकी का जादूगर</mark>\"।",
+      "en": "India: <mark>8 golds</mark>. Dhyan Chand = \"<mark>wizard</mark>\"."
+     }
+    },
+    {
+     "h": {
+      "hi": "ट्रॉफी",
+      "en": "Trophies"
+     },
+     "b": {
+      "hi": "रणजी (क्रिकेट), <mark>डूरंड (फुटबॉल)</mark>, <mark>थॉमस कप (बैडमिंटन)</mark>, <mark>डेविस कप (टेनिस)</mark>।",
+      "en": "Ranji (cricket), <mark>Durand (football)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "खेल-मैदान",
+      "en": "Playfields"
+     },
+     "b": {
+      "hi": "क्रिकेट: <mark>पिच</mark>; टेनिस: <mark>कोर्ट</mark>; फुटबॉल: <mark>फील्ड</mark>; गोल्फ: <mark>कोर्स</mark>।",
+      "en": "Cricket: <mark>pitch</mark>; golf: <mark>course</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "पुरस्कार",
+      "en": "Awards"
+     },
+     "b": {
+      "hi": "<mark>मेजर ध्यानचंद खेल रत्न</mark> (सर्वोच्च); <mark>अर्जुन पुरस्कार</mark>; <mark>द्रोणाचार्य</mark> (कोच)।",
+      "en": "<mark>Khel Ratna</mark> (highest); <mark>Arjuna Award</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "बिहार",
+      "en": "Bihar"
+     },
+     "b": {
+      "hi": "<mark>माउंट एवरेस्ट</mark> फतह करने वाले बिहार के पर्वतारोही (वर्तमान तथ्य CDN से)।",
+      "en": "Bihar mountaineers (see CDN updates)."
+     }
+    },
+    {
+     "h": {
+      "hi": "एशियाई खेल",
+      "en": "Asian Games"
+     },
+     "b": {
+      "hi": "प्रथम <mark>1951, नई दिल्ली</mark>।",
+      "en": "First <mark>1951, New Delhi</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "फीफा",
+      "en": "FIFA"
+     },
+     "b": {
+      "hi": "फुटबॉल विश्व कप <mark>हर 4 वर्ष</mark>।",
+      "en": "Football World Cup every <mark>4 years</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "ट्रॉफी-खेल जोड़ियाँ",
+      "en": "Trophy-sport pairs"
+     },
+     "b": {
+      "hi": "\"<mark>रणजी-क्रिकेट, डूरंड-फुटबॉल, थॉमस-बैडमिंटन, डेविस-टेनिस</mark>\" - र-क्रि, डू-फु, थो-बै, डे-टे क्रम से याद करें।",
+      "en": "Ranji=Cricket, Durand=Football, Thomas=Badminton, Davis=Tennis."
+     }
+    },
+    {
+     "h": {
+      "hi": "हॉकी 8 स्वर्ण",
+      "en": "Hockey - 8 golds"
+     },
+     "b": {
+      "hi": "भारत ने ओलंपिक हॉकी में <mark>8 स्वर्ण पदक</mark> जीते (1928 से 1980 तक) - \"आठ बार का चैंपियन\"।",
+      "en": "India won <mark>8</mark> Olympic hockey golds (1928-1980)."
+     }
+    },
+    {
+     "h": {
+      "hi": "आधुनिक ओलंपिक 1896",
+      "en": "Modern Olympics 1896"
+     },
+     "b": {
+      "hi": "<mark>1896, एथेंस</mark> - \"अठारह-छियानवे, एथेंस से शुरुआत\"। भारत ने 1900 पेरिस ओलंपिक में पहली बार भाग लिया था।",
+      "en": "Started in <mark>1896 Athens</mark>; India first took part in 1900 Paris."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "भारत ने हॉकी में कितने ओलंपिक स्वर्ण जीते?",
+      "en": "Olympic golds in hockey for India?"
+     },
+     "o": [
+      {
+       "hi": "6",
+       "en": "6"
+      },
+      {
+       "hi": "8",
+       "en": "8"
+      },
+      {
+       "hi": "10",
+       "en": "10"
+      },
+      {
+       "hi": "5",
+       "en": "5"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "8 स्वर्ण (1928–1980)।",
+      "en": "8 golds."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"हॉकी का जादूगर\" किसे कहते हैं?",
+      "en": "Who is the \"wizard of hockey\"?"
+     },
+     "o": [
+      {
+       "hi": "मिल्खा सिंह",
+       "en": "Milkha Singh"
+      },
+      {
+       "hi": "ध्यानचंद",
+       "en": "Dhyan Chand"
+      },
+      {
+       "hi": "पी.टी. उषा",
+       "en": "P.T. Usha"
+      },
+      {
+       "hi": "सचिन",
+       "en": "Sachin"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "मेजर ध्यानचंद।",
+      "en": "Major Dhyan Chand."
+     }
+    },
+    {
+     "q": {
+      "hi": "भारत ने क्रिकेट विश्व कप कब-कब जीता?",
+      "en": "India's Cricket World Cup wins?"
+     },
+     "o": [
+      {
+       "hi": "1983, 2011",
+       "en": "1983, 2011"
+      },
+      {
+       "hi": "1987, 2015",
+       "en": "1987, 2015"
+      },
+      {
+       "hi": "1983, 2007",
+       "en": "1983, 2007"
+      },
+      {
+       "hi": "2011, 2019",
+       "en": "2011, 2019"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "1983 (कपिल देव), 2011 (धोनी)।",
+      "en": "1983 and 2011."
+     }
+    },
+    {
+     "q": {
+      "hi": "थॉमस कप किस खेल से संबंधित?",
+      "en": "Thomas Cup is related to?"
+     },
+     "o": [
+      {
+       "hi": "टेनिस",
+       "en": "Tennis"
+      },
+      {
+       "hi": "बैडमिंटन",
+       "en": "Badminton"
+      },
+      {
+       "hi": "फुटबॉल",
+       "en": "Football"
+      },
+      {
+       "hi": "क्रिकेट",
+       "en": "Cricket"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "बैडमिंटन।",
+      "en": "Badminton."
+     }
+    },
+    {
+     "q": {
+      "hi": "भारत का प्रथम व्यक्तिगत ओलंपिक स्वर्ण?",
+      "en": "India's first individual Olympic gold?"
+     },
+     "o": [
+      {
+       "hi": "सुशील कुमार",
+       "en": "Sushil Kumar"
+      },
+      {
+       "hi": "अभिनव बिंद्रा",
+       "en": "Abhinav Bindra"
+      },
+      {
+       "hi": "विजेंदर",
+       "en": "Vijender"
+      },
+      {
+       "hi": "मैरी कॉम",
+       "en": "Mary Kom"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "अभिनव बिंद्रा (2008, निशानेबाज़ी)।",
+      "en": "Abhinav Bindra (2008, shooting)."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  },
+  {
+   "id": "g06",
+   "part": "gk",
+   "num": 6,
+   "kind": "revision",
+   "exams": [
+    "all"
+   ],
+   "title": {
+    "hi": "पुरस्कार, पुस्तकें एवं विविध",
+    "en": "Awards, Books & Misc"
+   },
+   "concept": {
+    "hi": "राष्ट्रीय पुरस्कार, प्रसिद्ध पुस्तकें एवं <mark>विविध तथ्य</mark>।",
+    "en": "National <mark>awards, books & misc facts</mark>."
+   },
+   "tricks": [
+    {
+     "h": {
+      "hi": "भारत रत्न",
+      "en": "Bharat Ratna"
+     },
+     "b": {
+      "hi": "सर्वोच्च नागरिक सम्मान (<mark>1954</mark> से)। प्रथम: <mark>राधाकृष्णन, राजाजी, सी.वी. रमन</mark>।",
+      "en": "Highest civilian award (from <mark>1954</mark>)."
+     }
+    },
+    {
+     "h": {
+      "hi": "पद्म पुरस्कार",
+      "en": "Padma awards"
+     },
+     "b": {
+      "hi": "क्रम: <mark>पद्म विभूषण > पद्म भूषण > पद्म श्री</mark>।",
+      "en": "Order: <mark>Vibhushan > Bhushan > Shri</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "नोबेल (भारतीय)",
+      "en": "Nobel (Indians)"
+     },
+     "b": {
+      "hi": "<mark>रवींद्रनाथ टैगोर (1913, साहित्य)</mark>; सी.वी. रमन (1930); मदर टेरेसा (1979); अमर्त्य सेन (1998)।",
+      "en": "<mark>Tagore (1913)</mark>; C.V. Raman (1930); Amartya Sen (1998)."
+     }
+    },
+    {
+     "h": {
+      "hi": "पुस्तकें",
+      "en": "Books"
+     },
+     "b": {
+      "hi": "<mark>गीता</mark>: वेदव्यास; <mark>रामायण</mark>: वाल्मीकि; <mark>अर्थशास्त्र</mark>: कौटिल्य; <mark>इंडिका</mark>: मेगस्थनीज़।",
+      "en": "<mark>Arthashastra</mark>: Kautilya; <mark>Indica</mark>: Megasthenes."
+     }
+    },
+    {
+     "h": {
+      "hi": "आधुनिक पुस्तकें",
+      "en": "Modern books"
+     },
+     "b": {
+      "hi": "<mark>गोदान</mark>: प्रेमचंद; <mark>गाइड</mark>: आर.के. नारायण; <mark>मालगुडी डेज़</mark>: नारायण।",
+      "en": "<mark>Godan</mark>: Premchand."
+     }
+    },
+    {
+     "h": {
+      "hi": "प्रथम (भारत)",
+      "en": "Firsts (India)"
+     },
+     "b": {
+      "hi": "प्रथम महिला PM <mark>इंदिरा गांधी</mark>; प्रथम महिला राष्ट्रपति <mark>प्रतिभा पाटिल</mark>; अंतरिक्ष में प्रथम <mark>राकेश शर्मा (1984)</mark>।",
+      "en": "First woman PM <mark>Indira Gandhi</mark>; space: <mark>Rakesh Sharma (1984)</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "संयुक्त राष्ट्र",
+      "en": "UN"
+     },
+     "b": {
+      "hi": "स्थापना <mark>1945</mark>; मुख्यालय <mark>न्यूयॉर्क</mark>।",
+      "en": "Founded <mark>1945</mark>; HQ <mark>New York</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "राजधानियाँ",
+      "en": "Capitals"
+     },
+     "b": {
+      "hi": "नेपाल: <mark>काठमांडू</mark>; भूटान: <mark>थिंपू</mark>; बांग्लादेश: <mark>ढाका</mark>; श्रीलंका: <mark>कोलंबो</mark>।",
+      "en": "Nepal: <mark>Kathmandu</mark>; Bhutan: <mark>Thimphu</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "मुद्राएँ",
+      "en": "Currencies"
+     },
+     "b": {
+      "hi": "जापान: <mark>येन</mark>; ब्रिटेन: <mark>पाउंड</mark>; यूरोप: <mark>यूरो</mark>; चीन: <mark>युआन</mark>।",
+      "en": "Japan: <mark>yen</mark>; UK: <mark>pound</mark>."
+     }
+    },
+    {
+     "h": {
+      "hi": "दिवस",
+      "en": "Days"
+     },
+     "b": {
+      "hi": "शिक्षक दिवस <mark>5 सितंबर</mark>; बाल दिवस <mark>14 नवंबर</mark>; पर्यावरण दिवस <mark>5 जून</mark>।",
+      "en": "Teachers' Day <mark>5 Sep</mark>."
+     }
+    }
+   ],
+   "examples": [],
+   "mnemonics": [
+    {
+     "h": {
+      "hi": "पद्म पुरस्कार क्रम",
+      "en": "Padma awards order"
+     },
+     "b": {
+      "hi": "\"<mark>विभूषण > भूषण > श्री</mark>\" - पद्म विभूषण (सर्वोच्च), फिर पद्म भूषण, फिर पद्म श्री। \"वि-भू-श्री, ऊपर से नीचे\"।",
+      "en": "Padma Vibhushan > Padma Bhushan > Padma Shri."
+     }
+    },
+    {
+     "h": {
+      "hi": "नोबेल भारतीय",
+      "en": "Indian Nobel laureates"
+     },
+     "b": {
+      "hi": "\"<mark>टैगोर 1913 प्रथम</mark>\" - रवींद्रनाथ टैगोर (साहित्य, गीतांजलि) पहले भारतीय नोबेल विजेता; फिर सी. वी. रमन (1930, भौतिकी)।",
+      "en": "Tagore 1913 (first), then C.V. Raman 1930."
+     }
+    },
+    {
+     "h": {
+      "hi": "पुस्तक-लेखक जोड़ियाँ",
+      "en": "Book-author pairs"
+     },
+     "b": {
+      "hi": "\"<mark>अर्थशास्त्र-कौटिल्य, इंडिका-मेगस्थनीज़</mark>\" - कौटिल्य (चाणक्य) का अर्थशास्त्र मौर्य प्रशासन पर; मेगस्थनीज़ की इंडिका चंद्रगुप्त मौर्य के दरबार का वर्णन करती है।",
+      "en": "Arthashastra = Kautilya, Indica = Megasthenes."
+     }
+    }
+   ],
+   "quiz": [
+    {
+     "q": {
+      "hi": "भारत रत्न की स्थापना कब?",
+      "en": "Bharat Ratna instituted?"
+     },
+     "o": [
+      {
+       "hi": "1947",
+       "en": "1947"
+      },
+      {
+       "hi": "1954",
+       "en": "1954"
+      },
+      {
+       "hi": "1950",
+       "en": "1950"
+      },
+      {
+       "hi": "1960",
+       "en": "1960"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "1954।",
+      "en": "1954."
+     }
+    },
+    {
+     "q": {
+      "hi": "साहित्य में नोबेल पाने वाले प्रथम भारतीय?",
+      "en": "First Indian Nobel laureate (Literature)?"
+     },
+     "o": [
+      {
+       "hi": "सी.वी. रमन",
+       "en": "C.V. Raman"
+      },
+      {
+       "hi": "टैगोर",
+       "en": "Tagore"
+      },
+      {
+       "hi": "मदर टेरेसा",
+       "en": "Mother Teresa"
+      },
+      {
+       "hi": "अमर्त्य सेन",
+       "en": "Amartya Sen"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "रवींद्रनाथ टैगोर (1913, गीतांजलि)।",
+      "en": "Tagore (1913)."
+     }
+    },
+    {
+     "q": {
+      "hi": "\"अर्थशास्त्र\" के लेखक?",
+      "en": "Author of \"Arthashastra\"?"
+     },
+     "o": [
+      {
+       "hi": "कालिदास",
+       "en": "Kalidas"
+      },
+      {
+       "hi": "कौटिल्य",
+       "en": "Kautilya"
+      },
+      {
+       "hi": "पाणिनि",
+       "en": "Panini"
+      },
+      {
+       "hi": "वाल्मीकि",
+       "en": "Valmiki"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "कौटिल्य (चाणक्य)।",
+      "en": "Kautilya."
+     }
+    },
+    {
+     "q": {
+      "hi": "अंतरिक्ष में जाने वाले प्रथम भारतीय?",
+      "en": "First Indian in space?"
+     },
+     "o": [
+      {
+       "hi": "कल्पना चावला",
+       "en": "Kalpana Chawla"
+      },
+      {
+       "hi": "राकेश शर्मा",
+       "en": "Rakesh Sharma"
+      },
+      {
+       "hi": "सुनीता विलियम्स",
+       "en": "Sunita Williams"
+      },
+      {
+       "hi": "रवीश मल्होत्रा",
+       "en": "Ravish Malhotra"
+      }
+     ],
+     "a": 1,
+     "e": {
+      "hi": "राकेश शर्मा (1984)।",
+      "en": "Rakesh Sharma (1984)."
+     }
+    },
+    {
+     "q": {
+      "hi": "शिक्षक दिवस कब मनाया जाता है?",
+      "en": "Teachers' Day?"
+     },
+     "o": [
+      {
+       "hi": "5 सितंबर",
+       "en": "5 September"
+      },
+      {
+       "hi": "14 नवंबर",
+       "en": "14 November"
+      },
+      {
+       "hi": "2 अक्टूबर",
+       "en": "2 October"
+      },
+      {
+       "hi": "26 जनवरी",
+       "en": "26 January"
+      }
+     ],
+     "a": 0,
+     "e": {
+      "hi": "5 सितंबर (राधाकृष्णन जयंती)।",
+      "en": "5 September."
+     }
+    }
+   ],
+   "reviewedAt": "2026-10-11",
+   "reviewStatus": "verified"
+  }
+ ]
+}
