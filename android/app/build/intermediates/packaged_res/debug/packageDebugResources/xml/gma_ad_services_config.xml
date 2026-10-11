@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ad-services-config>
+    <attribution>
+        <library-package-name value="com.google.android.gms.ads" />
+    </attribution>
+</ad-services-config>

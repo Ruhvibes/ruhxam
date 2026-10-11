@@ -17,6 +17,8 @@ var RXStore = (function(){
   if(!s.hfToken) s.hfToken='';
   if(!s.contentVer) s.contentVer=1;       // bundled CDN version
   if(!s.cdnCache) s.cdnCache=null;       // cached remote content
+  if(!s.streak) s.streak={count:0,last:''}; // daily study streak {count, last:'YYYY-MM-DD'}
+  if(!s.examDate) s.examDate=null;       // target exam date timestamp
   save(s);
   var uid=function(){ return 'n'+Date.now().toString(36)+Math.floor(Math.random()*1e6).toString(36); };
   return {
@@ -33,6 +35,15 @@ var RXStore = (function(){
     deleteNote:function(id){ s.notes=s.notes.filter(function(x){return x.id!==id;}); save(s); },
     toggleFav:function(id){ var n=s.notes.find(function(x){return x.id===id;}); if(n){n.fav=!n.fav;save(s);return n.fav;} return false; },
     clearData:function(){ localStorage.removeItem(KEY); },
+    // daily streak: call once per app launch
+    touchStreak:function(){
+      var today=new Date();var ds=today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+      var st=s.streak||{count:0,last:''};
+      if(st.last===ds)return st.count;
+      var y=new Date(today.getTime()-864e5);var ys=y.getFullYear()+'-'+(y.getMonth()+1)+'-'+y.getDate();
+      st.count=(st.last===ys)?st.count+1:1;
+      st.last=ds;s.streak=st;save(s);return st.count;
+    },
     all:function(){ return s; }
   };
 })();

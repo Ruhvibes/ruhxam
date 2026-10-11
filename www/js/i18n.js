@@ -28,7 +28,7 @@ var RT_STR = {
   part_ca: {hi:'भाग 5 : करेंट अफेयर्स', en:'Part 5 : Current Affairs'},
   maths_sub: {hi:'22 अध्याय • शॉर्ट ट्रिक्स', en:'22 chapters • short tricks'},
   reas_sub: {hi:'17 अध्याय • शॉर्ट ट्रिक्स', en:'17 chapters • short tricks'},
-  science_sub: {hi:'3 अध्याय • क्विक रिवीज़न', en:'3 chapters • quick revision'},
+  science_sub: {hi:'5 अध्याय • क्विक रिवीज़न', en:'5 chapters • quick revision'},
   gk_sub: {hi:'6 अध्याय • क्विक फैक्ट्स', en:'6 chapters • quick facts'},
   ca_sub: {hi:'3 अध्याय • मासिक अपडेट', en:'3 chapters • monthly updates'},
   quick_rev: {hi:'क्विक रिवीज़न', en:'Quick Revision'},
@@ -74,7 +74,7 @@ var RT_STR = {
   yes: {hi:'हाँ', en:'Yes'},
   no: {hi:'नहीं', en:'No'},
   no_results: {hi:'कोई परिणाम नहीं मिला।', en:'No results found.'},
-  ga_note: {hi:'नोट: GA/विज्ञान खंड की तैयारी RuhRank ऐप में करें।', en:'Note: prepare GA/Science in the RuhRank app.'},
+  ga_note: {hi:'नोट: मॉक में गणित, तर्कशक्ति, विज्ञान, GK/CA शामिल हैं।', en:'Note: mock covers Maths, Reasoning, Science, GK/CA.'},
   solution: {hi:'हल:', en:'Solution:'},
   explanation: {hi:'व्याख्या:', en:'Explanation:'},
   excellent: {hi:'उत्कृष्ट! 🎉', en:'Excellent! 🎉'},
@@ -120,6 +120,16 @@ var RT_STR = {
   clear_data: {hi:'🗑️ समस्त स्थानीय डेटा हटाएँ', en:'🗑️ Clear all local data'},
   about: {hi:'ऐप के बारे में', en:'About'},
   about_text: {hi:'RRB NTPC एवं Group D हेतु स्वतंत्र अध्ययन टूल। आधिकारिक RRB सूचनाएँ अवश्य सत्यापित करें।', en:'Independent study tool for RRB NTPC & Group D. Always verify official RRB notifications.'},
-  unofficial_note: {hi:'स्वतंत्र अध्ययन टूल — अभ्यास सेट अनौपचारिक हैं; आधिकारिक RRB सूचनाएँ सत्यापित करें।', en:'Independent study tool — practice sets are unofficial; verify official RRB notifications.'}
+  unofficial_note: {hi:'स्वतंत्र अध्ययन टूल — अभ्यास सेट अनौपचारिक हैं; आधिकारिक RRB सूचनाएँ सत्यापित करें।', en:'Independent study tool — practice sets are unofficial; verify official RRB notifications.'},
+  streak: {hi:'दिन की स्ट्रीक', en:'day streak'},
+  formula_sheet: {hi:'📋 फॉर्मूला शीट', en:'📋 Formula Sheet'},
+  all_formulas: {hi:'सभी गणित सूत्र एक जगह — त्वरित दोहराव हेतु', en:'All maths formulas in one place for quick revision'},
+  exam_countdown: {hi:'परीक्षा उल्टी गिनती', en:'Exam countdown'},
+  set_exam_date: {hi:'लक्ष्य परीक्षा तिथि चुनें', en:'Set target exam date'},
+  days_left: {hi:'दिन शेष', en:'days left'},
+  exam_today: {hi:'परीक्षा आज है — शुभकामनाएँ! 🎯', en:'Exam is today — good luck! 🎯'},
+  exam_passed: {hi:'तिथि बीत चुकी — नई तिथि चुनें', en:'Date passed — pick a new date'},
+  no_exam_date: {hi:'तिथि निर्धारित नहीं', en:'No date set'},
+  tap_to_set: {hi:'सेट करने हेतु टैप करें', en:'Tap to set'}
 };
 function RT_t(k){ var L=(window.RT&&RT.lang)||'hi'; var e=RT_STR[k]; return e?(e[L]||e.hi):k; }

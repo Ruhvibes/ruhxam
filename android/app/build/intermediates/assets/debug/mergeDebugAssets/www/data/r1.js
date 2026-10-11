@@ -1,0 +1,152 @@
+/* RuhXam — Reasoning Ch 1-5 */
+window.RT_CH = window.RT_CH || [];
+(function(){
+var P='reasoning';
+RT_CH.push({id:'r01',part:P,num:1,kind:'tricks',exams:['all'],
+title:{hi:'कोडिंग-डिकोडिंग',en:'Coding-Decoding'},
+concept:{hi:'अक्षरों को <mark>स्थान-संख्या (A=1…Z=26)</mark> से कोड किया जाता है। EJOTY क्रम याद रखें: E=5, J=10, O=15, T=20, Y=25।',en:'Letters coded by <mark>position (A=1…Z=26)</mark>. Remember EJOTY: E=5,J=10,O=15,T=20,Y=25.'},
+tricks:[
+{h:{hi:'विपरीत अक्षर',en:'Opposite letters'},b:{hi:'योग 27 वाले जोड़े: <mark>A-Z, B-Y, C-X, D-W, E-V…</mark> ("आज रात व्यस्त" ट्रिक से याद करें: Aत Zरात…)।',en:'Pairs summing to 27: <mark>A-Z, B-Y, C-X…</mark>'}},
+{h:{hi:'+n/−n शिफ्ट',en:'+/-n shift'},b:{hi:'पहले <mark>अंतर ज्ञात</mark> करें (जैसे CAT→DBU = +1)। फिर वही नियम लागू करें।',en:'Find the <mark>shift</mark> first, then apply.'}},
+{h:{hi:'उल्टा क्रम',en:'Reverse order'},b:{hi:'कभी-कभी शब्द <mark>उल्टा</mark> लिखा जाता है (BAT→TAB)।',en:'Sometimes the word is <mark>reversed</mark>.'}}],
+examples:[
+{q:{hi:'CAT को DBU लिखा जाता है, तो DOG को क्या लिखेंगे?',en:'CAT→DBU, code DOG?'},
+s:{hi:'प्रत्येक अक्षर +1: D→E, O→P, G→H → <mark>EPH</mark>।',en:'Each +1 → <mark>EPH</mark>.'}},
+{q:{hi:'यदि ZEBRA को 26-5-2-18-1 लिखा जाए, तो HORSE = ?',en:'ZEBRA=26-5-2-18-1, HORSE=?'},
+s:{hi:'H=8, O=15, R=18, S=19, E=5 → <mark>8-15-18-19-5</mark>।',en:'H=8,O=15,R=18,S=19,E=5.'}}],
+quiz:[
+{q:{hi:'A=1, B=2… तो BAD = ?',en:'A=1, B=2… BAD = ?'},
+o:[{hi:'2-1-4',en:'2-1-4'},{hi:'1-2-4',en:'1-2-4'},{hi:'4-1-2',en:'4-1-2'},{hi:'2-4-1',en:'2-4-1'}],a:0,
+e:{hi:'B=2, A=1, D=4।',en:'B=2,A=1,D=4.'}},
+{q:{hi:'Z का विपरीत अक्षर?',en:'Opposite of Z?'},
+o:[{hi:'Y',en:'Y'},{hi:'A',en:'A'},{hi:'M',en:'M'},{hi:'N',en:'N'}],a:1,
+e:{hi:'Z+A = 27 → A।',en:'Z+A=27 → A.'}},
+{q:{hi:'BALL को CZMN लिखा गया (प्रत्येक +1)। FAN = ?',en:'BALL→CZMN (+1 each). FAN?'},
+o:[{hi:'GBO',en:'GBO'},{hi:'EBM',en:'EBM'},{hi:'HCP',en:'HCP'},{hi:'GAP',en:'GAP'}],a:0,
+e:{hi:'F+1=G, A+1=B, N+1=O → GBO।',en:'F→G, A→B, N→O.'}},
+{q:{hi:'M का स्थान (A=1)?',en:'Position of M (A=1)?'},
+o:[{hi:'12',en:'12'},{hi:'13',en:'13'},{hi:'14',en:'14'},{hi:'11',en:'11'}],a:1,
+e:{hi:'A-Z में M 13वाँ अक्षर।',en:'M is 13th.'}},
+{q:{hi:'TAP को PAT लिखा गया। LOOP = ?',en:'TAP→PAT (reversed). LOOP?'},
+o:[{hi:'POOL',en:'POOL'},{hi:'OPOL',en:'OPOL'},{hi:'LOPO',en:'LOPO'},{hi:'OPLO',en:'OPLO'}],a:0,
+e:{hi:'अक्षर उल्टे: L-O-O-P → P-O-O-L = POOL।',en:'Letters reversed: POOL.'}}]});
+
+RT_CH.push({id:'r02',part:P,num:2,kind:'tricks',exams:['all'],
+title:{hi:'संख्या श्रेणी',en:'Number Series'},
+concept:{hi:'श्रेणी का <mark>पैटर्न</mark> खोजें: अंतर, गुणा, वर्ग, घन, या मिश्रित।',en:'Find the <mark>pattern</mark>: difference, multiply, squares, cubes.'},
+tricks:[
+{h:{hi:'अंतर विधि',en:'Difference method'},b:{hi:'क्रमागत <mark>अंतर</mark> निकालें; अंतर का अंतर (द्वितीय अंतर) भी देखें।',en:'Take successive <mark>differences</mark>, then differences of differences.'}},
+{h:{hi:'गुणा +/−',en:'Multiply +/-'},b:{hi:'×2+1, ×3−2 जैसे पैटर्न आम हैं।',en:'Patterns like ×2+1, ×3−2 are common.'}},
+{h:{hi:'वर्ग/घन',en:'Squares/cubes'},b:{hi:'n²±k, n³±k पहचानें: 1,4,9,16,25… / 1,8,27,64…',en:'Spot n²±k, n³±k.'}}],
+examples:[
+{q:{hi:'2, 6, 12, 20, 30, ? — अगला पद?',en:'2, 6, 12, 20, 30, ? Next?'},
+s:{hi:'अंतर: 4,6,8,10 → अगला अंतर 12 → 30+12 = <mark>42</mark>।',en:'Differences 4,6,8,10 → next 12 → <mark>42</mark>.'}},
+{q:{hi:'3, 9, 27, 81, ? — अगला?',en:'3, 9, 27, 81, ? Next?'},
+s:{hi:'×3 पैटर्न → 81×3 = <mark>243</mark>।',en:'×3 → <mark>243</mark>.'}}],
+quiz:[
+{q:{hi:'5, 11, 23, 47, ? — अगला?',en:'5, 11, 23, 47, ? Next?'},
+o:[{hi:'94',en:'94'},{hi:'95',en:'95'},{hi:'96',en:'96'},{hi:'93',en:'93'}],a:1,
+e:{hi:'×2+1: 47×2+1 = 95।',en:'×2+1 → 95.'}},
+{q:{hi:'1, 4, 9, 16, 25, ? — अगला?',en:'1, 4, 9, 16, 25, ? Next?'},
+o:[{hi:'30',en:'30'},{hi:'36',en:'36'},{hi:'35',en:'35'},{hi:'49',en:'49'}],a:1,
+e:{hi:'वर्ग श्रेणी: 6² = 36।',en:'Squares: 6²=36.'}},
+{q:{hi:'2, 3, 5, 9, 17, ? — अगला?',en:'2, 3, 5, 9, 17, ? Next?'},
+o:[{hi:'33',en:'33'},{hi:'32',en:'32'},{hi:'34',en:'34'},{hi:'31',en:'31'}],a:0,
+e:{hi:'अंतर दोगुना: 1,2,4,8 → अगला 16 → 17+16=33।',en:'Differences double → 33.'}},
+{q:{hi:'7, 14, 28, 56, ? — अगला?',en:'7, 14, 28, 56, ? Next?'},
+o:[{hi:'100',en:'100'},{hi:'108',en:'108'},{hi:'112',en:'112'},{hi:'116',en:'116'}],a:2,
+e:{hi:'×2 → 112।',en:'×2 → 112.'}},
+{q:{hi:'1, 8, 27, 64, ? — अगला?',en:'1, 8, 27, 64, ? Next?'},
+o:[{hi:'100',en:'100'},{hi:'121',en:'121'},{hi:'125',en:'125'},{hi:'144',en:'144'}],a:2,
+e:{hi:'घन श्रेणी: 5³ = 125।',en:'Cubes: 5³=125.'}}]});
+
+RT_CH.push({id:'r03',part:P,num:3,kind:'tricks',exams:['all'],
+title:{hi:'अक्षर श्रेणी',en:'Alphabet Series'},
+concept:{hi:'अक्षरों के <mark>स्थानों</mark> का पैटर्न खोजें (A=1…Z=26)।',en:'Find pattern in letter <mark>positions</mark>.'},
+tricks:[
+{h:{hi:'स्थान लिखें',en:'Write positions'},b:{hi:'पहले हर अक्षर का <mark>नंबर</mark> लिखें, फिर संख्या श्रेणी जैसे हल करें।',en:'Write <mark>numbers</mark> first, solve like number series.'}},
+{h:{hi:'स्किप पैटर्न',en:'Skip pattern'},b:{hi:'+1, +2, +3… या −1, −2… जैसे क्रम आम हैं।',en:'+1,+2,+3 or −1,−2 patterns common.'}},
+{h:{hi:'विपरीत अक्षर जोड़े',en:'Opposite letter pairs'},b:{hi:'जिन दो अक्षरों के स्थानों का योग <mark>27</mark> हो, वे विपरीत जोड़े हैं: A-Z, B-Y, C-X... श्रेणी में ये जोड़े बारी-बारी से भी आ सकते हैं।',en:'Pairs whose positions sum to <mark>27</mark>: A-Z, B-Y, C-X... They may also alternate in a series.'}},
+{h:{hi:'EJOTY स्मरण सूत्र',en:'EJOTY memory trick'},b:{hi:'E=5, J=10, O=15, T=20, Y=25 - <mark>5 के गुणज</mark> याद रखें। श्रेणी में इन स्थानों के अक्षर बार-बार आते हैं।',en:'E=5, J=10, O=15, T=20, Y=25 - <mark>multiples of 5</mark>.'}}],
+examples:[
+{q:{hi:'A, C, F, J, ? — अगला?',en:'A, C, F, J, ? Next?'},
+s:{hi:'स्थान: 1,3,6,10 → अंतर 2,3,4 → अगला 5 → 15 = <mark>O</mark>।',en:'Positions 1,3,6,10, diff 2,3,4 → next 15 = <mark>O</mark>.'}},
+{q:{hi:'Z, X, V, T, ? — अगला?',en:'Z, X, V, T, ? Next?'},
+s:{hi:'26,24,22,20 → −2 → 18 = <mark>R</mark>।',en:'−2 → 18 = <mark>R</mark>.'}}],
+quiz:[
+{q:{hi:'B, E, H, K, ? — अगला?',en:'B, E, H, K, ? Next?'},
+o:[{hi:'M',en:'M'},{hi:'N',en:'N'},{hi:'L',en:'L'},{hi:'O',en:'O'}],a:1,
+e:{hi:'2,5,8,11 → +3 → 14 = N।',en:'+3 → 14 = N.'}},
+{q:{hi:'A, D, G, J, ? — अगला?',en:'A, D, G, J, ? Next?'},
+o:[{hi:'K',en:'K'},{hi:'L',en:'L'},{hi:'M',en:'M'},{hi:'N',en:'N'}],a:2,
+e:{hi:'1,4,7,10 → +3 → 13 = M।',en:'+3 → 13 = M.'}},
+{q:{hi:'E, J, O, T, ? — अगला?',en:'E, J, O, T, ? Next?'},
+o:[{hi:'Y',en:'Y'},{hi:'X',en:'X'},{hi:'Z',en:'Z'},{hi:'W',en:'W'}],a:0,
+e:{hi:'5,10,15,20 → +5 → 25 = Y (EJOTY!)।',en:'+5 → 25 = Y.'}},
+{q:{hi:'D, F, I, M, ? — अगला?',en:'D, F, I, M, ? Next?'},
+o:[{hi:'R',en:'R'},{hi:'Q',en:'Q'},{hi:'S',en:'S'},{hi:'P',en:'P'}],a:0,
+e:{hi:'4,6,9,13 → अंतर 2,3,4 → अगला 5 → 18 = R।',en:'Diff 2,3,4 → next 18 = R.'}},
+{q:{hi:'W, T, Q, N, ? — अगला?',en:'W, T, Q, N, ? Next?'},
+o:[{hi:'J',en:'J'},{hi:'K',en:'K'},{hi:'L',en:'L'},{hi:'M',en:'M'}],a:1,
+e:{hi:'23,20,17,14 → −3 → 11 = K।',en:'−3 → 11 = K.'}}]});
+
+RT_CH.push({id:'r04',part:P,num:4,kind:'tricks',exams:['all'],
+title:{hi:'सादृश्य (Analogy)',en:'Analogy'},
+concept:{hi:'पहले युग्म का <mark>संबंध</mark> पहचानें, वही दूसरे पर लागू करें।',en:'Identify the <mark>relation</mark> in the first pair, apply to second.'},
+tricks:[
+{h:{hi:'संबंध के प्रकार',en:'Relation types'},b:{hi:'कारण-परिणाम, उपकरण-कार्य, <mark>n:n², n:n³</mark>, अक्षर-स्थान, विपरीत।',en:'Cause-effect, tool-work, <mark>n:n², n:n³</mark>, opposites.'}},
+{h:{hi:'संख्या सादृश्य',en:'Number analogy'},b:{hi:'वर्ग/घन/±k जाँचें: 4:16 = वर्ग; 3:27 = घन।',en:'Check squares/cubes/±k.'}},
+{h:{hi:'विकल्पों से उल्टी जाँच',en:'Reverse-check with options'},b:{hi:'संबंध स्पष्ट न हो तो प्रत्येक <mark>विकल्प</mark> पर वही संबंध लगाकर देखें - जो विकल्प पूरी तरह बैठे, वही उत्तर है।',en:'Apply the same relation to each <mark>option</mark> - the one that fits is the answer.'}},
+{h:{hi:'शब्द-व्याकरण मिलान',en:'Match grammar of words'},b:{hi:'संज्ञा : संज्ञा, क्रिया : क्रिया - उत्तर विकल्प में <mark>वही शब्द-भेद</mark> होना चाहिए। जैसे डॉक्टर : अस्पताल :: शिक्षक : विद्यालय (न कि "पढ़ाना")।',en:'Noun:noun, verb:verb - the answer must share the <mark>part of speech</mark>.'}}],
+examples:[
+{q:{hi:'डॉक्टर : अस्पताल :: शिक्षक : ?',en:'Doctor : Hospital :: Teacher : ?'},
+s:{hi:'कार्यस्थल संबंध → <mark>विद्यालय</mark>।',en:'Workplace → <mark>School</mark>.'}},
+{q:{hi:'5 : 125 :: 4 : ?',en:'5 : 125 :: 4 : ?'},
+s:{hi:'n:n³ → 4³ = <mark>64</mark>।',en:'n:n³ → <mark>64</mark>.'}}],
+quiz:[
+{q:{hi:'कलम : लिखना :: चाकू : ?',en:'Pen : Write :: Knife : ?'},
+o:[{hi:'काटना',en:'Cut'},{hi:'तेज़',en:'Sharp'},{hi:'सब्ज़ी',en:'Vegetable'},{hi:'रसोई',en:'Kitchen'}],a:0,
+e:{hi:'उपकरण-कार्य संबंध → काटना।',en:'Tool-work → Cut.'}},
+{q:{hi:'6 : 36 :: 9 : ?',en:'6 : 36 :: 9 : ?'},
+o:[{hi:'72',en:'72'},{hi:'81',en:'81'},{hi:'90',en:'90'},{hi:'18',en:'18'}],a:1,
+e:{hi:'n:n² → 9² = 81।',en:'9² = 81.'}},
+{q:{hi:'दिन : रात :: सफ़ेद : ?',en:'Day : Night :: White : ?'},
+o:[{hi:'रंग',en:'Colour'},{hi:'काला',en:'Black'},{hi:'चमक',en:'Bright'},{hi:'दूध',en:'Milk'}],a:1,
+e:{hi:'विपरीत संबंध → काला।',en:'Opposite → Black.'}},
+{q:{hi:'3 : 30 :: 5 : ?',en:'3 : 30 :: 5 : ?'},
+o:[{hi:'50',en:'50'},{hi:'130',en:'130'},{hi:'55',en:'55'},{hi:'150',en:'150'}],a:1,
+e:{hi:'n:n³+n → 27+3=30; 125+5=130।',en:'n³+n → 130.'}},
+{q:{hi:'मछली : जल :: पक्षी : ?',en:'Fish : Water :: Bird : ?'},
+o:[{hi:'पेड़',en:'Tree'},{hi:'आकाश',en:'Sky'},{hi:'घोंसला',en:'Nest'},{hi:'पंख',en:'Wing'}],a:1,
+e:{hi:'रहने का माध्यम → आकाश।',en:'Medium of living → Sky.'}}]});
+
+RT_CH.push({id:'r05',part:P,num:5,kind:'tricks',exams:['all'],
+title:{hi:'वर्गीकरण (भिन्न छाँटें)',en:'Classification (Odd One Out)'},
+concept:{hi:'जो <mark>अलग</mark> है उसे चुनें — सम/विषम, अभाज्य, वर्ग, अक्षर-स्वर आदि।',en:'Pick the <mark>different</mark> one.'},
+tricks:[
+{h:{hi:'संख्या जाँच',en:'Number checks'},b:{hi:'सम-विषम, अभाज्य-भाज्य, <mark>पूर्ण वर्ग/घन</mark>, विभाज्यता क्रम से जाँचें।',en:'Check even/odd, prime, <mark>perfect square/cube</mark>.'}},
+{h:{hi:'अक्षर जाँच',en:'Letter checks'},b:{hi:'<mark>स्वर (A,E,I,O,U)</mark> बनाम व्यंजन; स्थान सम/विषम।',en:'<mark>Vowels</mark> vs consonants; position parity.'}},
+{h:{hi:'युग्म बनाकर देखें',en:'Try pairing'},b:{hi:'विकल्पों में से दो-दो के <mark>युग्म</mark> बनाएँ (जैसे 2-4, 6-8 या A-C, B-D) - जो किसी युग्म में न आए, वही भिन्न है।',en:'Make <mark>pairs</mark> from the options - the one left unpaired is the odd one out.'}},
+{h:{hi:'अर्थ-आधारित समूह',en:'Meaning-based groups'},b:{hi:'शब्दों के <mark>अर्थ</mark> से समूह बनाएँ - फल, रंग, पेशा, देश आदि। जो शब्द किसी समूह में न बैठे, वही भिन्न है।',en:'Group words by <mark>meaning</mark> - fruit, colour, profession etc. The misfit is the answer.'}}],
+examples:[
+{q:{hi:'भिन्न: 2, 4, 6, 9, 10',en:'Odd one: 2, 4, 6, 9, 10'},
+s:{hi:'सभी सम हैं सिवाय <mark>9</mark> के।',en:'All even except <mark>9</mark>.'}},
+{q:{hi:'भिन्न: A, E, I, K, O',en:'Odd one: A, E, I, K, O'},
+s:{hi:'सभी स्वर हैं सिवाय <mark>K</mark> के।',en:'All vowels except <mark>K</mark>.'}}],
+quiz:[
+{q:{hi:'भिन्न छाँटें: 16, 25, 36, 42, 49',en:'Odd one: 16, 25, 36, 42, 49'},
+o:[{hi:'16',en:'16'},{hi:'25',en:'25'},{hi:'42',en:'42'},{hi:'49',en:'49'}],a:2,
+e:{hi:'सभी पूर्ण वर्ग हैं सिवाय 42 के।',en:'All perfect squares except 42.'}},
+{q:{hi:'भिन्न छाँटें: 3, 5, 7, 9, 11',en:'Odd one: 3, 5, 7, 9, 11'},
+o:[{hi:'3',en:'3'},{hi:'9',en:'9'},{hi:'7',en:'7'},{hi:'11',en:'11'}],a:1,
+e:{hi:'सभी अभाज्य हैं सिवाय 9 के।',en:'All prime except 9.'}},
+{q:{hi:'भिन्न छाँटें: CAT, DOG, BAT, EGG',en:'Odd one: CAT, DOG, BAT, EGG'},
+o:[{hi:'CAT',en:'CAT'},{hi:'DOG',en:'DOG'},{hi:'EGG',en:'EGG'},{hi:'BAT',en:'BAT'}],a:2,
+e:{hi:'सभी में स्वर एक बार, EGG में दो बार (E…E)।',en:'EGG has vowel twice.'}},
+{q:{hi:'भिन्न छाँटें: 8, 27, 64, 100, 125',en:'Odd one: 8, 27, 64, 100, 125'},
+o:[{hi:'8',en:'8'},{hi:'100',en:'100'},{hi:'27',en:'27'},{hi:'125',en:'125'}],a:1,
+e:{hi:'सभी पूर्ण घन हैं सिवाय 100 के।',en:'All perfect cubes except 100.'}},
+{q:{hi:'भिन्न छाँटें: जनवरी, मार्च, मई, जून, जुलाई',en:'Odd one: Jan, Mar, May, Jun, Jul'},
+o:[{hi:'जनवरी',en:'Jan'},{hi:'जून',en:'Jun'},{hi:'मार्च',en:'Mar'},{hi:'जुलाई',en:'Jul'}],a:1,
+e:{hi:'सभी 31 दिन के माह, जून 30 दिन का।',en:'All 31-day months except June.'}}]});
+})();

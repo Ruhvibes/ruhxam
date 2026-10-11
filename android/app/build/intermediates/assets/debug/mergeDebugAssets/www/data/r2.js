@@ -1,0 +1,152 @@
+/* RuhXam — Reasoning Ch 6-10 */
+window.RT_CH = window.RT_CH || [];
+(function(){
+var P='reasoning';
+RT_CH.push({id:'r06',part:P,num:6,kind:'tricks',exams:['all'],
+title:{hi:'रक्त संबंध',en:'Blood Relations'},
+concept:{hi:'परिवार के संबंधों को <mark>चित्र (family tree)</mark> बनाकर हल करें। पीढ़ी का ध्यान रखें।',en:'Draw a <mark>family tree</mark>. Watch generations.'},
+tricks:[
+{h:{hi:'चित्र बनाएँ',en:'Draw the tree'},b:{hi:'पुरुष = <mark>□/＋</mark>, महिला = <mark>○/－</mark>; एक पीढ़ी = एक पंक्ति।',en:'Male = <mark>□</mark>, female = <mark>○</mark>; one generation per row.'}},
+{h:{hi:'मुख्य संबंध',en:'Key relations'},b:{hi:'पिता का भाई = चाचा; माँ की बहन = मौसी; <mark>पत्नी की माँ = सास</mark>; भाई की पत्नी = भाभी।',en:'Father\'s brother = uncle; <mark>wife\'s mother = mother-in-law</mark>.'}},
+{h:{hi:'"इकलौता" शब्द',en:'Word "only"'},b:{hi:'"मेरा इकलौता भाई" = <mark>स्वयं पुरुष</mark> (वक्ता)।',en:'"My only brother" implies speaker is male.'}}],
+examples:[
+{q:{hi:'राम ने कहा: "वह मेरे पिता की इकलौती बहन का बेटा है।" वह राम का कौन?',en:'Ram: "He is my father\'s only sister\'s son." Relation?'},
+s:{hi:'पिता की इकलौती बहन = बुआ; बुआ का बेटा = <mark>फुफेरा भाई</mark>।',en:'Father\'s only sister = aunt; her son = <mark>cousin</mark>.'}},
+{q:{hi:'A, B की माँ है; B, C की बहन है; C, D का भाई है। D, A का कौन?',en:'A is B\'s mother; B sister of C; C brother of D. D to A?'},
+s:{hi:'B, C, D तीनों A के बच्चे → D = <mark>A का बेटा/बेटी (संतान)</mark>।',en:'All three are A\'s children → D is <mark>A\'s child</mark>.'}}],
+quiz:[
+{q:{hi:'राम की माँ, श्याम की इकलौती बहन है। श्याम, राम का कौन है?',en:'Ram\'s mother is Shyam\'s only sister. How is Shyam related to Ram?'},
+o:[{hi:'मामा',en:'Maternal uncle'},{hi:'चाचा',en:'Paternal uncle'},{hi:'भाई',en:'Brother'},{hi:'पिता',en:'Father'}],a:0,
+e:{hi:'माँ की बहन का भाई = मामा। श्याम, राम की माँ का भाई है → <mark>मामा</mark>।',en:'Mother\'s sister\'s brother = <mark>maternal uncle</mark>.'}},
+{q:{hi:'एक महिला की ओर इशारा: "वह मेरी पत्नी की माँ है।" महिला कौन?',en:'Pointing: "She is my wife\'s mother." Who?'},
+o:[{hi:'माँ',en:'Mother'},{hi:'सास',en:'Mother-in-law'},{hi:'दादी',en:'Grandmother'},{hi:'चाची',en:'Aunt'}],a:1,
+e:{hi:'पत्नी की माँ = सास।',en:'Wife\'s mother = mother-in-law.'}},
+{q:{hi:'P, Q का भाई है; R, P की माँ है; S, R का पिता है। S, P का कौन?',en:'P brother of Q; R mother of P; S father of R. S to P?'},
+o:[{hi:'दादा',en:'Grandfather'},{hi:'पिता',en:'Father'},{hi:'नाना',en:'Maternal grandfather'},{hi:'चाचा',en:'Uncle'}],a:2,
+e:{hi:'S = R का पिता = P की माँ का पिता = नाना।',en:'S = mother\'s father = maternal grandfather.'}},
+{q:{hi:'X ने Y से कहा: "तुम मेरे दादा के इकलौते बेटे के बेटे हो।" Y, X का कौन?',en:'X to Y: "You are my grandfather\'s only son\'s son." Y to X?'},
+o:[{hi:'भाई',en:'Brother'},{hi:'पिता',en:'Father'},{hi:'चचेरा भाई',en:'Cousin'},{hi:'बेटा',en:'Son'}],a:0,
+e:{hi:'दादा का इकलौता बेटा = पिता; पिता का बेटा = भाई।',en:'Only son = father; his son = brother.'}},
+{q:{hi:'A की बहन B है; B का भाई C है; C की माँ D है। D, A की कौन?',en:'A\'s sister B; B\'s brother C; C\'s mother D. D to A?'},
+o:[{hi:'माँ',en:'Mother'},{hi:'चाची',en:'Aunt'},{hi:'दादी',en:'Grandmother'},{hi:'बहन',en:'Sister'}],a:0,
+e:{hi:'A, B, C भाई-बहन; D उनकी माँ → A की माँ।',en:'Siblings → D is A\'s mother.'}}]});
+
+RT_CH.push({id:'r07',part:P,num:7,kind:'tricks',exams:['all'],
+title:{hi:'दिशा ज्ञान',en:'Direction Sense'},
+concept:{hi:'मुख्य दिशाएँ: <mark>उत्तर(N), दक्षिण(S), पूर्व(E), पश्चिम(W)</mark>। सूर्य पूर्व में उगता है।',en:'<mark>N, S, E, W</mark>. Sun rises in east.'},
+tricks:[
+{h:{hi:'चित्र बनाएँ',en:'Draw it'},b:{hi:'प्रारंभ बिंदु से <mark>तीर</mark> खींचते चलें; अंत में दिशा/दूरी निकालें।',en:'Draw <mark>arrows</mark> from start point.'}},
+{h:{hi:'पाइथागोरस',en:'Pythagoras'},b:{hi:'लंबवत दूरियों हेतु <mark>√(a²+b²)</mark> (जैसे 3-4-5 → 5)।',en:'Perpendicular distances: <mark>√(a²+b²)</mark>.'}},
+{h:{hi:'परछाई नियम',en:'Shadow rule'},b:{hi:'सुबह परछाई <mark>पश्चिम</mark> में, शाम को <mark>पूर्व</mark> में पड़ती है।',en:'Morning shadow → <mark>west</mark>; evening → <mark>east</mark>.'}}],
+examples:[
+{q:{hi:'राम पूर्व 4km, फिर उत्तर 3km चला। प्रारंभ से दूरी व दिशा?',en:'Ram walks 4km E, then 3km N. Distance & direction from start?'},
+s:{hi:'√(16+9) = <mark>5 km, उत्तर-पूर्व</mark>।',en:'√25 = <mark>5 km, north-east</mark>.'}},
+{q:{hi:'श्याम उत्तर की ओर मुँह करके दाएँ मुड़ा, फिर दाएँ। अब दिशा?',en:'Facing north, turns right twice. Now facing?'},
+s:{hi:'उत्तर→पूर्व→<mark>दक्षिण</mark>।',en:'N→E→<mark>S</mark>.'}}],
+quiz:[
+{q:{hi:'A पूर्व 5km, उत्तर 12km चला। सीधी दूरी?',en:'5km E, 12km N. Straight distance?'},
+o:[{hi:'13 km',en:'13 km'},{hi:'17 km',en:'17 km'},{hi:'15 km',en:'15 km'},{hi:'10 km',en:'10 km'}],a:0,
+e:{hi:'√(25+144) = 13 km।',en:'√169 = 13.'}},
+{q:{hi:'पश्चिम की ओर मुँह, बाएँ मुड़ें — दिशा?',en:'Facing west, turn left. Direction?'},
+o:[{hi:'पूर्व',en:'East'},{hi:'उत्तर',en:'North'},{hi:'दक्षिण',en:'South'},{hi:'पश्चिम',en:'West'}],a:2,
+e:{hi:'पश्चिम का बायाँ = दक्षिण।',en:'Left of west = south.'}},
+{q:{hi:'सुबह सूर्य की ओर मुँह — परछाई किस दिशा में?',en:'Facing sun in morning. Shadow direction?'},
+o:[{hi:'पूर्व',en:'East'},{hi:'पश्चिम',en:'West'},{hi:'उत्तर',en:'North'},{hi:'दक्षिण',en:'South'}],a:1,
+e:{hi:'सुबह परछाई पश्चिम में।',en:'Morning shadow falls west.'}},
+{q:{hi:'उत्तर 6km, पूर्व 8km, दक्षिण 6km — प्रारंभ से?',en:'N 6km, E 8km, S 6km. From start?'},
+o:[{hi:'8 km पूर्व',en:'8 km east'},{hi:'14 km पूर्व',en:'14 km east'},{hi:'8 km पश्चिम',en:'8 km west'},{hi:'6 km उत्तर',en:'6 km north'}],a:0,
+e:{hi:'उत्तर-दक्षिण कट गए → 8 km पूर्व।',en:'N−S cancel → 8 km east.'}},
+{q:{hi:'दक्षिण की ओर चलकर दाएँ, फिर बाएँ मुड़ा। अब दिशा?',en:'Walking south, turn right then left. Direction?'},
+o:[{hi:'उत्तर',en:'North'},{hi:'दक्षिण',en:'South'},{hi:'पूर्व',en:'East'},{hi:'पश्चिम',en:'West'}],a:1,
+e:{hi:'दक्षिण→(दायाँ)पश्चिम→(बायाँ)दक्षिण।',en:'S→(right)W→(left)S.'}}]});
+
+RT_CH.push({id:'r08',part:P,num:8,kind:'tricks',exams:['all'],
+title:{hi:'क्रम एवं रैंकिंग',en:'Ranking & Order'},
+concept:{hi:'कुल = <mark>बाएँ + दाएँ − 1</mark>। एक ओर से स्थान ज्ञात हो तो दूसरी ओर से = कुल − ज्ञात + 1।',en:'Total = <mark>left + right − 1</mark>.'},
+tricks:[
+{h:{hi:'मूल सूत्र',en:'Core formula'},b:{hi:'<mark>कुल व्यक्ति = बाईं ओर से स्थान + दाईं ओर से स्थान − 1</mark>',en:'<mark>Total = left rank + right rank − 1</mark>'}},
+{h:{hi:'स्थान परिवर्तन',en:'Rank interchange'},b:{hi:'स्थान बदलने पर नया कुल = <mark>नया बायाँ + पुराना दायाँ − 1</mark>।',en:'After swap: total = <mark>new left + old right − 1</mark>.'}},
+{h:{hi:'दो के बीच व्यक्ति',en:'Persons between two'},b:{hi:'बिना ओवरलैप के: <mark>बीच के व्यक्ति = कुल - (पहले का बायाँ क्रम + दूसरे का दायाँ क्रम)</mark>।',en:'With no overlap: <mark>between = total - (left rank of the first person + right rank of the second person)</mark>.'}},
+{h:{hi:'ओवरलैप जाँच',en:'Overlap check'},b:{hi:'यदि <mark>बायाँ क्रम + दायाँ क्रम > कुल</mark> हो, तो दोनों के क्रम आपस में ओवरलैप कर रहे हैं - सूत्र सीधे न लगाएँ, पहले स्थिति समझें।',en:'If <mark>left rank + right rank > total</mark>, the ranks overlap - do not apply the formula directly.'}}],
+examples:[
+{q:{hi:'राम बाएँ से 7वाँ, दाएँ से 12वाँ। कुल कितने?',en:'Ram 7th from left, 12th from right. Total?'},
+s:{hi:'7+12−1 = <mark>18</mark>।',en:'7+12−1 = <mark>18</mark>.'}},
+{q:{hi:'40 छात्रों में राम ऊपर से 15वाँ — नीचे से कौन-सा?',en:'40 students, Ram 15th from top. From bottom?'},
+s:{hi:'40−15+1 = <mark>26वाँ</mark>।',en:'40−15+1 = <mark>26th</mark>.'}}],
+quiz:[
+{q:{hi:'कुल 50 में A बाएँ से 20वाँ — दाएँ से?',en:'50 total, A 20th from left. From right?'},
+o:[{hi:'30वाँ',en:'30th'},{hi:'31वाँ',en:'31st'},{hi:'29वाँ',en:'29th'},{hi:'32वाँ',en:'32nd'}],a:1,
+e:{hi:'50−20+1 = 31वाँ।',en:'50−20+1 = 31st.'}},
+{q:{hi:'B दोनों ओर से 9वाँ — कुल?',en:'B 9th from both sides. Total?'},
+o:[{hi:'18',en:'18'},{hi:'17',en:'17'},{hi:'19',en:'19'},{hi:'16',en:'16'}],a:1,
+e:{hi:'9+9−1 = 17।',en:'9+9−1 = 17.'}},
+{q:{hi:'ऊपर से 12वाँ, नीचे से 28वाँ — कुल?',en:'12th from top, 28th from bottom. Total?'},
+o:[{hi:'40',en:'40'},{hi:'39',en:'39'},{hi:'41',en:'41'},{hi:'38',en:'38'}],a:1,
+e:{hi:'12+28−1 = 39।',en:'12+28−1 = 39.'}},
+{q:{hi:'30 लड़कों में A बाएँ से 12वाँ, B दाएँ से 10वाँ — बीच में कितने?',en:'30 boys; A 12th from left, B 10th from right. Between?'},
+o:[{hi:'6',en:'6'},{hi:'8',en:'8'},{hi:'7',en:'7'},{hi:'9',en:'9'}],a:1,
+e:{hi:'30 − (12+10) = 8।',en:'30−22 = 8.'}},
+{q:{hi:'स्थान बदलने पर A बाएँ से 15वाँ (पहले दाएँ से 8वाँ था)। कुल?',en:'After swap A 15th from left (was 8th from right). Total?'},
+o:[{hi:'23',en:'23'},{hi:'22',en:'22'},{hi:'24',en:'24'},{hi:'21',en:'21'}],a:1,
+e:{hi:'15+8−1 = 22।',en:'15+8−1 = 22.'}}]});
+
+RT_CH.push({id:'r09',part:P,num:9,kind:'tricks',exams:['all'],
+title:{hi:'न्याय निगमन (Syllogism)',en:'Syllogism'},
+concept:{hi:'कथनों से <mark>निश्चित</mark> निष्कर्ष निकालें। वेन चित्र बनाएँ। "कुछ" = कम-से-कम एक; "सभी" = 100%।',en:'Draw <mark>Venn diagrams</mark>. "Some" = at least one.'},
+tricks:[
+{h:{hi:'वेन चित्र',en:'Venn diagram'},b:{hi:'<mark>सभी A, B हैं</mark> → A का वृत्त B के अंदर। <mark>कुछ A, B हैं</mark> → वृत्त काटें। <mark>कोई A, B नहीं</mark> → वृत्त अलग।',en:'<mark>All A are B</mark> → A inside B. <mark>Some</mark> → overlap. <mark>No</mark> → separate.'}},
+{h:{hi:'निष्कर्ष नियम',en:'Conclusion rules'},b:{hi:'दो <mark>"कुछ"</mark> से कोई निश्चित निष्कर्ष नहीं। <mark>"सभी"+"कुछ"</mark> → "कुछ" निष्कर्ष।',en:'Two "some" → no definite conclusion.'}},
+{h:{hi:'"कुछ + सभी = कुछ" नियम',en:'"Some + All = Some" rule'},b:{hi:'<mark>कुछ A, B हैं + सभी B, C हैं = कुछ A, C हैं</mark> - यह निष्कर्ष सदैव सत्य होता है (मध्य पद "B" एक कथन में वितरित है)।',en:'<mark>Some A are B + All B are C = Some A are C</mark> - always valid.'}},
+{h:{hi:'मध्य पद वितरण नियम',en:'Middle term distribution rule'},b:{hi:'निश्चित निष्कर्ष हेतु <mark>मध्य पद कम-से-कम एक कथन में वितरित</mark> होना चाहिए। दो "कुछ" वाले कथनों से कभी निश्चित निष्कर्ष नहीं निकलता।',en:'The middle term must be <mark>distributed at least once</mark>; two "some" premises give no definite conclusion.'}}],
+examples:[
+{q:{hi:'कथन: सभी कलम किताबें हैं। निष्कर्ष: कुछ किताबें कलम हैं — सही?',en:'All pens are books. Conclusion: Some books are pens?'},
+s:{hi:'हाँ — "सभी" से <mark>"कुछ" निष्कर्ष</mark> सदैव सत्य।',en:'Yes — "all" implies <mark>"some"</mark>.'}},
+{q:{hi:'कथन: कोई कुत्ता बिल्ली नहीं। निष्कर्ष: कोई बिल्ली कुत्ता नहीं — सही?',en:'No dog is a cat. Conclusion: No cat is a dog?'},
+s:{hi:'हाँ — <mark>"कोई" पलटा</mark> जा सकता है।',en:'Yes — "no" reverses.'}}],
+quiz:[
+{q:{hi:'सभी A, B हैं। कुछ B, C हैं। निष्कर्ष: कुछ A, C हैं — ?',en:'All A are B. Some B are C. Conclusion: Some A are C?'},
+o:[{hi:'सत्य',en:'True'},{hi:'असत्य',en:'False'},{hi:'कह नहीं सकते',en:'Cannot say'},{hi:'कभी सत्य',en:'Sometimes'}],a:2,
+e:{hi:'"कुछ B, C" वाला भाग A से जुड़ा नहीं → निश्चित नहीं।',en:'No definite link → cannot say.'}},
+{q:{hi:'कोई पेन पेंसिल नहीं। सभी पेंसिल रबर हैं। निष्कर्ष: कोई पेन रबर नहीं — ?',en:'No pen is pencil. All pencils are erasers. No pen is eraser?'},
+o:[{hi:'सत्य',en:'True'},{hi:'असत्य',en:'False'},{hi:'कह नहीं सकते',en:'Cannot say'},{hi:'आंशिक सत्य',en:'Partially true'}],a:2,
+e:{hi:'रबर-वृत्त पेंसिल से बड़ा है; पेन, पेंसिल-रहित रबर हो सकता है → <mark>कह नहीं सकते</mark>।',en:'Eraser circle is bigger than pencil; a pen could be a non-pencil eraser → <mark>cannot say</mark>.'}},
+{q:{hi:'कुछ आम मीठे हैं। सभी मीठे फल हैं। निष्कर्ष: कुछ आम फल हैं — ?',en:'Some mangoes are sweet. All sweet are fruits. Some mangoes are fruits?'},
+o:[{hi:'सत्य',en:'True'},{hi:'असत्य',en:'False'},{hi:'कह नहीं सकते',en:'Cannot say'},{hi:'विरुद्ध',en:'Contradictory'}],a:0,
+e:{hi:'मीठे आम, फल-वृत्त के अंदर → सत्य।',en:'Sweet mangoes inside fruits → true.'}},
+{q:{hi:'सभी छात्र मेहनती हैं। राम छात्र है। निष्कर्ष: राम मेहनती है — ?',en:'All students are hardworking. Ram is a student. Ram is hardworking?'},
+o:[{hi:'सत्य',en:'True'},{hi:'असत्य',en:'False'},{hi:'कह नहीं सकते',en:'Cannot say'},{hi:'संभवतः',en:'Probably'}],a:0,
+e:{hi:'राम, छात्र-वृत्त के अंदर → सत्य।',en:'Ram inside students → true.'}},
+{q:{hi:'कुछ किताबें लाल हैं। कुछ लाल चीज़ें महँगी हैं। निष्कर्ष: कुछ किताबें महँगी हैं — ?',en:'Some books are red. Some red things are costly. Some books are costly?'},
+o:[{hi:'सत्य',en:'True'},{hi:'कह नहीं सकते',en:'Cannot say'},{hi:'असत्य',en:'False'},{hi:'निश्चित',en:'Definite'}],a:1,
+e:{hi:'दो "कुछ" से कोई निश्चित निष्कर्ष नहीं।',en:'Two "some" → no definite conclusion.'}}]});
+
+RT_CH.push({id:'r10',part:P,num:10,kind:'tricks',exams:['all'],
+title:{hi:'कथन एवं निष्कर्ष',en:'Statement & Conclusion'},
+concept:{hi:'केवल <mark>कथन में दी जानकारी</mark> से निष्कर्ष निकालें — बाहरी ज्ञान न लगाएँ।',en:'Use <mark>only given info</mark> — no outside knowledge.'},
+tricks:[
+{h:{hi:'"सभी/कोई" शब्द',en:'Absolute words'},b:{hi:'<mark>"सभी", "कोई नहीं", "हमेशा"</mark> वाले निष्कर्ष प्रायः गलत (अति-सामान्यीकरण)।',en:'Conclusions with <mark>"all/none/always"</mark> are usually wrong.'}},
+{h:{hi:'सलाह/सुझाव',en:'Advice'},b:{hi:'कथन तथ्य हो और निष्कर्ष <mark>सलाह</mark> हो → प्रायः अनुसरण नहीं करता।',en:'Fact → advice usually does NOT follow.'}},
+{h:{hi:'दोहराव वाला निष्कर्ष',en:'Repeating conclusion'},b:{hi:'यदि निष्कर्ष <mark>कथन का ही दोहराव</mark> हो (वही बात दूसरे शब्दों में), तो वह अनुसरण करता है।',en:'A conclusion that merely <mark>restates</mark> the statement follows.'}},
+{h:{hi:'"हो सकता है" वाले निष्कर्ष',en:'"May be" conclusions'},b:{hi:'<mark>"संभवतः", "हो सकता है"</mark> जैसे संभावना-सूचक निष्कर्ष प्रायः अनुसरण करते हैं - ये दावा नहीं, केवल गुंजाइश जताते हैं।',en:'"May be", "possibly" conclusions usually follow - they express possibility, not a claim.'}}],
+examples:[
+{q:{hi:'कथन: सभी भारतीय नागरिकों को मतदान का अधिकार है। निष्कर्ष: राम (भारतीय) को मतदान का अधिकार है।',en:'All Indian citizens can vote. Conclusion: Ram (Indian) can vote.'},
+s:{hi:'<mark>अनुसरण करता है</mark> — सीधा तार्किक परिणाम।',en:'<mark>Follows</mark> — direct logical result.'}},
+{q:{hi:'कथन: प्रदूषण बढ़ रहा है। निष्कर्ष: सभी फैक्ट्रियाँ बंद कर देनी चाहिए।',en:'Pollution rising. Conclusion: All factories must close.'},
+s:{hi:'<mark>अनुसरण नहीं करता</mark> — अति-सामान्यीकृत सलाह।',en:'<mark>Does not follow</mark> — extreme advice.'}}],
+quiz:[
+{q:{hi:'कथन: ईमानदारी सबसे अच्छी नीति है। निष्कर्ष: बेईमान लोग असफल होते हैं।',en:'Honesty is the best policy. Conclusion: Dishonest people fail.'},
+o:[{hi:'अनुसरण करता है',en:'Follows'},{hi:'अनुसरण नहीं करता',en:'Does not follow'}],a:1,
+e:{hi:'कथन में असफलता का उल्लेख नहीं → अनुसरण नहीं करता।',en:'Not stated → does not follow.'}},
+{q:{hi:'कथन: सभी कुत्तों के चार पैर होते हैं। निष्कर्ष: टॉमी (कुत्ता) के चार पैर हैं।',en:'All dogs have four legs. Conclusion: Tommy (a dog) has four legs.'},
+o:[{hi:'अनुसरण करता है',en:'Follows'},{hi:'अनुसरण नहीं करता',en:'Does not follow'}],a:0,
+e:{hi:'सीधा निष्कर्ष → अनुसरण करता है।',en:'Direct → follows.'}},
+{q:{hi:'कथन: धूम्रपान स्वास्थ्य के लिए हानिकारक है। निष्कर्ष: धूम्रपान पर पूर्ण प्रतिबंध लगना चाहिए।',en:'Smoking is harmful. Conclusion: It should be fully banned.'},
+o:[{hi:'अनुसरण करता है',en:'Follows'},{hi:'अनुसरण नहीं करता',en:'Does not follow'}],a:1,
+e:{hi:'तथ्य से चरम सलाह → अनुसरण नहीं करता।',en:'Fact → extreme advice does not follow.'}},
+{q:{hi:'कथन: कोई भी छात्र परीक्षा में नकल नहीं करेगा। निष्कर्ष: सभी छात्र ईमानदार हैं।',en:'No student will cheat. Conclusion: All students are honest.'},
+o:[{hi:'अनुसरण करता है',en:'Follows'},{hi:'अनुसरण नहीं करता',en:'Does not follow'}],a:1,
+e:{hi:'"सभी ईमानदार" अति-सामान्यीकरण → अनुसरण नहीं करता।',en:'Overgeneralization → does not follow.'}},
+{q:{hi:'कथन: बारिश हो रही है। निष्कर्ष: सड़कें गीली होंगी।',en:'It is raining. Conclusion: Roads will be wet.'},
+o:[{hi:'अनुसरण करता है',en:'Follows'},{hi:'अनुसरण नहीं करता',en:'Does not follow'}],a:0,
+e:{hi:'प्राकृतिक परिणाम → अनुसरण करता है।',en:'Natural consequence → follows.'}}]});
+})();

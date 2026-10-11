@@ -1206,10 +1206,18 @@
    "quiz": [
     {
      "q": {
-      "hi": "मोहन की माँ, सोहन की माँ की इकलौती बेटी है। मोहन, सोहन का कौन?",
-      "en": "Mohan's mother is the only daughter of Sohan's mother. Relation?"
+      "hi": "राम की माँ, श्याम की इकलौती बहन है। श्याम, राम का कौन है?",
+      "en": "Ram's mother is Shyam's only sister. How is Shyam related to Ram?"
      },
      "o": [
+      {
+       "hi": "मामा",
+       "en": "Maternal uncle"
+      },
+      {
+       "hi": "चाचा",
+       "en": "Paternal uncle"
+      },
       {
        "hi": "भाई",
        "en": "Brother"
@@ -1217,20 +1225,12 @@
       {
        "hi": "पिता",
        "en": "Father"
-      },
-      {
-       "hi": "चाचा",
-       "en": "Uncle"
-      },
-      {
-       "hi": "बेटा",
-       "en": "Son"
       }
      ],
      "a": 0,
      "e": {
-      "hi": "सोहन की माँ की इकलौती बेटी = सोहन की बहन = मोहन की माँ → मोहन, सोहन का भाई।",
-      "en": "Only daughter = Sohan's sister = Mohan's mother → brothers."
+      "hi": "माँ की बहन का भाई = मामा। श्याम, राम की माँ का भाई है → <mark>मामा</mark>।",
+      "en": "Mother's sister's brother = <mark>maternal uncle</mark>."
      }
     },
     {
@@ -1936,10 +1936,10 @@
        "en": "Partially true"
       }
      ],
-     "a": 0,
+     "a": 2,
      "e": {
-      "hi": "पेन, पेंसिल-वृत्त (जो रबर के अंदर) से पूर्णतः अलग → सत्य।",
-      "en": "Pen circle fully outside → true."
+      "hi": "रबर-वृत्त पेंसिल से बड़ा है; पेन, पेंसिल-रहित रबर हो सकता है → <mark>कह नहीं सकते</mark>।",
+      "en": "Eraser circle is bigger than pencil; a pen could be a non-pencil eraser → <mark>cannot say</mark>."
      }
     },
     {

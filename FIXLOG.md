@@ -58,3 +58,31 @@ Every MCQ was math/logic-verified during writing (self-caught bugs fixed: m14 Q2
 
 ## Diagrams (18 builders, 10 categories, all <5KB, HI/EN, dark-mode safe)
 Geometry (triangle types, circle parts, square/rectangle, angle types), analog clock, calendar grid, Venn 2/3, 8-direction compass, bar chart, pie chart, number line, mirror image, seating circle/row, family tree, India outline, history timeline.
+
+## Audit #3 — Final Polish Pass (2026-10-11)
+
+### Bugs fixed (content)
+1. **m02:2 BROKEN** — "HCF of 3/4, 6/8, 9/12?" had wrong LCM in explanation (said 12, correct is 24) and no valid answer. Replaced with "HCF of 4/5, 6/15?" → 2/15 (verified: HCF(4,6)=2, LCM(5,15)=15).
+2. **r06:0 WRONG** — Blood relation claimed Mohan/Sohan are "brothers"; correct relation is nephew/uncle and "nephew" wasn't an option. Rewrote: "Ram's mother is Shyam's only sister. How is Shyam related to Ram?" → Maternal uncle (मामा).
+3. **r09:1 WRONG** — "No pen is pencil. All pencils are erasers → No pen is eraser" marked True; correct is "Cannot say" (eraser circle extends beyond pencil). Fixed answer + explanation.
+4. **Group D mock short** — only 15 science Qs existed, pattern needs 25. Added s04 (Physics Part 2) + s05 (Environment & Everyday Science), each with 3 mnemonics + 10 facts + 5 verified MCQs. Mock now = full 100Q.
+5. **Outdated GA note** — mock setup said "prepare GA/Science in RuhRank"; RuhXam now covers them. Updated string.
+6. **Confirm modal i18n** — Yes/No buttons were hardcoded Hindi; now use t('yes')/t('no').
+
+### Improvements
+- Science subtitle updated: 3 → 5 chapters.
+- All 265 MCQs spot-checked across 5 parts (math recalculated, facts verified).
+
+### New features (3)
+1. **📋 Formula Sheet** — one-tap collection of all `<mark>` maths formulas grouped by chapter (Study → Formula Sheet button). Offline, bilingual.
+2. **🔥 Daily Streak** — tracks consecutive study days on home hero (flame + count). Same-day reload doesn't inflate; missed day resets to 1. Stored in RXStore.
+3. **🎯 Exam Countdown** — home widget + Profile date picker. Shows "N days left" / "today" / "passed" states. Tapping widget jumps to Profile picker.
+
+### Content totals (updated)
+- 53 chapters (22 maths + 17 reasoning + 5 science + 6 GK + 3 CA), 265 MCQs, all answers + bilingual explanations verified.
+
+### Test report (Audit #3)
+- Main suite: **40/40 PASS** (incl. fixed groupd mock = 100Q).
+- New harness `/tmp/rxtest/audit3.js`: **18/18 PASS** — streak widget + persistence, countdown set/past/clear, formula sheet chips + grouping, all 18 diagram builders exist + render valid SVG, corrupt localStorage recovery, rapid tab switching, EN/HI labels for new strings, m02:2 fix verified, zero JS errors.
+- `node --check` clean on all modified files.
+- CDN rebuilt via `tools/build-cdn.js` (53 chapters, 265 Qs, validation passed).

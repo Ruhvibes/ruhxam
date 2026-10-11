@@ -199,3 +199,15 @@ mark{background:linear-gradient(180deg,transparent 55%,var(--mark) 55%);padding:
 [data-theme="dark"] .trick{box-shadow:0 2px 14px rgba(0,0,0,.5);}
 [data-theme="dark"] .ch-hero{box-shadow:0 4px 20px rgba(0,0,0,.5);}
 [data-theme="dark"] .sec-div{box-shadow:0 2px 12px rgba(0,0,0,.45);}
+/* ---- Audit #3: streak + countdown widgets, formula sheet ---- */
+.widget-row{display:flex;gap:10px;margin:14px 0 4px;position:relative;z-index:1;}
+.widget{flex:1;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);border-radius:14px;padding:10px 12px;color:#fff;display:flex;align-items:center;gap:8px;font-family:inherit;cursor:default;}
+button.widget{cursor:pointer;text-align:left;}
+.widget .w-ico{font-size:22px;}
+.widget b{font-size:17px;}
+.widget span:last-child{font-size:11px;opacity:.85;}
+.cd-w.today{background:rgba(22,163,74,.35);}
+.cd-w.passed{background:rgba(220,38,38,.35);}
+.formula-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+.formula-chip{background:rgba(139,92,246,.12);border:1px solid var(--brand2);border-radius:10px;padding:6px 12px;font-weight:700;font-size:14px;}
+[data-theme="dark"] .formula-chip{background:rgba(139,92,246,.22);}

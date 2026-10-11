@@ -1,0 +1,155 @@
+/* RuhXam — Reasoning Ch 13-17 */
+window.RT_CH = window.RT_CH || [];
+(function(){
+var P='reasoning';
+RT_CH.push({id:'r13',part:P,num:13,kind:'tricks',exams:['all'],
+title:{hi:'गणितीय संक्रियाएँ',en:'Mathematical Operations'},
+concept:{hi:'चिह्नों को <mark>आपस में बदलकर</mark> BODMAS से हल करें।',en:'<mark>Interchange signs</mark>, solve by BODMAS.'},
+tricks:[
+{h:{hi:'चिह्न बदलें',en:'Swap signs'},b:{hi:'निर्देशानुसार + ↔ −, × ↔ ÷ बदलें, फिर <mark>BODMAS</mark> लागू करें।',en:'Swap as directed, then <mark>BODMAS</mark>.'}},
+{h:{hi:'कोष्ठक पहले',en:'Brackets first'},b:{hi:'बदलाव के बाद भी <mark>क्रम</mark> न भूलें।',en:'Keep <mark>order</mark> after swapping.'}},
+{h:{hi:'पहले पूरा व्यंजक लिखें',en:'Write the full expression first'},b:{hi:'अक्षर-चिह्न प्रश्नों में <mark>पहले सभी चिह्न बदलकर पूरा व्यंजक दोबारा लिखें</mark>, फिर BODMAS लगाएँ - बीच में बदलने से भूल होती है।',en:'<mark>Rewrite the whole expression</mark> with swapped signs first, then apply BODMAS.'}},
+{h:{hi:'दोहरा बदलाव = मूल चिह्न',en:'Double swap = original sign'},b:{hi:'यदि चिह्नों को <mark>दो बार आपस में बदला</mark> जाए (+ को - फिर - को +), तो चिह्न मूल जैसे ही रहते हैं - सीधे गणना करें।',en:'Swapping signs <mark>twice</mark> restores the originals - calculate directly.'}}],
+examples:[
+{q:{hi:'यदि + का अर्थ × और × का अर्थ + हो, तो 4 + 5 × 3 = ?',en:'If + means × and × means +, 4 + 5 × 3 = ?'},
+s:{hi:'4 × 5 + 3 = 20 + 3 = <mark>23</mark>।',en:'4×5+3 = <mark>23</mark>.'}},
+{q:{hi:'− का अर्थ ÷ हो, तो 20 − 4 + 2 = ? (+ अपरिवर्तित)',en:'− means ÷. 20 − 4 + 2 = ?'},
+s:{hi:'20 ÷ 4 + 2 = 5 + 2 = <mark>7</mark>।',en:'20÷4+2 = <mark>7</mark>.'}}],
+quiz:[
+{q:{hi:'+ → −, − → + हो तो 10 + 5 − 3 = ?',en:'+ → −, − → +. 10 + 5 − 3 = ?'},
+o:[{hi:'12',en:'12'},{hi:'8',en:'8'},{hi:'2',en:'2'},{hi:'18',en:'18'}],a:1,
+e:{hi:'10 − 5 + 3 = 8।',en:'10−5+3 = 8.'}},
+{q:{hi:'× → ÷ हो तो 36 × 6 + 2 = ? (+ अपरिवर्तित)',en:'× → ÷. 36 × 6 + 2 = ?'},
+o:[{hi:'12',en:'12'},{hi:'8',en:'8'},{hi:'14',en:'14'},{hi:'6',en:'6'}],a:1,
+e:{hi:'36 ÷ 6 + 2 = 6+2 = 8।',en:'6+2 = 8.'}},
+{q:{hi:'A का अर्थ +, B का अर्थ × हो तो 3 A 4 B 2 = ?',en:'A=+, B=×. 3 A 4 B 2 = ?'},
+o:[{hi:'14',en:'14'},{hi:'11',en:'11'},{hi:'24',en:'24'},{hi:'9',en:'9'}],a:1,
+e:{hi:'3 + 4 × 2 = 3+8 = 11।',en:'3+8 = 11.'}},
+{q:{hi:'− → ×, × → + हो तो 6 − 3 × 2 = ?',en:'− → ×, × → +. 6 − 3 × 2 = ?'},
+o:[{hi:'20',en:'20'},{hi:'14',en:'14'},{hi:'10',en:'10'},{hi:'16',en:'16'}],a:0,
+e:{hi:'6 × 3 + 2 = 18+2 = 20।',en:'18+2 = 20.'}},
+{q:{hi:'÷ → − हो तो 20 ÷ 5 + 3 = ? (+ अपरिवर्तित)',en:'÷ → −. 20 ÷ 5 + 3 = ?'},
+o:[{hi:'18',en:'18'},{hi:'7',en:'7'},{hi:'1',en:'1'},{hi:'23',en:'23'}],a:0,
+e:{hi:'20 − 5 + 3 = 18।',en:'20−5+3 = 18.'}}]});
+
+RT_CH.push({id:'r14',part:P,num:14,kind:'tricks',exams:['all'],
+title:{hi:'शब्द गठन (Jumbling)',en:'Jumbling / Word Formation'},
+concept:{hi:'अक्षरों से <mark>सार्थक शब्द</mark> बनाएँ या दिए शब्द से बनने/न बनने वाले शब्द पहचानें।',en:'Form <mark>meaningful words</mark> or check formability.'},
+tricks:[
+{h:{hi:'अक्षर गिनें',en:'Count letters'},b:{hi:'वांछित शब्द का <mark>प्रत्येक अक्षर</mark> मूल शब्द में उतनी ही बार होना चाहिए।',en:'Each letter must appear <mark>as many times</mark>.'}},
+{h:{hi:'प्रत्यय देखें',en:'Look at suffixes'},b:{hi:'−ING, −TION, −NESS जैसे <mark>प्रत्यय</mark> शब्द बनाने में मदद करते हैं।',en:'<mark>Suffixes</mark> like −ING help.'}},
+{h:{hi:'स्वर पहले अलग करें',en:'Separate vowels first'},b:{hi:'अक्षरों में से <mark>स्वर (A, E, I, O, U)</mark> पहले छाँट लें - अधिकांश सार्थक शब्द स्वर-व्यंजन के क्रम से जल्दी बनते हैं।',en:'Pick out the <mark>vowels</mark> first - words form faster around them.'}},
+{h:{hi:'सामान्य उपसर्ग देखें',en:'Look for common prefixes'},b:{hi:'<mark>UN-, RE-, PRE-, DIS-</mark> जैसे उपसर्ग पहले जाँचें - इनसे शब्द का आरंभ मिल जाता है और बाकी अक्षर आसानी से बैठते हैं।',en:'Check <mark>UN-, RE-, PRE-, DIS-</mark> prefixes first to catch the beginning of the word.'}}],
+examples:[
+{q:{hi:'"CAREFUL" से कौन-सा शब्द नहीं बन सकता? (A) RACE (B) FULL (C) CARE (D) FUEL',en:'Which word CANNOT be made from "CAREFUL"?'},
+s:{hi:'CAREFUL में L एक बार है → <mark>FULL</mark> (दो L चाहिए) नहीं बन सकता।',en:'Only one L → <mark>FULL</mark> impossible.'}},
+{q:{hi:'अक्षर: A, E, R, T — सार्थक शब्द?',en:'Letters A,E,R,T — meaningful word?'},
+s:{hi:'<mark>RATE / TEAR</mark>।',en:'<mark>RATE</mark>.'}}],
+quiz:[
+{q:{hi:'"STATION" से कौन-सा शब्द बन सकता है?',en:'Which word can be made from "STATION"?'},
+o:[{hi:'NATION',en:'NATION'},{hi:'TENTS',en:'TENTS'},{hi:'STAINS',en:'STAINS'},{hi:'TOASTS',en:'TOASTS'}],a:0,
+e:{hi:'NATION के सभी अक्षर STATION में हैं।',en:'All letters of NATION present.'}},
+{q:{hi:'"EXAMINATION" से कौन-सा शब्द नहीं बन सकता?',en:'Which CANNOT be made from "EXAMINATION"?'},
+o:[{hi:'MINE',en:'MINE'},{hi:'AXIOM',en:'AXIOM'},{hi:'NOTE',en:'NOTE'},{hi:'MAN',en:'MAN'}],a:1,
+e:{hi:'X एक बार, O नहीं है → AXIOM असंभव।',en:'No O → AXIOM impossible.'}},
+{q:{hi:'अव्यवस्थित: "PLEAP" — सार्थक शब्द?',en:'Jumbled "PLEAP" — meaningful?'},
+o:[{hi:'APPLE',en:'APPLE'},{hi:'PEPAL',en:'PEPAL'},{hi:'LEAPP',en:'LEAPP'},{hi:'PALEP',en:'PALEP'}],a:0,
+e:{hi:'PLEAP → APPLE।',en:'PLEAP → APPLE.'}},
+{q:{hi:'"BENCH" से कौन-सा शब्द नहीं बन सकता?',en:'Which CANNOT be made from "BENCH"?'},
+o:[{hi:'HEN',en:'HEN'},{hi:'BEN',en:'BEN'},{hi:'HENCE',en:'HENCE'},{hi:'NEB',en:'NEB'}],a:2,
+e:{hi:'HENCE में E दो बार चाहिए, BENCH में एक बार → असंभव।',en:'HENCE needs two E\'s; only one → impossible.'}},
+
+{q:{hi:'"WATER" से कौन-सा शब्द नहीं बन सकता?',en:'Which CANNOT be made from "WATER"?'},
+o:[{hi:'TEA',en:'TEA'},{hi:'RAT',en:'RAT'},{hi:'WATERFALL',en:'WATERFALL'},{hi:'ART',en:'ART'}],a:2,
+e:{hi:'WATERFALL में अतिरिक्त अक्षर चाहिए → असंभव।',en:'Needs extra letters → impossible.'}}]});
+
+RT_CH.push({id:'r15',part:P,num:15,kind:'tricks',exams:['all'],
+title:{hi:'वेन आरेख',en:'Venn Diagrams'},
+concept:{hi:'समूहों के <mark>संबंध</mark> को वृत्तों से दर्शाएँ: अलग, काटते हुए, या एक-दूसरे के अंदर।',en:'Show set <mark>relations</mark> with circles.'},
+tricks:[
+{h:{hi:'तीन संबंध',en:'Three relations'},b:{hi:'<mark>अलग</mark> (कोई संबंध नहीं), <mark>काटते</mark> (आंशिक), <mark>अंदर</mark> (पूर्ण समावेश)।',en:'<mark>Separate, overlapping, contained</mark>.'}},
+{h:{hi:'पहचान',en:'Identify'},b:{hi:'"सभी X, Y हैं" → X, Y के <mark>अंदर</mark>। "कुछ" → <mark>काटते</mark>।',en:'"All X are Y" → X <mark>inside</mark> Y.'}},
+{h:{hi:'कथन से पहले आरेख बनाएँ',en:'Draw before reading options'},b:{hi:'विकल्प देखने से <mark>पहले स्वयं आरेख</mark> बना लें - विकल्प भ्रमित करने के लिए होते हैं, आपका अपना आरेख नहीं भ्रमित करता।',en:'Draw your <mark>own diagram first</mark> - options are designed to mislead.'}},
+{h:{hi:'"केवल" = पृथक वृत्त',en:'"Only" = exclusive circle'},b:{hi:'"<mark>केवल X ही Y हैं</mark>" का अर्थ है: Y का पूरा वृत्त X के अंदर, और X के बाहर कोई Y नहीं - यानी पृथक (exclusive) समावेश।',en:'"<mark>Only X are Y</mark>" means the whole Y circle lies inside X - an exclusive inclusion.'}}],
+examples:[
+{q:{hi:'कुत्ता, पालतू पशु, बिल्ली का वेन आरेख?',en:'Venn: Dog, Pet animal, Cat?'},
+s:{hi:'कुत्ता व बिल्ली दोनों पालतू के <mark>अंदर अलग-अलग</mark> वृत्त।',en:'Dog & cat as separate circles <mark>inside</mark> pets.'}},
+{q:{hi:'लेखक, गायक, पुरुष का आरेख?',en:'Author, Singer, Men?'},
+s:{hi:'तीनों <mark>एक-दूसरे को काटते</mark> वृत्त।',en:'Three <mark>overlapping</mark> circles.'}}],
+quiz:[
+{q:{hi:'"सभी बसें वाहन हैं" — आरेख?',en:'"All buses are vehicles" — diagram?'},
+o:[{hi:'अलग वृत्त',en:'Separate'},{hi:'काटते वृत्त',en:'Overlapping'},{hi:'बस वाहन के अंदर',en:'Bus inside vehicle'},{hi:'वाहन बस के अंदर',en:'Vehicle inside bus'}],a:2,
+e:{hi:'बस का वृत्त वाहन के अंदर।',en:'Bus inside vehicle.'}},
+{q:{hi:'महिला, माँ, डॉक्टर — सर्वोत्तम आरेख?',en:'Women, Mothers, Doctors — best diagram?'},
+o:[{hi:'तीनों अलग',en:'All separate'},{hi:'तीनों एक-दूसरे को काटते',en:'All overlapping'},{hi:'माँ महिला के अंदर; डॉक्टर काटता',en:'Mother inside women; doctor overlaps'},{hi:'सभी एक ही',en:'All same'}],a:2,
+e:{hi:'सभी माँ महिला हैं (अंदर); डॉक्टर दोनों को काट सकता है।',en:'Mothers inside women; doctors overlap.'}},
+{q:{hi:'कुत्ता, बिल्ली, पालतू — आरेख?',en:'Dog, Cat, Pet — diagram?'},
+o:[{hi:'तीनों अलग',en:'All separate'},{hi:'कुत्ता-बिल्ली अलग, दोनों पालतू के अंदर',en:'Dog/cat separate, both inside pet'},{hi:'सभी काटते',en:'All overlap'},{hi:'पालतू कुत्ते के अंदर',en:'Pet inside dog'}],a:1,
+e:{hi:'दोनों अलग-अलग पालतू के अंदर।',en:'Separate circles inside pet.'}},
+{q:{hi:'भारत, दिल्ली, लाल किला — आरेख?',en:'India, Delhi, Red Fort?'},
+o:[{hi:'तीनों अलग',en:'All separate'},{hi:'एक के अंदर एक (तीन स्तर)',en:'Nested three levels'},{hi:'काटते',en:'Overlapping'},{hi:'दो अंदर एक बाहर',en:'Two inside one'}],a:1,
+e:{hi:'लाल किला ⊂ दिल्ली ⊂ भारत।',en:'Nested: Red Fort ⊂ Delhi ⊂ India.'}},
+{q:{hi:'फल, सेब, सब्ज़ी — आरेख?',en:'Fruit, Apple, Vegetable?'},
+o:[{hi:'सेब फल के अंदर; सब्ज़ी अलग',en:'Apple inside fruit; vegetable separate'},{hi:'तीनों अलग',en:'All separate'},{hi:'सभी एक',en:'All same'},{hi:'सब्ज़ी फल के अंदर',en:'Vegetable inside fruit'}],a:0,
+e:{hi:'सेब ⊂ फल; सब्ज़ी अलग वृत्त।',en:'Apple inside fruit; vegetable separate.'}}]});
+
+RT_CH.push({id:'r16',part:P,num:16,kind:'tricks',exams:['all'],
+title:{hi:'आँकड़ा पर्याप्तता',en:'Data Sufficiency'},
+concept:{hi:'प्रश्न का उत्तर देने हेतु <mark>कौन-सा कथन पर्याप्त</mark> है? (I) अकेला? (II) अकेला? दोनों मिलकर? या अपर्याप्त?',en:'Which statement(s) <mark>suffice</mark> to answer?'},
+tricks:[
+{h:{hi:'क्रम से जाँचें',en:'Check in order'},b:{hi:'पहले (I) अकेला → फिर (II) अकेला → फिर <mark>दोनों मिलकर</mark>।',en:'Try (I) alone → (II) alone → <mark>both</mark>.'}},
+{h:{hi:'अनुपात + एक मान',en:'Ratio + one value'},b:{hi:'अनुपात अकेला <mark>अपर्याप्त</mark>; एक निश्चित मान मिले तो पर्याप्त।',en:'Ratio alone <mark>insufficient</mark>.'}},
+{h:{hi:'अतिरिक्त जानकारी अनदेखा करें',en:'Ignore extra info'},b:{hi:'जो कथन उत्तर हेतु <mark>आवश्यक न हो</mark>, उसे अनदेखा करें - अतिरिक्त आँकड़े प्रायः भ्रमित करने के लिए दिए जाते हैं।',en:'<mark>Ignore</mark> statements not needed for the answer - extra data is there to confuse.'}},
+{h:{hi:'निश्चित "हाँ/ना" चाहिए',en:'Need a definite yes/no'},b:{hi:'कथन तभी पर्याप्त जब उससे <mark>एक ही निश्चित उत्तर</mark> निकले - दो संभावित उत्तर या दो मान मिलें तो कथन अपर्याप्त है।',en:'A statement suffices only if it yields <mark>one definite answer</mark>; two possibilities = insufficient.'}}],
+examples:[
+{q:{hi:'x का मान? (I) x²=25 (II) x>0',en:'Value of x? (I) x²=25 (II) x>0'},
+s:{hi:'(I) से x=±5; (II) से x=5 → <mark>दोनों मिलकर पर्याप्त</mark>।',en:'(I) gives ±5; (II) fixes 5 → <mark>both needed</mark>.'}},
+{q:{hi:'राम की आयु? (I) राम श्याम से 5 वर्ष बड़ा (II) श्याम 20 वर्ष का',en:'Ram\'s age? (I) Ram 5 yrs older than Shyam (II) Shyam is 20'},
+s:{hi:'दोनों से 25 → <mark>दोनों मिलकर</mark>।',en:'Both → 25.'}}],
+quiz:[
+{q:{hi:'दो संख्याओं का योग? (I) दोनों सम हैं (II) अंतर 4 है',en:'Sum of two numbers? (I) Both even (II) Difference 4'},
+o:[{hi:'केवल I',en:'Only I'},{hi:'केवल II',en:'Only II'},{hi:'दोनों मिलकर',en:'Both'},{hi:'अपर्याप्त',en:'Insufficient'}],a:3,
+e:{hi:'मान ज्ञात नहीं → अपर्याप्त।',en:'Values unknown → insufficient.'}},
+{q:{hi:'ट्रेन की चाल? (I) 200m, 10 सेकंड में पार (II) —',en:'Train speed? (I) Crosses 200m in 10s'},
+o:[{hi:'केवल I पर्याप्त',en:'Only I'},{hi:'केवल II',en:'Only II'},{hi:'दोनों चाहिए',en:'Both needed'},{hi:'अपर्याप्त',en:'Insufficient'}],a:0,
+e:{hi:'चाल = 200/10 = 20 m/s → केवल I पर्याप्त।',en:'Speed = 20 m/s → I alone.'}},
+{q:{hi:'x>y? (I) x=10 (II) y=5',en:'Is x>y? (I) x=10 (II) y=5'},
+o:[{hi:'केवल I',en:'Only I'},{hi:'केवल II',en:'Only II'},{hi:'दोनों मिलकर',en:'Both'},{hi:'अपर्याप्त',en:'Insufficient'}],a:2,
+e:{hi:'दोनों मान चाहिए → दोनों मिलकर।',en:'Need both values.'}},
+{q:{hi:'आयत का क्षेत्रफल? (I) लंबाई 10 (II) चौड़ाई 5',en:'Rectangle area? (I) Length 10 (II) Width 5'},
+o:[{hi:'केवल I',en:'Only I'},{hi:'केवल II',en:'Only II'},{hi:'दोनों मिलकर',en:'Both'},{hi:'अपर्याप्त',en:'Insufficient'}],a:2,
+e:{hi:'10×5 = 50 → दोनों चाहिए।',en:'Need both.'}},
+{q:{hi:'क्या n अभाज्य है? (I) n<10 (II) n विषम है',en:'Is n prime? (I) n<10 (II) n is odd'},
+o:[{hi:'केवल I',en:'Only I'},{hi:'केवल II',en:'Only II'},{hi:'दोनों मिलकर',en:'Both'},{hi:'अपर्याप्त',en:'Insufficient'}],a:3,
+e:{hi:'n = 1,3,5,7,9 में से — 9 भाज्य → अपर्याप्त।',en:'Could be 9 → insufficient.'}}]});
+
+RT_CH.push({id:'r17',part:P,num:17,kind:'tricks',exams:['all'],
+title:{hi:'कथन-पूर्वधारणा एवं तर्क',en:'Statement-Assumption & Arguments'},
+concept:{hi:'<mark>पूर्वधारणा</mark> = कथन में छिपी मान्यता। <mark>मज़बूत तर्क</mark> = तथ्यात्मक, सीधा संबंधित।',en:'<mark>Assumption</mark> = hidden belief. <mark>Strong argument</mark> = factual, directly related.'},
+tricks:[
+{h:{hi:'पूर्वधारणा जाँच',en:'Assumption test'},b:{hi:'"कथन सत्य होने हेतु <mark>क्या मानना ज़रूरी</mark> है?" — वही पूर्वधारणा।',en:'What <mark>must be true</mark> for the statement to hold?'}},
+{h:{hi:'मज़बूत बनाम कमज़ोर',en:'Strong vs weak'},b:{hi:'तथ्य+तर्क = मज़बूत; <mark>उदाहरण/तुलना/सरल "हाँ-ना"</mark> = कमज़ोर।',en:'Facts = strong; <mark>examples/comparisons</mark> = weak.'}},
+{h:{hi:'नकारात्मक पुनर्कथन नहीं',en:'No negative restatement'},b:{hi:'कथन का सीधा <mark>नकारात्मक पुनर्कथन</mark> ("ऐसा नहीं है कि...") पूर्वधारणा नहीं होता - पूर्वधारणा कथन से आगे की छिपी हुई मान्यता है।',en:'A mere <mark>negative restatement</mark> of the statement is not an assumption.'}},
+{h:{hi:'"केवल/सर्वोत्तम" वाले शब्द',en:'Words like "only/best"'},b:{hi:'<mark>"केवल", "सर्वोत्तम", "सभी"</mark> जैसे चरम शब्दों वाली पूर्वधारणाएँ प्रायः अंतर्निहित नहीं होतीं - ऐसे विकल्पों से सावधान रहें।',en:'Assumptions with extreme words like <mark>"only", "best", "all"</mark> are usually not implicit.'}}],
+examples:[
+{q:{hi:'कथन: "कृपया धूम्रपान न करें" (सूचना)। पूर्वधारणा: लोग सूचना पढ़ते हैं।',en:'"Please don\'t smoke" (notice). Assumption: people read notices.'},
+s:{hi:'<mark>अंतर्निहित है</mark> — सूचना तभी सार्थक जब पढ़ी जाए।',en:'<mark>Implicit</mark> — notice assumes readers.'}},
+{q:{hi:'क्या परीक्षा में कैलकुलेटर चाहिए? तर्क: "गणना तेज़ होगी" — मज़बूत?',en:'Calculator in exams? "Faster calculation" — strong?'},
+s:{hi:'<mark>मज़बूत</mark> — सीधा तथ्यात्मक लाभ।',en:'<mark>Strong</mark> — direct factual benefit.'}}],
+quiz:[
+{q:{hi:'कथन: "ट्रेन 3 घंटे देरी से चलेगी।" पूर्वधारणा: यात्री स्टेशन आएँगे।',en:'"Train delayed 3 hrs." Assumption: passengers will come.'},
+o:[{hi:'अंतर्निहित',en:'Implicit'},{hi:'अंतर्निहित नहीं',en:'Not implicit'}],a:0,
+e:{hi:'सूचना यात्रियों हेतु → अंतर्निहित।',en:'Notice is for passengers → implicit.'}},
+{q:{hi:'तर्क: "परीक्षा रद्द होनी चाहिए क्योंकि मेरा दोस्त फेल हुआ" — ?',en:'"Exam should be cancelled because my friend failed" — ?'},
+o:[{hi:'मज़बूत',en:'Strong'},{hi:'कमज़ोर',en:'Weak'}],a:1,
+e:{hi:'व्यक्तिगत उदाहरण → कमज़ोर तर्क।',en:'Personal example → weak.'}},
+{q:{hi:'कथन: "पुस्तकालय में शांति बनाए रखें।" पूर्वधारणा: पाठक शोर करते हैं।',en:'"Maintain silence in library." Assumption: readers make noise.'},
+o:[{hi:'अंतर्निहित',en:'Implicit'},{hi:'अंतर्निहित नहीं',en:'Not implicit'}],a:0,
+e:{hi:'चेतावनी तभी जब संभावना हो → अंतर्निहित।',en:'Warning implies possibility → implicit.'}},
+{q:{hi:'तर्क: "मोबाइल प्रतिबंधित हो क्योंकि विकिरण स्वास्थ्य को हानि पहुँचाता है" — ?',en:'"Ban mobiles: radiation harms health" — ?'},
+o:[{hi:'मज़बूत',en:'Strong'},{hi:'कमज़ोर',en:'Weak'}],a:0,
+e:{hi:'वैज्ञानिक तथ्य → मज़बूत तर्क।',en:'Scientific fact → strong.'}},
+{q:{hi:'कथन: "बच्चों को रोज़ दूध पिलाएँ।" पूर्वधारणा: दूध लाभदायक है।',en:'"Give children milk daily." Assumption: milk is beneficial.'},
+o:[{hi:'अंतर्निहित',en:'Implicit'},{hi:'अंतर्निहित नहीं',en:'Not implicit'}],a:0,
+e:{hi:'सलाह के पीछे यही मान्यता → अंतर्निहित।',en:'Advice assumes benefit → implicit.'}}]});
+})();

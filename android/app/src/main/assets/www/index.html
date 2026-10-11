@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="hi" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#6d28d9">
+<title>RuhXam — Railway Exam Prep</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header id="hdr">
+  <button id="btnBack" class="icon-btn hidden" aria-label="back">‹</button>
+  <div class="brand-mark">RX</div>
+  <div class="brand-copy"><strong>RuhXam</strong><span>BY HASNAIN KHAN</span></div>
+  <div class="hdr-actions">
+    <button id="btnExam" class="chip-btn" title="exam">🚂 <span id="examChip">NTPC</span></button>
+    <button id="btnLang" class="icon-btn" title="language">अ/A</button>
+    <button id="btnTheme" class="icon-btn" title="theme">🌙</button>
+  </div>
+</header>
+
+<main id="main">
+  <section id="v-home" class="view"></section>
+  <section id="v-study" class="view hidden"></section>
+  <section id="v-part" class="view hidden"></section>
+  <section id="v-chapter" class="view hidden"></section>
+  <section id="v-practice" class="view hidden"></section>
+  <section id="v-quiz" class="view hidden"></section>
+  <section id="v-mocksetup" class="view hidden"></section>
+  <section id="v-mock" class="view hidden"></section>
+  <section id="v-result" class="view hidden"></section>
+  <section id="v-notes" class="view hidden"></section>
+  <section id="v-noteedit" class="view hidden"></section>
+  <section id="v-progress" class="view hidden"></section>
+  <section id="v-profile" class="view hidden"></section>
+</main>
+
+<nav id="tabbar">
+  <button data-tab="home" class="tab sel">🏠<span>होम</span></button>
+  <button data-tab="study" class="tab">📚<span>अध्ययन</span></button>
+  <button data-tab="practice" class="tab">✏️<span>अभ्यास</span></button>
+  <button data-tab="mock" class="tab">⏱️<span>मॉक</span></button>
+  <button data-tab="notes" class="tab">📝<span>नोट्स</span></button>
+  <button data-tab="progress" class="tab">📊<span>प्रगति</span></button>
+  <button data-tab="profile" class="tab">⚙️<span>प्रोफ़ाइल</span></button>
+</nav>
+
+<div id="confirmModal" class="modal hidden">
+  <div class="modal-box">
+    <p id="confirmText"></p>
+    <div class="row">
+      <button id="confirmYes" class="btn primary">हाँ</button>
+      <button id="confirmNo" class="btn secondary">नहीं</button>
+    </div>
+  </div>
+</div>
+
+<div id="toast" class="toast hidden"></div>
+
+<script src="js/i18n.js"></script>
+<script src="js/exams.js"></script>
+<script src="data/m1.js"></script>
+<script src="data/m2.js"></script>
+<script src="data/m3.js"></script>
+<script src="data/m4.js"></script>
+<script src="data/m5.js"></script>
+<script src="data/r1.js"></script>
+<script src="data/r2.js"></script>
+<script src="data/r3.js"></script>
+<script src="data/r4.js"></script>
+<script src="data/s1.js"></script>
+<script src="data/g1.js"></script>
+<script src="data/g2.js"></script>
+<script src="data/ca1.js"></script>
+<script src="js/store.js"></script>
+<script src="js/diagrams.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

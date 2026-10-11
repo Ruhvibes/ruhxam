@@ -23,7 +23,9 @@ var toastTimer=null;
 function toast(msg){var el=$('toast');el.textContent=msg;el.classList.remove('hidden');
   clearTimeout(toastTimer);toastTimer=setTimeout(function(){el.classList.add('hidden');},2200);}
 function confirmDlg(msg,cb){
-  $('confirmText').textContent=msg;$('confirmModal').classList.remove('hidden');
+  $('confirmText').textContent=msg;
+  $('confirmYes').textContent=t('yes');$('confirmNo').textContent=t('no');
+  $('confirmModal').classList.remove('hidden');
   $('confirmYes').onclick=function(){$('confirmModal').classList.add('hidden');cb(true);};
   $('confirmNo').onclick=function(){$('confirmModal').classList.add('hidden');cb(false);};
 }
@@ -98,6 +100,39 @@ window.__ruhxamBack=function(){
 };
 function push(v,arg){RT.stack.push({v:RT.view});show(v,arg);}
 
+/* ---------- formula sheet (all maths <mark> formulas, one place) ---------- */
+function renderFormulaSheet(){
+  RT.view='formulas';
+  TABS.forEach(function(tb){$('v-'+tb).classList.toggle('hidden',tb!=='study');});
+  document.querySelectorAll('#tabbar .tab').forEach(function(b){b.classList.toggle('sel',b.getAttribute('data-tab')==='study');});
+  $('btnBack').classList.remove('hidden');setAds(true);
+  RT.stack.push({v:'study'});
+  var h='<h2 class="sec">'+esc(t('formula_sheet'))+'</h2><p class="muted">'+esc(t('all_formulas'))+'</p>';
+  chByPart('maths').forEach(function(c){
+    var marks=[];
+    (c.tricks||[]).forEach(function(tr){
+      var m=String(tr.b.hi||'').match(/<mark>(.*?)<\/mark>/g)||[];
+      m.forEach(function(x){var txt=x.replace(/<\/?mark>/g,'');if(marks.indexOf(txt)<0)marks.push(txt);});
+    });
+    if(!marks.length)return;
+    h+='<div class="card anim-in"><h3><span class="ch-num">'+c.num+'</span> '+esc(L(c.title))+'</h3>';
+    h+='<div class="formula-list">'+marks.map(function(f){return '<span class="formula-chip">'+f+'</span>';}).join('')+'</div></div>';
+  });
+  $('v-study').innerHTML=h;window.scrollTo(0,0);
+}
+
+/* ---------- exam countdown ---------- */
+function countdownText(){
+  var ts=RXStore.get('examDate');
+  if(!ts)return null;
+  var now=new Date();now.setHours(0,0,0,0);
+  var d=new Date(ts);d.setHours(0,0,0,0);
+  var days=Math.round((d-now)/864e5);
+  if(days<0)return {txt:t('exam_passed'),cls:'passed'};
+  if(days===0)return {txt:t('exam_today'),cls:'today'};
+  return {txt:days+' '+t('days_left'),cls:'left'};
+}
+
 /* ---------- home ---------- */
 function dailyTrick(){
   var pool=[];
@@ -115,11 +150,18 @@ function stats(){
 function renderHome(){
   var st=stats(),dt=dailyTrick(),last=RXStore.get('lastChapter');
   var lastCh=last?chById(last):null;
+  var streakN=RXStore.touchStreak();
+  var cd=countdownText();
   var h='';
   h+='<section class="hero"><img class="hero-logo" src="img/logo-small.png" alt="RuhXam"><p class="eyebrow">'+esc(t('exam_prep'))+'</p>';
   h+='<h1>'+esc(t('welcome'))+'</h1><p>'+esc(t('hero_text'))+'</p>';
   h+='<div class="hero-actions"><button class="primary-button" data-go="study">'+esc(t('start_learning'))+'</button>';
   h+='<button class="ghost-button" data-go="mock">'+esc(t('take_mock'))+'</button></div>';
+  // streak + countdown widgets
+  h+='<div class="widget-row">';
+  h+='<div class="widget streak-w"><span class="w-ico">🔥</span><b>'+streakN+'</b><span>'+esc(t('streak'))+'</span></div>';
+  h+='<button class="widget cd-w '+(cd?cd.cls:'')+'" id="cdWidget"><span class="w-ico">🎯</span><b>'+(cd?esc(cd.txt):esc(t('no_exam_date')))+'</b><span>'+esc(t('exam_countdown'))+'</span></button>';
+  h+='</div>';
   h+='<div class="offline-note"><span class="status-dot"></span><span>'+esc(t('offline_ready'))+'</span></div></section>';
   h+='<section class="stats-grid">';
   h+='<article class="stat-card"><span>'+esc(t('chapters_done'))+'</span><strong>'+st.done+'/'+CH.length+'</strong></article>';
@@ -130,6 +172,7 @@ function renderHome(){
   if(lastCh){h+='<button class="ch-row" data-ch="'+lastCh.id+'"><span class="ch-num">▶</span><span class="t">'+esc(t('continue_learning'))+': '+esc(L(lastCh.title))+'</span><span>›</span></button>';}
   if(dt){h+='<div class="daily"><h4>'+esc(t('daily_trick'))+'</h4><b>'+esc(L(dt.tr.h))+'</b><div>'+dt.tr.b+'</div><div class="muted" style="color:#fff;opacity:.85">'+esc(L(dt.c.title))+'</div></div>';}
   h+='<h2 class="sec">'+esc(t('study_parts'))+'</h2>';
+  h+='<button class="btn secondary block" id="formulaBtn" style="margin-bottom:10px">'+esc(t('formula_sheet'))+'</button>';
   RX_PARTS.forEach(function(p){
     var n=chByPart(p.id).length;
     h+='<div class="part-card" data-part="'+p.id+'"><span class="go">›</span><h3>'+p.icon+' '+esc(t(p.tk))+'</h3><p>'+n+' '+esc(t('chapters'))+' • '+esc(t(p.sk))+'</p></div>';
@@ -142,6 +185,8 @@ function wireHome(){
   document.querySelectorAll('#v-home [data-go]').forEach(function(b){b.onclick=function(){goTab(b.getAttribute('data-go'));};});
   document.querySelectorAll('#v-home [data-part]').forEach(function(b){b.onclick=function(){push('study');renderPart(b.getAttribute('data-part'));RT.view='study';};});
   document.querySelectorAll('#v-home [data-ch]').forEach(function(b){b.onclick=function(){openChapter(b.getAttribute('data-ch'));};});
+  var fb=$('formulaBtn');if(fb)fb.onclick=function(){renderFormulaSheet();};
+  var cdw=$('cdWidget');if(cdw)cdw.onclick=function(){goTab('profile');setTimeout(function(){var el=$('examDateInput');if(el)el.scrollIntoView({behavior:'smooth',block:'center'});},300);};
   var qi=$('q');
   qi.oninput=function(){
     var qv=qi.value.trim().toLowerCase(),box=$('searchRes');
@@ -609,6 +654,13 @@ function renderProfile(){
   Object.keys(RT_EXAMS).forEach(function(id){var e=RT_EXAMS[id];
     h+='<button class="exam-opt'+(RT.examId===id?' sel':'')+'" data-exam="'+id+'"><b>'+esc(L(e.name))+'</b><div class="p">'+esc(L(e.pattern))+'</div></button>';});
   h+='</div></div>';
+  h+='<div class="card"><h3>🎯 '+esc(t('exam_countdown'))+'</h3><p class="muted">'+esc(t('set_exam_date'))+'</p>';
+  var edv=RXStore.get('examDate');
+  var edstr=edv?new Date(edv).toISOString().slice(0,10):'';
+  h+='<input id="examDateInput" type="date" class="search" value="'+edstr+'">';
+  var cdt=countdownText();
+  if(cdt)h+='<p><b>'+esc(cdt.txt)+'</b></p>';
+  h+='</div>';
   h+='<div class="card"><h3>'+esc(t('theme'))+'</h3><div class="row"><button class="btn '+(RT.theme==='light'?'primary':'secondary')+'" data-theme="light">☀️</button><button class="btn '+(RT.theme==='dark'?'primary':'secondary')+'" data-theme="dark">🌙</button></div></div>';
   h+='<div class="card"><h3>'+esc(t('neg_mark'))+'</h3><div class="row">';
   [['0','0'],['0.25','-1/4'],['0.3333333333333333','-1/3'],['0.5','-1/2']].forEach(function(o){
@@ -625,6 +677,12 @@ function renderProfile(){
   document.querySelectorAll('#v-profile [data-theme]').forEach(function(b){b.onclick=function(){setTheme(b.getAttribute('data-theme'));renderProfile();};});
   document.querySelectorAll('#v-profile [data-neg]').forEach(function(b){b.onclick=function(){RXStore.set('negMark',b.getAttribute('data-neg'));renderProfile();};});
   $('cdnBtn').onclick=function(){checkCDN(true);};
+  var edi=$('examDateInput');
+  if(edi)edi.onchange=function(){
+    var v=edi.value;
+    RXStore.set('examDate',v?new Date(v+'T00:00:00').getTime():null);
+    renderProfile();toast('🎯 ✓');
+  };
   $('hfSave').onclick=function(){RXStore.set('hfToken',$('hfTok').value.trim());toast('✓');};
   $('clearBtn').onclick=function(){confirmDlg(t('clear_data')+'?',function(ok){if(ok){RXStore.clearData();location.reload();}});};
 }

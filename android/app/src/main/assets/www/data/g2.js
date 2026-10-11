@@ -1,0 +1,115 @@
+/* RuhXam — GK: Economy, Sports, Awards & Books */
+window.RT_CH = window.RT_CH || [];
+(function(){
+var P='gk';
+RT_CH.push({id:'g04',part:P,num:4,kind:'revision',exams:['all'],
+title:{hi:'भारतीय अर्थव्यवस्था',en:'Indian Economy'},
+concept:{hi:'बजट, RBI, पंचवर्षीय योजनाएँ एवं <mark>प्रमुख आर्थिक तथ्य</mark>।',en:'Key <mark>economic facts</mark>: budget, RBI, plans.'},
+tricks:[
+{h:{hi:'RBI',en:'RBI'},b:{hi:'स्थापना <mark>1935</mark>; राष्ट्रीयकरण <mark>1949</mark>; मुख्यालय <mark>मुंबई</mark>। प्रथम गवर्नर <mark>ओसबोर्न स्मिथ</mark>।',en:'Established <mark>1935</mark>; HQ <mark>Mumbai</mark>.'}},
+{h:{hi:'बजट',en:'Budget'},b:{hi:'केंद्रीय बजट <mark>1 फरवरी</mark> को पेश। रेल बजट 2017 से <mark>आम बजट में विलय</mark>।',en:'Union budget on <mark>1 Feb</mark>.'}},
+{h:{hi:'पंचवर्षीय योजनाएँ',en:'Five-year plans'},b:{hi:'प्रथम (1951–56) — <mark>हैरॉड-डोमर मॉडल</mark>। 12वीं अंतिम (2012–17); अब <mark>नीति आयोग</mark>।',en:'First plan (1951–56); now <mark>NITI Aayog</mark>.'}},
+{h:{hi:'मुद्रा',en:'Currency'},b:{hi:'₹ चिह्न <mark>उदय कुमार</mark> ने डिज़ाइन किया। 1 रुपया = <mark>100 पैसे</mark>।',en:'₹ designed by <mark>Uday Kumar</mark>.'}},
+{h:{hi:'कर',en:'Tax'},b:{hi:'GST लागू <mark>1 जुलाई 2017</mark>। प्रत्यक्ष कर: <mark>आयकर</mark>; अप्रत्यक्ष: <mark>GST</mark>।',en:'GST from <mark>1 July 2017</mark>.'}},
+{h:{hi:'बैंक',en:'Banks'},b:{hi:'SBI (1955, पूर्व <mark>इंपीरियल बैंक</mark>); राष्ट्रीयकरण <mark>1969 (14 बैंक)</mark>।',en:'SBI (1955); nationalization <mark>1969</mark>.'}},
+{h:{hi:'जनगणना',en:'Census'},b:{hi:'प्रथम (1872), नियमित <mark>1881</mark> से; दशकीय। 2011: <mark>15वीं</mark> जनगणना।',en:'Regular since <mark>1881</mark>.'}},
+{h:{hi:'कृषि',en:'Agriculture'},b:{hi:'हरित क्रांति: <mark>एम.एस. स्वामीनाथन</mark>; श्वेत क्रांति (दूध): <mark>वर्गीज़ कुरियन</mark>।',en:'Green revolution: <mark>M.S. Swaminathan</mark>.'}},
+{h:{hi:'उद्योग',en:'Industry'},b:{hi:'प्रथम लौह-इस्पात: <mark>जमशेदपुर (1907, टाटा)</mark>।',en:'First steel plant: <mark>Jamshedpur (1907)</mark>.'}},
+{h:{hi:'GDP',en:'GDP'},b:{hi:'आधार वर्ष <mark>2011–12</mark>। CSO गणना करता है।',en:'Base year <mark>2011–12</mark>.'}}],
+examples:[],
+mnemonics:[
+{h:{hi:'GST तिथि',en:'GST launch date'},b:{hi:'<mark>1 जुलाई 2017</mark> - "पहली जुलाई, एक कर व्यवस्था"। 101वें संविधान संशोधन से लागू; अनुच्छेद 246A और 269A से जुड़ा है।',en:'<mark>1 July 2017</mark> - via the 101st Amendment.'}},
+{h:{hi:'RBI स्थापना',en:'RBI establishment'},b:{hi:'<mark>1 अप्रैल 1935</mark> - RBI अधिनियम 1934 के तहत स्थापित; 1949 में राष्ट्रीयकरण हुआ। मुख्यालय: मुंबई। "पैंतीस में बैंक, उनचास में सरकारी"।',en:'Established <mark>1 April 1935</mark>; nationalised in 1949; HQ Mumbai.'}},
+{h:{hi:'क्रांति-व्यक्ति जोड़ी',en:'Revolution-person pairs'},b:{hi:'"<mark>हरी स्वामी, सफ़ेद कुरियन</mark>" - हरित क्रांति = एम. एस. स्वामीनाथन, श्वेत क्रांति (दुग्ध) = वर्गीज़ कुरियन।',en:'Green = M.S. Swaminathan, White (milk) = Verghese Kurien.'}}
+],
+quiz:[
+{q:{hi:'RBI की स्थापना कब हुई?',en:'When was RBI established?'},
+o:[{hi:'1947',en:'1947'},{hi:'1935',en:'1935'},{hi:'1949',en:'1949'},{hi:'1951',en:'1951'}],a:1,
+e:{hi:'1 अप्रैल 1935।',en:'1 April 1935.'}},
+{q:{hi:'GST भारत में कब लागू हुआ?',en:'When was GST implemented?'},
+o:[{hi:'1 जुलाई 2017',en:'1 July 2017'},{hi:'1 अप्रैल 2016',en:'1 April 2016'},{hi:'15 अगस्त 2017',en:'15 Aug 2017'},{hi:'1 जनवरी 2018',en:'1 Jan 2018'}],a:0,
+e:{hi:'1 जुलाई 2017।',en:'1 July 2017.'}},
+{q:{hi:'हरित क्रांति के जनक?',en:'Father of Green Revolution (India)?'},
+o:[{hi:'वर्गीज़ कुरियन',en:'Verghese Kurien'},{hi:'एम.एस. स्वामीनाथन',en:'M.S. Swaminathan'},{hi:'नॉर्मन बोरलॉग',en:'Norman Borlaug'},{hi:'पी.सी. महालनोबिस',en:'P.C. Mahalanobis'}],a:1,
+e:{hi:'एम.एस. स्वामीनाथन।',en:'M.S. Swaminathan.'}},
+{q:{hi:'बैंकों का राष्ट्रीयकरण (प्रथम चरण)?',en:'First bank nationalization?'},
+o:[{hi:'1969',en:'1969'},{hi:'1980',en:'1980'},{hi:'1971',en:'1971'},{hi:'1991',en:'1991'}],a:0,
+e:{hi:'1969 में 14 बैंक।',en:'14 banks in 1969.'}},
+{q:{hi:'नीति आयोग की स्थापना?',en:'NITI Aayog established?'},
+o:[{hi:'2014',en:'2014'},{hi:'2015',en:'2015'},{hi:'2016',en:'2016'},{hi:'2013',en:'2013'}],a:1,
+e:{hi:'1 जनवरी 2015।',en:'1 January 2015.'}}]});
+
+RT_CH.push({id:'g05',part:P,num:5,kind:'revision',exams:['all'],
+title:{hi:'खेल',en:'Sports'},
+concept:{hi:'प्रमुख खेल, ट्रॉफी एवं <mark>खिलाड़ी तथ्य</mark>।',en:'Key <mark>sports facts</mark>.'},
+tricks:[
+{h:{hi:'राष्ट्रीय खेल',en:'National sport'},b:{hi:'भारत का <mark>कोई आधिकारिक राष्ट्रीय खेल नहीं</mark> (हॉकी अनौपचारिक)।',en:'India has <mark>no official</mark> national sport.'}},
+{h:{hi:'ओलंपिक',en:'Olympics'},b:{hi:'प्राचीन: <mark>यूनान (776 ई.पू.)</mark>; आधुनिक: <mark>1896 एथेंस</mark>। भारत का प्रथम व्यक्तिगत स्वर्ण: <mark>अभिनव बिंद्रा (2008)</mark>।',en:'Modern: <mark>1896 Athens</mark>. India\'s first individual gold: <mark>Abhinav Bindra (2008)</mark>.'}},
+{h:{hi:'क्रिकेट',en:'Cricket'},b:{hi:'विश्व कप: भारत <mark>1983, 2011</mark>। प्रथम विश्व कप <mark>1975 (वेस्टइंडीज़)</mark>।',en:'India won <mark>1983, 2011</mark>.'}},
+{h:{hi:'हॉकी',en:'Hockey'},b:{hi:'भारत ने <mark>8 स्वर्ण</mark> (1928–1980)। ध्यानचंद = "<mark>हॉकी का जादूगर</mark>"।',en:'India: <mark>8 golds</mark>. Dhyan Chand = "<mark>wizard</mark>".'}},
+{h:{hi:'ट्रॉफी',en:'Trophies'},b:{hi:'रणजी (क्रिकेट), <mark>डूरंड (फुटबॉल)</mark>, <mark>थॉमस कप (बैडमिंटन)</mark>, <mark>डेविस कप (टेनिस)</mark>।',en:'Ranji (cricket), <mark>Durand (football)</mark>.'}},
+{h:{hi:'खेल-मैदान',en:'Playfields'},b:{hi:'क्रिकेट: <mark>पिच</mark>; टेनिस: <mark>कोर्ट</mark>; फुटबॉल: <mark>फील्ड</mark>; गोल्फ: <mark>कोर्स</mark>।',en:'Cricket: <mark>pitch</mark>; golf: <mark>course</mark>.'}},
+{h:{hi:'पुरस्कार',en:'Awards'},b:{hi:'<mark>मेजर ध्यानचंद खेल रत्न</mark> (सर्वोच्च); <mark>अर्जुन पुरस्कार</mark>; <mark>द्रोणाचार्य</mark> (कोच)।',en:'<mark>Khel Ratna</mark> (highest); <mark>Arjuna Award</mark>.'}},
+{h:{hi:'बिहार',en:'Bihar'},b:{hi:'<mark>माउंट एवरेस्ट</mark> फतह करने वाले बिहार के पर्वतारोही (वर्तमान तथ्य CDN से)।',en:'Bihar mountaineers (see CDN updates).'}},
+{h:{hi:'एशियाई खेल',en:'Asian Games'},b:{hi:'प्रथम <mark>1951, नई दिल्ली</mark>।',en:'First <mark>1951, New Delhi</mark>.'}},
+{h:{hi:'फीफा',en:'FIFA'},b:{hi:'फुटबॉल विश्व कप <mark>हर 4 वर्ष</mark>।',en:'Football World Cup every <mark>4 years</mark>.'}}],
+examples:[],
+mnemonics:[
+{h:{hi:'ट्रॉफी-खेल जोड़ियाँ',en:'Trophy-sport pairs'},b:{hi:'"<mark>रणजी-क्रिकेट, डूरंड-फुटबॉल, थॉमस-बैडमिंटन, डेविस-टेनिस</mark>" - र-क्रि, डू-फु, थो-बै, डे-टे क्रम से याद करें।',en:'Ranji=Cricket, Durand=Football, Thomas=Badminton, Davis=Tennis.'}},
+{h:{hi:'हॉकी 8 स्वर्ण',en:'Hockey - 8 golds'},b:{hi:'भारत ने ओलंपिक हॉकी में <mark>8 स्वर्ण पदक</mark> जीते (1928 से 1980 तक) - "आठ बार का चैंपियन"।',en:'India won <mark>8</mark> Olympic hockey golds (1928-1980).'}},
+{h:{hi:'आधुनिक ओलंपिक 1896',en:'Modern Olympics 1896'},b:{hi:'<mark>1896, एथेंस</mark> - "अठारह-छियानवे, एथेंस से शुरुआत"। भारत ने 1900 पेरिस ओलंपिक में पहली बार भाग लिया था।',en:'Started in <mark>1896 Athens</mark>; India first took part in 1900 Paris.'}}
+],
+quiz:[
+{q:{hi:'भारत ने हॉकी में कितने ओलंपिक स्वर्ण जीते?',en:'Olympic golds in hockey for India?'},
+o:[{hi:'6',en:'6'},{hi:'8',en:'8'},{hi:'10',en:'10'},{hi:'5',en:'5'}],a:1,
+e:{hi:'8 स्वर्ण (1928–1980)।',en:'8 golds.'}},
+{q:{hi:'"हॉकी का जादूगर" किसे कहते हैं?',en:'Who is the "wizard of hockey"?'},
+o:[{hi:'मिल्खा सिंह',en:'Milkha Singh'},{hi:'ध्यानचंद',en:'Dhyan Chand'},{hi:'पी.टी. उषा',en:'P.T. Usha'},{hi:'सचिन',en:'Sachin'}],a:1,
+e:{hi:'मेजर ध्यानचंद।',en:'Major Dhyan Chand.'}},
+{q:{hi:'भारत ने क्रिकेट विश्व कप कब-कब जीता?',en:'India\'s Cricket World Cup wins?'},
+o:[{hi:'1983, 2011',en:'1983, 2011'},{hi:'1987, 2015',en:'1987, 2015'},{hi:'1983, 2007',en:'1983, 2007'},{hi:'2011, 2019',en:'2011, 2019'}],a:0,
+e:{hi:'1983 (कपिल देव), 2011 (धोनी)।',en:'1983 and 2011.'}},
+{q:{hi:'थॉमस कप किस खेल से संबंधित?',en:'Thomas Cup is related to?'},
+o:[{hi:'टेनिस',en:'Tennis'},{hi:'बैडमिंटन',en:'Badminton'},{hi:'फुटबॉल',en:'Football'},{hi:'क्रिकेट',en:'Cricket'}],a:1,
+e:{hi:'बैडमिंटन।',en:'Badminton.'}},
+{q:{hi:'भारत का प्रथम व्यक्तिगत ओलंपिक स्वर्ण?',en:'India\'s first individual Olympic gold?'},
+o:[{hi:'सुशील कुमार',en:'Sushil Kumar'},{hi:'अभिनव बिंद्रा',en:'Abhinav Bindra'},{hi:'विजेंदर',en:'Vijender'},{hi:'मैरी कॉम',en:'Mary Kom'}],a:1,
+e:{hi:'अभिनव बिंद्रा (2008, निशानेबाज़ी)।',en:'Abhinav Bindra (2008, shooting).'}}]});
+
+RT_CH.push({id:'g06',part:P,num:6,kind:'revision',exams:['all'],
+title:{hi:'पुरस्कार, पुस्तकें एवं विविध',en:'Awards, Books & Misc'},
+concept:{hi:'राष्ट्रीय पुरस्कार, प्रसिद्ध पुस्तकें एवं <mark>विविध तथ्य</mark>।',en:'National <mark>awards, books & misc facts</mark>.'},
+tricks:[
+{h:{hi:'भारत रत्न',en:'Bharat Ratna'},b:{hi:'सर्वोच्च नागरिक सम्मान (<mark>1954</mark> से)। प्रथम: <mark>राधाकृष्णन, राजाजी, सी.वी. रमन</mark>।',en:'Highest civilian award (from <mark>1954</mark>).'}},
+{h:{hi:'पद्म पुरस्कार',en:'Padma awards'},b:{hi:'क्रम: <mark>पद्म विभूषण > पद्म भूषण > पद्म श्री</mark>।',en:'Order: <mark>Vibhushan > Bhushan > Shri</mark>.'}},
+{h:{hi:'नोबेल (भारतीय)',en:'Nobel (Indians)'},b:{hi:'<mark>रवींद्रनाथ टैगोर (1913, साहित्य)</mark>; सी.वी. रमन (1930); मदर टेरेसा (1979); अमर्त्य सेन (1998)।',en:'<mark>Tagore (1913)</mark>; C.V. Raman (1930); Amartya Sen (1998).'}},
+{h:{hi:'पुस्तकें',en:'Books'},b:{hi:'<mark>गीता</mark>: वेदव्यास; <mark>रामायण</mark>: वाल्मीकि; <mark>अर्थशास्त्र</mark>: कौटिल्य; <mark>इंडिका</mark>: मेगस्थनीज़।',en:'<mark>Arthashastra</mark>: Kautilya; <mark>Indica</mark>: Megasthenes.'}},
+{h:{hi:'आधुनिक पुस्तकें',en:'Modern books'},b:{hi:'<mark>गोदान</mark>: प्रेमचंद; <mark>गाइड</mark>: आर.के. नारायण; <mark>मालगुडी डेज़</mark>: नारायण।',en:'<mark>Godan</mark>: Premchand.'}},
+{h:{hi:'प्रथम (भारत)',en:'Firsts (India)'},b:{hi:'प्रथम महिला PM <mark>इंदिरा गांधी</mark>; प्रथम महिला राष्ट्रपति <mark>प्रतिभा पाटिल</mark>; अंतरिक्ष में प्रथम <mark>राकेश शर्मा (1984)</mark>।',en:'First woman PM <mark>Indira Gandhi</mark>; space: <mark>Rakesh Sharma (1984)</mark>.'}},
+{h:{hi:'संयुक्त राष्ट्र',en:'UN'},b:{hi:'स्थापना <mark>1945</mark>; मुख्यालय <mark>न्यूयॉर्क</mark>।',en:'Founded <mark>1945</mark>; HQ <mark>New York</mark>.'}},
+{h:{hi:'राजधानियाँ',en:'Capitals'},b:{hi:'नेपाल: <mark>काठमांडू</mark>; भूटान: <mark>थिंपू</mark>; बांग्लादेश: <mark>ढाका</mark>; श्रीलंका: <mark>कोलंबो</mark>।',en:'Nepal: <mark>Kathmandu</mark>; Bhutan: <mark>Thimphu</mark>.'}},
+{h:{hi:'मुद्राएँ',en:'Currencies'},b:{hi:'जापान: <mark>येन</mark>; ब्रिटेन: <mark>पाउंड</mark>; यूरोप: <mark>यूरो</mark>; चीन: <mark>युआन</mark>।',en:'Japan: <mark>yen</mark>; UK: <mark>pound</mark>.'}},
+{h:{hi:'दिवस',en:'Days'},b:{hi:'शिक्षक दिवस <mark>5 सितंबर</mark>; बाल दिवस <mark>14 नवंबर</mark>; पर्यावरण दिवस <mark>5 जून</mark>।',en:'Teachers\' Day <mark>5 Sep</mark>.'}}],
+examples:[],
+mnemonics:[
+{h:{hi:'पद्म पुरस्कार क्रम',en:'Padma awards order'},b:{hi:'"<mark>विभूषण > भूषण > श्री</mark>" - पद्म विभूषण (सर्वोच्च), फिर पद्म भूषण, फिर पद्म श्री। "वि-भू-श्री, ऊपर से नीचे"।',en:'Padma Vibhushan > Padma Bhushan > Padma Shri.'}},
+{h:{hi:'नोबेल भारतीय',en:'Indian Nobel laureates'},b:{hi:'"<mark>टैगोर 1913 प्रथम</mark>" - रवींद्रनाथ टैगोर (साहित्य, गीतांजलि) पहले भारतीय नोबेल विजेता; फिर सी. वी. रमन (1930, भौतिकी)।',en:'Tagore 1913 (first), then C.V. Raman 1930.'}},
+{h:{hi:'पुस्तक-लेखक जोड़ियाँ',en:'Book-author pairs'},b:{hi:'"<mark>अर्थशास्त्र-कौटिल्य, इंडिका-मेगस्थनीज़</mark>" - कौटिल्य (चाणक्य) का अर्थशास्त्र मौर्य प्रशासन पर; मेगस्थनीज़ की इंडिका चंद्रगुप्त मौर्य के दरबार का वर्णन करती है।',en:'Arthashastra = Kautilya, Indica = Megasthenes.'}}
+],
+quiz:[
+{q:{hi:'भारत रत्न की स्थापना कब?',en:'Bharat Ratna instituted?'},
+o:[{hi:'1947',en:'1947'},{hi:'1954',en:'1954'},{hi:'1950',en:'1950'},{hi:'1960',en:'1960'}],a:1,
+e:{hi:'1954।',en:'1954.'}},
+{q:{hi:'साहित्य में नोबेल पाने वाले प्रथम भारतीय?',en:'First Indian Nobel laureate (Literature)?'},
+o:[{hi:'सी.वी. रमन',en:'C.V. Raman'},{hi:'टैगोर',en:'Tagore'},{hi:'मदर टेरेसा',en:'Mother Teresa'},{hi:'अमर्त्य सेन',en:'Amartya Sen'}],a:1,
+e:{hi:'रवींद्रनाथ टैगोर (1913, गीतांजलि)।',en:'Tagore (1913).'}},
+{q:{hi:'"अर्थशास्त्र" के लेखक?',en:'Author of "Arthashastra"?'},
+o:[{hi:'कालिदास',en:'Kalidas'},{hi:'कौटिल्य',en:'Kautilya'},{hi:'पाणिनि',en:'Panini'},{hi:'वाल्मीकि',en:'Valmiki'}],a:1,
+e:{hi:'कौटिल्य (चाणक्य)।',en:'Kautilya.'}},
+{q:{hi:'अंतरिक्ष में जाने वाले प्रथम भारतीय?',en:'First Indian in space?'},
+o:[{hi:'कल्पना चावला',en:'Kalpana Chawla'},{hi:'राकेश शर्मा',en:'Rakesh Sharma'},{hi:'सुनीता विलियम्स',en:'Sunita Williams'},{hi:'रवीश मल्होत्रा',en:'Ravish Malhotra'}],a:1,
+e:{hi:'राकेश शर्मा (1984)।',en:'Rakesh Sharma (1984).'}},
+{q:{hi:'शिक्षक दिवस कब मनाया जाता है?',en:'Teachers\' Day?'},
+o:[{hi:'5 सितंबर',en:'5 September'},{hi:'14 नवंबर',en:'14 November'},{hi:'2 अक्टूबर',en:'2 October'},{hi:'26 जनवरी',en:'26 January'}],a:0,
+e:{hi:'5 सितंबर (राधाकृष्णन जयंती)।',en:'5 September.'}}]});
+})();

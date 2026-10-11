@@ -1,0 +1,62 @@
+[
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/xml_filepaths.xml.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/xml/filepaths.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/xml_gma_ad_services_config.xml.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/xml/gma_ad_services_config.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/drawable_splash_logo.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/drawable/splash_logo.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.ruhxam.app-debug-4:/drawable_splash.xml.flat",
+        "source": "com.ruhxam.app-main-6:/drawable/splash.xml"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/root/.gradle/daemon/8.7/com.ruhxam.app-debug-4:/drawable_splash.xml.flat",
+        "source": "/root/.gradle/daemon/8.7/com.ruhxam.app-main-6:/drawable/splash.xml"
+    }
+]

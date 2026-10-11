@@ -128,3 +128,82 @@ e:{hi:'स्कर्वी।',en:'Scurvy.'}},
 o:[{hi:'जड़',en:'Root'},{hi:'तना',en:'Stem'},{hi:'पत्ती',en:'Leaf'},{hi:'फूल',en:'Flower'}],a:2,
 e:{hi:'पत्तियों में (पर्णहरित द्वारा)।',en:'In leaves (chlorophyll).'}}]});
 })();
+
+/* RuhXam — Science Ch 4-5 (added Audit #3: Group D needs 25 science Qs) */
+window.RT_CH = window.RT_CH || [];
+(function(){
+var P='science';
+RT_CH.push({id:'s04',part:P,num:4,kind:'revision',exams:['all'],
+title:{hi:'भौतिकी — भाग 2',en:'Physics — Part 2'},
+concept:{hi:'विद्युत धारा, चुंबकत्व, आधुनिक भौतिकी एवं <mark>दैनिक जीवन के विज्ञान</mark> तथ्य।',en:'<mark>Everyday science</mark>: current, magnetism, modern physics.'},
+tricks:[
+{h:{hi:'विद्युत परिपथ',en:'Electric circuits'},b:{hi:'श्रेणी क्रम में धारा <mark>समान</mark>, समांतर क्रम में वोल्टेज <mark>समान</mark>। घरों में समांतर क्रम प्रयोग होता है।',en:'Series: current <mark>same</mark>; parallel: voltage <mark>same</mark>.'}},
+{h:{hi:'चुंबकीय क्षेत्र',en:'Magnetic field'},b:{hi:'विद्युत धारा से चुंबकीय क्षेत्र बनता है (<mark>ओर्स्टेड</mark>)। विद्युत मोटर इसी सिद्धांत पर।',en:'Current creates magnetic field (<mark>Oersted</mark>).'}},
+{h:{hi:'प्रकाशीय यंत्र',en:'Optical instruments'},b:{hi:'सूक्ष्मदर्शी में <mark>2 उत्तल लेंस</mark>; दूरबीन में बड़ा अभिदृश्यक लेंस।',en:'Microscope: <mark>2 convex lenses</mark>.'}},
+{h:{hi:'ध्वनि तरंगें',en:'Sound waves'},b:{hi:'अनुदैर्ध्य तरंगें; निर्वात में <mark>नहीं</mark> चलतीं। SONAR में <mark>पराश्रव्य</mark> तरंगें।',en:'Longitudinal; <mark>cannot</mark> travel in vacuum.'}},
+{h:{hi:'ऊष्मा संचरण',en:'Heat transfer'},b:{hi:'चालन (ठोस), संवहन (द्रव/गैस), विकिरण (<mark>निर्वात में भी</mark>)। सूर्य की ऊष्मा विकिरण से आती है।',en:'Conduction, convection, radiation (<mark>even in vacuum</mark>).'}},
+{h:{hi:'दाब',en:'Pressure'},b:{hi:'ऊँचाई बढ़ने पर वायुमंडलीय दाब <mark>घटता</mark> है। प्रेशर कुकर में दाब बढ़ने से क्वथनांक <mark>बढ़ता</mark> है।',en:'Pressure <mark>decreases</mark> with altitude.'}},
+{h:{hi:'आधुनिक भौतिकी',en:'Modern physics'},b:{hi:'परमाणु बम: <mark>नाभिकीय विखंडन</mark>; सूर्य: <mark>नाभिकीय संलयन</mark>।',en:'Atom bomb: <mark>fission</mark>; Sun: <mark>fusion</mark>.'}},
+{h:{hi:'रंग',en:'Colours'},b:{hi:'प्राथमिक रंग: <mark>लाल, हरा, नीला</mark> (RGB)। सफेद प्रकाश = 7 रंगों का मिश्रण।',en:'Primary: <mark>red, green, blue</mark>.'}},
+{h:{hi:'गति',en:'Motion'},b:{hi:'पलायन वेग (पृथ्वी): <mark>11.2 km/s</mark>। भूस्थिर उपग्रह की ऊँचाई ≈ <mark>36,000 km</mark>।',en:'Escape velocity: <mark>11.2 km/s</mark>.'}},
+{h:{hi:'ऊर्जा रूपांतरण',en:'Energy conversion'},b:{hi:'डायनेमो: यांत्रिक → <mark>विद्युत</mark>; बैटरी: रासायनिक → <mark>विद्युत</mark>; प्रकाश संश्लेषण: प्रकाश → <mark>रासायनिक</mark>।',en:'Dynamo: mechanical → <mark>electrical</mark>.'}}],
+examples:[],
+mnemonics:[
+{h:{hi:'ऊष्मा संचरण',en:'Heat transfer modes'},b:{hi:'"<mark>च-सं-वि</mark>" — चालन (छड़ी), संवहन (पानी), विकिरण (सूरज)। ठोस में चालन, द्रव-गैस में संवहन।',en:'Conduction (solids), convection (fluids), radiation (vacuum/Sun).'}},
+{h:{hi:'विद्युत मात्रक',en:'Electrical units'},b:{hi:'"<mark>वि-धा-प्र-श</mark>" — विभव=वोल्ट, धारा=एम्पियर, प्रतिरोध=ओम, शक्ति=वाट। V=IR और P=VI याद रखें।',en:'Voltage=Volt, current=Ampere, resistance=Ohm, power=Watt.'}},
+{h:{hi:'विखंडन बनाम संलयन',en:'Fission vs fusion'},b:{hi:'"<mark>बम टूटता है, सूरज जुड़ता है</mark>" — परमाणु बम में नाभिक टूटता है (विखंडन), सूर्य में नाभिक जुड़ते हैं (संलयन)।',en:'Bomb = <mark>fission</mark> (splits); Sun = <mark>fusion</mark> (joins).'}}
+],
+quiz:[
+{q:{hi:'घरों में विद्युत परिपथ किस क्रम में होता है?',en:'Home circuits are in?'},
+o:[{hi:'श्रेणी क्रम',en:'Series'},{hi:'समांतर क्रम',en:'Parallel'},{hi:'मिश्रित',en:'Mixed'},{hi:'कोई नहीं',en:'None'}],a:1,
+e:{hi:'समांतर क्रम — एक बल्ब फ्यूज़ हो तो बाकी जलते हैं।',en:'Parallel.'}},
+{q:{hi:'परमाणु बम किस सिद्धांत पर आधारित है?',en:'Atom bomb is based on?'},
+o:[{hi:'संलयन',en:'Fusion'},{hi:'विखंडन',en:'Fission'},{hi:'ऑक्सीकरण',en:'Oxidation'},{hi:'आयनन',en:'Ionization'}],a:1,
+e:{hi:'नाभिकीय विखंडन।',en:'Nuclear fission.'}},
+{q:{hi:'प्राथमिक रंग कौन-से हैं?',en:'Primary colours?'},
+o:[{hi:'लाल, पीला, नीला',en:'Red, Yellow, Blue'},{hi:'लाल, हरा, नीला',en:'Red, Green, Blue'},{hi:'नारंगी, हरा, बैंगनी',en:'Orange, Green, Violet'},{hi:'काला, सफेद, भूरा',en:'Black, White, Brown'}],a:1,
+e:{hi:'लाल, हरा, नीला (RGB)।',en:'Red, Green, Blue.'}},
+{q:{hi:'पृथ्वी का पलायन वेग?',en:'Earth escape velocity?'},
+o:[{hi:'7.9 km/s',en:'7.9 km/s'},{hi:'11.2 km/s',en:'11.2 km/s'},{hi:'15 km/s',en:'15 km/s'},{hi:'9.8 km/s',en:'9.8 km/s'}],a:1,
+e:{hi:'11.2 km/s।',en:'11.2 km/s.'}},
+{q:{hi:'ध्वनि तरंगें निर्वात में?',en:'Sound waves in vacuum?'},
+o:[{hi:'चलती हैं',en:'Travel'},{hi:'नहीं चलतीं',en:'Do not travel'},{hi:'तेज़ चलती हैं',en:'Travel faster'},{hi:'परावर्तित होती हैं',en:'Reflect'}],a:1,
+e:{hi:'माध्यम चाहिए — निर्वात में नहीं चलतीं।',en:'Need a medium.'}}]});
+
+RT_CH.push({id:'s05',part:P,num:5,kind:'revision',exams:['all'],
+title:{hi:'पर्यावरण एवं दैनिक विज्ञान',en:'Environment & Everyday Science'},
+concept:{hi:'पारिस्थितिकी, प्रदूषण, <mark>दैनिक जीवन के वैज्ञानिक तथ्य</mark> — RRB में नियमित प्रश्न।',en:'<mark>Everyday science</mark> facts asked regularly in RRB.'},
+tricks:[
+{h:{hi:'पारिस्थितिक तंत्र',en:'Ecosystem'},b:{hi:'उत्पादक (<mark>पादप</mark>) → उपभोक्ता → अपघटक। ऊर्जा का <mark>10% नियम</mark> (लिंडेमान)।',en:'Producers → consumers → decomposers. <mark>10% law</mark>.'}},
+{h:{hi:'प्रदूषण',en:'Pollution'},b:{hi:'वायु: <mark>SO₂, NO₂, CO</mark>; जल: <mark>सीसा, पारा</mark>; ध्वनि: <mark>80 dB</mark> से अधिक हानिकारक।',en:'Air: <mark>SO₂, NO₂</mark>; noise > <mark>80 dB</mark> harmful.'}},
+{h:{hi:'ओज़ोन',en:'Ozone'},b:{hi:'O₃ परत <mark>समतापमंडल</mark> में; UV किरणों से रक्षा। क्षरण: <mark>CFC</mark>।',en:'O₃ in <mark>stratosphere</mark>; depleted by <mark>CFCs</mark>.'}},
+{h:{hi:'अम्लीय वर्षा',en:'Acid rain'},b:{hi:'कारण: <mark>SO₂ + NO₂</mark>। ताजमहल पर प्रभाव (मथुरा रिफाइनरी)।',en:'Caused by <mark>SO₂, NO₂</mark>.'}},
+{h:{hi:'हरितगृह प्रभाव',en:'Greenhouse effect'},b:{hi:'गैसें: <mark>CO₂, CH₄, N₂O</mark>। ग्लोबल वार्मिंग का मुख्य कारण।',en:'Gases: <mark>CO₂, CH₄</mark>.'}},
+{h:{hi:'जल',en:'Water'},b:{hi:'शुद्ध जल का pH <mark>7</mark>; कठोर जल में <mark>Ca, Mg</mark> लवण; BOD अधिक = <mark>प्रदूषित</mark> जल।',en:'Hard water has <mark>Ca, Mg</mark> salts.'}},
+{h:{hi:'मिट्टी',en:'Soil'},b:{hi:'जलोढ़ (खादर): <mark>सर्वाधिक उपजाऊ</mark>; काली: कपास; लाल: लोहा; लैटेराइट: चाय।',en:'Alluvial = <mark>most fertile</mark>.'}},
+{h:{hi:'दैनिक रसायन',en:'Daily chemistry'},b:{hi:'साबुन: <mark>वसा + क्षार</mark>; ब्लीचिंग पाउडर: <mark>CaOCl₂</mark>; धुलाई सोडा: <mark>Na₂CO₃</mark>।',en:'Soap: <mark>fat + alkali</mark>.'}},
+{h:{hi:'खाद्य परिरक्षण',en:'Food preservation'},b:{hi:'अचार में <mark>नमक/तेल</mark>; दूध में <mark>पाश्चुरीकरण</mark> (63°C, 30 min)।',en:'Pasteurization: <mark>63°C, 30 min</mark>.'}},
+{h:{hi:'धातु दैनिक',en:'Everyday metals'},b:{hi:'बर्तन: <mark>एल्युमिनियम/स्टील</mark>; तार: <mark>ताँबा</mark>; सिक्के: मिश्रधातु।',en:'Wires: <mark>copper</mark>.'}}],
+examples:[],
+mnemonics:[
+{h:{hi:'प्रदूषक गैसें',en:'Pollutant gases'},b:{hi:'"<mark>सो-नो-को</mark>" — SO₂ (सल्फर), NO₂ (नाइट्रोजन), CO (कार्बन मोनोऑक्साइड) — तीनों वायु प्रदूषक। अम्लीय वर्षा = SO₂+NO₂।',en:'<mark>SO₂, NO₂, CO</mark> — air pollutants.'}},
+{h:{hi:'हरितगृह गैसें',en:'Greenhouse gases'},b:{hi:'"<mark>का-मी-ना</mark>" — CO₂ (कार्बन), CH₄ (मीथेन), N₂O (नाइट्रस) — "कामिना" गैसें गर्मी बढ़ाती हैं।',en:'<mark>CO₂, CH₄, N₂O</mark> trap heat.'}},
+{h:{hi:'मिट्टी-फसल',en:'Soil-crop pairs'},b:{hi:'"<mark>का-क-क, ला-लो-चाय</mark>" — काली-कपास, लाल-लोहा, लैटेराइट-चाय, जलोढ़-सबसे उपजाऊ।',en:'Black=cotton, red=iron, laterite=tea, alluvial=most fertile.'}}
+],
+quiz:[
+{q:{hi:'ओज़ोन परत किस मंडल में है?',en:'Ozone layer is in?'},
+o:[{hi:'क्षोभमंडल',en:'Troposphere'},{hi:'समतापमंडल',en:'Stratosphere'},{hi:'मध्यमंडल',en:'Mesosphere'},{hi:'आयनमंडल',en:'Ionosphere'}],a:1,
+e:{hi:'समतापमंडल (Stratosphere)।',en:'Stratosphere.'}},
+{q:{hi:'अम्लीय वर्षा का मुख्य कारण?',en:'Main cause of acid rain?'},
+o:[{hi:'CO₂',en:'CO₂'},{hi:'SO₂ और NO₂',en:'SO₂ and NO₂'},{hi:'O₃',en:'O₃'},{hi:'CH₄',en:'CH₄'}],a:1,
+e:{hi:'SO₂ + NO₂।',en:'SO₂ and NO₂.'}},
+{q:{hi:'सबसे उपजाऊ मिट्टी?',en:'Most fertile soil?'},
+o:[{hi:'काली',en:'Black'},{hi:'लाल',en:'Red'},{hi:'जलोढ़',en:'Alluvial'},{hi:'लैटेराइट',en:'Laterite'}],a:2,
+e:{hi:'जलोढ़ (खादर)।',en:'Alluvial.'}},
+{q:{hi:'पाश्चुरीकरण में तापमान?',en:'Pasteurization temperature?'},
+o:[{hi:'100°C',en:'100°C'},{hi:'63°C',en:'63°C'},{hi:'37°C',en:'37°C'},{hi:'0°C',en:'0°C'}],a:1,
+e:{hi:'63°C पर 30 मिनट।',en:'63°C for 30 min.'}},
+{q:{hi:'ऊर्जा का 10% नियम किसने दिया?',en:'10% law given by?'},
+o:[{hi:'डार्विन',en:'Darwin'},{hi:'लिंडेमान',en:'Lindeman'},{hi:'मेंडल',en:'Mendel'},{hi:'ओडम',en:'Odum'}],a:1,
+e:{hi:'लिंडेमान।',en:'Lindeman.'}}]});
+})();
