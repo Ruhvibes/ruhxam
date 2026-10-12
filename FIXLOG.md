@@ -370,3 +370,27 @@ Hasnain sent the reference screenshot again. Chapter pages now pixel-match the �
 - EN mode: verified
 - Practice flow: verified
 - Regression (uitest4): 7/10 — 3 mock failures pre-existing (fail on original code too)
+
+## 2026-10-12 — FINAL structure match verification ("sab kuchh same rkhna")
+
+Hasnain: "Ho sake to sab kuchh same rkhna". Verified every screen against the 5 reference screenshots via headless Puppeteer screenshots (400px viewport).
+
+### Verified ✅ (no changes needed)
+1. **Home**: full-width 2-tone cards (darker icon panel + brighter title panel), white icons, teal header with hamburger + 3-dot menu — matches home-cards1/2/3.png
+2. **Chapter list**: numbered colored pastel circles, Hindi title + English in brackets, gray subtitle, thin dividers, teal header — matches tricks-list.png
+3. **Chapter detail top**: blue "अध्याय— N नाम" box, blue concept box with yellow highlights + cyan tips, stacked fractions — matches chapter-detail.png
+4. **Tricky Box**: yellow label + blue वृद्धि/कमी table with white arrows + blue trick rows with yellow numbered badges
+5. **Questions**: red numbered, black "tricky" label, solutions with yellow highlights
+6. **EN mode**: full English rendering verified (headers, table, nav)
+7. **Cross-subject**: r01 (reasoning), s01 (science) render in identical reference style
+8. **0 JS errors** across all tested views
+
+### Fixed in this pass
+1. **Section order**: study notes were rendering between concept box and Tricky Box; moved to after solved examples so the reading flow matches the reference exactly: concept → Tricky Box → questions → notes → tips → practice CTA (app.js renderChapter)
+2. **Bilingual chapter header**: header now shows "प्रतिशत (Percentage) 5 / 22" like the reference "प्रतिशत (Percentage) 1 / 14" (other-language title in brackets)
+3. Restored expert tips block (was dropped during reorder) after study notes
+
+### Tests
+- node --check: all JS files pass
+- Headless screenshots: home, part-maths, ch-m05 (top/mid/low), r01, s01, EN mode — all visually match references
+- 0 page errors

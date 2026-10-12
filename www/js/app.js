@@ -321,12 +321,20 @@ function renderChapter(id){
   var idx=list.indexOf(c);
   var bm=RXStore.get('bookmarks').indexOf(id)>=0;
   /* header like reference: "प्रतिशत (Percentage) 1 / 14" */
-  $('hdrTitle').textContent=L(c.title)+' '+(idx+1)+' / '+list.length;
+  var otherLang=RT.lang==='hi'?(c.title.en||''):(c.title.hi||'');
+  $('hdrTitle').textContent=L(c.title)+(otherLang?' ('+otherLang+')':'')+' '+(idx+1)+' / '+list.length;
   var h='<div class="ch-body">';
   /* blue अध्याय box — pixel match */
   h+='<div class="adhyay-box"><span class="inner">'+esc(t('chapter_lbl'))+'— '+c.num+' '+esc(L(c.title))+'</span></div>';
   /* concept in blue box */
   h+='<div class="concept-box">'+fracify(L(c.concept))+dgmFor(c.id)+'</div>';
+  /* Tricky Box — pixel match (right after concept, like reference) */
+  h+=renderTrickyBox(c);
+  /* solved examples — red numbered, tricky solutions (pixel match) */
+  (c.examples||[]).forEach(function(ex,i){
+    h+='<div class="q-block"><div class="q-no">'+(i+1)+'. '+L(ex.q)+'</div>';
+    h+='<div class="q-tricky">tricky</div><div class="q-sol">'+fracify(L(ex.s))+'</div></div>';
+  });
   /* 📖 study notes — reference visual language */
   if(c.notes){
     h+='<div class="ref-sec"><div class="ref-sec-h">\uD83D\uDCD6 '+esc(t('study_notes'))+'</div>';
@@ -337,8 +345,6 @@ function renderChapter(id){
     if(c.notes.mistakes)h+='<h4 class="notes-h"><span class="k">\u26A0\uFE0F '+esc(t('common_mistakes'))+'</span></h4><div class="notes-sec">'+L(c.notes.mistakes)+'</div>';
     h+='</div>';
   }
-  /* Tricky Box — pixel match */
-  h+=renderTrickyBox(c);
   /* 💡 expert tips — reference visual language */
   if(c.tips&&c.tips.length){
     h+='<div class="ref-sec"><div class="ref-sec-h">\uD83D\uDCA1 '+esc(t('expert_tips'))+'</div>';
@@ -347,11 +353,6 @@ function renderChapter(id){
     });
     h+='</div>';
   }
-  /* solved examples — red numbered, tricky solutions (pixel match) */
-  (c.examples||[]).forEach(function(ex,i){
-    h+='<div class="q-block"><div class="q-no">'+(i+1)+'. '+L(ex.q)+'</div>';
-    h+='<div class="q-tricky">tricky</div><div class="q-sol">'+fracify(L(ex.s))+'</div></div>';
-  });
   /* difficulty filter */
   h+='<div class="diff-row"><span class="diff-lbl">'+esc(t('diff_label'))+':</span>';
   h+='<button class="diff-btn sel" data-d="0">'+esc(t('diff_all'))+'</button>';
