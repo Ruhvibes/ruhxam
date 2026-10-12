@@ -959,9 +959,21 @@ function applyCDNCache(){
     if(cc&&cc.chapters&&cc.chapters.length){
       // replace bundled chapters with cached ones (validated)
       var byId={};cc.chapters.forEach(function(c){byId[c.id]=c;});
-      CH.forEach(function(c,i){if(byId[c.id])CH[i]=byId[c.id];});
+      CH.forEach(function(c,i){
+        var nc=byId[c.id];if(!nc)return;
+        /* don't let a stale CDN downgrade pdfOnly maths quiz chapters into old HTML */
+        if(nc.part==='maths'&&!nc.pdfOnly)return;
+        CH[i]=nc;
+      });
       // add brand-new chapters from CDN
-      cc.chapters.forEach(function(c){if(!chById(c.id))CH.push(c);});
+      cc.chapters.forEach(function(c){
+        if(chById(c.id))return;
+        /* 2026-10-12: maths study content is Hasnain's PDF library ("Usko pura
+           hata do"). Never resurrect old HTML maths chapters from a stale CDN:
+           only pdfOnly quiz chapters are allowed for part 'maths'. */
+        if(c.part==='maths'&&!c.pdfOnly)return;
+        CH.push(c);
+      });
     }
   }catch(e){}
 }
