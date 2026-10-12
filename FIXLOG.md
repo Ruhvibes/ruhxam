@@ -5,6 +5,43 @@
 **Source:** `~/workspace/ruhxam/` (www/ + android/) | **Repo (to create):** `Ruhvibes/ruhxam`
 **Build date:** 2026-10-11 | **APK:** NOT built by agent — parent builds.
 
+## 2026-10-12 — PDF LIBRARY: Hasnain's own maths content replaces HTML chapters
+
+**Hasnain's orders:** "Sirf library me hi nahi, pura math isse replace kro" + "Usko pura hata do"
+(Confirmed the "Math Hindi: Competitive Exams" Play Store app is HIS OWN app — sent APK via Drive.)
+
+**What changed:**
+- **REMOVED:** All 22 old HTML maths chapters (m01–m22 concept/tricks/examples/notes/tips).
+  Old files `www/data/m1.js`–`m5.js` deleted from `index.html`.
+- **KEPT:** All 660 maths MCQs → new `www/data/mq.js` (quiz-only stubs). Practice-by-chapter,
+  daily practice, and mock tests (NTPC 100Q / Group D 100Q pools) work exactly as before.
+- **ADDED — PDF Library (93 PDFs, 41MB, from his own app):**
+  - ⚡ Math Shortcut Tricks — 18 PDFs (प्रतिशत, अनुपात, औसत, लाभ-हानि, साझेदारी, ब्याज, संख्या पद्धति, सरलीकरण, LCM/HCF, समय-कार्य, पाइप-टंकी, चाल-दूरी, नाव-धारा, आयु, क्षेत्रफल, आयतन, ग्राफ)
+  - 🧮 Arithmetic — 13 PDFs (Hindi study notes with English titles)
+  - 📚 Books — 4 PDFs (Algebra, Geometry, Statistics, Trigonometry)
+  - 🚂 Railway Questions (हल सहित) — 29 PDFs
+  - 📝 SSC Questions (हल सहित) — 29 PDFs
+- **PDF viewer:** Bundled PDF.js v3 (pdf.min.js + worker) renders pages on canvas — works 100% offline.
+  Page prev/next, zoom +/-, local `www/pdfs/` first with jsDelivr CDN fallback.
+- **Maths study navigation:** भाग 1 : गणित → 5 two-tone category cards → numbered PDF list → PDF viewer.
+  Back-stack wired through existing `__ruhxamBack`.
+- **Formula sheet:** now shows a redirect card to the PDF library (old HTML formulas are gone).
+- **Offline bundle:** `www/pdfs/` (41MB) ships inside the APK; CDN copy at `cdn/pdfs/` for fallback/updates.
+- **i18n:** new keys — pdf_library, pdf_categories, pdf_read, pdf_page, pdf_loading, pdf_error,
+  pdf_zoom_in/out, pdf_sets; maths_sub updated to "93 PDF".
+
+**Tests (headless, 400px):**
+- 53 chapters, 22 maths quiz chapters, 660 maths MCQs, 93 PDFs / 5 categories, PDF.js loaded — PASS
+- PDF category cards (5), tricks list (18 rows, "प्रतिशत" first), books (4, Hindi titles) — PASS
+- PDF render: tricks/1.pdf → "पृष्ठ 1 / 14", canvas 772×915; railway/1.pdf → "पृष्ठ 1 / 20" — PASS
+- Practice tab: 53 rows (22 maths), m05 quiz opens ("640 का 35% क्या है?") — PASS
+- Mock pool: NTPC 100Q (30 maths) — PASS
+- Formula sheet: empty-state redirect card — PASS
+- 0 JS page errors. node --check clean on all modified JS.
+
+**Committed + pushed:** PDFs (cdn/pdfs/ + www/pdfs/), mq.js, pdfjs/, pdflib.js, app.js, i18n.js, style.css, index.html.
+**Parent builds APK** (www/ → android assets, bump versionCode).
+
 ## Content inventory (final)
 | Part | Chapters | Format |
 |---|---|---|
