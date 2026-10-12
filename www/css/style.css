@@ -320,3 +320,11 @@ html[data-theme="dark"] .q-block .q-no{color:#f44336;}
 html[data-theme="dark"] .q-block .q-tricky,html[data-theme="dark"] .q-block .q-sol{color:#111;}
 html[data-theme="dark"] .ref-sec .notes-intro,html[data-theme="dark"] .ref-sec .notes-sec,html[data-theme="dark"] .ref-sec .tip-row{color:#111;}
 .concept-box mark.c{background:#4de3ff;}
+
+/* ---------- PDF library viewer ---------- */
+.pdf-viewer{padding:8px;}
+.pdf-bar{display:flex;gap:8px;align-items:center;justify-content:center;margin:6px 0;flex-wrap:wrap;}
+.pdf-info{font-weight:700;font-size:15px;min-width:110px;text-align:center;}
+.pdf-pages{display:flex;flex-direction:column;gap:10px;align-items:center;padding-bottom:20px;}
+.pdf-pages canvas{max-width:100%;border:1px solid #ddd;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.12);background:#fff;}
+html[data-theme="dark"] .pdf-info{color:#eee;}

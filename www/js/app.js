@@ -78,11 +78,11 @@ function qdgmFor(chId,qi){var f=RX_QDGM[chId+':'+qi];if(!f)return '';try{return 
 
 /* ---------- navigation ---------- */
 var TABS=['home','study','practice','mock','notes','progress','profile'];
-var RX_VIEWS={home:1,study:1,part:1,practice:1,mock:1,notes:1,progress:1,profile:1};
+var RX_VIEWS={home:1,study:1,part:1,practice:1,mock:1,notes:1,progress:1,profile:1,pdfcat:1,pdfview:1};
 function show(v,arg){
   if(!RX_VIEWS[v])v='home'; // unknown/special views (chapter, quiz, mockrun, noteedit, formulas) never land here blank
   RT.view=v;
-  var holder=(v==='part')?'study':v; // 'part' renders into v-study
+  var holder=(v==='part'||v==='pdfcat'||v==='pdfview')?'study':v; // 'part'/'pdfcat'/'pdfview' render into v-study
   document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
   var sec=$('v-'+holder);if(sec)sec.classList.remove('hidden');
   document.querySelectorAll('#tabbar .tab').forEach(function(b){
@@ -93,7 +93,8 @@ function show(v,arg){
   setAds(!!adsScreens[v]);
   window.scrollTo(0,0);
   ({home:renderHome,study:renderStudy,part:renderPart,practice:renderPractice,mock:renderMockSetup,
-    notes:renderNotes,progress:renderProgress,profile:renderProfile}[v]||renderHome)(arg);
+    notes:renderNotes,progress:renderProgress,profile:renderProfile,
+    pdfcat:renderPdfCat,pdfview:function(id){var p=window.pdfById(id);if(p)openPdf(id);else renderPdfHome();}}[v]||renderHome)(arg);
 }
 function goTab(v){RT.stack=[];if(typeof MK!=='undefined'&&MK&&MK.timer){clearInterval(MK.timer);MK=null;}show(v);}
 window.__ruhxamBack=function(){
@@ -114,16 +115,26 @@ function renderFormulaSheet(){
   var fstop=RT.stack[RT.stack.length-1];
   if(!fstop||fstop.v!=='study')RT.stack.push({v:'study'});
   var h='<h2 class="sec">'+esc(t('formula_sheet'))+'</h2><p class="muted">'+esc(t('all_formulas'))+'</p>';
+  var hasAny=false;
   chByPart('maths').forEach(function(c){
     var marks=[];
     function grabMarks(html){var m=String(html||'').match(/<mark>(.*?)<\/mark>/g)||[];m.forEach(function(x){var txt=x.replace(/<\/?mark>/g,'');if(txt&&marks.indexOf(txt)<0)marks.push(txt);});}
     (c.tricks||[]).forEach(function(tr){grabMarks(tr.b.hi);grabMarks(tr.b.en);});
     if(c.notes&&c.notes.formulas){grabMarks(c.notes.formulas.hi);grabMarks(c.notes.formulas.en);}
     if(!marks.length)return;
+    hasAny=true;
     h+='<div class="card anim-in"><h3><span class="ch-num">'+c.num+'</span> '+esc(L(c.title))+'</h3>';
     h+='<div class="formula-list">'+marks.map(function(f){return '<span class="formula-chip">'+f+'</span>';}).join('')+'</div></div>';
   });
+  if(!hasAny){
+    /* Maths study content is now Hasnain's PDF library — point there */
+    h+='<div class="card anim-in" style="text-align:center;padding:24px;">';
+    h+='<div style="font-size:40px;">\uD83D\uDCD0</div>';
+    h+='<p>'+esc(RT.lang==='hi'?'\u0938\u0942\u0924\u094D\u0930 \u0905\u092C PDF \u0932\u093E\u0907\u092C\u094D\u0930\u0947\u0930\u0940 \u092E\u0947\u0902 \u0939\u0948\u0902':'Formulas are now in the PDF library')+'</p>';
+    h+='<button class="btn primary" id="fsGoPdf">'+esc(t('pdf_library'))+'</button></div>';
+  }
   $('v-study').innerHTML=h;window.scrollTo(0,0);
+  var gp=$('fsGoPdf');if(gp)gp.onclick=function(){RT.stack.push({v:'home'});renderPdfHome();};
 }
 
 /* ---------- exam countdown ---------- */
@@ -243,6 +254,8 @@ function renderStudy(){
   });
 }
 function renderPart(pid){
+  /* Maths study content = Hasnain's PDF library (his own app content) */
+  if(pid==='maths'){renderPdfHome();return;}
   RT.curPart=pid;
   var p=partOf(pid),list=chByPart(pid),prog=RXStore.get('progress')||{};
   $('hdrTitle').textContent=t(p.tk);
@@ -260,6 +273,109 @@ function openChapter(id){
   var c=chById(id);
   RT.stack.push(RT.curPart?{v:'part',arg:RT.curPart}:{v:RT.view==='study'?'study':'home'});
   renderChapter(id);
+}
+
+/* ---------- PDF library (Hasnain's own maths content) ---------- */
+function renderPdfHome(){
+  RT.curPart='maths';RT.view='part';
+  $('hdrTitle').textContent=t('part_maths');
+  var h='<div class="home-cards">';
+  window.RX_PDF_CATS.forEach(function(cat){
+    var n=window.pdfsByCat(cat.id).length;
+    h+='<button class="subj-card '+cat.cls+'" data-pdfcat="'+cat.id+'">';
+    h+='<span class="ic-panel">'+cat.icon+'</span>';
+    h+='<span class="tx-panel">'+esc(RT.lang==='hi'?cat.hi:cat.en)+'<br><small style="font-weight:400;font-size:13px;opacity:.9">'+n+' '+esc(t('pdf_sets'))+'</small></span>';
+    h+='</button>';
+  });
+  h+='</div><p class="muted" style="text-align:center;padding:8px;">'+esc(t('pdf_howto'))+'</p>';
+  h+='<p class="muted" style="text-align:center;">'+esc(t('unofficial_note'))+'</p>';
+  $('v-study').innerHTML=h;
+  document.querySelectorAll('#v-study [data-pdfcat]').forEach(function(b){
+    b.onclick=function(){RT.stack.push({v:'part',arg:'maths'});renderPdfCat(b.getAttribute('data-pdfcat'));};
+  });
+  window.scrollTo(0,0);
+}
+function renderPdfCat(catId){
+  RT.view='pdfcat';
+  var cat=null;
+  window.RX_PDF_CATS.forEach(function(c){if(c.id===catId)cat=c;});
+  if(!cat){renderPdfHome();return;}
+  $('hdrTitle').textContent=RT.lang==='hi'?cat.hi:cat.en;
+  var list=window.pdfsByCat(catId);
+  var h='<div class="chap-list">';
+  list.forEach(function(p,i){
+    h+='<button class="chap-row" data-pdf="'+p.id+'"><span class="chap-num cn'+(i%10)+'">'+(i+1)+'</span><span class="t"><b>'+esc(RT.lang==='hi'?p.title.hi:p.title.en)+'</b><span>'+esc(t('pdf_read'))+'</span></span><span class="arr">›</span></button>';
+  });
+  h+='</div>';
+  $('v-study').innerHTML=h;
+  document.querySelectorAll('#v-study [data-pdf]').forEach(function(b){
+    b.onclick=function(){RT.stack.push({v:'pdfcat',arg:catId});openPdf(b.getAttribute('data-pdf'));};
+  });
+  window.scrollTo(0,0);
+}
+/* PDF.js viewer */
+var PDFV=null;
+function openPdf(pdfId){
+  var p=window.pdfById(pdfId);
+  if(!p){renderPdfHome();return;}
+  RT.view='pdfview';
+  document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
+  $('v-study').classList.remove('hidden');
+  document.querySelectorAll('#tabbar .tab').forEach(function(b){b.classList.toggle('sel',b.getAttribute('data-tab')==='study');});
+  $('btnBack').classList.remove('hidden');setAds(true);
+  $('hdrTitle').textContent=RT.lang==='hi'?p.title.hi:p.title.en;
+  var h='<div class="pdf-viewer">';
+  h+='<div class="pdf-bar"><button id="pdfPrev" class="btn secondary">‹</button>';
+  h+='<span id="pdfInfo" class="pdf-info">'+esc(t('pdf_loading'))+'</span>';
+  h+='<button id="pdfNext" class="btn secondary">›</button></div>';
+  h+='<div class="pdf-bar"><button id="pdfZout" class="btn secondary">'+esc(t('pdf_zoom_out'))+'</button>';
+  h+='<button id="pdfZin" class="btn secondary">'+esc(t('pdf_zoom_in'))+'</button></div>';
+  h+='<div id="pdfErr" class="hidden" style="text-align:center;padding:20px;"><p>'+esc(t('pdf_error'))+'</p><button id="pdfRetry" class="btn primary">🔁</button></div>';
+  h+='<div class="pdf-pages" id="pdfPages"></div>';
+  h+='</div>';
+  $('v-study').innerHTML=h;
+  window.scrollTo(0,0);
+  PDFV={pdf:p,doc:null,page:1,total:0,scale:1.4,rendering:false};
+  if(window.pdfjsLib){
+    try{window.pdfjsLib.GlobalWorkerOptions.workerSrc='js/pdfjs/pdf.worker.min.js';}catch(e){}
+  }
+  loadPdfDoc(false);
+  $('pdfPrev').onclick=function(){if(PDFV&&PDFV.page>1){PDFV.page--;renderPdfPage();}};
+  $('pdfNext').onclick=function(){if(PDFV&&PDFV.page<PDFV.total){PDFV.page++;renderPdfPage();}};
+  $('pdfZin').onclick=function(){if(PDFV){PDFV.scale=Math.min(3,PDFV.scale+0.25);renderPdfPage();}};
+  $('pdfZout').onclick=function(){if(PDFV){PDFV.scale=Math.max(0.6,PDFV.scale-0.25);renderPdfPage();}};
+  var rt=$('pdfRetry');if(rt)rt.onclick=function(){loadPdfDoc(true);};
+}
+function loadPdfDoc(useCdn){
+  var p=PDFV.pdf;
+  var url=useCdn?(window.PDF_CDN+p.cat+'/'+p.file):window.pdfURL(p.cat,p.file);
+  if(!window.pdfjsLib){$('pdfErr').classList.remove('hidden');return;}
+  $('pdfErr').classList.add('hidden');
+  $('pdfInfo').textContent=t('pdf_loading');
+  window.pdfjsLib.getDocument({url:url}).promise.then(function(doc){
+    PDFV.doc=doc;PDFV.total=doc.numPages;PDFV.page=1;
+    renderPdfPage();
+  }).catch(function(err){
+    if(!useCdn){loadPdfDoc(true);return;} /* local failed → try CDN */
+    $('pdfErr').classList.remove('hidden');
+    $('pdfInfo').textContent=t('pdf_error');
+  });
+}
+function renderPdfPage(){
+  if(!PDFV||!PDFV.doc||PDFV.rendering)return;
+  PDFV.rendering=true;
+  var box=$('pdfPages');
+  box.innerHTML='<canvas id="pdfCanvas"></canvas>';
+  var cv=$('pdfCanvas');
+  $('pdfInfo').textContent=t('pdf_page')+' '+PDFV.page+' / '+PDFV.total;
+  PDFV.doc.getPage(PDFV.page).then(function(page){
+    var vp=page.getViewport({scale:PDFV.scale});
+    cv.width=vp.width;cv.height=vp.height;
+    cv.style.width='100%';cv.style.height='auto';
+    page.render({canvasContext:cv.getContext('2d'),viewport:vp}).promise.then(function(){
+      PDFV.rendering=false;
+    }).catch(function(){PDFV.rendering=false;});
+  }).catch(function(){PDFV.rendering=false;});
 }
 
 /* ---------- chapter ---------- */
