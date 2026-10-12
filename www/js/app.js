@@ -116,10 +116,9 @@ function renderFormulaSheet(){
   var h='<h2 class="sec">'+esc(t('formula_sheet'))+'</h2><p class="muted">'+esc(t('all_formulas'))+'</p>';
   chByPart('maths').forEach(function(c){
     var marks=[];
-    (c.tricks||[]).forEach(function(tr){
-      var m=String(tr.b.hi||'').match(/<mark>(.*?)<\/mark>/g)||[];
-      m.forEach(function(x){var txt=x.replace(/<\/?mark>/g,'');if(marks.indexOf(txt)<0)marks.push(txt);});
-    });
+    function grabMarks(html){var m=String(html||'').match(/<mark>(.*?)<\/mark>/g)||[];m.forEach(function(x){var txt=x.replace(/<\/?mark>/g,'');if(txt&&marks.indexOf(txt)<0)marks.push(txt);});}
+    (c.tricks||[]).forEach(function(tr){grabMarks(tr.b.hi);grabMarks(tr.b.en);});
+    if(c.notes&&c.notes.formulas){grabMarks(c.notes.formulas.hi);grabMarks(c.notes.formulas.en);}
     if(!marks.length)return;
     h+='<div class="card anim-in"><h3><span class="ch-num">'+c.num+'</span> '+esc(L(c.title))+'</h3>';
     h+='<div class="formula-list">'+marks.map(function(f){return '<span class="formula-chip">'+f+'</span>';}).join('')+'</div></div>';
@@ -209,7 +208,11 @@ function wireHome(){
     var qv=qi.value.trim().toLowerCase(),box=$('searchRes');
     if(qv.length<2){box.innerHTML='';return;}
     var res=CH.filter(function(c){
-      return L(c.title).toLowerCase().indexOf(qv)>=0||L(c.concept).toLowerCase().indexOf(qv)>=0;
+      var hay=L(c.title)+' '+L(c.concept);
+      if(c.notes){hay+=' '+L(c.notes.intro)+' '+L(c.notes.formulas)+' '+L(c.notes.rules)+' '+L(c.notes.mistakes)+' '+L(c.notes.approach||{hi:'',en:''});}
+      (c.tips||[]).forEach(function(tp){hay+=' '+L(tp);});
+      (c.tricks||[]).forEach(function(tr){hay+=' '+L(tr.h)+' '+L(tr.b);});
+      return hay.toLowerCase().indexOf(qv)>=0;
     }).slice(0,12);
     box.innerHTML=res.length?res.map(function(c){
       return '<button class="chap-row" data-ch="'+c.id+'"><span class="chap-num cn'+(c.num%10)+'">'+c.num+'</span><span class="t"><b>'+esc(L(c.title))+'</b></span><span class="arr">›</span></button>';
@@ -289,6 +292,16 @@ function renderChapter(id){
   h+='<div class="adhyay-box"><span class="inner">'+esc(t('chapter_lbl'))+'— '+c.num+' '+esc(L(c.title))+'</span></div>';
   /* concept in blue box with highlights */
   h+='<div class="concept-box">'+L(c.concept)+dgmFor(c.id)+'</div>';
+  /* 📖 study notes (new) */
+  if(c.notes){
+    h+='<div class="tricky-label">📖 '+esc(t('study_notes'))+'</div>';
+    h+='<div class="notes-box"><div class="notes-intro">'+L(c.notes.intro)+'</div>';
+    if(c.notes.formulas) h+='<h4 class="notes-h">📐 '+esc(t('key_formulas'))+'</h4><div class="notes-sec">'+L(c.notes.formulas)+'</div>';
+    if(c.notes.rules) h+='<h4 class="notes-h">📏 '+esc(t('imp_rules'))+'</h4><div class="notes-sec">'+L(c.notes.rules)+'</div>';
+    if(c.notes.approach) h+='<h4 class="notes-h">🧭 '+esc(t('how_to_solve'))+'</h4><div class="notes-sec">'+L(c.notes.approach)+'</div>';
+    if(c.notes.mistakes) h+='<h4 class="notes-h warn">⚠️ '+esc(t('common_mistakes'))+'</h4><div class="notes-sec">'+L(c.notes.mistakes)+'</div>';
+    h+='</div>';
+  }
   /* tricks / facts */
   var items=(c.tricks||[]);
   if(items.length){
@@ -301,21 +314,48 @@ function renderChapter(id){
   (c.mnemonics||[]).forEach(function(mn,i){
     h+='<div class="trick c'+(i%6)+'"><h4><span class="n">🧠</span>'+esc(L(mn.h))+'</h4><div>'+L(mn.b)+'</div></div>';
   });
+  /* 💡 expert tips (new) */
+  if(c.tips&&c.tips.length){
+    h+='<div class="tricky-label">💡 '+esc(t('expert_tips'))+'</div>';
+    c.tips.forEach(function(tp,i){
+      h+='<div class="tip-box"><span class="tip-n">'+(i+1)+'</span><div>'+L(tp)+'</div></div>';
+    });
+  }
   /* solved examples — red numbered like reference */
   (c.examples||[]).forEach(function(ex,i){
     h+='<div class="q-block"><div class="q-no">'+(i+1)+'. '+L(ex.q)+'</div>';
     h+='<div class="tricky-sol"><div class="lbl">Tricky</div><div class="sol-box">'+L(ex.s)+'</div></div></div>';
   });
-  /* bookmark + practice */
+  /* bookmark + practice + difficulty filter */
+  h+='<div class="diff-row"><span class="diff-lbl">'+esc(t('diff_label'))+':</span>';
+  h+='<button class="diff-btn sel" data-d="0">'+esc(t('diff_all'))+'</button>';
+  h+='<button class="diff-btn" data-d="1">'+esc(t('diff_easy'))+'</button>';
+  h+='<button class="diff-btn" data-d="2">'+esc(t('diff_medium'))+'</button>';
+  h+='<button class="diff-btn" data-d="3">'+esc(t('diff_hard'))+'</button>';
+  h+='<button class="diff-btn" data-p="1" id="pyqBtn">'+esc(t('pyq_only'))+'</button></div>';
   h+='<div style="display:flex;gap:10px;margin:16px 4px;">';
   h+='<button id="bmBtn" class="btn secondary" style="flex:0 0 auto;">'+(bm?'🔖':'📑')+'</button>';
-  h+='<button id="pracBtn" class="btn primary big-cta" style="flex:1;">'+esc(t('practice_btn'))+' ('+(c.quiz||[]).length+')</button>';
+  h+='<button id="pracBtn" class="btn primary big-cta" style="flex:1;">'+esc(t('practice_btn'))+' (<span id="pracCount">'+(c.quiz||[]).length+'</span>)</button>';
   h+='</div>';
   h+='<p class="muted">'+esc(t('unofficial_note'))+'</p>';
   h+='</div>';
   $('v-study').innerHTML=h;window.scrollTo(0,0);
   $('bmBtn').onclick=function(){var on=RXStore.toggleBookmark(id);$('bmBtn').innerHTML=on?'🔖':'📑';toast(t(on?'bookmarked':'bookmark_removed'));};
-  $('pracBtn').onclick=function(){startPractice(id);};
+  var curDiff=0, pyqOnly=false;
+  function isPYQq(q){var s=L(q.src||{hi:'',en:''});return /RRB|SSC|IBPS/.test(s)&&!/Practice|अभ्यास|Expected/.test(s);}
+  function diffCount(d){var arr=(c.quiz||[]);if(d)arr=arr.filter(function(q){return (q.d||2)===d;});if(pyqOnly)arr=arr.filter(isPYQq);return arr.length;}
+  document.querySelectorAll('.diff-btn').forEach(function(b){
+    b.onclick=function(){
+      if(b.getAttribute('data-p')){
+        pyqOnly=!pyqOnly;b.classList.toggle('sel',pyqOnly);
+      }else{
+        document.querySelectorAll('.diff-btn[data-d]').forEach(function(x){x.classList.remove('sel');});
+        b.classList.add('sel');curDiff=parseInt(b.getAttribute('data-d'),10);
+      }
+      $('pracCount').textContent=diffCount(curDiff);
+    };
+  });
+  $('pracBtn').onclick=function(){startPractice(id,curDiff,pyqOnly);};
 }
 /* ---------- TTS (device, offline) ---------- */
 function speak(text){
@@ -358,9 +398,12 @@ function renderPractice(){
 
 /* ---------- quiz engine (practice: instant feedback) ---------- */
 var QZ=null;
-function startPractice(chId){
+function startPractice(chId,diff,pyqOnly){
   var c=chById(chId);if(!c)return;
   var set=(c.quiz||[]).map(function(q,i){return {ch:chId,qi:i};});
+  if(diff) set=set.filter(function(ref){return (qObj(ref).d||2)===diff;});
+  if(pyqOnly) set=set.filter(function(ref){var s=L(qObj(ref).src||{hi:'',en:''});return /RRB|SSC|IBPS/.test(s)&&!/Practice|अभ्यास|Expected/.test(s);});
+  if(!set.length){toast(t('diff_all'));return;}
   startPracticeSet(set,L(c.title),chId);
 }
 function startPracticeSet(set,title,chId){
@@ -381,10 +424,15 @@ function srcBadge(q){
   var bg=is2026?'#e91e63':isPYQ?'#1b8aae':'#9e9e9e';
   return '<span class="pill" style="background:'+bg+';color:#fff;margin-left:6px;">📅 '+esc(s)+'</span>';
 }
+function diffPill(q){
+  var d=q.d||2;
+  var lbl=d===1?t('diff_easy'):d===3?t('diff_hard'):t('diff_medium');
+  return '<span class="diff-pill d'+d+'">'+esc(lbl)+'</span>';
+}
 function renderQ(){
   $('hdrTitle').textContent=QZ.title;
   var ref=QZ.set[QZ.i],q=qObj(ref),c=chById(ref.ch);
-  var h='<p class="qnum">'+esc(t('q_no'))+' '+(QZ.i+1)+' '+esc(t('of'))+' '+QZ.set.length+srcBadge(q)+'</p>';
+  var h='<p class="qnum">'+esc(t('q_no'))+' '+(QZ.i+1)+' '+esc(t('of'))+' '+QZ.set.length+srcBadge(q)+diffPill(q)+'</p>';
   h+='<p class="muted">'+esc(L(c.title))+'</p>';
   h+=qdgmFor(ref.ch,ref.qi);
   h+='<div class="card"><h3>'+L(q.q)+'</h3><div id="opts">';
@@ -466,9 +514,19 @@ function mockPool(examId){
   var mq=chByPart('maths'),rq=chByPart('reasoning'),sq=chByPart('science'),
       gq=chByPart('gk'),cq=chByPart('ca');
   function pool(chs){var p=[];chs.forEach(function(c){(c.quiz||[]).forEach(function(q,i){p.push({ch:c.id,qi:i});});});return shuffle(p);}
-  var e=RT_EXAMS[examId],mp=pool(mq).slice(0,e.maths),rp=pool(rq).slice(0,e.reas),sp=[],gp=[];
-  if(examId==='groupd'&&e.science)sp=pool(sq).slice(0,e.science);
-  if(e.gk)gp=pool(gq).concat(pool(cq)).slice(0,e.gk);
+  function balancedPool(chs,n){
+    var all=pool(chs);
+    var e1=all.filter(function(r){return (qObj(r).d||2)===1;});
+    var e2=all.filter(function(r){return (qObj(r).d||2)===2;});
+    var e3=all.filter(function(r){return (qObj(r).d||2)===3;});
+    var n1=Math.round(n*0.4),n3=Math.round(n*0.2),n2=n-n1-n3;
+    var out=e1.slice(0,n1).concat(e2.slice(0,n2),e3.slice(0,n3));
+    if(out.length<n){var rest=all.filter(function(r){return out.indexOf(r)<0;});out=out.concat(rest.slice(0,n-out.length));}
+    return shuffle(out);
+  }
+  var e=RT_EXAMS[examId],mp=balancedPool(mq,e.maths),rp=balancedPool(rq,e.reas),sp=[],gp=[];
+  if(examId==='groupd'&&e.science)sp=balancedPool(sq,e.science);
+  if(e.gk)gp=balancedPool(gq.concat(cq),e.gk);
   return mp.concat(rp,sp,gp);
 }
 function renderMockSetup(){
@@ -613,16 +671,18 @@ function renderNotes(){
   renderPdfs();
 }
 var PDFS=[
-  {ti:{hi:'RRB आधिकारिक वेबसाइट (CDG)',en:'RRB Official Website (CDG)'},url:'https://www.rrbcdg.gov.in',cat:{hi:'आधिकारिक',en:'Official'}},
-  {ti:{hi:'रोज़गार समाचार (Employment News)',en:'Employment News'},url:'https://www.employmentnews.gov.in',cat:{hi:'आधिकारिक',en:'Official'}},
-  {ti:{hi:'NCERT पाठ्यपुस्तकें',en:'NCERT Textbooks'},url:'https://ncert.nic.in/textbook.php',cat:{hi:'अध्ययन',en:'Study'}},
-  {ti:{hi:'PIB — प्रेस सूचना ब्यूरो',en:'PIB — Press Information Bureau'},url:'https://pib.gov.in',cat:{hi:'करेंट अफेयर्स',en:'Current Affairs'}},
-  {ti:{hi:'India Code — कानून',en:'India Code — Laws'},url:'https://www.indiacode.nic.in',cat:{hi:'राजव्यवस्था',en:'Polity'}},
-  {ti:{hi:'जनगणना 2011',en:'Census 2011'},url:'https://censusindia.gov.in',cat:{hi:'आँकड़े',en:'Data'}}
+  {ti:{hi:'RRB NTPC पाठ्यक्रम (Syllabus)',en:'RRB NTPC Syllabus'},url:'https://www.sarkaridisha.com/wp-content/uploads/Railway-RRB-NTPC-102-Exam-Syllabus-English.pdf',cat:{hi:'परीक्षा',en:'Exam'},pdf:1},
+  {ti:{hi:'RRB NTPC 2026 गाइड',en:'RRB NTPC 2026 Guide'},url:'https://images.shiksha.com/mediadata/examGuides/examSectionGuide1715_Overview_2026-09-10-03-19.pdf',cat:{hi:'परीक्षा',en:'Exam'},pdf:1},
+  {ti:{hi:'RRB Group D 2026 गाइड',en:'RRB Group D 2026 Guide'},url:'https://images.shiksha.com/mediadata/examGuides/examSectionGuide1653_Overview_2026-09-24-03-24.pdf',cat:{hi:'परीक्षा',en:'Exam'},pdf:1},
+  {ti:{hi:'NCERT विज्ञान कक्षा 10',en:'NCERT Science Class 10'},url:'https://ncert.nic.in/textbook/pdf/jhsc1ps.pdf',cat:{hi:'अध्ययन',en:'Study'},pdf:1},
+  {ti:{hi:'RRB आधिकारिक वेबसाइट',en:'RRB Official Website'},url:'https://www.rrbcdg.gov.in',cat:{hi:'आधिकारिक',en:'Official'}},
+  {ti:{hi:'रोज़गार समाचार',en:'Employment News'},url:'https://www.employmentnews.gov.in',cat:{hi:'आधिकारिक',en:'Official'}}
 ];
 function renderPdfs(){
-  $('pdfList').innerHTML=PDFS.map(function(p){
-    return '<div class="ch-row"><span class="ch-num">📄</span><span class="t">'+esc(L(p.ti))+'<br><span class="muted">'+esc(L(p.cat))+' • '+esc(t('verified_link'))+'</span></span><a class="btn secondary" href="'+p.url+'" target="_blank" rel="noopener">↗</a></div>';
+  $('pdfList').innerHTML='<p class="muted" style="margin:4px 4px 8px;">'+esc(t('pdf_howto'))+'</p>'+PDFS.map(function(p){
+    var badge=p.pdf?'📕':'🔗';
+    var lbl=p.pdf?t('download_pdf'):t('open_link');
+    return '<div class="ch-row"><span class="ch-num">'+badge+'</span><span class="t">'+esc(L(p.ti))+'<br><span class="muted">'+esc(L(p.cat))+' • '+esc(t('verified_link'))+'</span></span><a class="btn '+(p.pdf?'primary':'secondary')+'" href="'+p.url+'" target="_blank" rel="noopener"'+(p.pdf?' download':'')+'>'+esc(lbl)+'</a></div>';
   }).join('')+'<p class="muted">'+esc(t('pdf_note'))+'</p>';
 }
 function openNote(id){

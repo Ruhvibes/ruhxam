@@ -236,3 +236,27 @@ html[data-theme="dark"] .stat b{color:#4db8d8;}
 html[data-theme="dark"] .formula-chip{background:#1a3a4a;border-color:#1b8aae;color:#b3e5fc;}
 html[data-theme="dark"] .dgm-wrap{background:#fff;}
 html[data-theme="dark"] .app-foot{color:#999;}
+
+/* ---------- study notes (new) ---------- */
+.notes-box{background:#fff8e1;border:2px solid #ffb300;border-radius:16px;padding:16px;margin:10px 4px;}
+.notes-intro{font-size:15px;line-height:1.7;margin-bottom:10px;}
+.notes-h{font-size:16px;margin:12px 0 6px;color:#1b8aae;}
+.notes-h.warn{color:#d32f2f;}
+.notes-sec{font-size:14.5px;line-height:1.8;background:#fff;border-radius:10px;padding:10px 12px;border:1px solid #ffe082;}
+.notes-sec mark{background:#ffeb3b;padding:1px 5px;font-weight:700;border-radius:3px;}
+/* ---------- expert tips (new) ---------- */
+.tip-box{display:flex;gap:10px;background:#e8f5e9;border-left:5px solid #4caf50;border-radius:0 12px 12px 0;padding:12px;margin:8px 4px;font-size:14.5px;line-height:1.7;}
+.tip-n{background:#4caf50;color:#fff;font-weight:700;min-width:26px;height:26px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:14px;}
+/* ---------- difficulty filter (new) ---------- */
+.diff-row{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin:12px 4px 0;}
+.diff-lbl{font-size:14px;font-weight:700;color:#555;}
+.diff-btn{border:2px solid #1b8aae;background:#fff;color:#1b8aae;border-radius:20px;padding:6px 14px;font-size:13px;font-weight:700;}
+.diff-btn.sel{background:#1b8aae;color:#fff;}
+.diff-pill{display:inline-block;font-size:11px;font-weight:700;border-radius:10px;padding:2px 8px;margin-left:6px;color:#fff;}
+.diff-pill.d1{background:#4caf50;}.diff-pill.d2{background:#ff9800;}.diff-pill.d3{background:#f44336;}
+/* dark mode */
+html[data-theme="dark"] .notes-box{background:#2a2410;border-color:#8a6d00;}
+html[data-theme="dark"] .notes-sec{background:#1e1e1e;border-color:#5a4a00;color:#e0d0a0;}
+html[data-theme="dark"] .tip-box{background:#1a2e1a;color:#c8e6c9;}
+html[data-theme="dark"] .diff-btn{background:#222;color:#4db8d8;border-color:#4db8d8;}
+html[data-theme="dark"] .diff-btn.sel{background:#4db8d8;color:#111;}

@@ -271,3 +271,36 @@ Note: the main harness's offline leg originally used `setOfflineMode(true)`, whi
 
 ### Ready for parent
 www/ is final. Copy to android assets, bump versionCode 3→4, rebuild APK, upload to release v1.
+
+## PDF Library Fix (2026-10-12)
+**Complaint:** "Isme kuchh nahi hai" — PDF section had only website links, no actual PDFs.
+**Fixed:**
+- Replaced 6 website-only links with 4 REAL downloadable PDFs + 2 official sites:
+  1. 📕 RRB NTPC Syllabus (verified PDF via browser)
+  2. 📕 RRB NTPC 2026 Guide (shiksha.com direct PDF)
+  3. 📕 RRB Group D 2026 Guide (shiksha.com direct PDF)
+  4. 📕 NCERT Science Class 10 Hindi (verified PDF via browser)
+  5. 🔗 RRB Official Website
+  6. 🔗 Employment News
+- PDF entries show 📕 + "⬇ डाउनलोड" button; links show 🔗 + "↗ खोलें"
+- Added "How to use" hint: PDFs download directly, save for offline reading
+- Bottom nav emojis verified safe (🏠📚✏️⏱️📝📊⚙️ all standard Unicode)
+
+## Study Notes + Full Hal + Difficulty (2026-10-12)
+**Hasnain:** "Aur notes nahi hai" + "Pura hal sahit" + difficulty-wise questions
+
+**Added to ALL 39 maths+reasoning chapters:**
+- 📖 **अध्ययन नोट्स**: intro + मुख्य सूत्र + नियम/तरीका + आम गलतियाँ (22 maths full, 17 reasoning lighter)
+- 💡 **एक्सपर्ट टिप्स**: 3 per maths chapter, 2 per reasoning
+- 🎯 **Difficulty tags**: 1,171 questions tagged (d:1 आसान ~40%, d:2 मध्यम ~40%, d:3 कठिन ~20%)
+- 📝 **Pura hal**: all explanations reviewed, brief ones rewritten to चरण 1→2→3 format; 2 accuracy fixes (r14-15 ambiguous option, r14-19 ambiguous jumble)
+
+**App improvements:**
+- Chapter view: notes → tricks → tips → examples → practice (with difficulty + PYQ filters)
+- Quiz: difficulty pill on every question; PYQ-only toggle
+- Mock tests: difficulty-balanced pools (40/40/20)
+- Search: now covers notes/tips/tricks text
+- Formula sheet: includes notes.formulas marks
+- PDF library: 4 verified real PDFs (RRB NTPC syllabus, NTPC 2026 guide, Group D 2026 guide, NCERT Science X) + 2 official links; download buttons; how-to hint
+
+**Tests:** 53 chapters, 22/22 maths + 17/17 reasoning with notes+tips, 1,171 difficulty-tagged, 0 JS errors (1 expected CDN-offline console note). CDN rebuilt v2.

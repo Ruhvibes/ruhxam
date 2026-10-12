@@ -1,5 +1,5 @@
 {
- "version": 2,
+ "version": 1,
  "part": "ca",
  "count": 3,
  "chapters": [
@@ -473,31 +473,31 @@
     },
     {
      "q": {
-      "hi": "2026 का रसायन नोबेल किन्हें मिला?",
-      "en": "Who won the 2026 Chemistry Nobel?"
+      "hi": "RBI ने 7 अक्टूबर 2026 को रेपो दर में कितनी वृद्धि की?",
+      "en": "By how much did the RBI raise the repo rate on 7 October 2026?"
      },
      "o": [
       {
-       "hi": "डाइसरोथ व हेगेमान",
-       "en": "Deisseroth & Hegemann"
+       "hi": "50 bps",
+       "en": "50 bps"
       },
       {
-       "hi": "हेनरी कागन व केंसो सोआई",
-       "en": "Henri Kagan & Kenso Soai"
+       "hi": "25 bps",
+       "en": "25 bps"
       },
       {
-       "hi": "ऐनी कार्सन",
-       "en": "Anne Carson"
+       "hi": "10 bps",
+       "en": "10 bps"
       },
       {
-       "hi": "नवी पिल्लै",
-       "en": "Navi Pillay"
+       "hi": "कोई बदलाव नहीं",
+       "en": "No change"
       }
      ],
      "a": 1,
      "e": {
-      "hi": "7 अक्टूबर 2026 को हेनरी कागन (फ्रांस) व केंसो सोआई (जापान) को असममित कार्बनिक संश्लेषण में नॉन-लिनियर प्रभाव व ऑटोकैटालिसिस हेतु रसायन नोबेल मिला।",
-      "en": "On 7 Oct 2026 Henri Kagan and Kenso Soai won the Chemistry Nobel for asymmetric organic synthesis."
+      "hi": "चरण 1: MPC ने <mark>25 bps</mark> बढ़ाकर रेपो दर <mark>5.50%</mark> की। चरण 2: यह <mark>3 वर्षों में प्रथम</mark> वृद्धि थी; रुख — \"<mark>कैलिब्रेटेड टाइटनिंग</mark>\"। याद रखें: SDF 5.25% व MSF 5.75% — रेपो से ±0.25%। RBI गवर्नर — संजय मल्होत्रा।",
+      "en": "The MPC raised the repo rate <mark>25 bps to 5.50%</mark> — the first hike in <mark>3 years</mark>; stance \"calibrated tightening\"."
      },
      "src": {
       "hi": "करेंट अफेयर्स 2026",
@@ -506,31 +506,31 @@
     },
     {
      "q": {
-      "hi": "2026 का साहित्य नोबेल किसे मिला?",
-      "en": "Who won the 2026 Literature Nobel?"
+      "hi": "MeitY ने IndiaAI CAIK कहाँ लॉन्च किया?",
+      "en": "Where did MeitY launch IndiaAI CAIK?"
      },
      "o": [
       {
-       "hi": "ऐनी कार्सन",
-       "en": "Anne Carson"
+       "hi": "हैदराबाद",
+       "en": "Hyderabad"
       },
       {
-       "hi": "हेनरी कागन",
-       "en": "Henri Kagan"
+       "hi": "तिरुवनंतपुरम",
+       "en": "Thiruvananthapuram"
       },
       {
-       "hi": "नवी पिल्लै",
-       "en": "Navi Pillay"
+       "hi": "बेंगलुरु",
+       "en": "Bengaluru"
       },
       {
-       "hi": "फ्रांसिस हाल्ज़ेन",
-       "en": "Francis Halzen"
+       "hi": "चेन्नई",
+       "en": "Chennai"
       }
      ],
-     "a": 0,
+     "a": 1,
      "e": {
-      "hi": "8 अक्टूबर 2026 को स्वीडिश अकादमी ने कनाडाई लेखिका ऐनी कार्सन को साहित्य नोबेल दिया — शास्त्रीय परंपरा से संवाद करती उनकी मौलिक रचनाओं हेतु।",
-      "en": "On 8 Oct 2026 the Swedish Academy awarded Canadian author Anne Carson the Literature Nobel."
+      "hi": "MeitY (इलेक्ट्रॉनिकी व सूचना प्रौद्योगिकी मंत्रालय) ने <mark>तिरुवनंतपुरम (केरल)</mark> में <mark>IndiaAI CAIK</mark> (Common AI Knowledge centre — सामान्य AI ज्ञान केंद्र) लॉन्च किया।",
+      "en": "MeitY launched <mark>IndiaAI CAIK</mark> (Common AI Knowledge centre) at <mark>Thiruvananthapuram, Kerala</mark>."
      },
      "src": {
       "hi": "करेंट अफेयर्स 2026",
@@ -539,31 +539,31 @@
     },
     {
      "q": {
-      "hi": "2026 का शांति नोबेल किसे मिला?",
-      "en": "Who won the 2026 Nobel Peace Prize?"
+      "hi": "2026 का अर्थशास्त्र नोबेल किस तिथि को घोषित हुआ?",
+      "en": "On which date was the 2026 Economics Nobel announced?"
      },
      "o": [
       {
-       "hi": "ऐनी कार्सन",
-       "en": "Anne Carson"
+       "hi": "9 अक्टूबर",
+       "en": "9 October"
       },
       {
-       "hi": "नवी पिल्लै",
-       "en": "Navi Pillay"
+       "hi": "12 अक्टूबर",
+       "en": "12 October"
       },
       {
-       "hi": "फ्रांसिस हाल्ज़ेन",
-       "en": "Francis Halzen"
+       "hi": "5 अक्टूबर",
+       "en": "5 October"
       },
       {
-       "hi": "केंसो सोआई",
-       "en": "Kenso Soai"
+       "hi": "15 अक्टूबर",
+       "en": "15 October"
       }
      ],
      "a": 1,
      "e": {
-      "hi": "9 अक्टूबर 2026 को नॉर्वेजियन नोबेल समिति ने दक्षिण अफ्रीका की नवी पिल्लै (पूर्व UN मानवाधिकार उच्चायुक्त) को अंतर्राष्ट्रीय कानून व शांति हेतु शांति नोबेल दिया।",
-      "en": "On 9 Oct 2026 the Norwegian Nobel Committee awarded South Africa's Navi Pillay the Peace Prize."
+      "hi": "चरण 1: नोबेल सप्ताह — \"<mark>5-6-7-8-9</mark>\" (चिकित्सा, भौतिकी, रसायन, साहित्य, शांति)। चरण 2: सप्ताह का समापन पुरस्कार — अर्थशास्त्र नोबेल <mark>12 अक्टूबर</mark> को <mark>रॉयल स्वीडिश अकादमी</mark> द्वारा घोषित हुआ। औपचारिक नाम — अल्फ्रेड नोबेल की स्मृति में आर्थिक विज्ञान हेतु स्वेरिजेस रिक्सबैंक पुरस्कार (1968 से)।",
+      "en": "Nobel week runs 5–9 Oct; the Economics prize closed the week on <mark>12 October</mark>, announced by the Royal Swedish Academy of Sciences."
      },
      "src": {
       "hi": "करेंट अफेयर्स 2026",
@@ -770,31 +770,31 @@
     },
     {
      "q": {
-      "hi": "एशियाई खेल 2026 में भारत ने कितने पदक जीते?",
-      "en": "How many medals did India win at the Asian Games 2026?"
+      "hi": "रक्षा मंत्रालय ने ब्रह्मोस एयरोस्पेस से कितने मूल्य का अनुबंध किया?",
+      "en": "For what value did the Defence Ministry sign a contract with BrahMos Aerospace?"
      },
      "o": [
       {
-       "hi": "107",
-       "en": "107"
+       "hi": "₹661.50 करोड़",
+       "en": "₹661.50 crore"
       },
       {
-       "hi": "85",
-       "en": "85"
+       "hi": "₹500 करोड़",
+       "en": "₹500 crore"
       },
       {
-       "hi": "95",
-       "en": "95"
+       "hi": "₹1,000 करोड़",
+       "en": "₹1,000 crore"
       },
       {
-       "hi": "70",
-       "en": "70"
+       "hi": "₹250 करोड़",
+       "en": "₹250 crore"
       }
      ],
-     "a": 1,
+     "a": 0,
      "e": {
-      "hi": "आइची-नागोया में भारत चौथा — 85 पदक (21 स्वर्ण, 27 रजत, 37 कांस्य); क्रिकेट, हॉकी व कबड्डी में पुरुष-महिला दोनों ने स्वर्ण जीते।",
-      "en": "At Aichi-Nagoya India finished 4th with 85 medals (21G, 27S, 37B); golden sweep in cricket, hockey, kabaddi."
+      "hi": "रक्षा मंत्रालय ने <mark>ब्रह्मोस एयरोस्पेस</mark> से <mark>₹661.50 करोड़</mark> का अनुबंध किया — नौसेना जहाजों हेतु <mark>अग्नि नियंत्रण प्रणाली</mark>, जिसमें <mark>68%</mark> स्वदेशी सामग्री है।",
+      "en": "The MoD signed a <mark>₹661.50-crore</mark> contract with <mark>BrahMos Aerospace</mark> for naval fire-control systems (<mark>68%</mark> indigenous)."
      },
      "src": {
       "hi": "करेंट अफेयर्स 2026",
@@ -1001,31 +1001,31 @@
     },
     {
      "q": {
-      "hi": "रामानुजन पुरस्कार 2026 किसे मिला?",
-      "en": "Who won the 2026 Ramanujan Prize?"
+      "hi": "PFRDA से पेंशन फंड प्रायोजित करने की अनुमति पाने वाला दूसरा सार्वजनिक बैंक कौन-सा है?",
+      "en": "Which is the second public-sector bank allowed by PFRDA to sponsor a pension fund?"
      },
      "o": [
       {
-       "hi": "महेश काकड़े",
-       "en": "Mahesh Kakde"
+       "hi": "बैंक ऑफ बड़ौदा",
+       "en": "Bank of Baroda"
       },
       {
-       "hi": "मंजुल भार्गव",
-       "en": "Manjul Bhargava"
+       "hi": "पंजाब नेशनल बैंक",
+       "en": "Punjab National Bank"
       },
       {
-       "hi": "अक्षय वेंकटेश",
-       "en": "Akshay Venkatesh"
+       "hi": "केनरा बैंक",
+       "en": "Canara Bank"
       },
       {
-       "hi": "नीना गुप्ता",
-       "en": "Neena Gupta"
+       "hi": "यूनियन बैंक ऑफ इंडिया",
+       "en": "Union Bank of India"
       }
      ],
      "a": 0,
      "e": {
-      "hi": "IISc बेंगलुरु के महेश काकड़े को बीजगणितीय संख्या सिद्धांत में योगदान हेतु 2026 का रामानुजन पुरस्कार मिला — ICTP का यह सम्मान विकासशील देशों के युवा गणितज्ञों हेतु है।",
-      "en": "Mahesh Kakde (IISc Bengaluru) won the 2026 Ramanujan Prize for algebraic number theory."
+      "hi": "PFRDA (पेंशन निधि विनियामक और विकास प्राधिकरण) से अनुमति — पेंशन फंड प्रायोजित करने वाला <mark>दूसरा</mark> सार्वजनिक बैंक <mark>बैंक ऑफ बड़ौदा</mark> बना; प्रथम — <mark>SBI (2008)</mark>।",
+      "en": "<mark>Bank of Baroda</mark> became the <mark>2nd</mark> public-sector bank with PFRDA approval to sponsor a pension fund (first — <mark>SBI, 2008</mark>)."
      },
      "src": {
       "hi": "करेंट अफेयर्स 2026",
@@ -2054,8 +2054,8 @@
       "en": "Typing test and CBAT have been removed in this CEN — selection via CBT-1, CBT-2, DV and medical only."
      },
      "src": {
-      "hi": "RRB NTPC 2026 — Latest Pattern",
-      "en": "RRB NTPC 2026 — Latest Pattern"
+      "hi": "अभ्यास प्रश्न",
+      "en": "Practice"
      }
     },
     {
@@ -2318,8 +2318,8 @@
       "en": "From 2026 Station Master recruitment is separate from NTPC — 500+ posts expected."
      },
      "src": {
-      "hi": "RRB NTPC 2026 — Latest Pattern",
-      "en": "RRB NTPC 2026 — Latest Pattern"
+      "hi": "अभ्यास प्रश्न",
+      "en": "Practice"
      }
     },
     {
@@ -2687,31 +2687,31 @@
     },
     {
      "q": {
-      "hi": "सितंबर 2026 में CPI मुद्रास्फीति क्या रही?",
-      "en": "CPI inflation in September 2026?"
+      "hi": "EWS आरक्षण हेतु पारिवारिक आय की अधिकतम सीमा क्या है?",
+      "en": "What is the maximum family income limit for EWS reservation?"
      },
      "o": [
       {
-       "hi": "4.8%",
-       "en": "4.8%"
+       "hi": "₹6 लाख/वर्ष",
+       "en": "₹6 lakh/year"
       },
       {
-       "hi": "3.2%",
-       "en": "3.2%"
+       "hi": "₹8 लाख/वर्ष",
+       "en": "₹8 lakh/year"
       },
       {
-       "hi": "5.2%",
-       "en": "5.2%"
+       "hi": "₹10 लाख/वर्ष",
+       "en": "₹10 lakh/year"
       },
       {
-       "hi": "2.5%",
-       "en": "2.5%"
+       "hi": "₹12 लाख/वर्ष",
+       "en": "₹12 lakh/year"
       }
      ],
      "a": 1,
      "e": {
-      "hi": "NSO के अनुसार सितंबर में 3.2% — 7 वर्षों का न्यूनतम; RBI के 4% लक्ष्य से नीचे रहने से मौद्रिक नीति को राहत मिलती है।",
-      "en": "Per the NSO, September CPI was 3.2% — a 7-year low, below the RBI's 4% target."
+      "hi": "EWS आरक्षण — पारिवारिक आय <mark>₹8 लाख/वर्ष</mark> से कम; SC/ST/OBC में शामिल अभ्यर्थी EWS में <mark>नहीं</mark> आते। यह आरक्षण <mark>103वें संविधान संशोधन (2019)</mark> से <mark>10%</mark> लागू है।",
+      "en": "EWS reservation — family income below <mark>₹8 lakh/year</mark>; introduced by the <mark>103rd Amendment (2019)</mark> at <mark>10%</mark>."
      },
      "src": {
       "hi": "करेंट अफेयर्स 2026",
