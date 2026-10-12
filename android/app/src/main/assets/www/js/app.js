@@ -78,9 +78,13 @@ function qdgmFor(chId,qi){var f=RX_QDGM[chId+':'+qi];if(!f)return '';try{return 
 
 /* ---------- navigation ---------- */
 var TABS=['home','study','practice','mock','notes','progress','profile'];
+var RX_VIEWS={home:1,study:1,part:1,practice:1,mock:1,notes:1,progress:1,profile:1};
 function show(v,arg){
+  if(!RX_VIEWS[v])v='home'; // unknown/special views (chapter, quiz, mockrun, noteedit, formulas) never land here blank
   RT.view=v;
-  TABS.forEach(function(tb){$('v-'+tb).classList.toggle('hidden',tb!==v);});
+  var holder=(v==='part')?'study':v; // 'part' renders into v-study
+  document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
+  var sec=$('v-'+holder);if(sec)sec.classList.remove('hidden');
   document.querySelectorAll('#tabbar .tab').forEach(function(b){
     b.classList.toggle('sel',b.getAttribute('data-tab')===v);
   });
@@ -88,7 +92,7 @@ function show(v,arg){
   var adsScreens={home:1,study:1,part:1,chapter:1,notes:1,progress:1,profile:1,practice:1};
   setAds(!!adsScreens[v]);
   window.scrollTo(0,0);
-  ({home:renderHome,study:renderStudy,practice:renderPractice,mock:renderMockSetup,
+  ({home:renderHome,study:renderStudy,part:renderPart,practice:renderPractice,mock:renderMockSetup,
     notes:renderNotes,progress:renderProgress,profile:renderProfile}[v]||renderHome)(arg);
 }
 function goTab(v){RT.stack=[];if(typeof MK!=='undefined'&&MK&&MK.timer){clearInterval(MK.timer);MK=null;}show(v);}
@@ -103,10 +107,12 @@ function push(v,arg){RT.stack.push({v:RT.view});show(v,arg);}
 /* ---------- formula sheet (all maths <mark> formulas, one place) ---------- */
 function renderFormulaSheet(){
   RT.view='formulas';
-  TABS.forEach(function(tb){$('v-'+tb).classList.toggle('hidden',tb!=='study');});
+  document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
+  $('v-study').classList.remove('hidden');
   document.querySelectorAll('#tabbar .tab').forEach(function(b){b.classList.toggle('sel',b.getAttribute('data-tab')==='study');});
   $('btnBack').classList.remove('hidden');setAds(true);
-  RT.stack.push({v:'study'});
+  var fstop=RT.stack[RT.stack.length-1];
+  if(!fstop||fstop.v!=='study')RT.stack.push({v:'study'});
   var h='<h2 class="sec">'+esc(t('formula_sheet'))+'</h2><p class="muted">'+esc(t('all_formulas'))+'</p>';
   chByPart('maths').forEach(function(c){
     var marks=[];
@@ -214,6 +220,7 @@ function wireHome(){
 
 /* ---------- study ---------- */
 function renderStudy(){
+  RT.curPart=null;
   $('hdrTitle').textContent=t('tab_study');
   var prog=RXStore.get('progress')||{};
   var h='<div class="home-cards">';
@@ -233,6 +240,7 @@ function renderStudy(){
   });
 }
 function renderPart(pid){
+  RT.curPart=pid;
   var p=partOf(pid),list=chByPart(pid),prog=RXStore.get('progress')||{};
   $('hdrTitle').textContent=t(p.tk);
   var sub=p.id==='maths'?'Math Shortcut Tricks':p.id==='reasoning'?'Reasoning Tricks':p.id==='science'?'Science Revision':p.id==='gk'?'GK Facts':'Current Affairs';
@@ -245,7 +253,11 @@ function renderPart(pid){
   $('v-study').innerHTML=h;
   document.querySelectorAll('#v-study [data-ch]').forEach(function(b){b.onclick=function(){openChapter(b.getAttribute('data-ch'));};});
 }
-function openChapter(id){RT.stack.push({v:RT.view==='study'?'study':'home'});renderChapter(id);}
+function openChapter(id){
+  var c=chById(id);
+  RT.stack.push(RT.curPart?{v:'part',arg:RT.curPart}:{v:RT.view==='study'?'study':'home'});
+  renderChapter(id);
+}
 
 /* ---------- chapter ---------- */
 
@@ -262,7 +274,8 @@ var curCh=null;
 function renderChapter(id){
   var c=chById(id);if(!c){goTab('home');return;}
   curCh=c;RT.view='chapter';
-  TABS.forEach(function(tb){$('v-'+tb).classList.toggle('hidden',tb!=='study');});
+  document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
+  $('v-study').classList.remove('hidden');
   document.querySelectorAll('#tabbar .tab').forEach(function(b){b.classList.toggle('sel',b.getAttribute('data-tab')==='study');});
   $('btnBack').classList.remove('hidden');setAds(true);
   RXStore.set('lastChapter',id);
@@ -273,7 +286,7 @@ function renderChapter(id){
   $('hdrTitle').textContent=L(c.title)+' '+(idx+1)+' / '+list.length;
   var h='<div class="ch-body">';
   /* blue अध्याय box */
-  h+='<div class="adhyay-box"><span class="inner">अध्याय— '+c.num+' '+esc(L(c.title))+'</span></div>';
+  h+='<div class="adhyay-box"><span class="inner">'+esc(t('chapter_lbl'))+'— '+c.num+' '+esc(L(c.title))+'</span></div>';
   /* concept in blue box with highlights */
   h+='<div class="concept-box">'+L(c.concept)+dgmFor(c.id)+'</div>';
   /* tricks / facts */
@@ -296,7 +309,7 @@ function renderChapter(id){
   /* bookmark + practice */
   h+='<div style="display:flex;gap:10px;margin:16px 4px;">';
   h+='<button id="bmBtn" class="btn secondary" style="flex:0 0 auto;">'+(bm?'🔖':'📑')+'</button>';
-  h+='<button id="pracBtn" class="btn primary big-cta" style="flex:1;">'+esc(t('practice_btn'))+'</button>';
+  h+='<button id="pracBtn" class="btn primary big-cta" style="flex:1;">'+esc(t('practice_btn'))+' ('+(c.quiz||[]).length+')</button>';
   h+='</div>';
   h+='<p class="muted">'+esc(t('unofficial_note'))+'</p>';
   h+='</div>';
@@ -317,6 +330,7 @@ function speak(text){
 
 /* ---------- practice hub ---------- */
 function renderPractice(){
+  $('hdrTitle').textContent=t('practice');
   var h='<h2 class="sec">'+esc(t('practice'))+'</h2>';
   h+='<p class="muted">⚠️ '+esc(t('unofficial_note'))+'</p>';
   h+='<button class="btn primary block" id="dailyPrac">'+esc(t('daily_practice'))+'</button>';
@@ -352,7 +366,7 @@ function startPractice(chId){
 function startPracticeSet(set,title,chId){
   QZ={set:set,title:title,chId:chId||null,i:0,ok:0,answered:{},review:[]};
   RT.view='quiz';
-  TABS.forEach(function(tb){$('v-'+tb).classList.toggle('hidden',true);});
+  document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
   $('v-quiz').classList.remove('hidden');
   document.querySelectorAll('#tabbar .tab').forEach(function(b){b.classList.toggle('sel',b.getAttribute('data-tab')==='practice');});
   $('btnBack').classList.remove('hidden');setAds(false);
@@ -368,6 +382,7 @@ function srcBadge(q){
   return '<span class="pill" style="background:'+bg+';color:#fff;margin-left:6px;">📅 '+esc(s)+'</span>';
 }
 function renderQ(){
+  $('hdrTitle').textContent=QZ.title;
   var ref=QZ.set[QZ.i],q=qObj(ref),c=chById(ref.ch);
   var h='<p class="qnum">'+esc(t('q_no'))+' '+(QZ.i+1)+' '+esc(t('of'))+' '+QZ.set.length+srcBadge(q)+'</p>';
   h+='<p class="muted">'+esc(L(c.title))+'</p>';
@@ -457,6 +472,7 @@ function mockPool(examId){
   return mp.concat(rp,sp,gp);
 }
 function renderMockSetup(){
+  $('hdrTitle').textContent=t('mock_title');
   var e=RT_EXAMS[RT.examId];
   var h='<h2 class="sec">'+esc(t('mock_title'))+'</h2>';
   h+='<p class="muted">⚠️ '+esc(t('unofficial_note'))+'</p>';
@@ -481,7 +497,7 @@ function renderMockSetup(){
 function startMock(set,e){
   MK={set:set,exam:e,i:0,ans:{},mark:{},sec:e.timeMin*60,timer:null,neg:negVal(),start:Date.now()};
   RT.view='mockrun';
-  TABS.forEach(function(tb){$('v-'+tb).classList.toggle('hidden',true);});
+  document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
   $('v-mock').classList.remove('hidden');
   $('btnBack').classList.add('hidden');setAds(false);
   renderMockQ();
@@ -495,6 +511,7 @@ function startMock(set,e){
   },1000);
 }
 function renderMockQ(){
+  $('hdrTitle').textContent=L(MK.exam.name);
   var ref=MK.set[MK.i],q=qObj(ref),c=chById(ref.ch);
   var h='<div class="row spread"><span class="timer" id="mkTimer"></span><button class="btn secondary" id="mkPal">☰</button></div>';
   h+='<p class="qnum">'+esc(t('q_no'))+' '+(MK.i+1)+' '+esc(t('of'))+' '+MK.set.length+srcBadge(q)+'</p>';
@@ -549,7 +566,7 @@ function finishMock(){
   var h='<div class="card"><div class="score-big">'+ (Math.round(score*100)/100) +'</div>';
   h+='<p style="text-align:center">'+esc(ok>=MK.set.length*0.8?t('excellent'):ok>=MK.set.length*0.5?t('good'):t('keep_going'))+'</p>';
   h+='<div class="stat-grid"><div class="stat"><b>'+ok+'</b>'+esc(t('correct'))+'</div><div class="stat"><b>'+wrong+'</b>'+esc(t('wrong'))+'</div>';
-  h+='<div class="stat"><b>'+skip+'</b>'+esc(t('skipped'))+'</div><div class="stat"><b>'+mins+' '+esc(t('min'))+'</b>'+esc(t('time_used'))+'</div></div>';
+  h+='<div class="stat"><b>'+skip+'</b>'+esc(t('skipped'))+'</div><div class="stat"><b>'+mins+'</b>'+esc(t('min'))+' • '+esc(t('time_used'))+'</div></div>';
   h+='<h3>'+esc(t('review'))+'</h3>';
   MK.set.forEach(function(ref,i){
     var q=qObj(ref),sel=MK.ans[i];
@@ -570,6 +587,7 @@ function finishMock(){
 /* ---------- notes ---------- */
 var editId=null,saveTimer=null;
 function renderNotes(){
+  $('hdrTitle').textContent=t('notes');
   var h='<h2 class="sec">'+esc(t('notes'))+'</h2>';
   h+='<div class="row"><input id="nq" class="search" style="flex:1" placeholder="'+esc(t('search_ph'))+'">';
   h+='<button id="favF" class="btn secondary">⭐</button></div>';
@@ -608,8 +626,9 @@ function renderPdfs(){
   }).join('')+'<p class="muted">'+esc(t('pdf_note'))+'</p>';
 }
 function openNote(id){
+  if(RT.view!=='noteedit')RT.stack.push({v:'notes'});
   editId=id;RT.view='noteedit';
-  TABS.forEach(function(tb){$('v-'+tb).classList.toggle('hidden',true);});
+  document.querySelectorAll('#main .view').forEach(function(s){s.classList.add('hidden');});
   $('v-noteedit').classList.remove('hidden');
   $('btnBack').classList.remove('hidden');setAds(false);
   var n=RXStore.get('notes').find(function(x){return x.id===id;})||{title:'',body:'',fav:false};
@@ -643,6 +662,7 @@ function openNote(id){
 
 /* ---------- progress ---------- */
 function renderProgress(){
+  $('hdrTitle').textContent=t('my_progress');
   var st=stats(),prog=RXStore.get('progress')||{},att=RXStore.get('attempts')||{};
   var h='<h2 class="sec">'+esc(t('my_progress'))+'</h2>';
   h+='<section class="stats-grid"><article class="stat-card"><span>'+esc(t('chapters_done'))+'</span><strong>'+st.done+'/'+CH.length+'</strong></article>';
@@ -662,6 +682,7 @@ function renderProgress(){
 
 /* ---------- profile / settings ---------- */
 function renderProfile(){
+  $('hdrTitle').textContent=t('profile');
   var h='<h2 class="sec">'+esc(t('profile'))+'</h2>';
   h+='<div class="card"><h3>'+esc(t('save_lang'))+'</h3><div class="row"><button class="btn '+(RT.lang==='hi'?'primary':'secondary')+'" data-lang="hi">हिंदी</button><button class="btn '+(RT.lang==='en'?'primary':'secondary')+'" data-lang="en">English</button></div></div>';
   h+='<div class="card"><h3>🚂 '+esc(t('exam_target'))+'</h3><div class="row">';
@@ -743,7 +764,15 @@ function applyCDNCache(){
 }
 
 /* ---------- header controls ---------- */
-function setLang(l){RT.lang=l;RXStore.set('lang',l);document.documentElement.lang=l;applyTabLabels();show(RT.view==='chapter'?'study':RT.view);}
+function setLang(l){RT.lang=l;RXStore.set('lang',l);document.documentElement.lang=l;applyTabLabels();
+  /* keep in-progress quiz/mock/note/formula alive across language switch */
+  var v=RT.view;
+  if(v==='quiz'){renderQ();return;}
+  if(v==='mockrun'){renderMockQ();return;}
+  if(v==='formulas'){renderFormulaSheet();return;}
+  if(v==='noteedit'){openNote(editId);return;}
+  show(v==='chapter'?'study':v);
+}
 function setTheme(th){RT.theme=th;RXStore.set('theme',th);document.documentElement.setAttribute('data-theme',th);}
 function updExamChip(){}
 /* popup menu */
@@ -768,11 +797,11 @@ function showMenu(items,x,y){
   setTimeout(function(){document.addEventListener('click',closeMenu);},10);
 }
 function closeMenu(){var m=$('popmenu');if(m)m.remove();document.removeEventListener('click',closeMenu);}
+var RX_TAB_ICONS=['🏠','📚','✏️','⏱️','📝','📊','⚙️'];
 function applyTabLabels(){
   var tabs=document.querySelectorAll('#tabbar .tab');
-  var keys=['home','study','practice','mock','notes','progress','profile'];
   var labels=[t('tab_home'),t('tab_study'),t('tab_practice'),t('tab_mock'),t('tab_notes'),t('tab_progress'),t('tab_profile')];
-  tabs.forEach(function(b,i){b.innerHTML=b.textContent.charAt(0)+'<span>'+esc(labels[i])+'</span>';});
+  tabs.forEach(function(b,i){b.innerHTML=RX_TAB_ICONS[i]+'<span>'+esc(labels[i])+'</span>';});
 }
 
 /* ---------- init ---------- */
