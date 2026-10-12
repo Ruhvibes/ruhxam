@@ -5,6 +5,43 @@
 **Source:** `~/workspace/ruhxam/` (www/ + android/) | **Repo (to create):** `Ruhvibes/ruhxam`
 **Build date:** 2026-10-11 | **APK:** NOT built by agent — parent builds.
 
+## 2026-10-12 — CDN + INTERNET SYSTEMS FIX (Hasnain: "Aur ak baar fix karo cdn system bhi internet system bhi")
+
+**ROOT CAUSE FOUND:** The CDN (`cdn/*.json`, v3) was STALE — built from the OLD `m1-m5.js`
+HTML maths chapters. But the app now uses Hasnain's PDF library for maths study
+("Usko pura hata do" — old HTML removed from `index.html`). The auto-update
+`checkCDN()` runs 2.5s after every launch: with local `contentVer=1` < CDN v3, it would
+download the stale JSONs and `applyCDNCache()` would **resurrect all 22 deleted HTML
+maths chapters** (add-new path) and **overwrite the pdfOnly quiz chapters** (replace path).
+
+**Fixes:**
+1. **CDN rebuilt to v4** from current `www/data` (`tools/build-cdn.js`: FILES now
+   `mq.js`+r1-r4+s1+g1+g2+ca1.js; validator skips tricks-check for `pdfOnly` chapters).
+   `maths.json` now holds the 22 pdfOnly quiz chapters (no HTML). 53 chapters, 1,593
+   questions, ~2.2MB. `content-version.json` → v4. Pushed to GitHub; jsDelivr cache
+   purged — verified live: `content-version.json` = v4, `maths.json` m01 pdfOnly=true.
+2. **`applyCDNCache()` hardened** (`www/js/app.js`): skips any CDN `part:'maths'`
+   chapter that isn't `pdfOnly` — both on replace and add paths. Even a future stale
+   rebuild can never resurrect deleted HTML maths. Poisoned-cache simulation test:
+   stale m99 blocked, m01 untouched, v4 applies cleanly (53 ch, 0 dupes).
+3. **Bundled `contentVer` → 4** (`www/js/store.js`): fresh installs skip re-downloading
+   v4 (saves ~2.2MB mobile data); existing users (v1/v3) still get v4 via update check.
+4. **CDN ↔ local parity verified:** 53/53 chapter IDs match, 0 mismatches.
+
+**Internet/offline audit:**
+- Offline: chapters/quizzes/mocks/notes/streak all bundled or localStorage — work fully.
+  All 93 PDFs bundled in `www/pdfs/` (41MB) — offline PDF reading works.
+- `checkCDN` auto-fail is silent (manual tap shows toast). No crash paths.
+- PDF viewer: local → CDN (`PDF_CDN`) → error UI with retry. Correct priority.
+- External resource links (sarkaridisha/shiksha/ncert/rrb sites) open via `target=_blank`
+  in system browser — graceful offline (browser's own error page). Verified live: all
+  6 CDN JSONs + sample PDFs return HTTP 200 on jsDelivr.
+- Headless test: 53 chapters, maths all pdfOnly, 93 PDFs listed, maths tap → PDF
+  categories, 0 page errors.
+
+**Tests:** `node --check` clean (app.js, store.js); guard simulation 6/6 pass;
+CDN parity 53/53; headless Chrome 400px render 0 JS errors.
+
 ## 2026-10-12 — SAME CHAPTER STRUCTURE FOR ALL SUBJECTS (Hasnain: "Har subject me changes chahiye, isi type me banao")
 
 **What changed:** Science (5), GK (6) and Current Affairs (3) chapters previously had ONLY
