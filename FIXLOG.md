@@ -5,6 +5,31 @@
 **Source:** `~/workspace/ruhxam/` (www/ + android/) | **Repo (to create):** `Ruhvibes/ruhxam`
 **Build date:** 2026-10-11 | **APK:** NOT built by agent — parent builds.
 
+## 2026-10-12 — SAME CHAPTER STRUCTURE FOR ALL SUBJECTS (Hasnain: "Har subject me changes chahiye, isi type me banao")
+
+**What changed:** Science (5), GK (6) and Current Affairs (3) chapters previously had ONLY
+concept + tricks + quiz. Added the missing sections so EVERY subject's chapter now renders
+identically: 🔵 blue concept box → 📦 Tricky Box → 🔴 red numbered solved examples →
+📖 study notes → 💡 expert tips → practice CTA. (Reasoning already had the full structure;
+Maths study content is Hasnain's PDF library.)
+
+**Per chapter added:**
+- `notes:{intro, formulas|rules|approach, mistakes}` — bilingual {hi,en}, <mark> highlights
+- `tips:[x2]` — bilingual exam tips
+- `examples:[x3]` — solved examples in "tricky" style (question + step-by-step solution)
+
+**Content notes:**
+- Science: worked numericals + concept-application examples (F=ma, free-fall, pH/litmus, optics, BOD)
+- GK: mnemonic-driven worked examples (Tarain I/II, K2 vs Kanchenjunga, Art 32 vs 226, repo rule)
+- CA: examples built ONLY from facts already in each chapter (no invented facts)
+- Style: formal Hindi (आप/करें), all facts verified, existing concept/tricks/quiz untouched
+
+**Tests:** node --check clean on all 4 files; node-load verified 14/14 chapters have
+concept+tricks+examples(≥3)+notes+tips+quiz, all bilingual; headless render test confirmed
+s01/g01/c01/r01 all show adhyay-box, concept-box, Tricky Box, examples, notes, tips,
+practice button — 0 JS errors.
+**Parent builds APK.**
+
 ## 2026-10-12 — PDF LIBRARY: Hasnain's own maths content replaces HTML chapters
 
 **Hasnain's orders:** "Sirf library me hi nahi, pura math isse replace kro" + "Usko pura hata do"
