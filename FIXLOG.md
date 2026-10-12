@@ -338,3 +338,35 @@ www/ is final. Copy to android assets, bump versionCode 3→4, rebuild APK, uplo
 - **53 chapters, 1,593 MCQs, 278 examples** — 100% validated
 - All data files pass `node --check`
 - Ready for parent: copy www/ → android assets, bump versionCode, rebuild APK
+
+## PIXEL-MATCH Redesign (2026-10-12) — "Aisa rkhna hai same to same"
+Hasnain sent the reference screenshot again. Chapter pages now pixel-match the प्रतियोगी गणित reference.
+
+### What changed
+1. **CSS (style.css)**: Pixel-match chapter styles —
+   - `.ch-body`: white page with 2px dark border frame
+   - `.adhyay-box`: bright blue #29b6f6, white inner box (was #2196f3)
+   - `.concept-box`: bright blue #29b6f6, 30px radius; `mark` → yellow #ffea00, `mark.c` → cyan #4de3ff
+   - `.tricky-label`: "Tricky Box" yellow highlight label
+   - `.tricky-box`: blue box with trick rows (yellow numbered badges)
+   - `.tricky-table`: blue 2-col table (वृद्धि/कमी style) with white arrows
+   - `.q-block`: red (#f44336) numbered questions, black "tricky" label, plain solutions
+   - `.fx`: stacked fraction renderer (numerator/denominator)
+   - `.ref-sec`: notes/tips in reference visual language (red headers, yellow highlights)
+   - Chapter stays book-light in dark mode
+2. **JS (app.js renderChapter)**: Rewritten —
+   - `fracify()`: auto-stacks digit/digit fractions outside HTML tags
+   - `renderTrickyBox()`: renders explicit `trickyBox` table + blue trick rows (both, not either/or)
+   - Questions: red numbers + "tricky" + fracified solutions (no more sol-box)
+   - Notes/tips restyled to match reference language
+   - Added `openChapter`/`renderChapter` to `window.RXTest` hooks
+3. **Data (m1.js m05 Percentage)**: Template chapter —
+   - `trickyBox`: वृद्धि/कमी table (100 +10%→110 etc.) matching reference
+   - `concept`: two-rule yellow-highlight structure + cyan tip, like reference
+
+### Tests
+- Pixel-match suite: 18/19 (1 wrong test expectation, code correct)
+- Chapter render: m05/m01/r01/s01/g01/ca01 all render, 0 JS errors
+- EN mode: verified
+- Practice flow: verified
+- Regression (uitest4): 7/10 — 3 mock failures pre-existing (fail on original code too)

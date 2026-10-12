@@ -1,5 +1,5 @@
 {
- "version": 1,
+ "version": 3,
  "part": "maths",
  "count": 22,
  "chapters": [
@@ -4884,7 +4884,7 @@
     "en": "Percentage"
    },
    "concept": {
-    "hi": "प्रतिशत = प्रति 100। x% = x/100। RRB में <mark>क्रमिक प्रतिशत परिवर्तन</mark> (x% वृद्धि फिर y% कमी), <mark>\"कितना % अधिक/कम\"</mark> और <mark>जनसंख्या/मूल्य वृद्धि</mark> वाले प्रश्न सबसे अधिक आते हैं। प्रतिशत को भिन्न में बदलना (25% = 1/4) गणना को 10 गुना तेज करता है।",
+    "hi": "<mark>प्रतिशत ज्ञात करना हो तो — 100 से गुणा किया जाता है।</mark><br>जैसे — 24, 60 का कितना प्रतिशत है<br><div class=\"fx-center\">24/60 × 100 = 40% <mark class=\"c\">[ का/से हो वो हमेशा बट्टे में आयेगा ]</mark></div><br><mark>\"प्रतिशत\" दिया हो तो — 100 से भाग दिया जाता है।</mark><br>जैसे — 90 का 30% कितना होता है<br><div class=\"fx-center\">90 × 30/100 = 27</div><br>RRB में <mark>क्रमिक प्रतिशत परिवर्तन</mark>, <mark>\"कितना % अधिक/कम\"</mark> और <mark>वृद्धि/कमी</mark> वाले प्रश्न सबसे अधिक आते हैं।",
     "en": "Percent = per 100. RRB loves <mark>successive percent change</mark>, <mark>\"what % more/less\"</mark> and <mark>growth</mark> questions. Converting % to fractions (25% = 1/4) makes calculation 10× faster."
    },
    "notes": {
@@ -4904,6 +4904,44 @@
      "hi": "क्रमिक प्रतिशतों को <mark>सीधे जोड़ना</mark> — 10%+20% = 32% होता है, 30% नहीं।<br>\"A, B से 20% अधिक\" से \"B, A से 20% कम\" निष्कर्ष निकालना — आधार बदलने पर उत्तर <mark>16.67% कम</mark> होता है।<br>0.5% को 0.5/10 समझना — 0.5% = <mark>0.5/100 = 5/1000</mark>।<br>\"x, y का 30% है\" में y, x का कितना % — उल्टा करने पर <mark>100/0.3 = 333.33%</mark> मिलता है; 30% ही उत्तर मानना भूल है।",
      "en": "Adding successive percents <mark>directly</mark> — 10%+20% = 32%, not 30%.<br>Concluding \"B is 20% less than A\" from \"A is 20% more than B\" — with the changed base it is <mark>16.67% less</mark>.<br>Reading 0.5% as 0.5/10 — 0.5% = <mark>0.5/100 = 5/1000</mark>.<br>In \"x is 30% of y\", y as % of x — inverting gives <mark>100/0.3 = 333.33%</mark>; answering 30% is the mistake."
     }
+   },
+   "trickyBox": {
+    "cols": [
+     {
+      "hi": "वृद्धि",
+      "en": "Increase"
+     },
+     {
+      "hi": "कमी",
+      "en": "Decrease"
+     }
+    ],
+    "rows": [
+     [
+      {
+       "a": "100",
+       "b": "+10%",
+       "c": "110"
+      },
+      {
+       "a": "100",
+       "b": "-10%",
+       "c": "90"
+      }
+     ],
+     [
+      {
+       "a": "100",
+       "b": "+20%",
+       "c": "120"
+      },
+      {
+       "a": "100",
+       "b": "-20%",
+       "c": "80"
+      }
+     ]
+    ]
    },
    "tips": [
     {

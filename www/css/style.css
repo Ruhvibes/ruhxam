@@ -260,3 +260,63 @@ html[data-theme="dark"] .notes-sec{background:#1e1e1e;border-color:#5a4a00;color
 html[data-theme="dark"] .tip-box{background:#1a2e1a;color:#c8e6c9;}
 html[data-theme="dark"] .diff-btn{background:#222;color:#4db8d8;border-color:#4db8d8;}
 html[data-theme="dark"] .diff-btn.sel{background:#4db8d8;color:#111;}
+
+/* ============================================================
+   PIXEL-MATCH: reference chapter style (प्रतियोगी गणित)
+   ============================================================ */
+.ch-body{background:#fff;border:2px solid #1a1a1a;margin:0;padding:0 0 28px;}
+/* अध्याय header box */
+.adhyay-box{background:#29b6f6;border-radius:22px;padding:12px;margin:10px 10px 18px;text-align:center;box-shadow:inset 0 0 0 3px rgba(255,255,255,.35);}
+.adhyay-box .inner{background:#fff;border:2px solid #1a1a1a;display:inline-block;padding:8px 30px;font-size:23px;font-weight:700;color:#111;}
+/* concept blue box */
+.concept-box{background:#29b6f6;border-radius:30px;padding:24px 20px;margin:14px 10px;color:#111;font-size:16.5px;line-height:2;}
+.concept-box mark,.concept-box .hl-y{background:#ffea00;padding:2px 6px;font-weight:700;color:#111;}
+.concept-box .hl-c{background:#4de3ff;padding:2px 8px;color:#111;}
+.concept-box .fx-center{text-align:center;margin:8px 0;}
+/* Tricky Box label */
+.tricky-label{background:#ffea00;display:inline-block;padding:3px 12px;font-weight:700;font-size:17px;margin:16px 10px 0;color:#111;}
+/* blue tricky box (trick rows) */
+.tricky-box{background:#29b6f6;margin:0 10px;padding:6px 0;}
+.tricky-box .tk-row{padding:12px 16px;border-bottom:2px solid rgba(255,255,255,.55);color:#111;}
+.tricky-box .tk-row:last-child{border-bottom:0;}
+.tricky-box .tk-row h4{margin:0 0 6px;font-size:16.5px;color:#111;}
+.tricky-box .tk-row h4 .n{background:#ffea00;border-radius:50%;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:15px;margin-right:8px;}
+.tricky-box .tk-row div{font-size:15.5px;line-height:1.8;}
+.tricky-box mark{background:#ffea00;padding:1px 5px;font-weight:700;}
+/* tricky 2-col table (like reference वृद्धि/कमी) */
+.tricky-table{width:calc(100% - 20px);margin:0 10px;background:#29b6f6;border-collapse:collapse;}
+.tricky-table th{background:#29b6f6;color:#111;font-size:16px;text-align:left;padding:8px 12px;border-bottom:2px solid #fff;border-right:2px solid #fff;}
+.tricky-table th:last-child{border-right:0;}
+.tricky-table td{padding:10px 12px;font-size:16px;color:#111;border-right:2px solid #fff;vertical-align:middle;}
+.tricky-table td:last-child{border-right:0;}
+.tricky-table .arr{color:#fff;font-weight:700;padding:0 4px;}
+/* questions: red numbers */
+.q-block{margin:16px 10px;padding:0;}
+.q-block .q-no{color:#f44336;font-weight:700;font-size:17.5px;margin-bottom:2px;line-height:1.6;}
+.q-block .q-tricky{color:#111;font-size:15.5px;margin:2px 0 2px 28px;}
+.q-block .q-sol{color:#111;font-size:16.5px;margin:2px 0 2px 28px;line-height:2;}
+.q-block .q-sol mark{background:#ffea00;padding:1px 5px;font-weight:700;}
+.q-block .q-tip{background:#ffea00;display:inline-block;padding:2px 8px;margin:4px 0 4px 8px;font-size:15px;color:#111;}
+/* stacked fraction */
+.fx{display:inline-flex;flex-direction:column;vertical-align:middle;text-align:center;margin:0 3px;line-height:1.25;}
+.fx .fn{border-bottom:2px solid #111;padding:0 4px;}
+.fx .fd{padding:0 4px;}
+/* notes / tips in reference visual language */
+.ref-sec{margin:16px 10px;}
+.ref-sec-h{color:#f44336;font-weight:700;font-size:18px;margin-bottom:8px;}
+.ref-sec .notes-intro{font-size:15.5px;line-height:1.9;color:#111;margin-bottom:10px;}
+.ref-sec .notes-intro mark{background:#ffea00;padding:1px 5px;font-weight:700;}
+.ref-sec h4.notes-h{color:#111;font-size:16px;margin:12px 0 6px;}
+.ref-sec h4.notes-h .k{background:#ffea00;padding:2px 8px;}
+.ref-sec .notes-sec{font-size:15.5px;line-height:1.9;color:#111;}
+.ref-sec .notes-sec mark{background:#ffea00;padding:1px 5px;font-weight:700;}
+.ref-sec .tip-row{display:flex;gap:8px;margin:8px 0;font-size:15.5px;color:#111;line-height:1.8;}
+.ref-sec .tip-row .tip-n{flex:0 0 auto;background:#29b6f6;color:#111;font-weight:700;border-radius:50%;width:26px;height:26px;display:inline-flex;align-items:center;justify-content:center;font-size:14px;}
+/* practice controls keep functional but matching */
+.ch-cta{margin:18px 10px;}
+/* chapter page stays book-light in dark mode */
+html[data-theme="dark"] .ch-body{background:#fff;}
+html[data-theme="dark"] .q-block .q-no{color:#f44336;}
+html[data-theme="dark"] .q-block .q-tricky,html[data-theme="dark"] .q-block .q-sol{color:#111;}
+html[data-theme="dark"] .ref-sec .notes-intro,html[data-theme="dark"] .ref-sec .notes-sec,html[data-theme="dark"] .ref-sec .tip-row{color:#111;}
+.concept-box mark.c{background:#4de3ff;}

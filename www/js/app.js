@@ -273,6 +273,41 @@ function secDiv(icon,label,cls){return '<div class="sec-div '+cls+'"><span>'+ico
 function ansBox(html){return '<div class="ans-box">✅ '+html+'</div>';}
 function marksOf(html){var m=String(html).match(/<mark>(.*?)<\/mark>/g);return m?m.map(function(x){return x.replace(/<\/?mark>/g,'');}):[];}
 
+/* ---------- pixel-match helpers (reference chapter style) ---------- */
+function fracify(html){
+  return String(html).replace(/(\d{1,3})\/(\d{1,3})/g,function(m,a,b,off,s){
+    var lt=s.lastIndexOf('<',off),gt=s.lastIndexOf('>',off);
+    if(lt>gt)return m;
+    return '<span class="fx"><span class="fn">'+a+'</span><span class="fd">'+b+'</span></span>';
+  });
+}
+function renderTrickyBox(c){
+  var items=(c.tricks||[]).concat((c.mnemonics||[]).map(function(mn){return{h:mn.h,b:mn.b,mn:1};}));
+  var hasTable=c.trickyBox&&c.trickyBox.rows&&c.trickyBox.rows.length;
+  if(!hasTable&&!items.length)return '';
+  var h='<div class="tricky-label">Tricky Box</div>';
+  if(hasTable){
+    var tb=c.trickyBox;
+    h+='<table class="tricky-table"><tr>';
+    (tb.cols||[]).forEach(function(col){h+='<th>'+esc(L(col))+'</th>';});
+    h+='</tr>';
+    tb.rows.forEach(function(row){
+      h+='<tr>';
+      row.forEach(function(cell){h+='<td>'+esc(cell.a)+' <b>'+esc(cell.b)+'</b> <span class="arr">\u2192</span> '+esc(cell.c)+'</td>';});
+      h+='</tr>';
+    });
+    h+='</table>';
+  }
+  if(items.length){
+    h+='<div class="tricky-box">';
+    items.forEach(function(tr,i){
+      h+='<div class="tk-row"><h4><span class="n">'+(tr.mn?'\uD83E\uDDE0':(i+1))+'</span>'+esc(L(tr.h))+'</h4><div>'+fracify(L(tr.b))+'</div></div>';
+    });
+    h+='</div>';
+  }
+  return h;
+}
+
 var curCh=null;
 function renderChapter(id){
   var c=chById(id);if(!c){goTab('home');return;}
@@ -288,53 +323,44 @@ function renderChapter(id){
   /* header like reference: "प्रतिशत (Percentage) 1 / 14" */
   $('hdrTitle').textContent=L(c.title)+' '+(idx+1)+' / '+list.length;
   var h='<div class="ch-body">';
-  /* blue अध्याय box */
+  /* blue अध्याय box — pixel match */
   h+='<div class="adhyay-box"><span class="inner">'+esc(t('chapter_lbl'))+'— '+c.num+' '+esc(L(c.title))+'</span></div>';
-  /* concept in blue box with highlights */
-  h+='<div class="concept-box">'+L(c.concept)+dgmFor(c.id)+'</div>';
-  /* 📖 study notes (new) */
+  /* concept in blue box */
+  h+='<div class="concept-box">'+fracify(L(c.concept))+dgmFor(c.id)+'</div>';
+  /* 📖 study notes — reference visual language */
   if(c.notes){
-    h+='<div class="tricky-label">📖 '+esc(t('study_notes'))+'</div>';
-    h+='<div class="notes-box"><div class="notes-intro">'+L(c.notes.intro)+'</div>';
-    if(c.notes.formulas) h+='<h4 class="notes-h">📐 '+esc(t('key_formulas'))+'</h4><div class="notes-sec">'+L(c.notes.formulas)+'</div>';
-    if(c.notes.rules) h+='<h4 class="notes-h">📏 '+esc(t('imp_rules'))+'</h4><div class="notes-sec">'+L(c.notes.rules)+'</div>';
-    if(c.notes.approach) h+='<h4 class="notes-h">🧭 '+esc(t('how_to_solve'))+'</h4><div class="notes-sec">'+L(c.notes.approach)+'</div>';
-    if(c.notes.mistakes) h+='<h4 class="notes-h warn">⚠️ '+esc(t('common_mistakes'))+'</h4><div class="notes-sec">'+L(c.notes.mistakes)+'</div>';
+    h+='<div class="ref-sec"><div class="ref-sec-h">\uD83D\uDCD6 '+esc(t('study_notes'))+'</div>';
+    h+='<div class="notes-intro">'+L(c.notes.intro)+'</div>';
+    if(c.notes.formulas)h+='<h4 class="notes-h"><span class="k">\uD83D\uDCD0 '+esc(t('key_formulas'))+'</span></h4><div class="notes-sec">'+L(c.notes.formulas)+'</div>';
+    if(c.notes.rules)h+='<h4 class="notes-h"><span class="k">\uD83D\uDCCF '+esc(t('imp_rules'))+'</span></h4><div class="notes-sec">'+L(c.notes.rules)+'</div>';
+    if(c.notes.approach)h+='<h4 class="notes-h"><span class="k">\uD83E\uDDED '+esc(t('how_to_solve'))+'</span></h4><div class="notes-sec">'+L(c.notes.approach)+'</div>';
+    if(c.notes.mistakes)h+='<h4 class="notes-h"><span class="k">\u26A0\uFE0F '+esc(t('common_mistakes'))+'</span></h4><div class="notes-sec">'+L(c.notes.mistakes)+'</div>';
     h+='</div>';
   }
-  /* tricks / facts */
-  var items=(c.tricks||[]);
-  if(items.length){
-    h+='<div class="tricky-label">⚡ '+(c.kind==='tricks'?t('tricks'):t('quick_rev'))+'</div>';
-    items.forEach(function(tr,i){
-      h+='<div class="trick c'+(i%6)+'"><h4><span class="n">'+(i+1)+'</span>'+esc(L(tr.h))+'</h4><div>'+L(tr.b)+'</div></div>';
-    });
-  }
-  /* mnemonics */
-  (c.mnemonics||[]).forEach(function(mn,i){
-    h+='<div class="trick c'+(i%6)+'"><h4><span class="n">🧠</span>'+esc(L(mn.h))+'</h4><div>'+L(mn.b)+'</div></div>';
-  });
-  /* 💡 expert tips (new) */
+  /* Tricky Box — pixel match */
+  h+=renderTrickyBox(c);
+  /* 💡 expert tips — reference visual language */
   if(c.tips&&c.tips.length){
-    h+='<div class="tricky-label">💡 '+esc(t('expert_tips'))+'</div>';
+    h+='<div class="ref-sec"><div class="ref-sec-h">\uD83D\uDCA1 '+esc(t('expert_tips'))+'</div>';
     c.tips.forEach(function(tp,i){
-      h+='<div class="tip-box"><span class="tip-n">'+(i+1)+'</span><div>'+L(tp)+'</div></div>';
+      h+='<div class="tip-row"><span class="tip-n">'+(i+1)+'</span><div>'+L(tp)+'</div></div>';
     });
+    h+='</div>';
   }
-  /* solved examples — red numbered like reference */
+  /* solved examples — red numbered, tricky solutions (pixel match) */
   (c.examples||[]).forEach(function(ex,i){
     h+='<div class="q-block"><div class="q-no">'+(i+1)+'. '+L(ex.q)+'</div>';
-    h+='<div class="tricky-sol"><div class="lbl">Tricky</div><div class="sol-box">'+L(ex.s)+'</div></div></div>';
+    h+='<div class="q-tricky">tricky</div><div class="q-sol">'+fracify(L(ex.s))+'</div></div>';
   });
-  /* bookmark + practice + difficulty filter */
+  /* difficulty filter */
   h+='<div class="diff-row"><span class="diff-lbl">'+esc(t('diff_label'))+':</span>';
   h+='<button class="diff-btn sel" data-d="0">'+esc(t('diff_all'))+'</button>';
   h+='<button class="diff-btn" data-d="1">'+esc(t('diff_easy'))+'</button>';
   h+='<button class="diff-btn" data-d="2">'+esc(t('diff_medium'))+'</button>';
   h+='<button class="diff-btn" data-d="3">'+esc(t('diff_hard'))+'</button>';
   h+='<button class="diff-btn" data-p="1" id="pyqBtn">'+esc(t('pyq_only'))+'</button></div>';
-  h+='<div style="display:flex;gap:10px;margin:16px 4px;">';
-  h+='<button id="bmBtn" class="btn secondary" style="flex:0 0 auto;">'+(bm?'🔖':'📑')+'</button>';
+  h+='<div class="ch-cta" style="display:flex;gap:10px;">';
+  h+='<button id="bmBtn" class="btn secondary" style="flex:0 0 auto;">'+(bm?'\uD83D\uDD16':'\uD83D\uDCC4')+'</button>';
   h+='<button id="pracBtn" class="btn primary big-cta" style="flex:1;">'+esc(t('practice_btn'))+' (<span id="pracCount">'+(c.quiz||[]).length+'</span>)</button>';
   h+='</div>';
   h+='<p class="muted">'+esc(t('unofficial_note'))+'</p>';
@@ -909,7 +935,7 @@ function init(){
   setTimeout(function(){checkCDN(false);},2500);
 }
 /* test hooks (used by headless QA; harmless in production) */
-window.RXTest={getQZ:function(){return QZ;},getMK:function(){return MK;},qObj:qObj,mockPool:mockPool,RT_EXAMS:RT_EXAMS,goTab:goTab,startMock:startMock,finishMock:finishMock,chById:chById};
+window.RXTest={getQZ:function(){return QZ;},getMK:function(){return MK;},qObj:qObj,mockPool:mockPool,RT_EXAMS:RT_EXAMS,goTab:goTab,startMock:startMock,finishMock:finishMock,chById:chById,openChapter:openChapter,renderChapter:renderChapter};
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',init);
 else init();
 })();
