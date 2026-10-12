@@ -86,3 +86,59 @@ Geometry (triangle types, circle parts, square/rectangle, angle types), analog c
 - New harness `/tmp/rxtest/audit3.js`: **18/18 PASS** — streak widget + persistence, countdown set/past/clear, formula sheet chips + grouping, all 18 diagram builders exist + render valid SVG, corrupt localStorage recovery, rapid tab switching, EN/HI labels for new strings, m02:2 fix verified, zero JS errors.
 - `node --check` clean on all modified files.
 - CDN rebuilt via `tools/build-cdn.js` (53 chapters, 265 Qs, validation passed).
+
+## Smoke Check — Light (2026-10-11)
+- Reran both headless harnesses: **40/40 PASS** (main suite) + **18/18 PASS** (audit-3 suite) = **58/58**, **0 JS errors**.
+- Covered: app boots, 7 tabs render, chapter loads, mock starts + scores with −1/3, notes autosave, HI/EN + dark mode + exam toggle, streak/countdown/formula sheet, CDN-offline fallback (bundled content, no crash).
+- Nothing broken found → **no code changes, no version bump needed** (versionCode stays 1, versionName "1.0").
+
+## Rebuild #2 (2026-10-12) — Major Redesign + Content Expansion
+
+### Hasnain's complaints:
+1. "Bahut gadbadi hai" — wanted UI like प्रतियोगी गणित reference app
+2. "Science me math question ghusa hai" — math questions mixed in science
+3. "Aur kuchh bhi nahi hai is apk me" — app feels empty
+4. "Isse padhke bachhe class 1 ka exam nahi nikal sakta" — content too basic
+5. "Question answer example bhar bhar ke do" — pack chapters with content
+6. "Har subject ka waise hi banana" — all subjects get screenshot-style treatment
+7. Target: 10,000 questions ("10000 tak rkho"), "Abhi add kro" (now, not later)
+
+### UI Redesign (matching reference screenshots):
+- Teal header (#1b8aae) with hamburger menu + 3-dot settings menu
+- Home: full-width colorful subject cards (left icon panel + right title panel)
+  - Maths (orange), Reasoning (blue), Science (green), GK (purple), CA (pink)
+  - Plus: Mock Test (red), Formula Sheet (slate), Notes (olive) cards
+- Chapter list: numbered colored circles with Hindi titles (like "Math Shortcut Tricks")
+- Chapter detail: blue "अध्याय— N नाम" header box, blue concept box with yellow highlights,
+  "Tricky Box" labels, red numbered questions with "Tricky" solutions
+- Bright light theme, Hindi-first
+
+### Content (4 parallel agents):
+- Maths: exam-level rewrite, 8+ examples + 30+ MCQs per chapter target
+- Reasoning: exam-level rewrite, 6+ examples + 30+ MCQs per chapter target
+- Science: remove ALL math questions, 25+ facts + 30+ MCQs per chapter
+- GK/CA: 25+ facts + 30+ MCQs per chapter, verified accuracy
+
+### Technical:
+- CDN validator updated for variable question counts
+- All render functions updated for new UI
+- Header controls moved to hamburger + 3-dot menus
+
+### Content Results (2026-10-12):
+- **1,593 MCQs** (was 265) — 6x increase!
+  - Maths: 22 chapters
+  - Reasoning: 17 chapters, 511 MCQs
+  - Science: 5 chapters, 150 MCQs (math questions removed)
+  - GK: 6 chapters + CA: 3 chapters, 272 MCQs
+- **597 tricks/facts**, **278 solved examples**
+- **100% src tagged**: 277 marked "2026 — Latest Pattern", 743 PYQ-tagged
+- All answers verified, full explanations
+- CDN rebuilt (v2)
+
+### UI Complete:
+- Teal header with hamburger + 3-dot menus
+- Colorful subject cards (reference style)
+- Numbered chapter circles
+- Blue chapter detail with highlights + Tricky solutions
+- PYQ badges on all questions (pink for 2026, blue for PYQ, gray for Practice)
+- Applied to ALL 5 subjects equally

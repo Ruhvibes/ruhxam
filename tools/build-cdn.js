@@ -26,12 +26,14 @@ function loadChapters(){
 function validate(c){
   const errs = [];
   if (!c.id || !c.part || !c.title || !c.title.hi) errs.push('bad-meta');
-  if (!Array.isArray(c.quiz) || c.quiz.length !== 5) errs.push('quiz!=5');
+  if (!Array.isArray(c.quiz) || c.quiz.length < 5) errs.push('quiz<5');
   (c.quiz||[]).forEach((q,i)=>{
     if (!Array.isArray(q.o) || q.o.length < 2 || q.o.length > 4) errs.push('q'+i+':opts!=2-4');
     if (typeof q.a !== 'number' || q.a < 0 || q.a >= q.o.length) errs.push('q'+i+':bad-answer-idx');
     if (!q.e || !q.e.hi) errs.push('q'+i+':no-explanation');
   });
+  // quality checks
+  if (!Array.isArray(c.tricks) || c.tricks.length < 3) errs.push('tricks<3');
   return errs;
 }
 
