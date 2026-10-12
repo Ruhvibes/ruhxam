@@ -146,6 +146,16 @@ var RT_STR = {
   exam_today: {hi:'परीक्षा आज है — शुभकामनाएँ! 🎯', en:'Exam is today — good luck! 🎯'},
   exam_passed: {hi:'तिथि बीत चुकी — नई तिथि चुनें', en:'Date passed — pick a new date'},
   no_exam_date: {hi:'तिथि निर्धारित नहीं', en:'No date set'},
-  tap_to_set: {hi:'सेट करने हेतु टैप करें', en:'Tap to set'}
+  tap_to_set: {hi:'सेट करने हेतु टैप करें', en:'Tap to set'},
+  pdf_library: {hi:'📚 PDF लाइब्रेरी', en:'📚 PDF Library'},
+  pdf_categories: {hi:'गणित PDF श्रेणियाँ', en:'Maths PDF Categories'},
+  pdf_read: {hi:'📖 पढ़ें', en:'📖 Read'},
+  pdf_page: {hi:'पृष्ठ', en:'Page'},
+  pdf_loading: {hi:'PDF लोड हो रहा है…', en:'Loading PDF…'},
+  pdf_error: {hi:'PDF नहीं खुला — इंटरनेट जाँचें या पुनः प्रयास करें।', en:'Could not open PDF — check internet and retry.'},
+  pdf_zoom_in: {hi:'＋ बड़ा', en:'＋ Zoom'},
+  pdf_zoom_out: {hi:'－ छोटा', en:'－ Zoom'},
+  pdf_sets: {hi:'सेट', en:'sets'},
+  maths_sub: {hi:'93 PDF • शॉर्ट ट्रिक्स एवं प्रश्न', en:'93 PDFs • short tricks & questions'}
 };
 function RT_t(k){ var L=(window.RT&&RT.lang)||'hi'; var e=RT_STR[k]; return e?(e[L]||e.hi):k; }
