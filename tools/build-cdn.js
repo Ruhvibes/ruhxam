@@ -1,14 +1,18 @@
 /* RuhXam CDN builder — converts www/data/*.js into cdn/*.json for jsDelivr.
  * Usage: node tools/build-cdn.js [version]
  * Hasnain's update flow: edit cdn/*.json (or re-run this), bump version,
- * push to Ruhvibes/ruhxam repo → installed apps auto-update (no new APK). */
+ * push to Ruhvibes/ruhxam repo → installed apps auto-update (no new APK).
+ * NOTE (2026-10-12): maths study content was REPLACED by Hasnain's PDF library
+ * ("Usko pura hata do"). m1-m5.js (old HTML maths) are NOT bundled and MUST
+ * NOT be rebuilt into the CDN. mq.js holds the quiz-only maths chapters
+ * (pdfOnly:true) used by practice/mock. */
 const fs = require('fs');
 const path = require('path');
 const ROOT = path.join(__dirname, '..');
 const DATA = path.join(ROOT, 'www', 'data');
 const CDN = path.join(ROOT, 'cdn');
 
-const FILES = ['m1.js','m2.js','m3.js','m4.js','m5.js','r1.js','r2.js','r3.js','r4.js',
+const FILES = ['mq.js','r1.js','r2.js','r3.js','r4.js',
                's1.js','g1.js','g2.js','ca1.js'];
 const PART_FILE = {maths:'maths.json', reasoning:'reasoning.json', science:'science.json',
                    gk:'gk.json', ca:'current-affairs.json'};
@@ -32,8 +36,8 @@ function validate(c){
     if (typeof q.a !== 'number' || q.a < 0 || q.a >= q.o.length) errs.push('q'+i+':bad-answer-idx');
     if (!q.e || !q.e.hi) errs.push('q'+i+':no-explanation');
   });
-  // quality checks
-  if (!Array.isArray(c.tricks) || c.tricks.length < 3) errs.push('tricks<3');
+  // quality checks (pdfOnly maths chapters are quiz-only by design — no tricks/concept)
+  if (!c.pdfOnly && (!Array.isArray(c.tricks) || c.tricks.length < 3)) errs.push('tricks<3');
   return errs;
 }
 

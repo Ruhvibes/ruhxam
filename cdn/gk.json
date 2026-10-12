@@ -1,5 +1,5 @@
 {
- "version": 3,
+ "version": 4,
  "part": "gk",
  "count": 6,
  "chapters": [
@@ -19,6 +19,30 @@
     "hi": "RRB NTPC/Group D में पूछे जाने वाले <mark>परीक्षा-स्तरीय</mark> इतिहास तथ्य — प्राचीन, मध्यकालीन एवं आधुनिक भारत।",
     "en": "<mark>Exam-level</mark> Indian history facts for RRB NTPC/Group D."
    },
+   "notes": {
+    "intro": {
+     "hi": "भारतीय इतिहास RRB NTPC और Group D का <mark>सबसे वज़नदार</mark> GK खंड है — हर पेपर में <mark>3–5 प्रश्न</mark> निश्चित रूप से आते हैं। प्राचीन (सिंधु सभ्यता, बौद्ध-जैन, मौर्य, गुप्त), मध्यकालीन (सल्तनत, मुगल, मराठा) और आधुनिक (1857, गांधी युग) — तीनों भागों से <mark>तिथि-आधारित</mark> प्रश्न पूछे जाते हैं।",
+     "en": "Indian History is the <mark>heaviest</mark> GK section in RRB NTPC & Group D — <mark>3–5 questions</mark> come in every paper, mostly <mark>date-based</mark>."
+    },
+    "rules": {
+     "hi": "तीनों युगों के <mark>समय-सीमा सूत्र</mark> कंठस्थ करें — प्राचीन: 2600 ई.पू. (सिंधु सभ्यता) → 321 ई.पू. (मौर्य) → 606 ई. (हर्ष); मध्यकालीन: <mark>1206 (सल्तनत)</mark> → <mark>1526 (मुगल)</mark>; आधुनिक: <mark>1757 (प्लासी)</mark> → 1857 → 1947। युद्ध-क्रम हेतु “<mark>बा-अक-अह</mark>” (पानीपत I, II, III) और आंदोलनों हेतु “<mark>20-30-42</mark>” (असहयोग, सविनय अवज्ञा, भारत छोड़ो) का प्रयोग करें।",
+     "en": "Memorise <mark>era anchors</mark> — 2600 BC (Indus), 321 BC (Mauryas), 1206 (Sultanate), 1526 (Mughals), 1757 (Plassey), 1857, 1947. Use <mark>Ba-Ak-Ah</mark> (Panipat battles) and <mark>20-30-42</mark> (Gandhian movements)."
+    },
+    "mistakes": {
+     "hi": "1) पानीपत की <mark>तीनों लड़ाइयों</mark> के वर्ष व विजेता आपस में मिलाना — 1526 बाबर, 1556 अकबर, 1761 अब्दाली। 2) तराइन I (1191, <mark>पृथ्वीराज चौहान विजयी</mark>) व तराइन II (1192, <mark>गौरी विजयी</mark>) को उल्टा याद करना। 3) “1857 का प्रारंभ” पूछे जाने पर सही उत्तर <mark>मेरठ (10 मई)</mark> न चुनकर <mark>मंगल पांडे (29 मार्च, बैरकपुर)</mark> चुन लेना — मंगल पांडे <mark>प्रथम शहीद</mark> हैं, क्रांति का प्रारंभ मेरठ से हुआ।",
+     "en": "1) Mixing up the three Panipat battles — 1526 Babur, 1556 Akbar, 1761 Abdali. 2) Reversing Tarain I (1191, <mark>Prithviraj won</mark>) and Tarain II (1192, <mark>Ghori won</mark>). 3) For “where did 1857 begin”, the answer is <mark>Meerut (10 May)</mark> — Mangal Pandey (29 Mar, Barrackpore) was the <mark>first martyr</mark>, not the beginning."
+    }
+   },
+   "tips": [
+    {
+     "hi": "“बा-अक-अह” और “20-30-42” जैसे क्रम-सूत्रों से आधे तिथि-प्रश्न बिना रटे हल हो जाते हैं — पहले क्रम याद करें, फिर वर्ष अपने आप बैठेंगे।",
+     "en": "Master ordering mnemonics like <mark>Ba-Ak-Ah</mark> and <mark>20-30-42</mark> first — the years then fall into place by themselves."
+    },
+    {
+     "hi": "“प्रथम” वाले प्रश्नों की सूची अलग से बनाएँ — प्रथम महिला शासक रज़िया (1236), प्रथम सत्याग्रह चंपारण (1917), प्रथम राष्ट्रपति राजेंद्र प्रसाद — ये <mark>हर वर्ष</mark> पूछे जाते हैं।",
+     "en": "Keep a separate “firsts” list — first woman ruler Razia (1236), first satyagraha Champaran (1917), first President Rajendra Prasad — asked <mark>every year</mark>."
+    }
+   ],
    "tricks": [
     {
      "h": {
@@ -271,7 +295,38 @@
      }
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "q": {
+      "hi": "तराइन के प्रथम (1191) और द्वितीय (1192) युद्धों में विजेता क्रमशः कौन थे?",
+      "en": "Who were the victors of the First (1191) and Second (1192) Battles of Tarain, respectively?"
+     },
+     "s": {
+      "hi": "सूत्र लगाएँ: दोनों युद्धों में पक्ष एक ही थे — <mark>पृथ्वीराज चौहान बनाम मुहम्मद गौरी</mark>। प्रथम युद्ध में <mark>चौहान</mark> विजयी हुए, द्वितीय में <mark>गौरी</mark>। याद रखने की तरकीब: “<mark>91 में चौहान, 92 में गौरी</mark>” — वर्ष का अंतिम अंक ही उत्तर देता है। अतः उत्तर: <mark>प्रथम — पृथ्वीराज चौहान, द्वितीय — मुहम्मद गौरी</mark>।",
+      "en": "Both battles were <mark>Prithviraj Chauhan vs Muhammad Ghori</mark>. <mark>Chauhan won the first, Ghori the second</mark>. Trick: “<mark>91-Chauhan, 92-Ghori</mark>” — the year’s last digit gives the answer. Answer: <mark>First — Prithviraj Chauhan; Second — Muhammad Ghori</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "“1857 की क्रांति का प्रारंभ कहाँ से हुआ?” और “1857 के प्रथम शहीद कौन थे?” — इन दोनों प्रश्नों के उत्तर अलग क्यों हैं?",
+      "en": "Why do “Where did the Revolt of 1857 begin?” and “Who was the first martyr of 1857?” have different answers?"
+     },
+     "s": {
+      "hi": "दो घटनाओं को अलग करें: <mark>मंगल पांडे</mark> ने <mark>29 मार्च 1857</mark> को <mark>बैरकपुर</mark> में पहला विद्रोह किया — वे <mark>प्रथम शहीद</mark> हैं। परंतु संगठित क्रांति की शुरुआत <mark>10 मई 1857</mark> को <mark>मेरठ</mark> छावनी से हुई, जहाँ से सिपाही दिल्ली कूच कर गए। सूत्र: “<mark>मार्च में मंगल शहीद, मई में मेरठ से क्रांति की शुरुआत</mark>” — <mark>प्रारंभ = मेरठ, शहीद = मंगल पांडे</mark>।",
+      "en": "Separate the two events: <mark>Mangal Pandey</mark> revolted first at <mark>Barrackpore on 29 March 1857</mark> — the <mark>first martyr</mark>. But the organised revolt began at <mark>Meerut on 10 May 1857</mark>. Rule: <mark>beginning = Meerut; martyr = Mangal Pandey</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "गांधीजी के आंदोलनों — असहयोग, सविनय अवज्ञा, भारत छोड़ो — को कालक्रम में लगाइए।",
+      "en": "Arrange Gandhi’s movements — Non-Cooperation, Civil Disobedience, Quit India — in chronological order."
+     },
+     "s": {
+      "hi": "“<mark>20-30-42</mark>” सूत्र लगाएँ: <mark>1920 — असहयोग</mark> (“बीस में रोको”), <mark>1930 — सविनय अवज्ञा/दांडी मार्च</mark> (“तीस में तोड़ो” — नमक कानून तोड़ा), <mark>1942 — भारत छोड़ो</mark> (“बयालीस में छोड़ो” — अंग्रेज़ों से भारत छुड़ाओ)। यही सही क्रम है: <mark>असहयोग → सविनय अवज्ञा → भारत छोड़ो</mark>।",
+      "en": "Use <mark>20-30-42</mark>: <mark>1920 — Non-Cooperation</mark>, <mark>1930 — Civil Disobedience/Dandi March</mark>, <mark>1942 — Quit India</mark>. The correct order is: <mark>Non-Cooperation → Civil Disobedience → Quit India</mark>."
+     }
+    }
+   ],
    "mnemonics": [
     {
      "h": {
@@ -1391,6 +1446,30 @@
     "hi": "RRB NTPC/Group D में पूछे जाने वाले <mark>परीक्षा-स्तरीय</mark> भूगोल तथ्य — भारत एवं विश्व।",
     "en": "<mark>Exam-level</mark> geography facts for RRB NTPC/Group D — India & the world."
    },
+   "notes": {
+    "intro": {
+     "hi": "भूगोल से RRB परीक्षाओं में <mark>4–6 प्रश्न</mark> आते हैं — भारत का भौतिक भूगोल (नदियाँ, पर्वत, मिट्टी), राज्यों के रिकॉर्ड और विश्व भूगोल के तथ्य। यह अध्याय <mark>मानचित्र-आधारित सोच</mark> माँगता है: हर नदी का उद्गम व दिशा, हर पर्वत का स्थान याद रखें।",
+     "en": "Geography gives <mark>4–6 questions</mark> — physical geography of India (rivers, mountains, soils), state records and world facts. Think <mark>map-first</mark>: origin and direction of every river, location of every range."
+    },
+    "rules": {
+     "hi": "नदियों को <mark>दिशा-सूत्र</mark> से बाँधें — पूर्व की ओर: <mark>गंगा, ब्रह्मपुत्र, गोदावरी, कृष्णा</mark> (डेल्टा बनाती हैं); पश्चिम की ओर: <mark>नर्मदा, तापी</mark> (भ्रंश घाटी, <mark>डेल्टा नहीं</mark> — ज्वारनदमुख)। पर्वतों को <mark>ऊँचाई-क्रम</mark> से: कंचनजंगा (8598 m, भारत की सबसे ऊँची) > नंदा देवी (7816 m)। कर्क रेखा के 8 राज्य: “<mark>गु-रा-म-छ-झ-बं-त्रि-मि</mark>” (पश्चिम से पूर्व)।",
+     "en": "Group rivers by <mark>direction</mark> — east-flowing: <mark>Ganga, Brahmaputra, Godavari, Krishna</mark> (form deltas); west-flowing: <mark>Narmada, Tapi</mark> (rift valleys, <mark>no deltas</mark> — estuaries). Peaks by height: Kanchenjunga (8,598 m, India’s highest) > Nanda Devi (7,816 m)."
+    },
+    "mistakes": {
+     "hi": "1) <mark>कंचनजंगा</mark> (भारत की सबसे ऊँची, 8598 m) को <mark>K2</mark> (8611 m, POK में) से मिलाना — K2 भारत-नियंत्रित क्षेत्र में नहीं है। 2) <mark>चिल्का</mark> (खारे पानी की लैगून) व <mark>वुलर</mark> (मीठे पानी की सबसे बड़ी झील) को आपस में बदलना। 3) <mark>चेन्नई — कृत्रिम</mark>, <mark>विशाखापत्तनम — प्राकृतिक</mark>, <mark>कोलकाता — नदी तटीय</mark> बंदरगाह की पहचान उल्टी करना।",
+     "en": "1) Confusing <mark>Kanchenjunga</mark> (India’s highest, 8,598 m) with <mark>K2</mark> (8,611 m, in POK). 2) Swapping <mark>Chilka</mark> (brackish lagoon) and <mark>Wular</mark> (largest freshwater lake). 3) Reversing <mark>Chennai — artificial</mark>, <mark>Visakhapatnam — natural</mark>, <mark>Kolkata — riverine</mark> ports."
+    }
+   },
+   "tips": [
+    {
+     "hi": "“दक्षिण की गंगा = गोदावरी”, “बिहार का शोक = कोसी”, “भारत का नियाग्रा = चित्रकूट” — उपनाम वाले प्रश्न <mark>सीधे</mark> इन्हीं जोड़ियों से आते हैं; उपनाम-सूची अलग से तैयार करें।",
+     "en": "“Dakshin Ganga = Godavari”, “Sorrow of Bihar = Kosi”, “Niagara of India = Chitrakote” — epithet questions come <mark>directly</mark> from these pairs; prepare the epithet list separately."
+    },
+    {
+     "hi": "संख्यात्मक तथ्यों को <mark>श्रेणियों</mark> में याद करें — सबसे बड़ा/छोटा/लंबा/गहरा; RRB में “सबसे/प्रथम” वाले प्रश्न सबसे अधिक पूछे जाते हैं।",
+     "en": "Learn numeric facts as <mark>superlatives</mark> — largest/smallest/longest/deepest; RRB asks “biggest/first” questions the most."
+    }
+   ],
    "tricks": [
     {
      "h": {
@@ -1643,7 +1722,38 @@
      }
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "q": {
+      "hi": "“भारत की सबसे ऊँची पर्वत चोटी कौन-सी है?” — K2 (8611 m) विकल्प में हो तो भी उत्तर कंचनजंगा क्यों है?",
+      "en": "Why is Kanchenjunga the answer to “India’s highest peak?” even when K2 (8,611 m) is an option?"
+     },
+     "s": {
+      "hi": "ऊँचाई की तुलना करें: K2 = 8611 m, कंचनजंगा = 8598 m — संख्या में K2 ऊँचा है। परंतु <mark>K2 POK (पाक-अधिकृत कश्मीर)</mark> में स्थित है, जो भारत के <mark>प्रशासनिक नियंत्रण</mark> में नहीं है। परीक्षा में “भारत की सबसे ऊँची चोटी” का अर्थ है <mark>भारत-नियंत्रित क्षेत्र की</mark> सबसे ऊँची चोटी — वह है <mark>कंचनजंगा (8598 m, सिक्किम)</mark>। तरकीब: “<mark>नियंत्रण वाली ही गिनी जाती है</mark>”।",
+      "en": "K2 (8,611 m) is higher, but it lies in <mark>POK</mark>, outside India’s <mark>administrative control</mark>. “India’s highest peak” means the highest within <mark>India-controlled territory</mark> — <mark>Kanchenjunga (8,598 m, Sikkim)</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "नर्मदा और तापी डेल्टा क्यों नहीं बनातीं, जबकि गंगा-गोदावरी बनाती हैं?",
+      "en": "Why don’t the Narmada and Tapi form deltas, while the Ganga and Godavari do?"
+     },
+     "s": {
+      "hi": "दिशा-सूत्र लगाएँ: गंगा व गोदावरी <mark>पूर्व की ओर</mark> बहकर बंगाल की खाड़ी में गिरती हैं — मंद ढाल पर <mark>अवसाद जमा</mark> होकर <mark>डेल्टा</mark> बनता है। नर्मदा व तापी <mark>पश्चिम की ओर</mark> <mark>भ्रंश घाटी</mark> में तेज़ गति से बहती हैं और <mark>ज्वारनदमुख (estuary)</mark> बनाती हैं — तेज़ धारा अवसाद जमा नहीं होने देती। याद रखें: “<mark>भ्रंश घाटी = डेल्टा नहीं</mark>”।",
+      "en": "East-flowing rivers like the Ganga deposit silt on gentle slopes, forming <mark>deltas</mark>. The Narmada and Tapi flow <mark>west</mark> through <mark>rift valleys</mark> at speed, forming <mark>estuaries</mark> — fast currents prevent silt deposition. Rule: “<mark>rift valley = no delta</mark>”."
+     }
+    },
+    {
+     "q": {
+      "hi": "कर्क रेखा भारत के किन राज्यों से गुजरती है? क्रम याद रखने की तरकीब बताइए।",
+      "en": "Which states does the Tropic of Cancer pass through? Give a memory trick for the order."
+     },
+     "s": {
+      "hi": "कर्क रेखा (23.5°N) <mark>8 राज्यों</mark> से गुजरती है। पश्चिम से पूर्व का क्रम-सूत्र है: “<mark>गु-रा-म-छ-झ-बं-त्रि-मि</mark>” — <mark>गु</mark>जरात, <mark>रा</mark>जस्थान, <mark>म</mark>ध्यप्रदेश, <mark>छ</mark>त्तीसगढ़, <mark>झा</mark>रखंड, <mark>बं</mark>गाल (पश्चिम), <mark>त्रि</mark>पुरा, <mark>मि</mark>ज़ोरम। एक ही साँस में बोलकर याद करें — क्रम ही प्रश्न का उत्तर है।",
+      "en": "The Tropic of Cancer (23.5°N) crosses <mark>8 states</mark>, west to east: “<mark>Gu-Ra-M-Chh-Jh-B-Tri-Mi</mark>” — Gujarat, Rajasthan, Madhya Pradesh, Chhattisgarh, Jharkhand, West Bengal, Tripura, Mizoram."
+     }
+    }
+   ],
    "mnemonics": [
     {
      "h": {
@@ -2697,6 +2807,30 @@
     "hi": "RRB NTPC/Group D में पूछे जाने वाले <mark>परीक्षा-स्तरीय</mark> संविधान तथ्य — अनुच्छेद, संशोधन व संस्थाएँ।",
     "en": "<mark>Exam-level</mark> polity facts for RRB NTPC/Group D — articles, amendments & institutions."
    },
+   "notes": {
+    "intro": {
+     "hi": "भारतीय राजव्यवस्था RRB परीक्षाओं का <mark>सबसे स्कोरिंग</mark> खंड है — अनुच्छेद, संशोधन और संस्थाओं से <mark>4–6 सीधे प्रश्न</mark> आते हैं। तथ्य निश्चित हैं, कोई अनुमान नहीं — जो <mark>अनुच्छेद-सूत्र</mark> याद करेगा, वही अंक पाएगा।",
+     "en": "Polity is the <mark>most scoring</mark> RRB section — <mark>4–6 direct questions</mark> on articles, amendments and institutions. The facts are fixed; the <mark>article-number</mark> you memorise is the mark you score."
+    },
+    "rules": {
+     "hi": "अनुच्छेदों को <mark>समूह-सूत्र</mark> में बाँधें — मौलिक अधिकार <mark>12–35</mark>, राष्ट्रपति <mark>52–62</mark>, आपातकाल “<mark>352-356-360</mark>” (राष्ट्रीय, राज्य, वित्तीय — बढ़ता क्रम)। संशोधनों के <mark>जोड़े</mark> याद करें: 42वाँ (मौलिक कर्तव्य, 1976) ↔ 86वाँ (शिक्षा का अधिकार, 2002); 73वाँ (पंचायत) ↔ 74वाँ (नगरपालिका); 101वाँ (GST)।",
+     "en": "Group articles: Fundamental Rights <mark>12–35</mark>, President <mark>52–62</mark>, Emergency “<mark>352-356-360</mark>” (national, state, financial — ascending). Amendment <mark>pairs</mark>: 42nd (duties) ↔ 86th (right to education); 73rd (panchayat) ↔ 74th (municipality); 101st (GST)."
+    },
+    "mistakes": {
+     "hi": "1) अनुच्छेद <mark>32</mark> (SC की रिट शक्ति) व <mark>226</mark> (HC की रिट शक्ति) को आपस में बदलना। 2) <mark>42वें संशोधन</mark> (1976 — मौलिक कर्तव्य, प्रस्तावना में 3 शब्द) को <mark>44वें</mark> (1978 — संपत्ति का अधिकार हटाया) से मिलाना। 3) <mark>धन विधेयक (अनुच्छेद 110) केवल लोकसभा</mark> में पेश होता है — “दोनों सदनों” वाला विकल्प <mark>भ्रामक</mark> है।",
+     "en": "1) Swapping Art. <mark>32</mark> (SC writs) and <mark>226</mark> (HC writs). 2) Mixing the <mark>42nd Amendment</mark> (1976 — duties, Preamble words) with the <mark>44th</mark> (1978 — right to property removed). 3) A <mark>Money Bill (Art. 110)</mark> is introduced <mark>only in the Lok Sabha</mark> — the “both Houses” option is a <mark>trap</mark>."
+    }
+   },
+   "tips": [
+    {
+     "hi": "संशोधन-संख्या और वर्ष को <mark>जोड़े</mark> में याद करें — 42/1976, 44/1978, 52/1985, 61/1988, 73–74/1992, 86/2002, 101/2016। जोड़ा याद रहेगा तो आधा प्रश्न वहीं हल हो जाएगा।",
+     "en": "Learn amendments as <mark>number-year pairs</mark> — 42/1976, 44/1978, 52/1985, 61/1988, 73–74/1992, 86/2002, 101/2016. The pair alone solves half the question."
+    },
+    {
+     "hi": "“कौन करता है?” वाले प्रश्नों में <mark>कर्ता-सूत्र</mark> लगाएँ — नियुक्ति करने वाला राष्ट्रपति (राज्यपाल, UPSC अध्यक्ष); जनता चुनती है केवल लोकसभा — “नियुक्ति ऊपर से, चुनाव नीचे से”।",
+     "en": "For “who appoints?” questions use the <mark>appointer rule</mark> — the President appoints (Governor, UPSC Chairman); the people elect only the Lok Sabha."
+    }
+   ],
    "tricks": [
     {
      "h": {
@@ -2949,7 +3083,38 @@
      }
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "q": {
+      "hi": "अनुच्छेद 32 और अनुच्छेद 226 — दोनों रिट से जुड़े हैं; अंतर कैसे याद रखें?",
+      "en": "Articles 32 and 226 both concern writs — how do you keep them apart?"
+     },
+     "s": {
+      "hi": "संख्या-सूत्र लगाएँ: <mark>32</mark> (छोटी संख्या) = <mark>सर्वोच्च न्यायालय</mark>; <mark>226</mark> (बड़ी संख्या) = <mark>उच्च न्यायालय</mark>। अंबेडकर ने अनुच्छेद 32 को “<mark>संविधान की आत्मा</mark>” कहा था। अतः <mark>32 → SC, 226 → HC</mark> — छोटी संख्या, बड़ी अदालत।",
+      "en": "Number trick: <mark>32</mark> (small number) = <mark>Supreme Court</mark>; <mark>226</mark> (big number) = <mark>High Court</mark>. Ambedkar called Art. 32 the “<mark>soul of the Constitution</mark>”. So <mark>32 → SC, 226 → HC</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "42वें (1976) और 44वें (1978) संशोधन में क्या अंतर है? दोनों पास-पास के वर्षों के हैं।",
+      "en": "How do you distinguish the 42nd (1976) and 44th (1978) Amendments?"
+     },
+     "s": {
+      "hi": "कार्य-सूत्र लगाएँ: <mark>42वाँ</mark> = “<mark>जोड़ा</mark>” (मौलिक कर्तव्य जोड़े, प्रस्तावना में समाजवादी/धर्मनिरपेक्ष/अखंडता जोड़े); <mark>44वाँ</mark> = “<mark>हटाया</mark>” (<mark>संपत्ति का अधिकार</mark> मौलिक अधिकारों से हटाया, और “आंतरिक अशांति” की जगह “<mark>सशस्त्र विद्रोह</mark>” लाया)। याद रखें: “<mark>बयालीस ने जोड़ा, चवालीस ने हटाया</mark>”।",
+      "en": "Function rule: the <mark>42nd</mark> <mark>added</mark> (Fundamental Duties; Socialist/Secular/Integrity in the Preamble); the <mark>44th</mark> <mark>removed</mark> (the <mark>right to property</mark> from Fundamental Rights). Remember: “<mark>42 added, 44 removed</mark>”."
+     }
+    },
+    {
+     "q": {
+      "hi": "“धन विधेयक किस सदन में पेश किया जा सकता है?” — विकल्प: केवल लोकसभा, केवल राज्यसभा, दोनों सदन।",
+      "en": "“In which House can a Money Bill be introduced?” — options: Lok Sabha only, Rajya Sabha only, both Houses."
+     },
+     "s": {
+      "hi": "अनुच्छेद-सूत्र: धन विधेयक = अनुच्छेद <mark>110</mark>। नियम है — धन विधेयक <mark>केवल लोकसभा</mark> में पेश होता है; राज्यसभा इसे <mark>केवल 14 दिन</mark> रोक सकती है, संशोधन नहीं कर सकती। “दोनों सदन” वाला विकल्प <mark>जानबूझकर भ्रामक</mark> है। उत्तर: <mark>केवल लोकसभा</mark>।",
+      "en": "Article rule: Money Bill = Art. <mark>110</mark>. It is introduced <mark>only in the Lok Sabha</mark>; the Rajya Sabha can only <mark>delay it 14 days</mark>, not amend it. “Both Houses” is a <mark>deliberate trap</mark>. Answer: <mark>Lok Sabha only</mark>."
+     }
+    }
+   ],
    "mnemonics": [
     {
      "h": {
@@ -4003,6 +4168,30 @@
     "hi": "RRB NTPC/Group D में पूछे जाने वाले <mark>परीक्षा-स्तरीय</mark> आर्थिक तथ्य — RBI, बजट, बैंकिंग, कर।",
     "en": "<mark>Exam-level</mark> economy facts for RRB NTPC/Group D — RBI, budget, banking, tax."
    },
+   "notes": {
+    "intro": {
+     "hi": "भारतीय अर्थव्यवस्था से RRB में <mark>3–5 प्रश्न</mark> आते हैं — RBI, बजट, बैंकिंग इतिहास, GST और कृषि क्रांतियाँ। यहाँ <mark>तिथि + संस्था + व्यक्ति</mark> की त्रिवेणी है — तीनों को एक साथ याद करें (जैसे: SBI–1955–इंपीरियल बैंक)।",
+     "en": "The economy section gives <mark>3–5 questions</mark> — RBI, Budget, banking history, GST and agricultural revolutions. Learn the <mark>date + institution + person</mark> trio together (e.g. SBI–1955–Imperial Bank)."
+    },
+    "rules": {
+     "hi": "बैंकिंग-इतिहास को <mark>कालक्रम-सूत्र</mark> में बाँधें: RBI <mark>1935</mark> → राष्ट्रीयकरण <mark>1969 (14 बैंक)</mark> → <mark>1980 (6 बैंक)</mark> → SBI की जड़ में <mark>इंपीरियल बैंक (1921)</mark>। कर-संरचना: <mark>प्रत्यक्ष</mark> (आयकर — <mark>CBDT</mark>) बनाम <mark>अप्रत्यक्ष</mark> (GST — <mark>CBIC</mark>)। क्रांति-रंग: <mark>हरी = स्वामीनाथन</mark> (खाद्यान्न), <mark>सफ़ेद = कुरियन</mark> (दुग्ध)।",
+     "en": "Chain banking history: RBI <mark>1935</mark> → nationalisation <mark>1969 (14 banks)</mark> → <mark>1980 (6)</mark> → SBI’s roots in the <mark>Imperial Bank (1921)</mark>. Taxes: <mark>direct</mark> (CBDT) vs <mark>indirect</mark> (CBIC). Revolution colours: <mark>green = Swaminathan</mark>, <mark>white = Kurien</mark>."
+    },
+    "mistakes": {
+     "hi": "1) <mark>रेपो</mark> (RBI बैंकों को ऋण देता है) व <mark>रिवर्स रेपो</mark> (RBI बैंकों से जमा लेता है) की दिशा उल्टी करना — “रेपो में RBI देता है” याद रखें। 2) <mark>1969 (14 बैंक)</mark> व <mark>1980 (6 बैंक)</mark> के राष्ट्रीयकरण के आँकड़े आपस में बदलना। 3) <mark>₹1 का नोट वित्त मंत्रालय</mark> जारी करता है, RBI नहीं — “₹1 को छोड़कर सभी नोट RBI” वाला नियम उल्टा याद करना।",
+     "en": "1) Reversing <mark>repo</mark> (RBI lends to banks) and <mark>reverse repo</mark> (RBI borrows from banks). 2) Swapping <mark>1969 (14 banks)</mark> and <mark>1980 (6 banks)</mark> nationalisation figures. 3) The <mark>₹1 note is issued by the Finance Ministry</mark>, not the RBI."
+    }
+   },
+   "tips": [
+    {
+     "hi": "“पैंतीस में स्थापित, उनचास में सरकारी” (RBI 1935/1949) और “पहली जुलाई, एक कर” (GST 1 जुलाई 2017) — तिथि-सूत्रों को <mark>बोलकर</mark> याद करें; अर्थशास्त्र के प्रश्न इन्हीं से खुलते हैं।",
+     "en": "Chant date-formulas aloud — “1935/1949” for the RBI, “1 July 2017” for GST; most economy questions open from these."
+    },
+    {
+     "hi": "CBDT बनाम CBIC, CPI बनाम WPI, FDI बनाम FII — <mark>जोड़े</mark> में अंतर याद करें; RRB “कौन-सा किससे जुड़ा है” वाले प्रश्न इन्हीं जोड़ों से बनाता है।",
+     "en": "Learn contrasting <mark>pairs</mark> — CBDT vs CBIC, CPI vs WPI, FDI vs FII; RRB builds “which belongs to which” questions from these pairs."
+    }
+   ],
    "tricks": [
     {
      "h": {
@@ -4255,7 +4444,38 @@
      }
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "q": {
+      "hi": "रेपो दर और रिवर्स रेपो दर में क्या अंतर है? दोनों में “RBI” और “बैंक” शब्द आते हैं — दिशा कैसे याद रखें?",
+      "en": "How do you keep the direction of the repo and reverse repo rates straight?"
+     },
+     "s": {
+      "hi": "शब्द-सूत्र लगाएँ: <mark>रेपो</mark> में RBI <mark>देता</mark> है (बैंकों को <mark>ऋण</mark>), <mark>रिवर्स रेपो</mark> में RBI <mark>लेता</mark> है (बैंकों से <mark>जमा</mark>)। “रिवर्स” शब्द ही दिशा पलट देता है — सामान्य रेपो में धन RBI से बैंकों की ओर जाता है, रिवर्स में बैंकों से RBI की ओर। याद रखें: “<mark>रेपो-ऋण, रिवर्स-जमा</mark>”।",
+      "en": "Word rule: in <mark>repo</mark> the RBI <mark>gives</mark> (loans to banks); in <mark>reverse repo</mark> the RBI <mark>takes</mark> (deposits from banks). “Reverse” flips the direction. Remember: “<mark>repo = loan, reverse = deposit</mark>”."
+     }
+    },
+    {
+     "q": {
+      "hi": "1969 और 1980 — दोनों वर्षों में बैंकों का राष्ट्रीयकरण हुआ; संख्याएँ (14 और 6) कैसे न भूलें?",
+      "en": "Banks were nationalised in both 1969 and 1980 — how do you keep 14 and 6 straight?"
+     },
+     "s": {
+      "hi": "कालक्रम-तर्क लगाएँ: <mark>पहले</mark> राष्ट्रीयकरण (1969) में <mark>अधिक</mark> बैंक (14) लिए गए — शुरुआत में बड़े पैमाने पर कदम उठाया गया; <mark>बाद</mark> में (1980) बचे हुए <mark>कम</mark> बैंक (6) लिए गए। सूत्र: “<mark>पहले ज़्यादा, बाद में कम — 69 में चौदह, 80 में छह</mark>”।",
+      "en": "Chronology logic: the <mark>first</mark> nationalisation (1969) took <mark>more</mark> banks (14); the <mark>later</mark> one (1980) took the remaining <mark>fewer</mark> (6). Rule: “<mark>first more, later fewer — 14 in 69, 6 in 80</mark>”."
+     }
+    },
+    {
+     "q": {
+      "hi": "GST कब लागू हुआ और किस संविधान संशोधन से? दोनों को एक साथ कैसे याद रखें?",
+      "en": "When was GST launched and by which amendment — how do you remember both together?"
+     },
+     "s": {
+      "hi": "जोड़ा-सूत्र: संशोधन संख्या <mark>101</mark>, तिथि <mark>1 जुलाई 2017</mark> — “<mark>101 में एक, जुलाई पहली</mark>”। 101 में “एक” (1) है और तिथि भी महीने की “पहली” (1 जुलाई) — एक ही अंक दोनों को जोड़ता है। साथ में अनुच्छेद <mark>246A</mark> (कर लगाने की शक्ति) याद रखें।",
+      "en": "Pair formula: Amendment <mark>101</mark>, date <mark>1 July 2017</mark> — “<mark>101 mein ek, July pehli</mark>”. The digit 1 links both. Also remember Art. <mark>246A</mark> (power to tax)."
+     }
+    }
+   ],
    "mnemonics": [
     {
      "h": {
@@ -5299,6 +5519,30 @@
     "hi": "RRB NTPC/Group D में पूछे जाने वाले <mark>परीक्षा-स्तरीय</mark> खेल तथ्य — ओलंपिक, ट्रॉफी, खिलाड़ी, पुरस्कार।",
     "en": "<mark>Exam-level</mark> sports facts for RRB NTPC/Group D — Olympics, trophies, players, awards."
    },
+   "notes": {
+    "intro": {
+     "hi": "खेल से RRB में <mark>3–4 प्रश्न</mark> निश्चित आते हैं — ओलंपिक, ट्रॉफी-खेल जोड़ियाँ और “प्रथम/सर्वोच्च” वाले तथ्य। यह अध्याय <mark>जोड़ी-आधारित</mark> है: ट्रॉफी-खेल, खिलाड़ी-उपलब्धि, वर्ष-आयोजन — जोड़ियाँ याद करें, प्रश्न स्वयं हल होंगे।",
+     "en": "Sports gives <mark>3–4 certain questions</mark> — Olympics, trophy-sport pairs and “first/highest” facts. This chapter is <mark>pair-based</mark>: trophy-sport, player-achievement, year-event — learn the pairs and questions solve themselves."
+    },
+    "rules": {
+     "hi": "जोड़ी-सूत्र कंठस्थ करें: ट्रॉफी — “<mark>रणजी-क्रिकेट, डूरंड-फुटबॉल, थॉमस-बैडमिंटन, डेविस-टेनिस</mark>”; ओलंपिक — प्राचीन <mark>776 ई.पू.</mark>, आधुनिक <mark>1896</mark>; हॉकी — भारत के <mark>8 स्वर्ण (1928–1980)</mark>। पुरस्कार-क्रम: “<mark>रत्न > अर्जुन > द्रोणाचार्य</mark>” (खिलाड़ी सर्वोच्च → खिलाड़ी → प्रशिक्षक)।",
+     "en": "Memorise pairs: trophies — “<mark>Ranji-Cricket, Durand-Football, Thomas-Badminton, Davis-Tennis</mark>”; Olympics — ancient <mark>776 BC</mark>, modern <mark>1896</mark>; hockey — India’s <mark>8 golds (1928–1980)</mark>. Award order: “<mark>Khel Ratna > Arjuna > Dronacharya</mark>”."
+    },
+    "mistakes": {
+     "hi": "1) <mark>थॉमस कप</mark> (बैडमिंटन, पुरुष) को <mark>डेविस कप</mark> (टेनिस) से मिलाना — “थॉमस-बैडमिंटन, डेविस-टेनिस” पक्का करें। 2) भारत का <mark>कोई आधिकारिक राष्ट्रीय खेल नहीं</mark> है — “हॉकी” वाला विकल्प तभी सही जब प्रश्न में “आधिकारिक” न लिखा हो। 3) <mark>अभिनव बिंद्रा (2008)</mark> — प्रथम <mark>व्यक्तिगत</mark> स्वर्ण; हॉकी के 1928 के स्वर्ण <mark>टीम</mark> स्वर्ण थे — “व्यक्तिगत” शब्द पर ध्यान दें।",
+     "en": "1) Mixing the <mark>Thomas Cup</mark> (badminton) with the <mark>Davis Cup</mark> (tennis). 2) India has <mark>no official</mark> national sport — “hockey” is wrong if the question says “official”. 3) <mark>Bindra (2008)</mark> won the first <mark>individual</mark> gold; hockey’s 1928 gold was a <mark>team</mark> gold — watch the word “individual”."
+    }
+   },
+   "tips": [
+    {
+     "hi": "मैदानों के नाम “खेल-स्थान” जोड़े में याद करें — क्रिकेट <mark>पिच</mark>, टेनिस <mark>कोर्ट</mark>, गोल्फ <mark>कोर्स</mark>, मुक्केबाज़ी <mark>रिंग</mark>; RRB हर वर्ष 1 प्रश्न यहीं से पूछता है।",
+     "en": "Learn playfield names as sport-venue pairs — cricket <mark>pitch</mark>, tennis <mark>court</mark>, golf <mark>course</mark>, boxing <mark>ring</mark>; RRB asks one question from here every year."
+    },
+    {
+     "hi": "हाल की घटनाओं (पेरिस 2024, महिला विश्व कप 2025) को <mark>वर्ष-टैग</mark> के साथ याद करें — “2024 में क्या, 2025 में क्या”; ताज़ा खेल-समाचार RRB के प्रिय प्रश्न हैं।",
+     "en": "Tag recent events with their <mark>year</mark> — Paris 2024, Women’s World Cup 2025; fresh sports news is RRB’s favourite question source."
+    }
+   ],
    "tricks": [
     {
      "h": {
@@ -5551,7 +5795,38 @@
      }
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "q": {
+      "hi": "“डूरंड कप किस खेल से संबंधित है?” — विकल्प: क्रिकेट, फुटबॉल, हॉकी, टेनिस।",
+      "en": "“The Durand Cup is associated with which sport?” — options: cricket, football, hockey, tennis."
+     },
+     "s": {
+      "hi": "जोड़ी-सूत्र लगाएँ: “<mark>रणजी-क्रिकेट, डूरंड-फुटबॉल, थॉमस-बैडमिंटन, डेविस-टेनिस</mark>” — <mark>डूरंड</mark> के साथ <mark>फुटबॉल</mark> बँधा है। अतिरिक्त जाँच: डूरंड कप <mark>1888</mark> से खेला जा रहा <mark>एशिया का सबसे पुराना</mark> फुटबॉल टूर्नामेंट है — “सबसे पुराना” टैग भी फुटबॉल की ओर इशारा करता है। उत्तर: <mark>फुटबॉल</mark>।",
+      "en": "Pair formula: “<mark>Ranji-Cricket, Durand-Football, Thomas-Badminton, Davis-Tennis</mark>” — <mark>Durand</mark> pairs with <mark>football</mark>. Cross-check: the Durand Cup (since <mark>1888</mark>) is <mark>Asia’s oldest</mark> football tournament. Answer: <mark>football</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "“भारत का राष्ट्रीय खेल कौन-सा है?” — क्या उत्तर “हॉकी” होगा?",
+      "en": "“What is India’s national sport?” — is the answer “hockey”?"
+     },
+     "s": {
+      "hi": "शब्द पर ध्यान दें: भारत का <mark>कोई आधिकारिक राष्ट्रीय खेल नहीं</mark> है — यह RTI से स्पष्ट हो चुका है। यदि प्रश्न में “<mark>आधिकारिक</mark>” लिखा है तो “हॉकी” विकल्प <mark>गलत</mark> होगा; सही उत्तर होगा “<mark>कोई नहीं/घोषित नहीं</mark>”। यदि प्रश्न केवल “राष्ट्रीय खेल” (बिना “आधिकारिक”) पूछे और विकल्पों में हॉकी हो, तो परंपरागत उत्तर <mark>हॉकी</mark> चुनें। तरकीब: “<mark>आधिकारिक दिखा → कोई नहीं</mark>”।",
+      "en": "Watch the wording: India has <mark>no official</mark> national sport (confirmed via RTI). If the question says “<mark>official</mark>”, “hockey” is <mark>wrong</mark> — the answer is “<mark>none declared</mark>”. Without “official”, the conventional answer is <mark>hockey</mark>. Rule: “<mark>official mentioned → none</mark>”."
+     }
+    },
+    {
+     "q": {
+      "hi": "भारत का प्रथम व्यक्तिगत ओलंपिक स्वर्ण किसने जीता — और यह हॉकी के 1928 के स्वर्ण से कैसे अलग है?",
+      "en": "Who won India’s first individual Olympic gold — and how does it differ from hockey’s 1928 gold?"
+     },
+     "s": {
+      "hi": "<mark>अभिनव बिंद्रा</mark> ने <mark>2008</mark> (बीजिंग) में 10m एयर राइफल में <mark>प्रथम व्यक्तिगत स्वर्ण</mark> जीता। हॉकी का 1928 (एम्स्टर्डम) का स्वर्ण <mark>टीम</mark> स्पर्धा का था — इसलिए “व्यक्तिगत” शब्द प्रश्न का <mark>निर्णायक</mark> शब्द है। क्रम-सूत्र: “<mark>1928 टीम, 2008 व्यक्ति</mark>” — पूरे 80 वर्ष का अंतर।",
+      "en": "<mark>Abhinav Bindra</mark> won the <mark>first individual gold</mark> in <mark>2008</mark> (10m air rifle). Hockey’s 1928 gold was a <mark>team</mark> event — so “individual” is the <mark>decisive</mark> word. Formula: “<mark>1928 team, 2008 individual</mark>”."
+     }
+    }
+   ],
    "mnemonics": [
     {
      "h": {
@@ -6605,6 +6880,30 @@
     "hi": "RRB NTPC/Group D में पूछे जाने वाले <mark>परीक्षा-स्तरीय</mark> पुरस्कार, पुस्तकें व विविध तथ्य।",
     "en": "<mark>Exam-level</mark> awards, books & miscellaneous facts for RRB NTPC/Group D."
    },
+   "notes": {
+    "intro": {
+     "hi": "पुरस्कार, पुस्तकें और विविध तथ्य RRB का <mark>“प्रथम” वाला</mark> खंड है — भारत रत्न, नोबेल, ज्ञानपीठ, पुस्तक-लेखक और दिवस-तिथियों से <mark>3–4 प्रश्न</mark> आते हैं। यहाँ <mark>वर्ष + नाम + श्रेणी</mark> की त्रिवेणी याद करें (जैसे: टैगोर–1913–साहित्य)।",
+     "en": "Awards, books and miscellany is RRB’s <mark>“firsts”</mark> section — <mark>3–4 questions</mark> on the Bharat Ratna, Nobel, Jnanpith, book-author pairs and important days. Learn the <mark>year + name + category</mark> trio (e.g. Tagore–1913–Literature)."
+    },
+    "rules": {
+     "hi": "क्रम-सूत्र बाँधें: पद्म — “<mark>विभूषण > भूषण > श्री</mark>” (ऊपर से नीचे); वीरता — “<mark>परमवीर > महावीर > वीर चक्र</mark>” (युद्धकालीन), शांतिकालीन सर्वोच्च — <mark>अशोक चक्र</mark>। नोबेल भारतीय-क्रम: “<mark>टैगोर 1913 प्रथम</mark>” (साहित्य) → रमन 1930 → खुराना 1968 → टेरेसा 1979। पुस्तक-जोड़ी: <mark>अर्थशास्त्र-कौटिल्य, इंडिका-मेगस्थनीज़, राजतरंगिणी-कल्हण, हर्षचरित-बाणभट्ट</mark>।",
+     "en": "Order formulas: Padma — “<mark>Vibhushan > Bhushan > Shri</mark>”; gallantry — “<mark>Param Vir > Maha Vir > Vir Chakra</mark>” (wartime), peacetime highest — <mark>Ashoka Chakra</mark>. Indian Nobel order: “<mark>Tagore 1913 first</mark>” → Raman 1930 → Khorana 1968 → Teresa 1979. Book pairs: <mark>Arthashastra-Kautilya, Indica-Megasthenes</mark>."
+    },
+    "mistakes": {
+     "hi": "1) <mark>परमवीर चक्र</mark> (युद्धकालीन सर्वोच्च) व <mark>अशोक चक्र</mark> (शांतिकालीन सर्वोच्च) को आपस में बदलना — “युद्ध में परमवीर, शांति में अशोक”। 2) <mark>ज्ञानपीठ (1961 स्थापित)</mark> को <mark>साहित्य अकादमी (1954)</mark> से मिलाना — स्थापना-वर्ष अलग हैं। 3) नोबेल में <mark>हरगोविंद खुराना (1968)</mark> को भौतिकी का मान लेना — उन्हें <mark>चिकित्सा</mark> वर्ग में मिला था, भौतिकी में नहीं।",
+     "en": "1) Swapping the <mark>Param Vir Chakra</mark> (wartime highest) and <mark>Ashoka Chakra</mark> (peacetime highest). 2) Mixing the <mark>Jnanpith (est. 1961)</mark> with the <mark>Sahitya Akademi (1954)</mark>. 3) Assuming <mark>Har Gobind Khorana (1968)</mark> won in Physics — his Nobel was in <mark>Medicine</mark>."
+    }
+   },
+   "tips": [
+    {
+     "hi": "“प्रथम” श्रृंखला के हर तथ्य को <mark>वर्ष-टैग</mark> के साथ याद करें — टैगोर 1913, रमन 1930, देविका रानी 1969 (फाल्के), भानु अथैया 1983 (ऑस्कर); वर्ष ही प्रश्न का उत्तर होता है।",
+     "en": "Tag every “first” with its <mark>year</mark> — Tagore 1913, Raman 1930, Devika Rani 1969 (Phalke), Bhanu Athaiya 1983 (Oscar); the year itself is the answer."
+    },
+    {
+     "hi": "दिवस-तिथियों को <mark>अंक-सूत्र</mark> में बाँधें — “5-14-5” (शिक्षक 5 सितंबर, बाल 14 नवंबर, पर्यावरण 5 जून) और “8-21-14” (महिला 8 मार्च, योग 21 जून, हिंदी 14 सितंबर)।",
+     "en": "Bind important days into <mark>digit formulas</mark> — “5-14-5” (Teachers 5 Sept, Children 14 Nov, Environment 5 June) and “8-21-14” (Women 8 Mar, Yoga 21 June, Hindi 14 Sept)."
+    }
+   ],
    "tricks": [
     {
      "h": {
@@ -6857,7 +7156,38 @@
      }
     }
    ],
-   "examples": [],
+   "examples": [
+    {
+     "q": {
+      "hi": "परमवीर चक्र और अशोक चक्र में क्या अंतर है? दोनों सर्वोच्च वीरता पुरस्कार कहलाते हैं।",
+      "en": "What is the difference between the Param Vir Chakra and the Ashoka Chakra? Both are called the highest gallantry awards."
+     },
+     "s": {
+      "hi": "परिस्थिति-सूत्र लगाएँ: <mark>परमवीर चक्र</mark> = <mark>युद्धकालीन</mark> सर्वोच्च (प्रथम — <mark>मेजर सोमनाथ शर्मा</mark>, 1947); <mark>अशोक चक्र</mark> = <mark>शांतिकालीन</mark> सर्वोच्च। याद रखें: “<mark>युद्ध में परमवीर, शांति में अशोक</mark>”। युद्धकालीन क्रम भी बाँध लें: “<mark>परमवीर > महावीर > वीर चक्र</mark>”।",
+      "en": "Situation rule: the <mark>Param Vir Chakra</mark> is the <mark>wartime</mark> highest (first — <mark>Maj. Somnath Sharma</mark>, 1947); the <mark>Ashoka Chakra</mark> is the <mark>peacetime</mark> highest. Remember: “<mark>Param Vir in war, Ashoka in peace</mark>”."
+     }
+    },
+    {
+     "q": {
+      "hi": "“गीतांजलि” के लेखक को नोबेल किस वर्ष और किस श्रेणी में मिला था?",
+      "en": "In which year and category did the author of “Gitanjali” win the Nobel?"
+     },
+     "s": {
+      "hi": "जोड़ी-श्रृंखला लगाएँ: <mark>गीतांजलि → टैगोर → 1913 → साहित्य</mark>। टैगोर <mark>प्रथम भारतीय</mark> और <mark>प्रथम गैर-यूरोपीय</mark> नोबेल विजेता थे। सूत्र “<mark>टैगोर 1913 प्रथम</mark>” से वर्ष पक्का करें — उत्तर: <mark>1913, साहित्य</mark>।",
+      "en": "Chain: <mark>Gitanjali → Tagore → 1913 → Literature</mark>. Tagore was the <mark>first Indian</mark> and <mark>first non-European</mark> laureate. Formula: “<mark>Tagore 1913 first</mark>”. Answer: <mark>1913, Literature</mark>."
+     }
+    },
+    {
+     "q": {
+      "hi": "“इंडिका” और “अर्थशास्त्र” — लेखक और विषय के आधार पर अंतर स्पष्ट कीजिए।",
+      "en": "Distinguish “Indica” and “Arthashastra” by author and subject."
+     },
+     "s": {
+      "hi": "लेखक-विषय जोड़ी: <mark>इंडिका → मेगस्थनीज़</mark> (यूनानी राजदूत; <mark>चंद्रगुप्त मौर्य</mark> के दरबार का वर्णन — <mark>विदेशी दृष्टिकोण</mark>); <mark>अर्थशास्त्र → कौटिल्य/चाणक्य</mark> (<mark>मौर्य प्रशासन</mark> व राजकीय नीति पर ग्रंथ — <mark>भारतीय दृष्टिकोण</mark>)। तरकीब: “<mark>विदेशी ने देखा (इंडिका), भारतीय ने चलाया (अर्थशास्त्र)</mark>”।",
+      "en": "Author-subject pairs: <mark>Indica → Megasthenes</mark> (Greek ambassador’s account of <mark>Chandragupta Maurya’s</mark> court — a <mark>foreign view</mark>); <mark>Arthashastra → Kautilya</mark> (treatise on <mark>Mauryan administration</mark> — an <mark>Indian view</mark>)."
+     }
+    }
+   ],
    "mnemonics": [
     {
      "h": {
