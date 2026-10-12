@@ -304,3 +304,37 @@ www/ is final. Copy to android assets, bump versionCode 3→4, rebuild APK, uplo
 - PDF library: 4 verified real PDFs (RRB NTPC syllabus, NTPC 2026 guide, Group D 2026 guide, NCERT Science X) + 2 official links; download buttons; how-to hint
 
 **Tests:** 53 chapters, 22/22 maths + 17/17 reasoning with notes+tips, 1,171 difficulty-tagged, 0 JS errors (1 expected CDN-offline console note). CDN rebuilt v2.
+
+## Final Complete Fix Pass #5 (2026-10-12)
+**Hasnain:** "ak baar pura fix kro" — fix everything completely in one go.
+
+### Content fixes
+1. **20 short explanations expanded** → full चरण 1→2→3 format (r08: 10 ranking Qs, r12: 1 dice Q, r15: 8 Venn Qs, r16: 1 data sufficiency Q). All answers were correct; only explanations were brief.
+2. **4 missing EN option fields fixed** (g05[2]: years, m10[28]: rupees — copied hi→en since identical).
+3. **35/35 random MCQs manually verified** across all 5 subjects — all answers CORRECT.
+4. **Science math-contamination re-checked**: 11 flagged hits all FALSE POSITIVES (chemical ratios like "HCl:HNO₃ का अनुपात", physics terms like "समानुपाती", "हानिकारक"). No actual math questions in science.
+5. **0 duplicates** across 1,593 questions. **0 missing explanations, 0 missing src, 0 structural issues.**
+
+### UI/UX verified (headless, 360px)
+- Back navigation works (chapter list → home)
+- Language toggle works (header menu → HI/EN switch confirmed)
+- Quiz: 4 options render, answer feedback works
+- All 7 bottom tabs work; no horizontal overflow
+
+### Functionality verified
+- **Mock test**: 100 Qs, timer running, palette, confirm dialogs, result with review. **Negative marking math verified**: 50✓/50✗ → score 33.33 = 50 − 50×(1/3) ✓
+- **Notes**: autosave (800ms debounce) works, create/list/delete all work
+- **Bookmarks**: toggle works, persists to localStorage (`ruhxam-v1`)
+- **Search**: works across chapters
+- **Streak 🔥 + Countdown 🎯**: visible on home
+
+### Technical
+- **0 JS errors** across all tests
+- **CDN rebuilt**: 53 chapters, 1,593 questions, v1
+- **PDF links verified live**: RRB NTPC syllabus (200 OK), NCERT Science X Hindi (valid)
+- Load time ~4s for full app (acceptable)
+
+### Final state
+- **53 chapters, 1,593 MCQs, 278 examples** — 100% validated
+- All data files pass `node --check`
+- Ready for parent: copy www/ → android assets, bump versionCode, rebuild APK

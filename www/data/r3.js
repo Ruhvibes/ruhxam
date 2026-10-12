@@ -287,7 +287,7 @@ e:{hi:'5 दर्पण-सममित नहीं है → बायाँ
 src:{hi:'अभ्यास प्रश्न',en:'Practice'}},
 {q:{hi:'मानक पासे में 1 के विपरीत कौन-सा अंक होता है?',en:'In a standard die, what is opposite 1?'},
 o:[{hi:'6',en:'6'},{hi:'1',en:'1'},{hi:'5',en:'5'},{hi:'2',en:'2'}],d:1,a:0,
-e:{hi:'विपरीत फलकों का योग 7: 1↔6।',en:'Opposite faces sum to 7: 1↔6.'},
+e:{hi:'चरण 1: मानक पासे में विपरीत फलकों का योग 7 होता है। चरण 2: 1 + ? = 7 → ? = <mark>6</mark>। याद रखें: 1↔6, 2↔5, 3↔4।',en:'Step 1: On a standard die, opposite faces sum to 7. Step 2: 1 + ? = 7 → <mark>6</mark>. Remember: 1↔6, 2↔5, 3↔4.'},
 src:{hi:'RRB NTPC 2021',en:'RRB NTPC 2021'}},
 {q:{hi:'दर्पण में "car" का पहला अक्षर क्या दिखेगा?',en:'In a mirror, what will be the first letter of "car"?'},
 o:[{hi:'उल्टा r',en:'Flipped r'},{hi:'r (समान)',en:'r (same)'},{hi:'c',en:'c'},{hi:'a',en:'a'}],d:2,a:0,

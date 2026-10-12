@@ -173,7 +173,7 @@ e:{hi:'1928 से 1980 तक भारत ने 8 स्वर्ण जी�
 o:[{hi:'मिल्खा सिंह',en:'Milkha Singh'},{hi:'मेजर ध्यानचंद',en:'Major Dhyan Chand'},{hi:'पी.टी. उषा',en:'P.T. Usha'},{hi:'सचिन तेंदुलकर',en:'Sachin Tendulkar'}],a:1,
 e:{hi:'मेजर ध्यानचंद ने 1928, 1932 व 1936 के स्वर्ण जीते; उनके जन्मदिन 29 अगस्त को राष्ट्रीय खेल दिवस मनाया जाता है और सर्वोच्च खेल पुरस्कार उन्हीं के नाम पर है।',en:'Major Dhyan Chand won golds in 1928, 1932 and 1936; his birthday (29 Aug) is National Sports Day.'},src:{hi:'RRB Group D 2018',en:'RRB Group D 2018'}},
 {q:{hi:'भारत ने क्रिकेट विश्व कप कब-कब जीता?',en:'When did India win the Cricket World Cup?'},
-o:[{hi:'1983, 2011',en:'1983, 2011'},{hi:'1987, 2015'},{hi:'1983, 2007'},{hi:'2011, 2019'}],a:0,
+o:[{hi:'1983, 2011',en:'1983, 2011'},{hi:'1987, 2015',en:'1987, 2015'},{hi:'1983, 2007',en:'1983, 2007'},{hi:'2011, 2019',en:'2011, 2019'}],a:0,
 e:{hi:'1983 (कपिल देव, लॉर्ड्स — वेस्टइंडीज़ को हराया) और 2011 (धोनी, वानखेड़े — श्रीलंका को हराया); 2007 T20 विश्व कप भी भारत ने जीता था — प्रारूप का अंतर ध्यान रखें।',en:'1983 (Kapil Dev, Lord\'s) and 2011 (Dhoni, Wankhede); India also won the 2007 T20 World Cup — note the format difference.'},src:{hi:'RRB NTPC 2021',en:'RRB NTPC 2021'}},
 {q:{hi:'थॉमस कप किस खेल से संबंधित है?',en:'The Thomas Cup is associated with which sport?'},
 o:[{hi:'टेनिस',en:'Tennis'},{hi:'बैडमिंटन',en:'Badminton'},{hi:'फुटबॉल',en:'Football'},{hi:'क्रिकेट',en:'Cricket'}],a:1,
